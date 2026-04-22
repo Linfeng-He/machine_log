@@ -147,6 +147,9 @@ GIT_AUTHOR_EMAIL="${CRASH_PUSHER_GIT_AUTHOR_EMAIL:-${GIT_AUTHOR_EMAIL:-crash-pus
   exit 1
 }
 
+REPO_OWNER_USER="$(stat -c %U "$REPO_DIR" 2>/dev/null || true)"
+REPO_OWNER_UID="$(stat -c %u "$REPO_DIR" 2>/dev/null || true)"
+
 BOOT_ID="$(cat /proc/sys/kernel/random/boot_id)"
 BOOT_TS="$(date -u +%Y%m%dT%H%M%SZ)"
 SYS_ROOT_REL="sys"
@@ -198,28 +201,50 @@ log_multiline() {
   done <<<"$text"
 }
 
+run_git() {
+  local -a preserved_env=()
+
+  for env_name in SSH_AUTH_SOCK GIT_ASKPASS SSH_ASKPASS DISPLAY WAYLAND_DISPLAY XAUTHORITY DBUS_SESSION_BUS_ADDRESS XDG_RUNTIME_DIR VSCODE_GIT_ASKPASS_NODE VSCODE_GIT_ASKPASS_MAIN VSCODE_GIT_ASKPASS_HANDLE ELECTRON_RUN_AS_NODE; do
+    if [[ -n "${!env_name:-}" ]]; then
+      preserved_env+=("${env_name}=${!env_name}")
+    fi
+  done
+
+  if [[ -n "$REPO_OWNER_UID" && "$(id -u)" -eq "$REPO_OWNER_UID" ]]; then
+    env "${preserved_env[@]}" GIT_SSH_COMMAND="${GIT_SSH_COMMAND:-ssh -o StrictHostKeyChecking=accept-new}" git "$@"
+    return $?
+  fi
+
+  if [[ -n "$REPO_OWNER_USER" && "$REPO_OWNER_USER" != "UNKNOWN" ]] && command -v sudo >/dev/null 2>&1; then
+    sudo -H -u "$REPO_OWNER_USER" env "${preserved_env[@]}" GIT_SSH_COMMAND="${GIT_SSH_COMMAND:-ssh -o StrictHostKeyChecking=accept-new}" git "$@"
+    return $?
+  fi
+
+  env "${preserved_env[@]}" GIT_SSH_COMMAND="${GIT_SSH_COMMAND:-ssh -o StrictHostKeyChecking=accept-new}" git "$@"
+}
+
 ensure_repo() {
   [[ -d "$REPO_DIR/.git" ]] || {
     echo "REPO_DIR is not a git repo: $REPO_DIR" >&2
     exit 1
   }
 
-  git config --global --add safe.directory "$REPO_DIR" >/dev/null 2>&1 || true
+  log "git user: ${REPO_OWNER_USER:-unknown}"
 
   if [[ -n "$REPO_URL" ]]; then
-    if git -C "$REPO_DIR" remote get-url origin >/dev/null 2>&1; then
-      git -C "$REPO_DIR" remote set-url origin "$REPO_URL" >/dev/null 2>&1 || true
+    if run_git -C "$REPO_DIR" remote get-url origin >/dev/null 2>&1; then
+      run_git -C "$REPO_DIR" remote set-url origin "$REPO_URL" >/dev/null 2>&1 || true
     else
-      git -C "$REPO_DIR" remote add origin "$REPO_URL" >/dev/null 2>&1 || true
+      run_git -C "$REPO_DIR" remote add origin "$REPO_URL" >/dev/null 2>&1 || true
     fi
   fi
 
   if [[ -z "$REPO_BRANCH" ]]; then
-    REPO_BRANCH="$(git -C "$REPO_DIR" symbolic-ref --quiet --short HEAD 2>/dev/null || true)"
+    REPO_BRANCH="$(run_git -C "$REPO_DIR" symbolic-ref --quiet --short HEAD 2>/dev/null || true)"
   fi
 
   if [[ -z "$REPO_BRANCH" ]]; then
-    REPO_BRANCH="$(git -C "$REPO_DIR" rev-parse --abbrev-ref origin/HEAD 2>/dev/null | sed 's#^origin/##' || true)"
+    REPO_BRANCH="$(run_git -C "$REPO_DIR" rev-parse --abbrev-ref origin/HEAD 2>/dev/null | sed 's#^origin/##' || true)"
   fi
 
   if [[ -z "$REPO_BRANCH" || "$REPO_BRANCH" == "HEAD" ]]; then
@@ -231,15 +256,15 @@ check_push_access() {
   local remote_url=""
   local push_output=""
 
-  if ! git -C "$REPO_DIR" remote get-url origin >/dev/null 2>&1; then
+  if ! run_git -C "$REPO_DIR" remote get-url origin >/dev/null 2>&1; then
     log "origin remote is not configured; commits will stay local"
     return 0
   fi
 
-  remote_url="$(git -C "$REPO_DIR" remote get-url origin 2>/dev/null || true)"
+  remote_url="$(run_git -C "$REPO_DIR" remote get-url origin 2>/dev/null || true)"
   log "origin remote: ${remote_url}"
 
-  push_output="$(git -C "$REPO_DIR" push --dry-run origin "$REPO_BRANCH" 2>&1)" || {
+  push_output="$(run_git -C "$REPO_DIR" push --dry-run origin "$REPO_BRANCH" 2>&1)" || {
     log "push preflight failed for origin/${REPO_BRANCH}"
     log_multiline "push preflight: " "$push_output"
     if [[ "$remote_url" == https://github.com/* ]]; then
@@ -475,13 +500,13 @@ git_sync_once() {
   local push_output
   now="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
 
-  git -C "$REPO_DIR" add --all -- "$SYS_ROOT_REL"
-  staged_files="$(git -C "$REPO_DIR" diff --cached --name-only -- "$SYS_ROOT_REL")"
+  run_git -C "$REPO_DIR" add --all -- "$SYS_ROOT_REL"
+  staged_files="$(run_git -C "$REPO_DIR" diff --cached --name-only -- "$SYS_ROOT_REL")"
   if [[ -z "$staged_files" ]]; then
     return 0
   fi
 
-  commit_output="$(git -C "$REPO_DIR" \
+  commit_output="$(run_git -C "$REPO_DIR" \
     -c user.name="$GIT_AUTHOR_NAME" \
     -c user.email="$GIT_AUTHOR_EMAIL" \
     commit -m "sys capture ${HOST_ID} ${BOOT_TS} ${now}" -- "$SYS_ROOT_REL" 2>&1)" || {
@@ -490,8 +515,8 @@ git_sync_once() {
     return 1
   }
 
-  if git -C "$REPO_DIR" remote get-url origin >/dev/null 2>&1; then
-    push_output="$(git -C "$REPO_DIR" push origin "$REPO_BRANCH" 2>&1)" || {
+  if run_git -C "$REPO_DIR" remote get-url origin >/dev/null 2>&1; then
+    push_output="$(run_git -C "$REPO_DIR" push origin "$REPO_BRANCH" 2>&1)" || {
       log "git push failed for origin/${REPO_BRANCH}"
       log_multiline "git push: " "$push_output"
       return 1
@@ -840,6 +865,13 @@ GIT_AUTHOR_EMAIL=$(quote_env_value "crash-pusher@${HOST_ID}")
 CMMHI_CMD=$(quote_env_value "$CMMHI_CMD")
 CMMHI_TIMEOUT=$(quote_env_value "3")
 EOF
+
+for env_name in SSH_AUTH_SOCK GIT_ASKPASS SSH_ASKPASS DISPLAY WAYLAND_DISPLAY XAUTHORITY DBUS_SESSION_BUS_ADDRESS XDG_RUNTIME_DIR VSCODE_GIT_ASKPASS_NODE VSCODE_GIT_ASKPASS_MAIN VSCODE_GIT_ASKPASS_HANDLE ELECTRON_RUN_AS_NODE; do
+  if [[ -n "${!env_name:-}" ]]; then
+    printf '%s=%s\n' "$env_name" "$(quote_env_value "${!env_name}")" >>"$ENV_PATH"
+  fi
+done
+
 chmod 0600 "$ENV_PATH"
 
 if [[ "$INSTALL_SAMPLER" -eq 1 ]]; then
