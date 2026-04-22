@@ -565,3 +565,508 @@ cmmhi_rtm not configured or not found
 
 == sensors ==
 sensors command not installed
+
+===== temperature timestamp_utc=20260422T032451Z host=node0 boot_id=62503c1c-026f-4d12-960b-226160d86543 =====
+timestamp_utc=20260422T032451Z
+
+== cmmhi_rtm ==
+cmmhi_rtm not configured or not found
+
+== thermal zones ==
+/sys/class/thermal/thermal_zone0: type=pch_haswell temp=64500
+/sys/class/thermal/thermal_zone1: type=x86_pkg_temp temp=43000
+
+== hwmon ==
+/sys/class/hwmon/hwmon0/temp1_input: label=Composite value=44850
+/sys/class/hwmon/hwmon0/temp2_input: label=Sensor 1 value=44850
+/sys/class/hwmon/hwmon2/temp1_input: label=temp1_input value=64500
+/sys/class/hwmon/hwmon3/temp1_input: label=Package id 0 value=43000
+/sys/class/hwmon/hwmon3/temp2_input: label=Core 0 value=43000
+/sys/class/hwmon/hwmon3/temp3_input: label=Core 1 value=43000
+/sys/class/hwmon/hwmon3/temp4_input: label=Core 2 value=43000
+/sys/class/hwmon/hwmon3/temp5_input: label=Core 3 value=44000
+/sys/class/hwmon/hwmon3/temp6_input: label=Core 4 value=43000
+/sys/class/hwmon/hwmon3/temp7_input: label=Core 5 value=43000
+/sys/class/hwmon/hwmon3/temp8_input: label=Core 6 value=43000
+/sys/class/hwmon/hwmon3/temp9_input: label=Core 7 value=44000
+
+== sensors ==
+sensors command not installed
+
+===== temperature timestamp_utc=20260422T032453Z host=node0 boot_id=62503c1c-026f-4d12-960b-226160d86543 =====
+timestamp_utc=20260422T032453Z
+
+== cmmhi_rtm ==
+cmmhi_rtm not configured or not found
+
+== thermal zones ==
+/sys/class/thermal/thermal_zone0: type=pch_haswell temp=64500
+/sys/class/thermal/thermal_zone1: type=x86_pkg_temp temp=43000
+
+== hwmon ==
+/sys/class/hwmon/hwmon0/temp1_input: label=Composite value=45850
+/sys/class/hwmon/hwmon0/temp2_input: label=Sensor 1 value=45850
+/sys/class/hwmon/hwmon2/temp1_input: label=temp1_input value=64500
+/sys/class/hwmon/hwmon3/temp1_input: label=Package id 0 value=43000
+/sys/class/hwmon/hwmon3/temp2_input: label=Core 0 value=43000
+/sys/class/hwmon/hwmon3/temp3_input: label=Core 1 value=43000
+/sys/class/hwmon/hwmon3/temp4_input: label=Core 2 value=43000
+/sys/class/hwmon/hwmon3/temp5_input: label=Core 3 value=43000
+/sys/class/hwmon/hwmon3/temp6_input: label=Core 4 value=43000
+/sys/class/hwmon/hwmon3/temp7_input: label=Core 5 value=43000
+/sys/class/hwmon/hwmon3/temp8_input: label=Core 6 value=43000
+/sys/class/hwmon/hwmon3/temp9_input: label=Core 7 value=43000
+
+== sensors ==
+sensors command not installed
+
+===== temperature timestamp_utc=20260422T032454Z host=node0 boot_id=62503c1c-026f-4d12-960b-226160d86543 =====
+timestamp_utc=20260422T032454Z
+
+== cmmhi_rtm ==
+cmmhi_rtm not configured or not found
+
+== thermal zones ==
+/sys/class/thermal/thermal_zone0: type=pch_haswell temp=64500
+/sys/class/thermal/thermal_zone1: type=x86_pkg_temp temp=43000
+
+== hwmon ==
+/sys/class/hwmon/hwmon0/temp1_input: label=Composite value=45850
+/sys/class/hwmon/hwmon0/temp2_input: label=Sensor 1 value=45850
+/sys/class/hwmon/hwmon2/temp1_input: label=temp1_input value=64500
+/sys/class/hwmon/hwmon3/temp1_input: label=Package id 0 value=43000
+/sys/class/hwmon/hwmon3/temp2_input: label=Core 0 value=43000
+/sys/class/hwmon/hwmon3/temp3_input: label=Core 1 value=43000
+/sys/class/hwmon/hwmon3/temp4_input: label=Core 2 value=43000
+/sys/class/hwmon/hwmon3/temp5_input: label=Core 3 value=43000
+/sys/class/hwmon/hwmon3/temp6_input: label=Core 4 value=43000
+/sys/class/hwmon/hwmon3/temp7_input: label=Core 5 value=43000
+/sys/class/hwmon/hwmon3/temp8_input: label=Core 6 value=43000
+/sys/class/hwmon/hwmon3/temp9_input: label=Core 7 value=43000
+
+== sensors ==
+sensors command not installed
+
+===== temperature timestamp_utc=20260422T032455Z host=node0 boot_id=62503c1c-026f-4d12-960b-226160d86543 =====
+timestamp_utc=20260422T032455Z
+
+== cmmhi_rtm ==
+cmmhi_rtm not configured or not found
+
+== thermal zones ==
+/sys/class/thermal/thermal_zone0: type=pch_haswell temp=64500
+/sys/class/thermal/thermal_zone1: type=x86_pkg_temp temp=43000
+
+== hwmon ==
+/sys/class/hwmon/hwmon0/temp1_input: label=Composite value=45850
+/sys/class/hwmon/hwmon0/temp2_input: label=Sensor 1 value=45850
+/sys/class/hwmon/hwmon2/temp1_input: label=temp1_input value=64500
+/sys/class/hwmon/hwmon3/temp1_input: label=Package id 0 value=43000
+/sys/class/hwmon/hwmon3/temp2_input: label=Core 0 value=43000
+/sys/class/hwmon/hwmon3/temp3_input: label=Core 1 value=43000
+/sys/class/hwmon/hwmon3/temp4_input: label=Core 2 value=43000
+/sys/class/hwmon/hwmon3/temp5_input: label=Core 3 value=43000
+/sys/class/hwmon/hwmon3/temp6_input: label=Core 4 value=43000
+/sys/class/hwmon/hwmon3/temp7_input: label=Core 5 value=43000
+/sys/class/hwmon/hwmon3/temp8_input: label=Core 6 value=43000
+/sys/class/hwmon/hwmon3/temp9_input: label=Core 7 value=43000
+
+== sensors ==
+sensors command not installed
+
+===== temperature timestamp_utc=20260422T032456Z host=node0 boot_id=62503c1c-026f-4d12-960b-226160d86543 =====
+timestamp_utc=20260422T032456Z
+
+== cmmhi_rtm ==
+cmmhi_rtm not configured or not found
+
+== thermal zones ==
+/sys/class/thermal/thermal_zone0: type=pch_haswell temp=64500
+/sys/class/thermal/thermal_zone1: type=x86_pkg_temp temp=43000
+
+== hwmon ==
+/sys/class/hwmon/hwmon0/temp1_input: label=Composite value=45850
+/sys/class/hwmon/hwmon0/temp2_input: label=Sensor 1 value=45850
+/sys/class/hwmon/hwmon2/temp1_input: label=temp1_input value=64500
+/sys/class/hwmon/hwmon3/temp1_input: label=Package id 0 value=43000
+/sys/class/hwmon/hwmon3/temp2_input: label=Core 0 value=42000
+/sys/class/hwmon/hwmon3/temp3_input: label=Core 1 value=43000
+/sys/class/hwmon/hwmon3/temp4_input: label=Core 2 value=42000
+/sys/class/hwmon/hwmon3/temp5_input: label=Core 3 value=43000
+/sys/class/hwmon/hwmon3/temp6_input: label=Core 4 value=42000
+/sys/class/hwmon/hwmon3/temp7_input: label=Core 5 value=42000
+/sys/class/hwmon/hwmon3/temp8_input: label=Core 6 value=43000
+/sys/class/hwmon/hwmon3/temp9_input: label=Core 7 value=43000
+
+== sensors ==
+sensors command not installed
+
+===== temperature timestamp_utc=20260422T032457Z host=node0 boot_id=62503c1c-026f-4d12-960b-226160d86543 =====
+timestamp_utc=20260422T032457Z
+
+== cmmhi_rtm ==
+cmmhi_rtm not configured or not found
+
+== thermal zones ==
+/sys/class/thermal/thermal_zone0: type=pch_haswell temp=64500
+/sys/class/thermal/thermal_zone1: type=x86_pkg_temp temp=43000
+
+== hwmon ==
+/sys/class/hwmon/hwmon0/temp1_input: label=Composite value=45850
+/sys/class/hwmon/hwmon0/temp2_input: label=Sensor 1 value=45850
+/sys/class/hwmon/hwmon2/temp1_input: label=temp1_input value=64000
+/sys/class/hwmon/hwmon3/temp1_input: label=Package id 0 value=43000
+/sys/class/hwmon/hwmon3/temp2_input: label=Core 0 value=43000
+/sys/class/hwmon/hwmon3/temp3_input: label=Core 1 value=43000
+/sys/class/hwmon/hwmon3/temp4_input: label=Core 2 value=43000
+/sys/class/hwmon/hwmon3/temp5_input: label=Core 3 value=43000
+/sys/class/hwmon/hwmon3/temp6_input: label=Core 4 value=43000
+/sys/class/hwmon/hwmon3/temp7_input: label=Core 5 value=43000
+/sys/class/hwmon/hwmon3/temp8_input: label=Core 6 value=43000
+/sys/class/hwmon/hwmon3/temp9_input: label=Core 7 value=43000
+
+== sensors ==
+sensors command not installed
+
+===== temperature timestamp_utc=20260422T032458Z host=node0 boot_id=62503c1c-026f-4d12-960b-226160d86543 =====
+timestamp_utc=20260422T032458Z
+
+== cmmhi_rtm ==
+cmmhi_rtm not configured or not found
+
+== thermal zones ==
+/sys/class/thermal/thermal_zone0: type=pch_haswell temp=64000
+/sys/class/thermal/thermal_zone1: type=x86_pkg_temp temp=42000
+
+== hwmon ==
+/sys/class/hwmon/hwmon0/temp1_input: label=Composite value=45850
+/sys/class/hwmon/hwmon0/temp2_input: label=Sensor 1 value=45850
+/sys/class/hwmon/hwmon2/temp1_input: label=temp1_input value=64000
+/sys/class/hwmon/hwmon3/temp1_input: label=Package id 0 value=43000
+/sys/class/hwmon/hwmon3/temp2_input: label=Core 0 value=43000
+/sys/class/hwmon/hwmon3/temp3_input: label=Core 1 value=43000
+/sys/class/hwmon/hwmon3/temp4_input: label=Core 2 value=43000
+/sys/class/hwmon/hwmon3/temp5_input: label=Core 3 value=43000
+/sys/class/hwmon/hwmon3/temp6_input: label=Core 4 value=43000
+/sys/class/hwmon/hwmon3/temp7_input: label=Core 5 value=43000
+/sys/class/hwmon/hwmon3/temp8_input: label=Core 6 value=43000
+/sys/class/hwmon/hwmon3/temp9_input: label=Core 7 value=42000
+
+== sensors ==
+sensors command not installed
+
+===== temperature timestamp_utc=20260422T032459Z host=node0 boot_id=62503c1c-026f-4d12-960b-226160d86543 =====
+timestamp_utc=20260422T032459Z
+
+== cmmhi_rtm ==
+cmmhi_rtm not configured or not found
+
+== thermal zones ==
+/sys/class/thermal/thermal_zone0: type=pch_haswell temp=64000
+/sys/class/thermal/thermal_zone1: type=x86_pkg_temp temp=43000
+
+== hwmon ==
+/sys/class/hwmon/hwmon0/temp1_input: label=Composite value=45850
+/sys/class/hwmon/hwmon0/temp2_input: label=Sensor 1 value=45850
+/sys/class/hwmon/hwmon2/temp1_input: label=temp1_input value=64000
+/sys/class/hwmon/hwmon3/temp1_input: label=Package id 0 value=43000
+/sys/class/hwmon/hwmon3/temp2_input: label=Core 0 value=43000
+/sys/class/hwmon/hwmon3/temp3_input: label=Core 1 value=43000
+/sys/class/hwmon/hwmon3/temp4_input: label=Core 2 value=43000
+/sys/class/hwmon/hwmon3/temp5_input: label=Core 3 value=43000
+/sys/class/hwmon/hwmon3/temp6_input: label=Core 4 value=43000
+/sys/class/hwmon/hwmon3/temp7_input: label=Core 5 value=43000
+/sys/class/hwmon/hwmon3/temp8_input: label=Core 6 value=42000
+/sys/class/hwmon/hwmon3/temp9_input: label=Core 7 value=43000
+
+== sensors ==
+sensors command not installed
+
+===== temperature timestamp_utc=20260422T032500Z host=node0 boot_id=62503c1c-026f-4d12-960b-226160d86543 =====
+timestamp_utc=20260422T032500Z
+
+== cmmhi_rtm ==
+cmmhi_rtm not configured or not found
+
+== thermal zones ==
+/sys/class/thermal/thermal_zone0: type=pch_haswell temp=64000
+/sys/class/thermal/thermal_zone1: type=x86_pkg_temp temp=43000
+
+== hwmon ==
+/sys/class/hwmon/hwmon0/temp1_input: label=Composite value=45850
+/sys/class/hwmon/hwmon0/temp2_input: label=Sensor 1 value=45850
+/sys/class/hwmon/hwmon2/temp1_input: label=temp1_input value=64000
+/sys/class/hwmon/hwmon3/temp1_input: label=Package id 0 value=42000
+/sys/class/hwmon/hwmon3/temp2_input: label=Core 0 value=43000
+/sys/class/hwmon/hwmon3/temp3_input: label=Core 1 value=43000
+/sys/class/hwmon/hwmon3/temp4_input: label=Core 2 value=43000
+/sys/class/hwmon/hwmon3/temp5_input: label=Core 3 value=43000
+/sys/class/hwmon/hwmon3/temp6_input: label=Core 4 value=43000
+/sys/class/hwmon/hwmon3/temp7_input: label=Core 5 value=43000
+/sys/class/hwmon/hwmon3/temp8_input: label=Core 6 value=43000
+/sys/class/hwmon/hwmon3/temp9_input: label=Core 7 value=43000
+
+== sensors ==
+sensors command not installed
+
+===== temperature timestamp_utc=20260422T032501Z host=node0 boot_id=62503c1c-026f-4d12-960b-226160d86543 =====
+timestamp_utc=20260422T032501Z
+
+== cmmhi_rtm ==
+cmmhi_rtm not configured or not found
+
+== thermal zones ==
+/sys/class/thermal/thermal_zone0: type=pch_haswell temp=64000
+/sys/class/thermal/thermal_zone1: type=x86_pkg_temp temp=43000
+
+== hwmon ==
+/sys/class/hwmon/hwmon0/temp1_input: label=Composite value=45850
+/sys/class/hwmon/hwmon0/temp2_input: label=Sensor 1 value=45850
+/sys/class/hwmon/hwmon2/temp1_input: label=temp1_input value=64000
+/sys/class/hwmon/hwmon3/temp1_input: label=Package id 0 value=43000
+/sys/class/hwmon/hwmon3/temp2_input: label=Core 0 value=43000
+/sys/class/hwmon/hwmon3/temp3_input: label=Core 1 value=43000
+/sys/class/hwmon/hwmon3/temp4_input: label=Core 2 value=43000
+/sys/class/hwmon/hwmon3/temp5_input: label=Core 3 value=43000
+/sys/class/hwmon/hwmon3/temp6_input: label=Core 4 value=43000
+/sys/class/hwmon/hwmon3/temp7_input: label=Core 5 value=43000
+/sys/class/hwmon/hwmon3/temp8_input: label=Core 6 value=43000
+/sys/class/hwmon/hwmon3/temp9_input: label=Core 7 value=43000
+
+== sensors ==
+sensors command not installed
+
+===== temperature timestamp_utc=20260422T032502Z host=node0 boot_id=62503c1c-026f-4d12-960b-226160d86543 =====
+timestamp_utc=20260422T032502Z
+
+== cmmhi_rtm ==
+cmmhi_rtm not configured or not found
+
+== thermal zones ==
+/sys/class/thermal/thermal_zone0: type=pch_haswell temp=64000
+/sys/class/thermal/thermal_zone1: type=x86_pkg_temp temp=43000
+
+== hwmon ==
+/sys/class/hwmon/hwmon0/temp1_input: label=Composite value=45850
+/sys/class/hwmon/hwmon0/temp2_input: label=Sensor 1 value=45850
+/sys/class/hwmon/hwmon2/temp1_input: label=temp1_input value=64000
+/sys/class/hwmon/hwmon3/temp1_input: label=Package id 0 value=42000
+/sys/class/hwmon/hwmon3/temp2_input: label=Core 0 value=43000
+/sys/class/hwmon/hwmon3/temp3_input: label=Core 1 value=43000
+/sys/class/hwmon/hwmon3/temp4_input: label=Core 2 value=42000
+/sys/class/hwmon/hwmon3/temp5_input: label=Core 3 value=43000
+/sys/class/hwmon/hwmon3/temp6_input: label=Core 4 value=42000
+/sys/class/hwmon/hwmon3/temp7_input: label=Core 5 value=43000
+/sys/class/hwmon/hwmon3/temp8_input: label=Core 6 value=43000
+/sys/class/hwmon/hwmon3/temp9_input: label=Core 7 value=43000
+
+== sensors ==
+sensors command not installed
+
+===== temperature timestamp_utc=20260422T032504Z host=node0 boot_id=62503c1c-026f-4d12-960b-226160d86543 =====
+timestamp_utc=20260422T032504Z
+
+== cmmhi_rtm ==
+cmmhi_rtm not configured or not found
+
+== thermal zones ==
+/sys/class/thermal/thermal_zone0: type=pch_haswell temp=64000
+/sys/class/thermal/thermal_zone1: type=x86_pkg_temp temp=43000
+
+== hwmon ==
+/sys/class/hwmon/hwmon0/temp1_input: label=Composite value=45850
+/sys/class/hwmon/hwmon0/temp2_input: label=Sensor 1 value=45850
+/sys/class/hwmon/hwmon2/temp1_input: label=temp1_input value=64000
+/sys/class/hwmon/hwmon3/temp1_input: label=Package id 0 value=42000
+/sys/class/hwmon/hwmon3/temp2_input: label=Core 0 value=43000
+/sys/class/hwmon/hwmon3/temp3_input: label=Core 1 value=43000
+/sys/class/hwmon/hwmon3/temp4_input: label=Core 2 value=42000
+/sys/class/hwmon/hwmon3/temp5_input: label=Core 3 value=43000
+/sys/class/hwmon/hwmon3/temp6_input: label=Core 4 value=43000
+/sys/class/hwmon/hwmon3/temp7_input: label=Core 5 value=43000
+/sys/class/hwmon/hwmon3/temp8_input: label=Core 6 value=43000
+/sys/class/hwmon/hwmon3/temp9_input: label=Core 7 value=43000
+
+== sensors ==
+sensors command not installed
+
+===== temperature timestamp_utc=20260422T032505Z host=node0 boot_id=62503c1c-026f-4d12-960b-226160d86543 =====
+timestamp_utc=20260422T032505Z
+
+== cmmhi_rtm ==
+cmmhi_rtm not configured or not found
+
+== thermal zones ==
+/sys/class/thermal/thermal_zone0: type=pch_haswell temp=64000
+/sys/class/thermal/thermal_zone1: type=x86_pkg_temp temp=42000
+
+== hwmon ==
+/sys/class/hwmon/hwmon0/temp1_input: label=Composite value=45850
+/sys/class/hwmon/hwmon0/temp2_input: label=Sensor 1 value=45850
+/sys/class/hwmon/hwmon2/temp1_input: label=temp1_input value=64000
+/sys/class/hwmon/hwmon3/temp1_input: label=Package id 0 value=42000
+/sys/class/hwmon/hwmon3/temp2_input: label=Core 0 value=42000
+/sys/class/hwmon/hwmon3/temp3_input: label=Core 1 value=42000
+/sys/class/hwmon/hwmon3/temp4_input: label=Core 2 value=42000
+/sys/class/hwmon/hwmon3/temp5_input: label=Core 3 value=42000
+/sys/class/hwmon/hwmon3/temp6_input: label=Core 4 value=42000
+/sys/class/hwmon/hwmon3/temp7_input: label=Core 5 value=42000
+/sys/class/hwmon/hwmon3/temp8_input: label=Core 6 value=42000
+/sys/class/hwmon/hwmon3/temp9_input: label=Core 7 value=42000
+
+== sensors ==
+sensors command not installed
+
+===== temperature timestamp_utc=20260422T032506Z host=node0 boot_id=62503c1c-026f-4d12-960b-226160d86543 =====
+timestamp_utc=20260422T032506Z
+
+== cmmhi_rtm ==
+cmmhi_rtm not configured or not found
+
+== thermal zones ==
+/sys/class/thermal/thermal_zone0: type=pch_haswell temp=64000
+/sys/class/thermal/thermal_zone1: type=x86_pkg_temp temp=42000
+
+== hwmon ==
+/sys/class/hwmon/hwmon0/temp1_input: label=Composite value=45850
+/sys/class/hwmon/hwmon0/temp2_input: label=Sensor 1 value=45850
+/sys/class/hwmon/hwmon2/temp1_input: label=temp1_input value=64000
+/sys/class/hwmon/hwmon3/temp1_input: label=Package id 0 value=42000
+/sys/class/hwmon/hwmon3/temp2_input: label=Core 0 value=42000
+/sys/class/hwmon/hwmon3/temp3_input: label=Core 1 value=42000
+/sys/class/hwmon/hwmon3/temp4_input: label=Core 2 value=43000
+/sys/class/hwmon/hwmon3/temp5_input: label=Core 3 value=43000
+/sys/class/hwmon/hwmon3/temp6_input: label=Core 4 value=43000
+/sys/class/hwmon/hwmon3/temp7_input: label=Core 5 value=43000
+/sys/class/hwmon/hwmon3/temp8_input: label=Core 6 value=42000
+/sys/class/hwmon/hwmon3/temp9_input: label=Core 7 value=43000
+
+== sensors ==
+sensors command not installed
+
+===== temperature timestamp_utc=20260422T032507Z host=node0 boot_id=62503c1c-026f-4d12-960b-226160d86543 =====
+timestamp_utc=20260422T032507Z
+
+== cmmhi_rtm ==
+cmmhi_rtm not configured or not found
+
+== thermal zones ==
+/sys/class/thermal/thermal_zone0: type=pch_haswell temp=64000
+/sys/class/thermal/thermal_zone1: type=x86_pkg_temp temp=43000
+
+== hwmon ==
+/sys/class/hwmon/hwmon0/temp1_input: label=Composite value=45850
+/sys/class/hwmon/hwmon0/temp2_input: label=Sensor 1 value=45850
+/sys/class/hwmon/hwmon2/temp1_input: label=temp1_input value=64000
+/sys/class/hwmon/hwmon3/temp1_input: label=Package id 0 value=43000
+/sys/class/hwmon/hwmon3/temp2_input: label=Core 0 value=43000
+/sys/class/hwmon/hwmon3/temp3_input: label=Core 1 value=43000
+/sys/class/hwmon/hwmon3/temp4_input: label=Core 2 value=43000
+/sys/class/hwmon/hwmon3/temp5_input: label=Core 3 value=43000
+/sys/class/hwmon/hwmon3/temp6_input: label=Core 4 value=43000
+/sys/class/hwmon/hwmon3/temp7_input: label=Core 5 value=43000
+/sys/class/hwmon/hwmon3/temp8_input: label=Core 6 value=43000
+/sys/class/hwmon/hwmon3/temp9_input: label=Core 7 value=43000
+
+== sensors ==
+sensors command not installed
+
+===== temperature timestamp_utc=20260422T032508Z host=node0 boot_id=62503c1c-026f-4d12-960b-226160d86543 =====
+timestamp_utc=20260422T032508Z
+
+== cmmhi_rtm ==
+cmmhi_rtm not configured or not found
+
+== thermal zones ==
+/sys/class/thermal/thermal_zone0: type=pch_haswell temp=64000
+/sys/class/thermal/thermal_zone1: type=x86_pkg_temp temp=43000
+
+== hwmon ==
+/sys/class/hwmon/hwmon0/temp1_input: label=Composite value=45850
+/sys/class/hwmon/hwmon0/temp2_input: label=Sensor 1 value=45850
+/sys/class/hwmon/hwmon2/temp1_input: label=temp1_input value=64000
+/sys/class/hwmon/hwmon3/temp1_input: label=Package id 0 value=43000
+/sys/class/hwmon/hwmon3/temp2_input: label=Core 0 value=43000
+/sys/class/hwmon/hwmon3/temp3_input: label=Core 1 value=43000
+/sys/class/hwmon/hwmon3/temp4_input: label=Core 2 value=43000
+/sys/class/hwmon/hwmon3/temp5_input: label=Core 3 value=43000
+/sys/class/hwmon/hwmon3/temp6_input: label=Core 4 value=43000
+/sys/class/hwmon/hwmon3/temp7_input: label=Core 5 value=43000
+/sys/class/hwmon/hwmon3/temp8_input: label=Core 6 value=42000
+/sys/class/hwmon/hwmon3/temp9_input: label=Core 7 value=43000
+
+== sensors ==
+sensors command not installed
+
+===== temperature timestamp_utc=20260422T032509Z host=node0 boot_id=62503c1c-026f-4d12-960b-226160d86543 =====
+timestamp_utc=20260422T032509Z
+
+== cmmhi_rtm ==
+cmmhi_rtm not configured or not found
+
+== thermal zones ==
+/sys/class/thermal/thermal_zone0: type=pch_haswell temp=64000
+/sys/class/thermal/thermal_zone1: type=x86_pkg_temp temp=43000
+
+== hwmon ==
+/sys/class/hwmon/hwmon0/temp1_input: label=Composite value=45850
+/sys/class/hwmon/hwmon0/temp2_input: label=Sensor 1 value=45850
+/sys/class/hwmon/hwmon2/temp1_input: label=temp1_input value=64000
+/sys/class/hwmon/hwmon3/temp1_input: label=Package id 0 value=43000
+/sys/class/hwmon/hwmon3/temp2_input: label=Core 0 value=43000
+/sys/class/hwmon/hwmon3/temp3_input: label=Core 1 value=43000
+/sys/class/hwmon/hwmon3/temp4_input: label=Core 2 value=42000
+/sys/class/hwmon/hwmon3/temp5_input: label=Core 3 value=42000
+/sys/class/hwmon/hwmon3/temp6_input: label=Core 4 value=42000
+/sys/class/hwmon/hwmon3/temp7_input: label=Core 5 value=43000
+/sys/class/hwmon/hwmon3/temp8_input: label=Core 6 value=43000
+/sys/class/hwmon/hwmon3/temp9_input: label=Core 7 value=42000
+
+== sensors ==
+sensors command not installed
+
+===== temperature timestamp_utc=20260422T032510Z host=node0 boot_id=62503c1c-026f-4d12-960b-226160d86543 =====
+timestamp_utc=20260422T032510Z
+
+== cmmhi_rtm ==
+cmmhi_rtm not configured or not found
+
+== thermal zones ==
+/sys/class/thermal/thermal_zone0: type=pch_haswell temp=63500
+/sys/class/thermal/thermal_zone1: type=x86_pkg_temp temp=43000
+
+== hwmon ==
+/sys/class/hwmon/hwmon0/temp1_input: label=Composite value=45850
+/sys/class/hwmon/hwmon0/temp2_input: label=Sensor 1 value=45850
+/sys/class/hwmon/hwmon2/temp1_input: label=temp1_input value=63500
+/sys/class/hwmon/hwmon3/temp1_input: label=Package id 0 value=43000
+/sys/class/hwmon/hwmon3/temp2_input: label=Core 0 value=43000
+/sys/class/hwmon/hwmon3/temp3_input: label=Core 1 value=43000
+/sys/class/hwmon/hwmon3/temp4_input: label=Core 2 value=43000
+/sys/class/hwmon/hwmon3/temp5_input: label=Core 3 value=43000
+/sys/class/hwmon/hwmon3/temp6_input: label=Core 4 value=43000
+/sys/class/hwmon/hwmon3/temp7_input: label=Core 5 value=43000
+/sys/class/hwmon/hwmon3/temp8_input: label=Core 6 value=43000
+/sys/class/hwmon/hwmon3/temp9_input: label=Core 7 value=43000
+
+== sensors ==
+sensors command not installed
+
+===== temperature timestamp_utc=20260422T032511Z host=node0 boot_id=62503c1c-026f-4d12-960b-226160d86543 =====
+timestamp_utc=20260422T032511Z
+
+== cmmhi_rtm ==
+cmmhi_rtm not configured or not found
+
+== thermal zones ==
+/sys/class/thermal/thermal_zone0: type=pch_haswell temp=63500
+/sys/class/thermal/thermal_zone1: type=x86_pkg_temp temp=43000
+
+== hwmon ==
+/sys/class/hwmon/hwmon0/temp1_input: label=Composite value=45850
+/sys/class/hwmon/hwmon0/temp2_input: label=Sensor 1 value=45850
+/sys/class/hwmon/hwmon2/temp1_input: label=temp1_input value=63500
+/sys/class/hwmon/hwmon3/temp1_input: label=Package id 0 value=42000
+/sys/class/hwmon/hwmon3/temp2_input: label=Core 0 value=43000
+/sys/class/hwmon/hwmon3/temp3_input: label=Core 1 value=43000
+/sys/class/hwmon/hwmon3/temp4_input: label=Core 2 value=43000
