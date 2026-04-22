@@ -4,11 +4,15 @@ set -Eeuo pipefail
 usage() {
   cat <<'EOF'
 Usage:
+  bash install_crash_pusher.sh \
+    [--cmmhi-cmd '/path/to/cmmhi_rtm -d']
+
   sudo bash install_crash_pusher.sh \
     [--cmmhi-cmd '/path/to/cmmhi_rtm -d']
 
 Options:
   --repo-dir DIR            Git repo that receives the sys updates. Default: git repo containing this script
+                           If root cannot write DIR, a runtime clone is created under /var/lib/crash-pusher/repos
   --repo-url URL            Optional override for the repo's origin remote. Default: keep existing origin
   --repo-branch BRANCH      Git branch to push to. Default: current branch of the cloned repo
   --cmmhi-cmd CMD           Temperature command to run every second. Default: auto-discover cmmhi_rtm and run it with -d
@@ -22,6 +26,9 @@ Options:
   --help                    Show this help.
 
 Examples:
+  bash install_crash_pusher.sh \
+    --cmmhi-cmd '/opt/cmmhi/cmmhi_rtm -d'
+
   sudo bash install_crash_pusher.sh \
     --cmmhi-cmd '/opt/cmmhi/cmmhi_rtm -d'
 
@@ -773,7 +780,9 @@ bootstrap_repo_https_credentials() {
   local remote_url=""
   local cred_tmp=""
 
-  remote_url="$(run_repo_git "$repo_owner_user" -C "$repo_dir" remote get-url origin 2>/dev/null || true)"
+  if ! remote_url="$(run_repo_git "$repo_owner_user" -C "$repo_dir" remote get-url origin 2>/dev/null)"; then
+    remote_url=""
+  fi
   [[ "$remote_url" == https://github.com/* ]] || return 0
 
   if run_repo_git "$repo_owner_user" -C "$repo_dir" push --dry-run origin "$repo_branch" >/dev/null 2>&1; then
@@ -804,6 +813,123 @@ EOF
   fi
 
   rm -f "$cred_tmp"
+}
+
+append_install_args() {
+  local -n args_ref="$1"
+
+  if [[ "$STOP_SERVICE_MODE" -eq 1 ]]; then
+    args_ref+=(--stop)
+    return 0
+  fi
+
+  args_ref+=(--repo-dir "$REPO_DIR")
+  [[ -n "$REPO_URL" ]] && args_ref+=(--repo-url "$REPO_URL")
+  [[ -n "$REPO_BRANCH" ]] && args_ref+=(--repo-branch "$REPO_BRANCH")
+  [[ -n "$CMMHI_CMD" ]] && args_ref+=(--cmmhi-cmd "$CMMHI_CMD")
+  args_ref+=(--host-id "$HOST_ID")
+  args_ref+=(--snapshot-interval "$SNAPSHOT_INTERVAL")
+  args_ref+=(--push-interval "$PUSH_INTERVAL")
+  [[ "$START_SERVICE" -eq 1 ]] || args_ref+=(--no-start)
+  [[ "$INSTALL_SAMPLER" -eq 1 ]] || args_ref+=(--skip-sampler)
+}
+
+rerun_via_sudo() {
+  local -a sudo_args=()
+
+  require_cmd sudo
+
+  if [[ "$STOP_SERVICE_MODE" -ne 1 ]]; then
+    [[ -n "$REPO_DIR" ]] || die "--repo-dir resolved to an empty path"
+    [[ -d "$REPO_DIR" ]] || die "repo dir does not exist: $REPO_DIR"
+    [[ -d "$REPO_DIR/.git" ]] || die "repo dir is not a git repo: $REPO_DIR"
+    REPO_DIR="$(cd -- "$REPO_DIR" && pwd -P)"
+
+    if [[ -z "$REPO_URL" ]]; then
+      if ! REPO_URL="$(git -C "$REPO_DIR" remote get-url origin 2>/dev/null)"; then
+        REPO_URL=""
+      fi
+    fi
+
+    if [[ -z "$REPO_BRANCH" ]]; then
+      REPO_BRANCH="$(current_repo_branch "$REPO_DIR")"
+    fi
+  fi
+
+  append_install_args sudo_args
+  exec sudo bash -s -- "${sudo_args[@]}" <"$0"
+}
+
+discover_user_group() {
+  local owner_user="$1"
+
+  [[ -n "$owner_user" ]] || return 0
+  id -gn "$owner_user" 2>/dev/null || true
+}
+
+repo_dir_is_root_writable() {
+  local repo_dir="$1"
+  local probe_dir="${repo_dir}/.crash-pusher-root-write-test.$$"
+
+  mkdir -p "$probe_dir" 2>/dev/null || return 1
+  rmdir "$probe_dir" 2>/dev/null || true
+  return 0
+}
+
+ensure_runtime_repo_dir() {
+  local original_repo_dir="$1"
+  local runtime_owner="${REPO_OWNER_USER:-${SUDO_USER:-}}"
+  local runtime_group=""
+  local runtime_root="/var/lib/crash-pusher"
+  local runtime_repo_parent="${runtime_root}/repos"
+  local runtime_repo_dir="${runtime_repo_parent}/machine_log"
+  local clone_source="$original_repo_dir"
+
+  [[ -n "$STAGING_ROOT" ]] && return 0
+  [[ -n "$original_repo_dir" ]] || return 0
+
+  if repo_dir_is_root_writable "$original_repo_dir"; then
+    return 0
+  fi
+
+  if [[ -z "$runtime_owner" || "$runtime_owner" == "UNKNOWN" ]]; then
+    runtime_owner="$(id -un)"
+  fi
+  runtime_group="$(discover_user_group "$runtime_owner")"
+  [[ -n "$runtime_group" ]] || runtime_group="$runtime_owner"
+
+  if [[ -z "$REPO_URL" ]]; then
+    if ! run_repo_git "$runtime_owner" -C "$original_repo_dir" rev-parse --show-toplevel >/dev/null 2>&1; then
+      die "repo dir is not writable by root and cannot be reopened as ${runtime_owner}; rerun from a normal user shell or pass --repo-url"
+    fi
+  else
+    clone_source="$REPO_URL"
+  fi
+
+  log "repo dir ${original_repo_dir} is not writable by root; using runtime working copy ${runtime_repo_dir}"
+
+  install -d -m 0755 "$runtime_root"
+  install -d -m 0775 -o "$runtime_owner" -g "$runtime_group" "$runtime_repo_parent"
+
+  if [[ ! -d "$runtime_repo_dir/.git" ]]; then
+    if [[ -n "$REPO_BRANCH" ]]; then
+      run_repo_git "$runtime_owner" clone --branch "$REPO_BRANCH" --single-branch "$clone_source" "$runtime_repo_dir"
+    else
+      run_repo_git "$runtime_owner" clone "$clone_source" "$runtime_repo_dir"
+    fi
+  elif [[ -n "$REPO_URL" ]]; then
+    if run_repo_git "$runtime_owner" -C "$runtime_repo_dir" remote get-url origin >/dev/null 2>&1; then
+      run_repo_git "$runtime_owner" -C "$runtime_repo_dir" remote set-url origin "$REPO_URL" >/dev/null 2>&1 || true
+    fi
+  fi
+
+  REPO_DIR="$runtime_repo_dir"
+  REPO_OWNER_USER="$(discover_repo_owner_user "$REPO_DIR")"
+  REPO_OWNER_HOME="$(discover_repo_owner_home "$REPO_OWNER_USER")"
+
+  if [[ -z "$REPO_BRANCH" ]]; then
+    REPO_BRANCH="$(current_repo_branch "$REPO_DIR")"
+  fi
 }
 
 ROOT_UID=0
@@ -877,6 +1003,10 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 
+if [[ -z "$STAGING_ROOT" ]] && [[ "$(id -u)" -ne "$ROOT_UID" ]]; then
+  rerun_via_sudo
+fi
+
 if [[ "$STOP_SERVICE_MODE" -eq 1 ]]; then
   if [[ -n "$STAGING_ROOT" ]]; then
     echo "staging mode: real stop command is:"
@@ -898,10 +1028,6 @@ require_cmd install
 require_cmd git
 require_cmd curl
 
-if [[ -z "$STAGING_ROOT" ]] && [[ "$(id -u)" -ne "$ROOT_UID" ]]; then
-  die "real installation must run as root"
-fi
-
 if [[ -n "$STAGING_ROOT" ]]; then
   mkdir -p "$STAGING_ROOT"
 else
@@ -913,15 +1039,33 @@ if [[ -z "$CMMHI_CMD" ]]; then
 fi
 
 [[ -n "$REPO_DIR" ]] || die "--repo-dir resolved to an empty path"
-[[ -d "$REPO_DIR" ]] || die "repo dir does not exist: $REPO_DIR"
-[[ -d "$REPO_DIR/.git" ]] || die "repo dir is not a git repo: $REPO_DIR"
-REPO_DIR="$(cd -- "$REPO_DIR" && pwd -P)"
-REPO_OWNER_USER="$(discover_repo_owner_user "$REPO_DIR")"
-REPO_OWNER_HOME="$(discover_repo_owner_home "$REPO_OWNER_USER")"
+ORIGINAL_REPO_DIR="$REPO_DIR"
+if [[ -d "$REPO_DIR/.git" ]]; then
+  REPO_DIR="$(cd -- "$REPO_DIR" && pwd -P)"
+  ORIGINAL_REPO_DIR="$REPO_DIR"
+  REPO_OWNER_USER="$(discover_repo_owner_user "$REPO_DIR")"
+  REPO_OWNER_HOME="$(discover_repo_owner_home "$REPO_OWNER_USER")"
+else
+  if [[ "$(id -u)" -eq "$ROOT_UID" ]] && [[ -z "$STAGING_ROOT" ]]; then
+    REPO_OWNER_USER="${SUDO_USER:-}"
+    REPO_OWNER_HOME="$(discover_repo_owner_home "$REPO_OWNER_USER")"
+    if [[ -n "$REPO_URL" ]]; then
+      :
+    elif [[ -n "$REPO_OWNER_USER" ]] && run_repo_git "$REPO_OWNER_USER" -C "$REPO_DIR" rev-parse --show-toplevel >/dev/null 2>&1; then
+      :
+    else
+      die "repo dir is not accessible as a git repo: $REPO_DIR"
+    fi
+  else
+    die "repo dir is not a git repo: $REPO_DIR"
+  fi
+fi
 
 if [[ -z "$REPO_BRANCH" ]]; then
   REPO_BRANCH="$(current_repo_branch "$REPO_DIR")"
 fi
+
+ensure_runtime_repo_dir "$ORIGINAL_REPO_DIR"
 
 BIN_DIR="$(prefix_path /usr/local/bin)"
 LIB_DIR="$(prefix_path /usr/local/lib/crash-pusher)"
