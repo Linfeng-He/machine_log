@@ -1,4 +1,4 @@
-===== syslog snapshot host=node0 boot_started_utc=20260422T005834Z boot_id=179612ea-2e99-4892-8219-f26f64b164e4 captured_utc=20260422T005836Z =====
+===== syslog snapshot host=node0 boot_started_utc=20260422T005834Z boot_id=179612ea-2e99-4892-8219-f26f64b164e4 captured_utc=20260422T005857Z =====
 
 Apr 21 17:30:58 localhost systemd[1]: logrotate.service: Deactivated successfully.
 Apr 21 17:30:58 localhost systemd[1]: Finished Rotate log files.
