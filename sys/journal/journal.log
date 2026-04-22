@@ -1,20 +1,5 @@
-===== journal snapshot host=node0 boot_started_utc=20260422T032427Z boot_id=62503c1c-026f-4d12-960b-226160d86543 captured_utc=20260422T032821Z =====
+===== journal snapshot host=node0 boot_started_utc=20260422T032427Z boot_id=62503c1c-026f-4d12-960b-226160d86543 captured_utc=20260422T032842Z =====
 
-Apr 21 21:24:33 localhost systemd[1]: Finished Testbed Services.
-Apr 21 21:24:33 localhost systemd[1]: Reached target Multi-User System.
-Apr 21 21:24:33 localhost systemd[1]: Reached target Graphical Interface.
-Apr 21 21:24:33 localhost systemd[1]: Starting Record Runlevel Change in UTMP...
-Apr 21 21:24:33 localhost systemd[1]: systemd-update-utmp-runlevel.service: Deactivated successfully.
-Apr 21 21:24:33 localhost systemd[1]: Finished Record Runlevel Change in UTMP.
-Apr 21 21:24:33 localhost systemd[1]: Startup finished in 14.082s (kernel) + 12.652s (userspace) = 26.734s.
-Apr 21 21:24:37 localhost systemd-resolved[708]: Clock change detected. Flushing caches.
-Apr 21 21:24:45 localhost sh[599]: emulab-networkd[599]: found eno1 as control net
-Apr 21 21:24:45 localhost systemd[1]: emulab-networkd@eno1d1.service: Deactivated successfully.
-Apr 21 21:24:45 localhost systemd[1]: Condition check resulted in OpenVSwitch configuration for cleanup being skipped.
-Apr 21 21:24:45 localhost systemd[1]: systemd-networkd-wait-online.service: Deactivated successfully.
-Apr 21 21:24:45 localhost systemd[1]: Stopped Wait for Network to be Configured.
-Apr 21 21:24:45 localhost systemd[1]: Stopping Wait for Network to be Configured...
-Apr 21 21:24:45 localhost systemd[1]: Stopping Network Configuration...
 Apr 21 21:24:45 localhost systemd-networkd[677]: eno1: DHCPv6 lease lost
 Apr 21 21:24:45 localhost systemd-resolved[708]: eno1: Failed to read DNSSEC negative trust anchors for the interface, ignoring: No data available
 Apr 21 21:24:45 localhost systemd[1]: systemd-networkd.service: Deactivated successfully.
@@ -400,3 +385,18 @@ Apr 21 21:27:58 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[19550]: pam_unix(s
 Apr 21 21:28:01 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[19550]: pam_unix(sudo:session): session closed for user LH
 Apr 21 21:28:21 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[21458]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log add --all -- sys
 Apr 21 21:28:21 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[21458]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
+Apr 21 21:28:21 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[21458]: pam_unix(sudo:session): session closed for user LH
+Apr 21 21:28:21 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[21481]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log diff --cached --name-only -- sys
+Apr 21 21:28:21 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[21481]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
+Apr 21 21:28:21 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[21481]: pam_unix(sudo:session): session closed for user LH
+Apr 21 21:28:21 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[21489]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log -c user.name=crash-pusher -c user.email=crash-pusher@node0 commit -m 'sys capture node0 20260422T032427Z 2026-04-22T03:28:21Z' -- sys
+Apr 21 21:28:21 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[21489]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
+Apr 21 21:28:22 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[21489]: pam_unix(sudo:session): session closed for user LH
+Apr 21 21:28:22 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[21513]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log remote get-url origin
+Apr 21 21:28:22 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[21513]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
+Apr 21 21:28:22 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[21513]: pam_unix(sudo:session): session closed for user LH
+Apr 21 21:28:22 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[21517]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log push origin main
+Apr 21 21:28:22 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[21517]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
+Apr 21 21:28:23 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[21517]: pam_unix(sudo:session): session closed for user LH
+Apr 21 21:28:34 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[22545]: Connection closed by 143.198.225.197 port 34648 [preauth]
+Apr 21 21:28:34 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[22557]: Connection closed by 143.198.225.197 port 35202 [preauth]
