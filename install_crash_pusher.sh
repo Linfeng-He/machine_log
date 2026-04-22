@@ -535,6 +535,29 @@ refresh_live_logs_once() {
   refresh_syslog_once "$sys_root"
 }
 
+acquire_git_sync_lock() {
+  local lock_dir="${REPO_DIR}/.git/crash-pusher-sync.lock"
+  local attempt=0
+
+  while ! mkdir "$lock_dir" 2>/dev/null; do
+    attempt=$((attempt + 1))
+    if [[ "$attempt" -ge 50 ]]; then
+      log "git sync lock busy: ${lock_dir}"
+      return 1
+    fi
+    sleep 0.2
+  done
+
+  GIT_SYNC_LOCK_DIR="$lock_dir"
+}
+
+release_git_sync_lock() {
+  if [[ -n "${GIT_SYNC_LOCK_DIR:-}" && -d "$GIT_SYNC_LOCK_DIR" ]]; then
+    rmdir "$GIT_SYNC_LOCK_DIR" 2>/dev/null || true
+  fi
+  GIT_SYNC_LOCK_DIR=""
+}
+
 stop_workers() {
   local pid_var pid
   for pid_var in SNAPSHOT_PID TEMP_PID PUSH_PID LOG_SYNC_PID; do
@@ -550,30 +573,40 @@ git_sync_once() {
   local staged_files
   local commit_output
   local push_output
+  local add_output
+  local rc=0
   now="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
 
-  run_git -C "$REPO_DIR" add --all -- "$SYS_ROOT_REL"
-  staged_files="$(run_git -C "$REPO_DIR" diff --cached --name-only -- "$SYS_ROOT_REL")"
-  if [[ -z "$staged_files" ]]; then
-    return 0
-  fi
+  acquire_git_sync_lock || return 1
 
-  commit_output="$(run_git -C "$REPO_DIR" \
-    -c user.name="$GIT_AUTHOR_NAME" \
-    -c user.email="$GIT_AUTHOR_EMAIL" \
-    commit -m "sys capture ${HOST_ID} ${BOOT_TS} ${now}" -- "$SYS_ROOT_REL" 2>&1)" || {
-    log "git commit failed"
-    log_multiline "git commit: " "$commit_output"
-    return 1
-  }
-
-  if run_git -C "$REPO_DIR" remote get-url origin >/dev/null 2>&1; then
-    push_output="$(run_git -C "$REPO_DIR" push origin "$REPO_BRANCH" 2>&1)" || {
-      log "git push failed for origin/${REPO_BRANCH}"
-      log_multiline "git push: " "$push_output"
-      return 1
+  if ! add_output="$(run_git -C "$REPO_DIR" add --all -- "$SYS_ROOT_REL" 2>&1)"; then
+    log "git add failed"
+    log_multiline "git add: " "$add_output"
+    rc=1
+  elif ! staged_files="$(run_git -C "$REPO_DIR" diff --cached --name-only -- "$SYS_ROOT_REL" 2>/dev/null)"; then
+    log "git staged diff failed"
+    rc=1
+  elif [[ -n "$staged_files" ]]; then
+    commit_output="$(run_git -C "$REPO_DIR" \
+      -c user.name="$GIT_AUTHOR_NAME" \
+      -c user.email="$GIT_AUTHOR_EMAIL" \
+      commit -m "sys capture ${HOST_ID} ${BOOT_TS} ${now}" -- "$SYS_ROOT_REL" 2>&1)" || {
+      log "git commit failed"
+      log_multiline "git commit: " "$commit_output"
+      rc=1
     }
+
+    if [[ "$rc" -eq 0 ]] && run_git -C "$REPO_DIR" remote get-url origin >/dev/null 2>&1; then
+      push_output="$(run_git -C "$REPO_DIR" push origin "$REPO_BRANCH" 2>&1)" || {
+        log "git push failed for origin/${REPO_BRANCH}"
+        log_multiline "git push: " "$push_output"
+        rc=1
+      }
+    fi
   fi
+
+  release_git_sync_lock
+  return "$rc"
 }
 
 run_service_main() {
@@ -588,8 +621,8 @@ run_service_main() {
     [[ "$cleanup_done" -eq 1 ]] && return 0
     cleanup_done=1
     log "stopping"
-    git_sync_once || true
     stop_workers
+    git_sync_once || true
   }
 
   prepare_sys_tree "$sys_root"
