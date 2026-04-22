@@ -1,44 +1,5 @@
-===== journal snapshot host=node0 boot_started_utc=20260422T004555Z boot_id=e66596e1-a2c6-4d58-80f4-d1779cbb52ce captured_utc=20260422T004630Z =====
+===== journal snapshot host=node0 boot_started_utc=20260422T004555Z boot_id=e66596e1-a2c6-4d58-80f4-d1779cbb52ce captured_utc=20260422T004655Z =====
 
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:     -b, --ignore-space-change
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:                           ignore changes in amount of whitespace
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:     --ignore-space-at-eol
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:                           ignore changes in whitespace at EOL
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:     --ignore-cr-at-eol    ignore carrier-return at the end of line
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:     --ignore-blank-lines  ignore changes whose lines are all blank
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:     -I, --ignore-matching-lines <regex>
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:                           ignore changes whose all lines match <regex>
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:     --indent-heuristic    heuristic to shift diff hunk boundaries for easy reading
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:     --patience            generate diff using the "patience diff" algorithm
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:     --histogram           generate diff using the "histogram diff" algorithm
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:     --diff-algorithm <algorithm>
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:                           choose a diff algorithm
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:     --anchored <text>     generate diff using the "anchored diff" algorithm
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:     --word-diff[=<mode>]  show word diff, using <mode> to delimit changed words
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:     --word-diff-regex <regex>
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:                           use <regex> to decide what a word is
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:     --color-words[=<regex>]
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:                           equivalent to --word-diff=color --word-diff-regex=<regex>
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:     --color-moved[=<mode>]
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:                           moved lines of code are colored differently
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:     --color-moved-ws <mode>
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:                           how white spaces are ignored in --color-moved
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]: Other diff options
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:     --relative[=<prefix>]
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:                           when run from subdir, exclude changes outside and show relative paths
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:     -a, --text            treat all files as text
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:     -R                    swap two inputs, reverse the diff
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:     --exit-code           exit with 1 if there were differences, 0 otherwise
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:     --quiet               disable all output of the program
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:     --ext-diff            allow an external diff helper to be executed
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:     --textconv            run external text conversion filters when comparing binary files
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:     --ignore-submodules[=<when>]
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:                           ignore changes to submodules in the diff generation
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: crash-pusher.service: Main process exited, code=exited, status=143/n/a
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:     --submodule[=<format>]
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:                           specify how differences in submodules are shown
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:     --ita-invisible-in-index
-Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:                           hide 'git add -N' entries from the index
 Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:     --ita-visible-in-index
 Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:                           treat 'git add -N' entries as real in the index
 Apr 21 18:58:44 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[468657]:     -S <string>           look for differences that change the number of occurrences of the specified string
@@ -400,3 +361,42 @@ Apr 21 19:46:00 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[486720]: pam_unix(s
 Apr 21 19:46:00 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[486742]:     root : TTY=pts/1 ; PWD=/users/LH ; USER=LH ; COMMAND=/usr/bin/env DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 ELECTRON_RUN_AS_NODE=1 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log push origin main
 Apr 21 19:46:00 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[486742]: pam_unix(sudo:session): session opened for user LH(uid=20023) by LH(uid=0)
 Apr 21 19:46:00 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[486742]: pam_unix(sudo:session): session closed for user LH
+Apr 21 19:46:30 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[490072]:     root : TTY=pts/1 ; PWD=/users/LH ; USER=LH ; COMMAND=/usr/bin/env DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 ELECTRON_RUN_AS_NODE=1 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log add --all -- sys
+Apr 21 19:46:30 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[490072]: pam_unix(sudo:session): session opened for user LH(uid=20023) by LH(uid=0)
+Apr 21 19:46:31 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[490072]: pam_unix(sudo:session): session closed for user LH
+Apr 21 19:46:31 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[490087]:     root : TTY=pts/1 ; PWD=/users/LH ; USER=LH ; COMMAND=/usr/bin/env DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 ELECTRON_RUN_AS_NODE=1 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log diff --cached --name-only -- sys
+Apr 21 19:46:31 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[490087]: pam_unix(sudo:session): session opened for user LH(uid=20023) by LH(uid=0)
+Apr 21 19:46:31 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[490087]: pam_unix(sudo:session): session closed for user LH
+Apr 21 19:46:31 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[490094]:     root : TTY=pts/1 ; PWD=/users/LH ; USER=LH ; COMMAND=/usr/bin/env DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 ELECTRON_RUN_AS_NODE=1 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log -c user.name=crash-pusher -c user.email=crash-pusher@node0 commit -m 'sys capture node0 20260422T004555Z 2026-04-22T00:46:30Z' -- sys
+Apr 21 19:46:31 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[490094]: pam_unix(sudo:session): session opened for user LH(uid=20023) by LH(uid=0)
+Apr 21 19:46:31 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[490094]: pam_unix(sudo:session): session closed for user LH
+Apr 21 19:46:31 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[490139]:     root : TTY=pts/1 ; PWD=/users/LH ; USER=LH ; COMMAND=/usr/bin/env DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 ELECTRON_RUN_AS_NODE=1 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log remote get-url origin
+Apr 21 19:46:31 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[490139]: pam_unix(sudo:session): session opened for user LH(uid=20023) by LH(uid=0)
+Apr 21 19:46:31 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[490139]: pam_unix(sudo:session): session closed for user LH
+Apr 21 19:46:31 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[490159]:     root : TTY=pts/1 ; PWD=/users/LH ; USER=LH ; COMMAND=/usr/bin/env DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 ELECTRON_RUN_AS_NODE=1 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log push origin main
+Apr 21 19:46:31 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[490159]: pam_unix(sudo:session): session opened for user LH(uid=20023) by LH(uid=0)
+Apr 21 19:46:31 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[490159]: pam_unix(sudo:session): session closed for user LH
+Apr 21 19:46:40 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[491073]: Connection reset by authenticating user root 87.251.64.145 port 32934 [preauth]
+Apr 21 19:46:41 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[491242]: Connection reset by authenticating user root 87.251.64.145 port 32962 [preauth]
+Apr 21 19:46:42 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[491254]: Connection reset by authenticating user root 87.251.64.145 port 32968 [preauth]
+Apr 21 19:46:42 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[491384]: Connection reset by authenticating user root 87.251.64.145 port 32978 [preauth]
+Apr 21 19:46:43 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[491506]: Connection reset by authenticating user root 87.251.64.145 port 32980 [preauth]
+Apr 21 19:46:44 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[491556]: Connection reset by authenticating user root 87.251.64.145 port 33000 [preauth]
+Apr 21 19:46:45 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[491676]: Invalid user test1 from 87.251.64.145 port 33020
+Apr 21 19:46:45 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[491676]: Connection reset by invalid user test1 87.251.64.145 port 33020 [preauth]
+Apr 21 19:46:46 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[491816]: Invalid user test2 from 87.251.64.145 port 33032
+Apr 21 19:46:47 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[491816]: Connection reset by invalid user test2 87.251.64.145 port 33032 [preauth]
+Apr 21 19:46:47 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[491976]: Invalid user www from 87.251.64.145 port 33048
+Apr 21 19:46:48 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[491976]: Connection reset by invalid user www 87.251.64.145 port 33048 [preauth]
+Apr 21 19:46:48 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[492111]: Invalid user Admin from 87.251.64.145 port 33060
+Apr 21 19:46:49 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[492111]: Connection reset by invalid user Admin 87.251.64.145 port 33060 [preauth]
+Apr 21 19:46:49 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[492128]: Invalid user adm from 87.251.64.145 port 1494
+Apr 21 19:46:50 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[492128]: Connection reset by invalid user adm 87.251.64.145 port 1494 [preauth]
+Apr 21 19:46:51 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[492268]: Invalid user admin from 87.251.64.145 port 1504
+Apr 21 19:46:51 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[492268]: Connection reset by invalid user admin 87.251.64.145 port 1504 [preauth]
+Apr 21 19:46:52 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[492408]: Invalid user guest1 from 87.251.64.145 port 1516
+Apr 21 19:46:52 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[492408]: Connection reset by invalid user guest1 87.251.64.145 port 1516 [preauth]
+Apr 21 19:46:53 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[492548]: Invalid user james from 87.251.64.145 port 1530
+Apr 21 19:46:53 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[492548]: Connection reset by invalid user james 87.251.64.145 port 1530 [preauth]
+Apr 21 19:46:54 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[492674]: Invalid user oracle from 87.251.64.145 port 1532
+Apr 21 19:46:54 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[492674]: Connection reset by invalid user oracle 87.251.64.145 port 1532 [preauth]
