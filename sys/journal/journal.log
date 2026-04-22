@@ -1,39 +1,5 @@
-===== journal snapshot host=node0 boot_started_utc=20260422T032427Z boot_id=62503c1c-026f-4d12-960b-226160d86543 captured_utc=20260422T032511Z =====
+===== journal snapshot host=node0 boot_started_utc=20260422T032427Z boot_id=62503c1c-026f-4d12-960b-226160d86543 captured_utc=20260422T032532Z =====
 
-Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
-Apr 21 21:24:25 localhost sbkeysync[709]:     9e4a69173161682e55fde8fef560eb88ec1ffedcaf04001f66c0caf707b2b734
-Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
-Apr 21 21:24:25 localhost sbkeysync[709]:     9998d363c491be16bd74ba10b94d9291001611736fdca643a36664bc0f315a42
-Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
-Apr 21 21:24:25 localhost sbkeysync[709]:     8d8ea289cfe70a1c07ab7365cb28ee51edd33cf2506de888fbadd60ebf80481c
-Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
-Apr 21 21:24:25 localhost sbkeysync[709]:     8bf434b49e00ccf71502a2cd900865cb01ec3b3da03c35be505fdf7bd563f521
-Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
-Apr 21 21:24:25 localhost sbkeysync[709]:     8ad64859f195b5f58dafaa940b6a6167acd67a886e8f469364177221c55945b9
-Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
-Apr 21 21:24:25 localhost sbkeysync[709]:     895a9785f617ca1d7ed44fc1a1470b71f3f1223862d9ff9dcc3ae2df92163daf
-Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
-Apr 21 21:24:25 localhost sbkeysync[709]:     82db3bceb4f60843ce9d97c3d187cd9b5941cd3de8100e586f2bda5637575f67
-Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
-Apr 21 21:24:25 localhost sbkeysync[709]:     81a8b965bb84d3876b9429a95481cc955318cfaa1412d808c8a33bfd33fff0e4
-Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
-Apr 21 21:24:25 localhost sbkeysync[709]:     7827af99362cfaf0717dade4b1bfe0438ad171c15addc248b75bf8caa44bb2c5
-Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
-Apr 21 21:24:25 localhost sbkeysync[709]:     72e0bd1867cf5d9d56ab158adf3bddbc82bf32a8d8aa1d8c5e2f6df29428d6d8
-Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
-Apr 21 21:24:25 localhost sbkeysync[709]:     726b3eb654046a30f3f83d9b96ce03f670e9a806d1708a0371e62dc49d2c23c1
-Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
-Apr 21 21:24:25 localhost sbkeysync[709]:     71f2906fd222497e54a34662ab2497fcc81020770ff51368e9e3d9bfcbfd6375
-Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
-Apr 21 21:24:25 localhost sbkeysync[709]:     6f1428ff71c9db0ed5af1f2e7bbfcbab647cc265ddf5b293cdb626f50a3a785e
-Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
-Apr 21 21:24:25 localhost sbkeysync[709]:     6c8854478dd559e29351b826c06cb8bfef2b94ad3538358772d193f82ed1ca11
-Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
-Apr 21 21:24:25 localhost sbkeysync[709]:     6b1d138078e4418aa68deb7bb35e066092cf479eeb8ce4cd12e7d072ccb42f66
-Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
-Apr 21 21:24:25 localhost sbkeysync[709]:     5ae949ea8855eb93e439dbc65bda2e42852c2fdf6789fa146736e3c3410f2b5c
-Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
-Apr 21 21:24:25 localhost sbkeysync[709]:     518831fe7382b514d03e15c621228b8ab65479bd0cbfa3c5c1d0f48d9c306135
 Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
 Apr 21 21:24:25 localhost sbkeysync[709]:     47cc086127e2069a86e03a6bef2cd410f8c55a6d6bdb362168c31b2ce32a5adf
 Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
@@ -400,3 +366,37 @@ Apr 21 21:24:51 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-
 Apr 21 21:24:51 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:24:51Z] git push: remote: No anonymous write access.
 Apr 21 21:24:51 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:24:51Z] git push: fatal: Authentication failed for 'https://github.com/Linfeng-He/machine_log.git/'
 Apr 21 21:24:55 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: systemd-fsckd.service: Deactivated successfully.
+Apr 21 21:25:11 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[4870]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log add --all -- sys
+Apr 21 21:25:11 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[4870]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
+Apr 21 21:25:11 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[4870]: pam_unix(sudo:session): session closed for user LH
+Apr 21 21:25:11 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[4874]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log diff --cached --name-only -- sys
+Apr 21 21:25:11 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[4874]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
+Apr 21 21:25:11 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[4874]: pam_unix(sudo:session): session closed for user LH
+Apr 21 21:25:11 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[4878]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log -c user.name=crash-pusher -c user.email=crash-pusher@node0 commit -m 'sys capture node0 20260422T032427Z 2026-04-22T03:25:11Z' -- sys
+Apr 21 21:25:11 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[4878]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
+Apr 21 21:25:11 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[4878]: pam_unix(sudo:session): session closed for user LH
+Apr 21 21:25:11 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[4942]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log remote get-url origin
+Apr 21 21:25:11 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[4942]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
+Apr 21 21:25:11 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[4942]: pam_unix(sudo:session): session closed for user LH
+Apr 21 21:25:11 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[4946]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log push origin main
+Apr 21 21:25:11 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[4946]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
+Apr 21 21:25:12 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[4946]: pam_unix(sudo:session): session closed for user LH
+Apr 21 21:25:12 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:25:12Z] git push failed for origin/main
+Apr 21 21:25:12 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:25:12Z] git push: Missing or invalid credentials.
+Apr 21 21:25:12 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:25:12Z] git push: Error: connect ENOENT /run/user/20024/vscode-git-9b1f7ab212.sock
+Apr 21 21:25:12 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:25:12Z] git push:     at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+Apr 21 21:25:12 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:25:12Z] git push:   errno: -2,
+Apr 21 21:25:12 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:25:12Z] git push:   code: 'ENOENT',
+Apr 21 21:25:12 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:25:12Z] git push:   syscall: 'connect',
+Apr 21 21:25:12 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:25:12Z] git push:   address: '/run/user/20024/vscode-git-9b1f7ab212.sock'
+Apr 21 21:25:12 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:25:12Z] git push: }
+Apr 21 21:25:12 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:25:12Z] git push: Missing or invalid credentials.
+Apr 21 21:25:12 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:25:12Z] git push: Error: connect ENOENT /run/user/20024/vscode-git-9b1f7ab212.sock
+Apr 21 21:25:12 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:25:12Z] git push:     at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+Apr 21 21:25:12 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:25:12Z] git push:   errno: -2,
+Apr 21 21:25:12 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:25:12Z] git push:   code: 'ENOENT',
+Apr 21 21:25:12 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:25:12Z] git push:   syscall: 'connect',
+Apr 21 21:25:12 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:25:12Z] git push:   address: '/run/user/20024/vscode-git-9b1f7ab212.sock'
+Apr 21 21:25:12 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:25:12Z] git push: }
+Apr 21 21:25:12 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:25:12Z] git push: remote: No anonymous write access.
+Apr 21 21:25:12 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:25:12Z] git push: fatal: Authentication failed for 'https://github.com/Linfeng-He/machine_log.git/'
