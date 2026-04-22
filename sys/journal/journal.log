@@ -1,109 +1,5 @@
-===== journal snapshot host=node0 boot_started_utc=20260422T032427Z boot_id=62503c1c-026f-4d12-960b-226160d86543 captured_utc=20260422T032429Z =====
+===== journal snapshot host=node0 boot_started_utc=20260422T032427Z boot_id=62503c1c-026f-4d12-960b-226160d86543 captured_utc=20260422T032450Z =====
 
-Apr 21 21:24:25 localhost sbkeysync[709]:     39dbc2288ef44b5f95332cb777e31103e840dba680634aa806f5c9b100061802
-Apr 21 21:24:25 localhost sbkeysync[709]:     e19dae83c02e6f281358d4ebd11d7723b4f5ea0e357907d5443decc5f93c1e9d
-Apr 21 21:24:25 localhost sbkeysync[709]:     b92af298dc08049b78c77492d6551b710cd72aada3d77be54609e43278ef6e4d
-Apr 21 21:24:25 localhost sbkeysync[709]:     81d8fb4c9e2e7a8225656b4b8273b7cba4b03ef2e9eb20e0a0291624eca1ba86
-Apr 21 21:24:25 localhost sbkeysync[709]:     45c7c8ae750acfbb48fc37527d6412dd644daed8913ccd8a24c94d856967df8e
-Apr 21 21:24:25 localhost sbkeysync[709]:     64575bd912789a2e14ad56f6341f52af6bf80cf94400785975e9f04e2d64d745
-Apr 21 21:24:25 localhost sbkeysync[709]:     939aeef4f5fa51e23340c3f2e49048ce8872526afdf752c3a7f3a3f2bc9f6049
-Apr 21 21:24:25 localhost sbkeysync[709]:     3b0287533e0cc3d0ec1aa823cbf0a941aad8721579d1c499802dd1c3a636b8a9
-Apr 21 21:24:25 localhost sbkeysync[709]:     c83cb13922ad99f560744675dd37cc94dcad5a1fcba6472fee341171d939e884
-Apr 21 21:24:25 localhost sbkeysync[709]:     77dd190fa30d88ff5e3b011a0ae61e6209780c130b535ecb87e6f0888a0b6b2f
-Apr 21 21:24:25 localhost sbkeysync[709]:     55b99b0de53dbcfe485aa9c737cf3fb616ef3d91fab599aa7cab19eda763b5ba
-Apr 21 21:24:25 localhost sbkeysync[709]:     ca171d614a8d7e121c93948cd0fe55d39981f9d11aa96e03450a415227c2c65b
-Apr 21 21:24:25 localhost sbkeysync[709]:     fecfb232d12e994b6d485d2c7167728aa5525984ad5ca61e7516221f079a1436
-Apr 21 21:24:25 localhost sbkeysync[709]:     fe63a84f782cc9d3fcf2ccf9fc11fbd03760878758d26285ed12669bdc6e6d01
-Apr 21 21:24:25 localhost sbkeysync[709]:     fddd6e3d29ea84c7743dad4a1bdbc700b5fec1b391f932409086acc71dd6dbd8
-Apr 21 21:24:25 localhost sbkeysync[709]:     e92c22eb3b5642d65c1ec2caf247d2594738eebb7fb3841a44956f59e2b0d1fa
-Apr 21 21:24:25 localhost sbkeysync[709]:     d8cbeb9735f5672b367e4f96cdc74969615d17074ae96c724d42ce0216f8f3fa
-Apr 21 21:24:25 localhost sbkeysync[709]:     ce3bfabe59d67ce8ac8dfd4a16f7c43ef9c224513fbc655957d735fa29f540ce
-Apr 21 21:24:25 localhost sbkeysync[709]:     cb6b858b40d3a098765815b592c1514a49604fafd60819da88d7a76e9778fef7
-Apr 21 21:24:25 localhost sbkeysync[709]:     c90f336617b8e7f983975413c997f10b73eb267fd8a10cb9e3bdbfc667abdb8b
-Apr 21 21:24:25 localhost sbkeysync[709]:     c617c1a8b1ee2a811c28b5a81b4c83d7c98b5b0c27281d610207ebe692c2967f
-Apr 21 21:24:25 localhost sbkeysync[709]:     c409bdac4775add8db92aa22b5b718fb8c94a1462c1fe9a416b95d8a3388c2fc
-Apr 21 21:24:25 localhost sbkeysync[709]:     bc87a668e81966489cb508ee805183c19e6acd24cf17799ca062d2e384da0ea7
-Apr 21 21:24:25 localhost sbkeysync[709]:     b97a0889059c035ff1d54b6db53b11b9766668d9f955247c028b2837d7a04cd9
-Apr 21 21:24:25 localhost sbkeysync[709]:     b8f078d983a24ac433216393883514cd932c33af18e7dd70884c8235f4275736
-Apr 21 21:24:25 localhost sbkeysync[709]:     b54f1ee636631fad68058d3b0937031ac1b90ccb17062a391cca68afdbe40d55
-Apr 21 21:24:25 localhost sbkeysync[709]:     afe2030afb7d2cda13f9fa333a02e34f6751afec11b010dbcd441fdf4c4002b3
-Apr 21 21:24:25 localhost sbkeysync[709]:     aeebae3151271273ed95aa2e671139ed31a98567303a332298f83709a9d55aa1
-Apr 21 21:24:25 localhost sbkeysync[709]:     ad6826e1946d26d3eaf3685c88d97d85de3b4dcb3d0ee2ae81c70560d13c5720
-Apr 21 21:24:25 localhost sbkeysync[709]:     a7f32f508d4eb0fead9a087ef94ed1ba0aec5de6f7ef6ff0a62b93bedf5d458d
-Apr 21 21:24:25 localhost sbkeysync[709]:     a6b5151f3655d3a2af0d472759796be4a4200e5495a7d869754c4848857408a7
-Apr 21 21:24:25 localhost sbkeysync[709]:     9e4a69173161682e55fde8fef560eb88ec1ffedcaf04001f66c0caf707b2b734
-Apr 21 21:24:25 localhost sbkeysync[709]:     9998d363c491be16bd74ba10b94d9291001611736fdca643a36664bc0f315a42
-Apr 21 21:24:25 localhost sbkeysync[709]:     8d8ea289cfe70a1c07ab7365cb28ee51edd33cf2506de888fbadd60ebf80481c
-Apr 21 21:24:25 localhost sbkeysync[709]:     8bf434b49e00ccf71502a2cd900865cb01ec3b3da03c35be505fdf7bd563f521
-Apr 21 21:24:25 localhost sbkeysync[709]:     8ad64859f195b5f58dafaa940b6a6167acd67a886e8f469364177221c55945b9
-Apr 21 21:24:25 localhost sbkeysync[709]:     895a9785f617ca1d7ed44fc1a1470b71f3f1223862d9ff9dcc3ae2df92163daf
-Apr 21 21:24:25 localhost sbkeysync[709]:     82db3bceb4f60843ce9d97c3d187cd9b5941cd3de8100e586f2bda5637575f67
-Apr 21 21:24:25 localhost sbkeysync[709]:     81a8b965bb84d3876b9429a95481cc955318cfaa1412d808c8a33bfd33fff0e4
-Apr 21 21:24:25 localhost sbkeysync[709]:     7827af99362cfaf0717dade4b1bfe0438ad171c15addc248b75bf8caa44bb2c5
-Apr 21 21:24:25 localhost sbkeysync[709]:     72e0bd1867cf5d9d56ab158adf3bddbc82bf32a8d8aa1d8c5e2f6df29428d6d8
-Apr 21 21:24:25 localhost sbkeysync[709]:     726b3eb654046a30f3f83d9b96ce03f670e9a806d1708a0371e62dc49d2c23c1
-Apr 21 21:24:25 localhost sbkeysync[709]:     71f2906fd222497e54a34662ab2497fcc81020770ff51368e9e3d9bfcbfd6375
-Apr 21 21:24:25 localhost sbkeysync[709]:     6f1428ff71c9db0ed5af1f2e7bbfcbab647cc265ddf5b293cdb626f50a3a785e
-Apr 21 21:24:25 localhost sbkeysync[709]:     6c8854478dd559e29351b826c06cb8bfef2b94ad3538358772d193f82ed1ca11
-Apr 21 21:24:25 localhost sbkeysync[709]:     6b1d138078e4418aa68deb7bb35e066092cf479eeb8ce4cd12e7d072ccb42f66
-Apr 21 21:24:25 localhost sbkeysync[709]:     5ae949ea8855eb93e439dbc65bda2e42852c2fdf6789fa146736e3c3410f2b5c
-Apr 21 21:24:25 localhost sbkeysync[709]:     518831fe7382b514d03e15c621228b8ab65479bd0cbfa3c5c1d0f48d9c306135
-Apr 21 21:24:25 localhost sbkeysync[709]:     47cc086127e2069a86e03a6bef2cd410f8c55a6d6bdb362168c31b2ce32a5adf
-Apr 21 21:24:25 localhost sbkeysync[709]:     4397daca839e7f63077cb50c92df43bc2d2fb2a8f59f26fc7a0e4bd4d9751692
-Apr 21 21:24:25 localhost sbkeysync[709]:     3fce9b9fdf3ef09d5452b0f95ee481c2b7f06d743a737971558e70136ace3e73
-Apr 21 21:24:25 localhost sbkeysync[709]:     3841d221368d1583d75c0a02e62160394d6c4e0a6760b6f607b90362bc855b02
-Apr 21 21:24:25 localhost sbkeysync[709]:     3608edbaf5ad0f41a414a1777abf2faf5e670334675ec3995e6935829e0caad2
-Apr 21 21:24:25 localhost sbkeysync[709]:     306628fa5477305728ba4a467de7d0387a54f569d3769fce5e75ec89d28d1593
-Apr 21 21:24:25 localhost sbkeysync[709]:     2e70916786a6f773511fa7181fab0f1d70b557c6322ea923b2a8d3b92b51af7d
-Apr 21 21:24:25 localhost sbkeysync[709]:     2c73d93325ba6dcbe589d4a4c63c5b935559ef92fbf050ed50c4e2085206f17d
-Apr 21 21:24:25 localhost sbkeysync[709]:     2bbf2ca7b8f1d91f27ee52b6fb2a5dd049b85a2b9b529c5d6662068104b055f8
-Apr 21 21:24:25 localhost sbkeysync[709]:     2b99cf26422e92fe365fbf4bc30d27086c9ee14b7a6fff44fb2f6b9001699939
-Apr 21 21:24:25 localhost sbkeysync[709]:     18333429ff0562ed9f97033e1148dceee52dbe2e496d5410b5cfd6c864d2d10f
-Apr 21 21:24:25 localhost sbkeysync[709]:     174e3a0b5b43c6a607bbd3404f05341e3dcf396267ce94f8b50e2e23a9da920c
-Apr 21 21:24:25 localhost sbkeysync[709]:     106faceacfecfd4e303b74f480a08098e2d0802b936f8ec774ce21f31686689c
-Apr 21 21:24:25 localhost sbkeysync[709]:     0dc9f3fb99962148c3ca833632758d3ed4fc8d0b0007b95b31e6528f2acd5bfc
-Apr 21 21:24:25 localhost sbkeysync[709]:     0d0dbeca6f29eca06f331a7d72e4884b12097fb348983a2a14a0d73f4f10140f
-Apr 21 21:24:25 localhost sbkeysync[709]:     0c189339762df336ab3dd006a463df715a39cfb0f492465c600e6c6bd7bd898c
-Apr 21 21:24:25 localhost sbkeysync[709]:     0bbb4392daac7ab89b30a4ac657531b97bfaab04f90b0dafe5f9b6eb90a06374
-Apr 21 21:24:25 localhost sbkeysync[709]:     09df5f4e511208ec78b96d12d08125fdb603868de39f6f72927852599b659c26
-Apr 21 21:24:25 localhost sbkeysync[709]:     07e6c6a858646fb1efc67903fe28b116011f2367fe92e6be2b36999eff39d09e
-Apr 21 21:24:25 localhost sbkeysync[709]:     075eea060589548ba060b2feed10da3c20c7fe9b17cd026b94e8a683b8115238
-Apr 21 21:24:25 localhost sbkeysync[709]:     90fbe70e69d633408d3e170c6832dbb2d209e0272527dfb63d49d29572a6f44c
-Apr 21 21:24:25 localhost sbkeysync[709]:     29c6eb52b43c3aa18b2cd8ed6ea8607cef3cfae1bafe1165755cf2e614844a44
-Apr 21 21:24:25 localhost sbkeysync[709]:     d063ec28f67eba53f1642dbf7dff33c6a32add869f6013fe162e2c32f1cbe56d
-Apr 21 21:24:25 localhost sbkeysync[709]:     d626157e1d6a718bc124ab8da27cbb65072ca03a7b6b257dbdcbbd60f65ef3d1
-Apr 21 21:24:25 localhost sbkeysync[709]:     5391c3a2fb112102a6aa1edc25ae77e19f5d6f09cd09eeb2509922bfcd5992ea
-Apr 21 21:24:25 localhost sbkeysync[709]:     58fb941aef95a25943b3fb5f2510a0df3fe44c58c95e0ab80487297568ab9771
-Apr 21 21:24:25 localhost sbkeysync[709]:     c3a99a460da464a057c3586d83cef5f4ae08b7103979ed8932742df0ed530c66
-Apr 21 21:24:25 localhost sbkeysync[709]:     e6ca68e94146629af03f69c2f86e6bef62f930b37c6fbcc878b78df98c0334e5
-Apr 21 21:24:25 localhost sbkeysync[709]:     1aec84b84b6c65a51220a9be7181965230210d62d6d33c48999c6b295a2b0a06
-Apr 21 21:24:25 localhost sbkeysync[709]:     363384d14d1f2e0b7815626484c459ad57a318ef4396266048d058c5a19bbf76
-Apr 21 21:24:25 localhost sbkeysync[709]:     c5d9d8a186e2c82d09afaa2a6f7f2e73870d3e64f72c4e08ef67796a840f0fbd
-Apr 21 21:24:25 localhost sbkeysync[709]:     f52f83a3fa9cfbd6920f722824dbe4034534d25b8507246b3b957dac6e1bce7a
-Apr 21 21:24:25 localhost sbkeysync[709]:     80b4d96931bf0d02fd91a61e19d14f1da452e66db2408ca8604d411f92659f0a
-Apr 21 21:24:25 localhost sbkeysync[709]: filesystem keys:
-Apr 21 21:24:25 localhost sbkeysync[709]:   PK:
-Apr 21 21:24:25 localhost sbkeysync[709]:   KEK:
-Apr 21 21:24:25 localhost sbkeysync[709]:   db:
-Apr 21 21:24:25 localhost sbkeysync[709]:   dbx:
-Apr 21 21:24:25 localhost sbkeysync[709]:     45c7c8ae750acfbb48fc37527d6412dd644daed8913ccd8a24c94d856967df8e
-Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
-Apr 21 21:24:25 localhost sbkeysync[709]:     64575bd912789a2e14ad56f6341f52af6bf80cf94400785975e9f04e2d64d745
-Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
-Apr 21 21:24:25 localhost sbkeysync[709]:     939aeef4f5fa51e23340c3f2e49048ce8872526afdf752c3a7f3a3f2bc9f6049
-Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
-Apr 21 21:24:25 localhost sbkeysync[709]:     3b0287533e0cc3d0ec1aa823cbf0a941aad8721579d1c499802dd1c3a636b8a9
-Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
-Apr 21 21:24:25 localhost sbkeysync[709]:     c83cb13922ad99f560744675dd37cc94dcad5a1fcba6472fee341171d939e884
-Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
-Apr 21 21:24:25 localhost sbkeysync[709]:     77dd190fa30d88ff5e3b011a0ae61e6209780c130b535ecb87e6f0888a0b6b2f
-Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
-Apr 21 21:24:25 localhost sbkeysync[709]:     55b99b0de53dbcfe485aa9c737cf3fb616ef3d91fab599aa7cab19eda763b5ba
-Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
-Apr 21 21:24:25 localhost sbkeysync[709]:     ca171d614a8d7e121c93948cd0fe55d39981f9d11aa96e03450a415227c2c65b
-Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
-Apr 21 21:24:25 localhost sbkeysync[709]:     fecfb232d12e994b6d485d2c7167728aa5525984ad5ca61e7516221f079a1436
-Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
 Apr 21 21:24:25 localhost sbkeysync[709]:     fe63a84f782cc9d3fcf2ccf9fc11fbd03760878758d26285ed12669bdc6e6d01
 Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
 Apr 21 21:24:25 localhost sbkeysync[709]:     fddd6e3d29ea84c7743dad4a1bdbc700b5fec1b391f932409086acc71dd6dbd8
@@ -400,3 +296,107 @@ Apr 21 21:24:29 localhost sh[754]: Checking Testbed user accounts configuration 
 Apr 21 21:24:29 localhost sh[754]: Checking Testbed route configuration ...
 Apr 21 21:24:29 localhost sh[754]: net.ipv4.conf.all.forwarding = 1
 Apr 21 21:24:29 localhost sh[754]: Checking Testbed tunnel configuration ...
+Apr 21 21:24:29 localhost sudo[1124]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log add --all -- sys
+Apr 21 21:24:29 localhost sudo[1124]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
+Apr 21 21:24:29 localhost sh[754]: Checking Testbed interface configuration ...
+Apr 21 21:24:29 localhost sudo[1124]: pam_unix(sudo:session): session closed for user LH
+Apr 21 21:24:29 localhost sudo[1209]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log diff --cached --name-only -- sys
+Apr 21 21:24:29 localhost sudo[1209]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
+Apr 21 21:24:29 localhost sudo[1209]: pam_unix(sudo:session): session closed for user LH
+Apr 21 21:24:29 localhost sudo[1213]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log -c user.name=crash-pusher -c user.email=crash-pusher@node0 commit -m 'sys capture node0 20260422T032427Z 2026-04-22T03:24:29Z' -- sys
+Apr 21 21:24:29 localhost sudo[1213]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
+Apr 21 21:24:29 localhost sudo[1213]: pam_unix(sudo:session): session closed for user LH
+Apr 21 21:24:29 localhost sudo[1219]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log remote get-url origin
+Apr 21 21:24:29 localhost sudo[1219]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
+Apr 21 21:24:29 localhost sudo[1219]: pam_unix(sudo:session): session closed for user LH
+Apr 21 21:24:29 localhost sudo[1223]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log push origin main
+Apr 21 21:24:29 localhost sudo[1223]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
+Apr 21 21:24:30 localhost sh[754]: Checking Testbed hostnames configuration ...
+Apr 21 21:24:30 localhost sh[754]: Checking Testbed remote storage configuration ...
+Apr 21 21:24:30 localhost sh[754]: Checking Testbed trace configuration ...
+Apr 21 21:24:30 localhost kernel: fbcon: Taking over console
+Apr 21 21:24:30 localhost kernel: mgag200 0000:01:00.1: [drm] drm_plane_enable_fb_damage_clips() not called
+Apr 21 21:24:30 localhost systemd[1]: dmesg.service: Deactivated successfully.
+Apr 21 21:24:30 localhost sudo[1223]: pam_unix(sudo:session): session closed for user LH
+Apr 21 21:24:30 localhost runner.sh[1112]: [2026-04-22T03:24:30Z] git push failed for origin/main
+Apr 21 21:24:30 localhost runner.sh[1112]: [2026-04-22T03:24:30Z] git push: Missing or invalid credentials.
+Apr 21 21:24:30 localhost runner.sh[1112]: [2026-04-22T03:24:30Z] git push: Error: connect ENOENT /run/user/20024/vscode-git-9b1f7ab212.sock
+Apr 21 21:24:30 localhost runner.sh[1112]: [2026-04-22T03:24:30Z] git push:     at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+Apr 21 21:24:30 localhost runner.sh[1112]: [2026-04-22T03:24:30Z] git push:   errno: -2,
+Apr 21 21:24:30 localhost runner.sh[1112]: [2026-04-22T03:24:30Z] git push:   code: 'ENOENT',
+Apr 21 21:24:30 localhost runner.sh[1112]: [2026-04-22T03:24:30Z] git push:   syscall: 'connect',
+Apr 21 21:24:30 localhost runner.sh[1112]: [2026-04-22T03:24:30Z] git push:   address: '/run/user/20024/vscode-git-9b1f7ab212.sock'
+Apr 21 21:24:30 localhost runner.sh[1112]: [2026-04-22T03:24:30Z] git push: }
+Apr 21 21:24:30 localhost runner.sh[1112]: [2026-04-22T03:24:30Z] git push: Missing or invalid credentials.
+Apr 21 21:24:30 localhost runner.sh[1112]: [2026-04-22T03:24:30Z] git push: Error: connect ENOENT /run/user/20024/vscode-git-9b1f7ab212.sock
+Apr 21 21:24:30 localhost runner.sh[1112]: [2026-04-22T03:24:30Z] git push:     at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+Apr 21 21:24:30 localhost runner.sh[1112]: [2026-04-22T03:24:30Z] git push:   errno: -2,
+Apr 21 21:24:30 localhost runner.sh[1112]: [2026-04-22T03:24:30Z] git push:   code: 'ENOENT',
+Apr 21 21:24:30 localhost runner.sh[1112]: [2026-04-22T03:24:30Z] git push:   syscall: 'connect',
+Apr 21 21:24:30 localhost runner.sh[1112]: [2026-04-22T03:24:30Z] git push:   address: '/run/user/20024/vscode-git-9b1f7ab212.sock'
+Apr 21 21:24:30 localhost runner.sh[1112]: [2026-04-22T03:24:30Z] git push: }
+Apr 21 21:24:30 localhost runner.sh[1112]: [2026-04-22T03:24:30Z] git push: remote: No anonymous write access.
+Apr 21 21:24:30 localhost runner.sh[1112]: [2026-04-22T03:24:30Z] git push: fatal: Authentication failed for 'https://github.com/Linfeng-He/machine_log.git/'
+Apr 21 21:24:30 localhost sh[754]: Checking Testbed trafgen configuration ...
+Apr 21 21:24:30 localhost kernel: Console: switching to colour frame buffer device 128x48
+Apr 21 21:24:30 localhost sh[754]: Checking Testbed Tarball configuration ...
+Apr 21 21:24:30 localhost sh[754]: Checking Testbed RPM configuration ...
+Apr 21 21:24:31 localhost pubsubd[903]: 127.0.0.1: Client Connected: cport:53118 sock:6
+Apr 21 21:24:31 localhost pubsubd[903]: 127.0.0.1: Add Subscription:6 token:1 ' ( EXPT == "lsm-PG0/Testnode1" ) && ( OBJTYPE == "PROGRAM" ) && ( OBJNAME == "node0-program" ) && ( EVENTTYPE == "RUN" || EVENTTYPE == "START" || EVENTTYPE == "STOP" || EVENTTYPE == "HALT" || EVENTTYPE == "KILL" ) && SCHEDULER == 0 '
+Apr 21 21:24:31 localhost pubsubd[903]: 127.0.0.1: Add Subscription:6 token:2 ' ( EXPT == "lsm-PG0/Testnode1" ) && ( OBJTYPE == "TIME" ) && ( EVENTTYPE == "START" ) && SCHEDULER == 0 '
+Apr 21 21:24:31 localhost pubsubd[903]: 127.0.0.1: Add Subscription:6 token:3 ' ( EXPT == "lsm-PG0/Testnode1" ) && ( OBJTYPE == "PROGRAM" ) && ( OBJNAME == "__node0_program-agent" ) && ( EVENTTYPE == "RELOAD" ) && SCHEDULER == 0 '
+Apr 21 21:24:32 localhost sh[754]: Checking Testbed tiptunnel configuration ...
+Apr 21 21:24:33 localhost sh[754]: Starting linktest daemon
+Apr 21 21:24:33 localhost pubsubd[903]: 127.0.0.1: Client Connected: cport:53128 sock:7
+Apr 21 21:24:33 localhost pubsubd[903]: 127.0.0.1: Add Subscription:7 token:1 ' ( EXPT == "lsm-PG0/Testnode1" ) && ( OBJTYPE == "LINKTEST" ) && ( EVENTTYPE == "START" || EVENTTYPE == "KILL" ) && SCHEDULER == 0 '
+Apr 21 21:24:33 localhost pubsubd[903]: 127.0.0.1: Add Subscription:7 token:2 ' ( EXPT == "lsm-PG0/Testnode1" ) && ( OBJTYPE == "TIME" ) && ( EVENTTYPE == "START" ) && SCHEDULER == 0 '
+Apr 21 21:24:33 localhost sh[754]: Informing Emulab Control that we are up and running
+Apr 21 21:24:33 localhost sh[754]: Checking Testbed Experiment Startup Command ...
+Apr 21 21:24:33 localhost sh[754]: Booting up vnodes
+Apr 21 21:24:33 localhost sh[754]: Booting up subnodes
+Apr 21 21:24:33 localhost sh[754]: No subnodes. Exiting gracefully ...
+Apr 21 21:24:33 localhost systemd[1]: Finished Testbed Services.
+Apr 21 21:24:33 localhost systemd[1]: Reached target Multi-User System.
+Apr 21 21:24:33 localhost systemd[1]: Reached target Graphical Interface.
+Apr 21 21:24:33 localhost systemd[1]: Starting Record Runlevel Change in UTMP...
+Apr 21 21:24:33 localhost systemd[1]: systemd-update-utmp-runlevel.service: Deactivated successfully.
+Apr 21 21:24:33 localhost systemd[1]: Finished Record Runlevel Change in UTMP.
+Apr 21 21:24:33 localhost systemd[1]: Startup finished in 14.082s (kernel) + 12.652s (userspace) = 26.734s.
+Apr 21 21:24:37 localhost systemd-resolved[708]: Clock change detected. Flushing caches.
+Apr 21 21:24:45 localhost sh[599]: emulab-networkd[599]: found eno1 as control net
+Apr 21 21:24:45 localhost systemd[1]: emulab-networkd@eno1d1.service: Deactivated successfully.
+Apr 21 21:24:45 localhost systemd[1]: Condition check resulted in OpenVSwitch configuration for cleanup being skipped.
+Apr 21 21:24:45 localhost systemd[1]: systemd-networkd-wait-online.service: Deactivated successfully.
+Apr 21 21:24:45 localhost systemd[1]: Stopped Wait for Network to be Configured.
+Apr 21 21:24:45 localhost systemd[1]: Stopping Wait for Network to be Configured...
+Apr 21 21:24:45 localhost systemd[1]: Stopping Network Configuration...
+Apr 21 21:24:45 localhost systemd-networkd[677]: eno1: DHCPv6 lease lost
+Apr 21 21:24:45 localhost systemd-resolved[708]: eno1: Failed to read DNSSEC negative trust anchors for the interface, ignoring: No data available
+Apr 21 21:24:45 localhost systemd[1]: systemd-networkd.service: Deactivated successfully.
+Apr 21 21:24:45 localhost systemd[1]: Stopped Network Configuration.
+Apr 21 21:24:45 localhost systemd[1]: Starting Force udev to settle before systemd-networkd starts...
+Apr 21 21:24:45 localhost systemd[1]: Started ntp-systemd-netif.service.
+Apr 21 21:24:45 localhost sh[2592]: Waiting for udev to settle...
+Apr 21 21:24:45 localhost systemd[1]: ntp-systemd-netif.service: Deactivated successfully.
+Apr 21 21:24:45 localhost sh[2597]: /run/systemd/network/eno1.network 158 8 81a4 0 0 19 725 1 0 0 1776828265 1776828285 1776828285 0 4096
+Apr 21 21:24:45 localhost systemd[1]: emulab-udev-settle-networkd.service: Deactivated successfully.
+Apr 21 21:24:45 localhost systemd[1]: Finished Force udev to settle before systemd-networkd starts.
+Apr 21 21:24:45 localhost systemd[1]: Starting Network Configuration...
+Apr 21 21:24:45 localhost systemd-networkd[2598]: eno1: Link UP
+Apr 21 21:24:45 localhost systemd-networkd[2598]: eno1: Gained carrier
+Apr 21 21:24:45 localhost systemd-networkd[2598]: lo: Link UP
+Apr 21 21:24:45 localhost systemd-networkd[2598]: lo: Gained carrier
+Apr 21 21:24:45 localhost systemd-networkd[2598]: eno1: Gained IPv6LL
+Apr 21 21:24:45 localhost systemd-networkd[2598]: Enumeration completed
+Apr 21 21:24:45 localhost systemd[1]: Started Network Configuration.
+Apr 21 21:24:45 localhost systemd[1]: Starting Wait for Network to be Configured...
+Apr 21 21:24:45 localhost systemd[1]: systemd-networkd-wait-online.service: Deactivated successfully.
+Apr 21 21:24:45 localhost systemd[1]: Stopped Wait for Network to be Configured.
+Apr 21 21:24:45 localhost systemd[1]: Starting Wait for Network to be Configured...
+Apr 21 21:24:45 localhost systemd-networkd[2598]: eno1: DHCPv4 address 128.110.217.163/21 via 128.110.216.1
+Apr 21 21:24:45 localhost systemd[1]: Started ntp-systemd-netif.service.
+Apr 21 21:24:45 localhost systemd[1]: Finished Wait for Network to be Configured.
+Apr 21 21:24:45 ms1103 systemd-resolved[708]: System hostname changed to 'ms1103'.
+Apr 21 21:24:45 ms1103 systemd[1]: ntp-systemd-netif.service: Deactivated successfully.
+Apr 21 21:24:45 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd-resolved[708]: System hostname changed to 'node0.testnode1.lsm-pg0.utah.cloudlab.us'.
+Apr 21 21:24:45 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: emulab-networkd@eno1.service: Deactivated successfully.
