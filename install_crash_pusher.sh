@@ -14,7 +14,6 @@ Usage:
 
 Options:
   --repo-dir DIR            Git repo that receives the sys updates. Default: git repo containing this script
-                           If root cannot write DIR, a runtime clone is created under /var/lib/crash-pusher/repos
   --repo-url URL            Optional override for the repo's origin remote. Default: keep existing origin
   --repo-branch BRANCH      Git branch to push to. Default: current branch of the cloned repo
   --cmmhi-cmd CMD           Temperature command to run every second. Default: leave unset unless provided or found via --search
@@ -195,15 +194,32 @@ log_multiline() {
   done <<<"$text"
 }
 
+preserved_git_env_names() {
+  cat <<'EOF'
+SSH_AUTH_SOCK
+GIT_ASKPASS
+SSH_ASKPASS
+DISPLAY
+WAYLAND_DISPLAY
+XAUTHORITY
+DBUS_SESSION_BUS_ADDRESS
+XDG_RUNTIME_DIR
+VSCODE_GIT_ASKPASS_NODE
+VSCODE_GIT_ASKPASS_MAIN
+VSCODE_GIT_IPC_HANDLE
+ELECTRON_RUN_AS_NODE
+EOF
+}
+
 run_git() {
   local -a preserved_env=()
   local env_name
 
-  for env_name in SSH_AUTH_SOCK GIT_ASKPASS SSH_ASKPASS DISPLAY WAYLAND_DISPLAY XAUTHORITY DBUS_SESSION_BUS_ADDRESS XDG_RUNTIME_DIR VSCODE_GIT_ASKPASS_NODE VSCODE_GIT_ASKPASS_MAIN VSCODE_GIT_IPC_HANDLE ELECTRON_RUN_AS_NODE; do
+  while IFS= read -r env_name; do
     if [[ -n "${!env_name:-}" ]]; then
       preserved_env+=("${env_name}=${!env_name}")
     fi
-  done
+  done < <(preserved_git_env_names)
 
   if [[ -n "$REPO_OWNER_UID" && "$(id -u)" -eq "$REPO_OWNER_UID" ]]; then
     env "${preserved_env[@]}" GIT_SSH_COMMAND="${GIT_SSH_COMMAND:-ssh -o StrictHostKeyChecking=accept-new}" git "$@"
@@ -703,11 +719,11 @@ add_preserved_git_env() {
   local -n preserved_ref="$1"
   local env_name
 
-  for env_name in SSH_AUTH_SOCK GIT_ASKPASS SSH_ASKPASS DISPLAY WAYLAND_DISPLAY XAUTHORITY DBUS_SESSION_BUS_ADDRESS XDG_RUNTIME_DIR VSCODE_GIT_ASKPASS_NODE VSCODE_GIT_ASKPASS_MAIN VSCODE_GIT_IPC_HANDLE ELECTRON_RUN_AS_NODE; do
+  while IFS= read -r env_name; do
     if [[ -n "${!env_name:-}" ]]; then
       preserved_ref+=("${env_name}=${!env_name}")
     fi
-  done
+  done < <(preserved_git_env_names)
 }
 
 run_repo_git() {
@@ -882,6 +898,9 @@ append_install_args() {
 
 rerun_via_sudo() {
   local -a sudo_args=()
+  local -a preserved_env_names=()
+  local env_name
+  local preserve_env_csv=""
 
   require_cmd sudo
 
@@ -903,79 +922,18 @@ rerun_via_sudo() {
   fi
 
   append_install_args sudo_args
+  while IFS= read -r env_name; do
+    if [[ -n "${!env_name:-}" ]]; then
+      preserved_env_names+=("$env_name")
+    fi
+  done < <(preserved_git_env_names)
+
+  if [[ "${#preserved_env_names[@]}" -gt 0 ]]; then
+    preserve_env_csv="$(IFS=,; printf '%s' "${preserved_env_names[*]}")"
+    exec sudo --preserve-env="$preserve_env_csv" bash -s -- "${sudo_args[@]}" <"$0"
+  fi
+
   exec sudo bash -s -- "${sudo_args[@]}" <"$0"
-}
-
-discover_user_group() {
-  local owner_user="$1"
-
-  [[ -n "$owner_user" ]] || return 0
-  id -gn "$owner_user" 2>/dev/null || true
-}
-
-repo_dir_is_root_writable() {
-  local repo_dir="$1"
-  local probe_dir="${repo_dir}/.crash-pusher-root-write-test.$$"
-
-  mkdir -p "$probe_dir" 2>/dev/null || return 1
-  rmdir "$probe_dir" 2>/dev/null || true
-  return 0
-}
-
-ensure_runtime_repo_dir() {
-  local original_repo_dir="$1"
-  local runtime_owner="${REPO_OWNER_USER:-${SUDO_USER:-}}"
-  local runtime_group=""
-  local runtime_root="/var/lib/crash-pusher"
-  local runtime_repo_parent="${runtime_root}/repos"
-  local runtime_repo_dir="${runtime_repo_parent}/machine_log"
-  local clone_source="$original_repo_dir"
-
-  [[ -n "$STAGING_ROOT" ]] && return 0
-  [[ -n "$original_repo_dir" ]] || return 0
-
-  if repo_dir_is_root_writable "$original_repo_dir"; then
-    return 0
-  fi
-
-  if [[ -z "$runtime_owner" || "$runtime_owner" == "UNKNOWN" ]]; then
-    runtime_owner="$(id -un)"
-  fi
-  runtime_group="$(discover_user_group "$runtime_owner")"
-  [[ -n "$runtime_group" ]] || runtime_group="$runtime_owner"
-
-  if [[ -z "$REPO_URL" ]]; then
-    if ! run_repo_git "$runtime_owner" -C "$original_repo_dir" rev-parse --show-toplevel >/dev/null 2>&1; then
-      die "repo dir is not writable by root and cannot be reopened as ${runtime_owner}; rerun from a normal user shell or pass --repo-url"
-    fi
-  else
-    clone_source="$REPO_URL"
-  fi
-
-  log "repo dir ${original_repo_dir} is not writable by root; using runtime working copy ${runtime_repo_dir}"
-
-  install -d -m 0755 "$runtime_root"
-  install -d -m 0775 -o "$runtime_owner" -g "$runtime_group" "$runtime_repo_parent"
-
-  if [[ ! -d "$runtime_repo_dir/.git" ]]; then
-    if [[ -n "$REPO_BRANCH" ]]; then
-      run_repo_git "$runtime_owner" clone --branch "$REPO_BRANCH" --single-branch "$clone_source" "$runtime_repo_dir"
-    else
-      run_repo_git "$runtime_owner" clone "$clone_source" "$runtime_repo_dir"
-    fi
-  elif [[ -n "$REPO_URL" ]]; then
-    if run_repo_git "$runtime_owner" -C "$runtime_repo_dir" remote get-url origin >/dev/null 2>&1; then
-      run_repo_git "$runtime_owner" -C "$runtime_repo_dir" remote set-url origin "$REPO_URL" >/dev/null 2>&1 || true
-    fi
-  fi
-
-  REPO_DIR="$runtime_repo_dir"
-  REPO_OWNER_USER="$(discover_repo_owner_user "$REPO_DIR")"
-  REPO_OWNER_HOME="$(discover_repo_owner_home "$REPO_OWNER_USER")"
-
-  if [[ -z "$REPO_BRANCH" ]]; then
-    REPO_BRANCH="$(current_repo_branch "$REPO_DIR")"
-  fi
 }
 
 ROOT_UID=0
@@ -1127,33 +1085,15 @@ else
 fi
 
 [[ -n "$REPO_DIR" ]] || die "--repo-dir resolved to an empty path"
-ORIGINAL_REPO_DIR="$REPO_DIR"
-if [[ -d "$REPO_DIR/.git" ]]; then
-  REPO_DIR="$(cd -- "$REPO_DIR" && pwd -P)"
-  ORIGINAL_REPO_DIR="$REPO_DIR"
-  REPO_OWNER_USER="$(discover_repo_owner_user "$REPO_DIR")"
-  REPO_OWNER_HOME="$(discover_repo_owner_home "$REPO_OWNER_USER")"
-else
-  if [[ "$(id -u)" -eq "$ROOT_UID" ]] && [[ -z "$STAGING_ROOT" ]]; then
-    REPO_OWNER_USER="${SUDO_USER:-}"
-    REPO_OWNER_HOME="$(discover_repo_owner_home "$REPO_OWNER_USER")"
-    if [[ -n "$REPO_URL" ]]; then
-      :
-    elif [[ -n "$REPO_OWNER_USER" ]] && run_repo_git "$REPO_OWNER_USER" -C "$REPO_DIR" rev-parse --show-toplevel >/dev/null 2>&1; then
-      :
-    else
-      die "repo dir is not accessible as a git repo: $REPO_DIR"
-    fi
-  else
-    die "repo dir is not a git repo: $REPO_DIR"
-  fi
-fi
+[[ -d "$REPO_DIR" ]] || die "repo dir does not exist: $REPO_DIR"
+[[ -d "$REPO_DIR/.git" ]] || die "repo dir is not a git repo: $REPO_DIR"
+REPO_DIR="$(cd -- "$REPO_DIR" && pwd -P)"
+REPO_OWNER_USER="$(discover_repo_owner_user "$REPO_DIR")"
+REPO_OWNER_HOME="$(discover_repo_owner_home "$REPO_OWNER_USER")"
 
 if [[ -z "$REPO_BRANCH" ]]; then
   REPO_BRANCH="$(current_repo_branch "$REPO_DIR")"
 fi
-
-ensure_runtime_repo_dir "$ORIGINAL_REPO_DIR"
 
 BIN_DIR="$(prefix_path /usr/local/bin)"
 ETC_DEFAULT_DIR="$(prefix_path /etc/default)"
@@ -1182,11 +1122,11 @@ CMMHI_CMD=$(quote_env_value "$CMMHI_CMD")
 CMMHI_TIMEOUT=$(quote_env_value "3")
 EOF
 
-for env_name in SSH_AUTH_SOCK GIT_ASKPASS SSH_ASKPASS DISPLAY WAYLAND_DISPLAY XAUTHORITY DBUS_SESSION_BUS_ADDRESS XDG_RUNTIME_DIR VSCODE_GIT_ASKPASS_NODE VSCODE_GIT_ASKPASS_MAIN VSCODE_GIT_IPC_HANDLE ELECTRON_RUN_AS_NODE; do
+while IFS= read -r env_name; do
   if [[ -n "${!env_name:-}" ]]; then
     printf '%s=%s\n' "$env_name" "$(quote_env_value "${!env_name}")" >>"$ENV_PATH"
   fi
-done
+done < <(preserved_git_env_names)
 
 chmod 0600 "$ENV_PATH"
 
