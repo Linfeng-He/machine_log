@@ -1,4 +1,4 @@
-===== syslog snapshot host=node0 boot_started_utc=20260422T032225Z boot_id=179612ea-2e99-4892-8219-f26f64b164e4 captured_utc=20260422T032227Z =====
+===== syslog snapshot host=node0 boot_started_utc=20260422T032225Z boot_id=179612ea-2e99-4892-8219-f26f64b164e4 captured_utc=20260422T032240Z =====
 
 Apr 21 17:30:58 localhost systemd[1]: logrotate.service: Deactivated successfully.
 Apr 21 17:30:58 localhost systemd[1]: Finished Rotate log files.
@@ -401,3 +401,46 @@ Apr 21 21:22:25 localhost runner.sh[12087]: [2026-04-22T03:22:25Z] git user: LH
 Apr 21 21:22:25 localhost runner.sh[12087]: [2026-04-22T03:22:25Z] origin remote: https://github.com/Linfeng-He/machine_log.git
 Apr 21 21:22:25 localhost systemd[1]: apt-daily.service: Deactivated successfully.
 Apr 21 21:22:25 localhost systemd[1]: Finished Daily apt download activities.
+Apr 21 21:22:39 localhost systemd[1]: Stopping Session 13 of User LH...
+Apr 21 21:22:39 localhost systemd[1]: Stopping Session 14 of User LH...
+Apr 21 21:22:39 localhost systemd[1]: Stopping Session 3 of User LH...
+Apr 21 21:22:39 localhost systemd[1]: Removed slice Slice /system/emulab-networkd.
+Apr 21 21:22:39 localhost systemd[1]: Removed slice Slice /system/modprobe.
+Apr 21 21:22:39 localhost systemd[1]: Stopped target Graphical Interface.
+Apr 21 21:22:39 localhost systemd[1]: Stopped target Multi-User System.
+Apr 21 21:22:39 localhost systemd[1]: Stopped target Login Prompts.
+Apr 21 21:22:39 localhost systemd[1]: Stopped target rpc_pipefs.target.
+Apr 21 21:22:39 localhost systemd[1]: Stopped target RPC Port Mapper.
+Apr 21 21:22:39 localhost systemd[1]: Stopped target Timer Units.
+Apr 21 21:22:39 localhost systemd[1]: apt-daily-upgrade.timer: Deactivated successfully.
+Apr 21 21:22:39 localhost systemd[1]: Stopped Daily apt upgrade and clean activities.
+Apr 21 21:22:39 localhost systemd[1]: apt-daily.timer: Deactivated successfully.
+Apr 21 21:22:39 localhost systemd[1]: Stopped Daily apt download activities.
+Apr 21 21:22:39 localhost systemd[1]: dpkg-db-backup.timer: Deactivated successfully.
+Apr 21 21:22:39 localhost systemd[1]: Stopped Daily dpkg database backup timer.
+Apr 21 21:22:39 localhost systemd[1]: e2scrub_all.timer: Deactivated successfully.
+Apr 21 21:22:39 localhost systemd[1]: Stopped Periodic ext4 Online Metadata Check for All Filesystems.
+Apr 21 21:22:39 localhost systemd[1]: fstrim.timer: Deactivated successfully.
+Apr 21 21:22:39 localhost systemd[1]: Stopped Discard unused blocks once a week.
+Apr 21 21:22:39 localhost systemd[1]: logrotate.timer: Deactivated successfully.
+Apr 21 21:22:39 localhost systemd[1]: Stopped Daily rotation of log files.
+Apr 21 21:22:39 localhost systemd[1]: man-db.timer: Deactivated successfully.
+Apr 21 21:22:39 localhost systemd[1]: Stopped Daily man-db regeneration.
+Apr 21 21:22:39 localhost systemd[1]: motd-news.timer: Deactivated successfully.
+Apr 21 21:22:39 localhost systemd[1]: Stopped Message of the Day.
+Apr 21 21:22:39 localhost systemd[1]: systemd-tmpfiles-clean.timer: Deactivated successfully.
+Apr 21 21:22:39 localhost systemd[1]: Stopped Daily Cleanup of Temporary Directories.
+Apr 21 21:22:39 localhost systemd[1]: ua-timer.timer: Deactivated successfully.
+Apr 21 21:22:39 localhost systemd[1]: Stopped Ubuntu Advantage Timer for running repeated jobs.
+Apr 21 21:22:39 localhost systemd[1]: lvm2-lvmpolld.socket: Deactivated successfully.
+Apr 21 21:22:39 localhost systemd[1]: Closed LVM2 poll daemon socket.
+Apr 21 21:22:39 localhost systemd[1]: systemd-rfkill.socket: Deactivated successfully.
+Apr 21 21:22:39 localhost systemd[1]: Closed Load/Save RF Kill Switch Status /dev/rfkill Watch.
+Apr 21 21:22:39 localhost systemd[1]: Unmounting RPC Pipe File System...
+Apr 21 21:22:39 localhost systemd[1]: Stopping Availability of block devices...
+Apr 21 21:22:39 localhost systemd[1]: Stopping Crash log pusher...
+Apr 21 21:22:39 localhost systemd[1]: Stopping Regular background program processing daemon...
+Apr 21 21:22:39 localhost systemd[1]: Stopping Getty on tty1...
+Apr 21 21:22:39 localhost systemd[1]: Stopping irqbalance daemon...
+Apr 21 21:22:39 localhost systemd[1]: Stopping Dispatcher daemon for systemd-networkd...
+Apr 21 21:22:39 localhost ntpd[842]: ntpd exiting on signal 15 (Terminated)
