@@ -1,4 +1,4 @@
-===== syslog snapshot host=node0 boot_started_utc=20260422T232213Z boot_id=e66596e1-a2c6-4d58-80f4-d1779cbb52ce captured_utc=20260422T232429Z =====
+===== syslog snapshot host=node0 boot_started_utc=20260422T232213Z boot_id=e66596e1-a2c6-4d58-80f4-d1779cbb52ce captured_utc=20260422T232445Z =====
 
 Apr 21 17:44:40 localhost systemd[1]: Starting GRUB failed boot detection...
 Apr 21 17:44:40 localhost systemd[1]: logrotate.service: Deactivated successfully.
@@ -2541,3 +2541,5 @@ Apr 22 18:22:13 localhost systemd[1]: Configuration file /run/systemd/system/net
 Apr 22 18:22:13 localhost systemd[1]: Started Crash log pusher.
 Apr 22 18:22:13 localhost bash[529207]: [2026-04-22T23:22:13Z] git user: LH
 Apr 22 18:22:13 localhost bash[529207]: [2026-04-22T23:22:13Z] origin remote: https://github.com/Linfeng-He/machine_log.git
+Apr 22 18:24:44 localhost systemd[1]: Reloading.
+Apr 22 18:24:44 localhost systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
