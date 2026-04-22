@@ -1,190 +1,5 @@
-===== journal snapshot host=node0 boot_started_utc=20260422T232213Z boot_id=e66596e1-a2c6-4d58-80f4-d1779cbb52ce captured_utc=20260422T232445Z =====
+===== journal snapshot host=node0 boot_started_utc=20260422T232650Z boot_id=e66596e1-a2c6-4d58-80f4-d1779cbb52ce captured_utc=20260422T232654Z =====
 
-Apr 22 17:41:20 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[524581]: Another git process seems to be running in this repository, e.g.
-Apr 22 17:41:20 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[524581]: an editor opened by 'git commit'. Please make sure all processes
-Apr 22 17:41:20 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[524581]: are terminated then try again. If it still fails, a git process
-Apr 22 17:41:20 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[524581]: may have crashed in this repository earlier:
-Apr 22 17:41:20 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[524581]: remove the file manually to continue.
-Apr 22 17:41:20 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[524580]: pam_unix(sudo:session): session closed for user LH
-Apr 22 17:41:20 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[524584]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20023/vscode-git-c0aa6eaea4.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log diff --cached --name-only -- sys
-Apr 22 17:41:20 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[524584]: pam_unix(sudo:session): session opened for user LH(uid=20023) by (uid=0)
-Apr 22 17:41:20 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[524584]: pam_unix(sudo:session): session closed for user LH
-Apr 22 17:41:40 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[526839]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20023/vscode-git-c0aa6eaea4.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log add --all -- sys
-Apr 22 17:41:40 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[526839]: pam_unix(sudo:session): session opened for user LH(uid=20023) by (uid=0)
-Apr 22 17:41:40 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[526840]: fatal: Unable to create '/users/LH/machine_log/.git/index.lock': File exists.
-Apr 22 17:41:40 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[526840]: Another git process seems to be running in this repository, e.g.
-Apr 22 17:41:40 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[526840]: an editor opened by 'git commit'. Please make sure all processes
-Apr 22 17:41:40 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[526840]: are terminated then try again. If it still fails, a git process
-Apr 22 17:41:40 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[526840]: may have crashed in this repository earlier:
-Apr 22 17:41:40 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[526840]: remove the file manually to continue.
-Apr 22 17:41:40 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[526839]: pam_unix(sudo:session): session closed for user LH
-Apr 22 17:41:40 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[526844]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20023/vscode-git-c0aa6eaea4.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log diff --cached --name-only -- sys
-Apr 22 17:41:40 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[526844]: pam_unix(sudo:session): session opened for user LH(uid=20023) by (uid=0)
-Apr 22 17:41:40 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[526844]: pam_unix(sudo:session): session closed for user LH
-Apr 22 17:41:50 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[528058]:       LH : TTY=pts/6 ; PWD=/users/LH/machine_log ; USER=root ; COMMAND=/usr/bin/bash install_crash_pusher.sh --stop
-Apr 22 17:41:50 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[528058]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=20023)
-Apr 22 17:41:50 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: Reloading.
-Apr 22 17:41:50 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
-Apr 22 17:41:51 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: Stopping Crash log pusher...
-Apr 22 17:41:51 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[500870]: [2026-04-22T22:41:51Z] stopping
-Apr 22 17:41:51 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[528167]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20023/vscode-git-c0aa6eaea4.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log add --all -- sys
-Apr 22 17:41:51 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[528167]: pam_unix(sudo:session): session opened for user LH(uid=20023) by (uid=0)
-Apr 22 17:41:51 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[528171]: fatal: Unable to create '/users/LH/machine_log/.git/index.lock': File exists.
-Apr 22 17:41:51 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[528171]: Another git process seems to be running in this repository, e.g.
-Apr 22 17:41:51 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[528171]: an editor opened by 'git commit'. Please make sure all processes
-Apr 22 17:41:51 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[528171]: are terminated then try again. If it still fails, a git process
-Apr 22 17:41:51 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[528171]: may have crashed in this repository earlier:
-Apr 22 17:41:51 node0.testnode.lsm-pg0.wisc.cloudlab.us runner.sh[528171]: remove the file manually to continue.
-Apr 22 17:41:51 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[528167]: pam_unix(sudo:session): session closed for user LH
-Apr 22 17:41:51 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[528179]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20023/vscode-git-c0aa6eaea4.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log diff --cached --name-only -- sys
-Apr 22 17:41:51 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[528179]: pam_unix(sudo:session): session opened for user LH(uid=20023) by (uid=0)
-Apr 22 17:41:51 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[528179]: pam_unix(sudo:session): session closed for user LH
-Apr 22 17:41:51 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: crash-pusher.service: Main process exited, code=exited, status=143/n/a
-Apr 22 17:41:51 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: crash-pusher.service: Killing process 526849 (sleep) with signal SIGKILL.
-Apr 22 17:41:51 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: crash-pusher.service: Killing process 528120 (sleep) with signal SIGKILL.
-Apr 22 17:41:51 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: crash-pusher.service: Killing process 528178 (sleep) with signal SIGKILL.
-Apr 22 17:41:51 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: crash-pusher.service: Killing process 528180 (ss) with signal SIGKILL.
-Apr 22 17:41:51 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: crash-pusher.service: Killing process 528181 (head) with signal SIGKILL.
-Apr 22 17:41:51 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: crash-pusher.service: Failed with result 'exit-code'.
-Apr 22 17:41:51 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: crash-pusher.service: Unit process 528181 (head) remains running after unit stopped.
-Apr 22 17:41:51 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: Stopped Crash log pusher.
-Apr 22 17:41:51 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: crash-pusher.service: Consumed 1min 44.372s CPU time.
-Apr 22 17:41:51 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[528058]: pam_unix(sudo:session): session closed for user root
-Apr 22 17:42:16 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[498024]: pam_unix(sshd:session): session closed for user LH
-Apr 22 17:42:16 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd-logind[1607]: Session 32 logged out. Waiting for processes to exit.
-Apr 22 17:42:28 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528214]: Connection reset by authenticating user root 2.57.122.197 port 1226 [preauth]
-Apr 22 17:42:35 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: session-32.scope: Deactivated successfully.
-Apr 22 17:42:35 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: session-32.scope: Consumed 1min 32.553s CPU time.
-Apr 22 17:42:35 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd-logind[1607]: Removed session 32.
-Apr 22 17:43:09 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528218]: Accepted publickey for LH from 71.187.248.113 port 49706 ssh2: RSA SHA256:hElkzd92JFx2Be3nEdpFzMpn+m1N3su9yosmOrbUAmU
-Apr 22 17:43:09 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528218]: pam_unix(sshd:session): session opened for user LH(uid=20023) by (uid=0)
-Apr 22 17:43:10 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd-logind[1607]: New session 41 of user LH.
-Apr 22 17:43:10 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: Started Session 41 of User LH.
-Apr 22 17:43:32 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528336]: Invalid user admin from 91.109.114.213 port 52638
-Apr 22 17:43:33 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528336]: Connection closed by invalid user admin 91.109.114.213 port 52638 [preauth]
-Apr 22 17:44:17 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528339]: Connection reset by authenticating user root 2.57.122.197 port 39826 [preauth]
-Apr 22 17:45:36 node0.testnode.lsm-pg0.wisc.cloudlab.us usermod[528349]: change user 'root' password
-Apr 22 17:45:37 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528345]: Invalid user orangepi from 91.109.114.213 port 45196
-Apr 22 17:45:37 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528345]: Connection closed by invalid user orangepi 91.109.114.213 port 45196 [preauth]
-Apr 22 17:46:04 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528362]: Connection reset by authenticating user root 2.57.122.193 port 4872 [preauth]
-Apr 22 17:46:14 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528365]: Invalid user ubnt from 45.148.10.121 port 38196
-Apr 22 17:46:15 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528365]: Connection closed by invalid user ubnt 45.148.10.121 port 38196 [preauth]
-Apr 22 17:47:38 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528368]: Connection closed by authenticating user root 91.109.114.213 port 50306 [preauth]
-Apr 22 17:47:50 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528370]: Connection reset by authenticating user root 45.148.10.147 port 6302 [preauth]
-Apr 22 17:49:19 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528375]: Connection reset by authenticating user root 87.251.64.149 port 39904 [preauth]
-Apr 22 17:49:20 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528377]: Connection reset by authenticating user root 87.251.64.149 port 39908 [preauth]
-Apr 22 17:49:21 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528379]: Connection reset by authenticating user root 87.251.64.149 port 39920 [preauth]
-Apr 22 17:49:22 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528381]: Connection reset by authenticating user sshd 87.251.64.149 port 39932 [preauth]
-Apr 22 17:49:24 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528383]: Invalid user ubuntu from 87.251.64.149 port 39940
-Apr 22 17:49:24 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528383]: Connection reset by invalid user ubuntu 87.251.64.149 port 39940 [preauth]
-Apr 22 17:49:25 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528385]: Invalid user user from 87.251.64.149 port 39946
-Apr 22 17:49:25 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528385]: Connection reset by invalid user user 87.251.64.149 port 39946 [preauth]
-Apr 22 17:49:26 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528387]: Invalid user  from 87.251.64.149 port 39958
-Apr 22 17:49:26 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528387]: Connection reset by invalid user  87.251.64.149 port 39958 [preauth]
-Apr 22 17:49:27 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528389]: Invalid user GUEST from 87.251.64.149 port 39964
-Apr 22 17:49:27 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528389]: Connection reset by invalid user GUEST 87.251.64.149 port 39964 [preauth]
-Apr 22 17:49:27 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528391]: Invalid user admin from 87.251.64.149 port 39976
-Apr 22 17:49:27 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528391]: Connection reset by invalid user admin 87.251.64.149 port 39976 [preauth]
-Apr 22 17:49:28 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528393]: Invalid user administrator from 87.251.64.149 port 39978
-Apr 22 17:49:28 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528393]: Connection reset by invalid user administrator 87.251.64.149 port 39978 [preauth]
-Apr 22 17:49:29 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528395]: Invalid user ftp from 87.251.64.149 port 60048
-Apr 22 17:49:29 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528395]: Connection reset by invalid user ftp 87.251.64.149 port 60048 [preauth]
-Apr 22 17:49:30 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528397]: Invalid user odoo from 87.251.64.149 port 60060
-Apr 22 17:49:30 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528397]: Connection reset by invalid user odoo 87.251.64.149 port 60060 [preauth]
-Apr 22 17:49:31 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528399]: Connection reset by authenticating user root 87.251.64.149 port 60064 [preauth]
-Apr 22 17:49:34 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528401]: Connection reset by authenticating user root 87.251.64.149 port 60068 [preauth]
-Apr 22 17:49:35 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528403]: Connection reset by authenticating user root 87.251.64.149 port 60074 [preauth]
-Apr 22 17:49:36 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528405]: Connection reset by authenticating user root 87.251.64.149 port 60086 [preauth]
-Apr 22 17:49:37 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528407]: Connection reset by authenticating user root 87.251.64.149 port 60088 [preauth]
-Apr 22 17:49:37 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528411]: Invalid user user from 87.251.64.149 port 60100
-Apr 22 17:49:37 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528411]: Connection reset by invalid user user 87.251.64.149 port 60100 [preauth]
-Apr 22 17:49:37 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528409]: Connection reset by authenticating user root 2.57.122.197 port 30624 [preauth]
-Apr 22 17:49:38 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528413]: Invalid user CUAdmin from 87.251.64.149 port 60112
-Apr 22 17:49:38 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528413]: Connection reset by invalid user CUAdmin 87.251.64.149 port 60112 [preauth]
-Apr 22 17:49:39 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528415]: Invalid user admin from 87.251.64.149 port 46364
-Apr 22 17:49:39 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528415]: Connection reset by invalid user admin 87.251.64.149 port 46364 [preauth]
-Apr 22 17:49:40 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528417]: Connection reset by authenticating user root 87.251.64.149 port 46376 [preauth]
-Apr 22 17:49:41 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528419]: Connection reset by authenticating user root 87.251.64.149 port 46392 [preauth]
-Apr 22 17:49:43 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528421]: Connection reset by authenticating user root 87.251.64.149 port 46406 [preauth]
-Apr 22 17:49:44 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528424]: Connection reset by authenticating user root 87.251.64.149 port 46442 [preauth]
-Apr 22 17:49:45 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528427]: Connection reset by authenticating user root 87.251.64.149 port 46468 [preauth]
-Apr 22 17:49:45 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528423]: Connection closed by authenticating user root 91.109.114.213 port 43572 [preauth]
-Apr 22 17:49:45 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528429]: Connection reset by authenticating user root 87.251.64.149 port 46472 [preauth]
-Apr 22 17:49:46 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528431]: Invalid user server from 87.251.64.149 port 46496
-Apr 22 17:49:46 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528431]: Connection reset by invalid user server 87.251.64.149 port 46496 [preauth]
-Apr 22 17:49:47 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528433]: Invalid user user1 from 87.251.64.149 port 46500
-Apr 22 17:49:47 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528433]: Connection reset by invalid user user1 87.251.64.149 port 46500 [preauth]
-Apr 22 17:49:48 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528435]: Invalid user user from 87.251.64.149 port 46510
-Apr 22 17:49:48 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528435]: Connection reset by invalid user user 87.251.64.149 port 46510 [preauth]
-Apr 22 17:49:49 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528437]: Invalid user admin from 87.251.64.149 port 46524
-Apr 22 17:49:49 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528437]: Connection reset by invalid user admin 87.251.64.149 port 46524 [preauth]
-Apr 22 17:51:27 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528441]: Connection reset by authenticating user root 92.118.39.236 port 48408 [preauth]
-Apr 22 17:51:51 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528444]: Connection closed by authenticating user root 91.109.114.213 port 46994 [preauth]
-Apr 22 17:53:13 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528447]: Connection reset by authenticating user root 195.178.110.15 port 17730 [preauth]
-Apr 22 17:53:50 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528449]: Connection closed by authenticating user root 91.109.114.213 port 38612 [preauth]
-Apr 22 17:55:01 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528455]: Connection reset by authenticating user root 92.118.39.235 port 40292 [preauth]
-Apr 22 17:55:59 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528458]: Connection closed by authenticating user root 91.109.114.213 port 37818 [preauth]
-Apr 22 17:56:49 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528461]: Connection reset by authenticating user root 2.57.122.195 port 28418 [preauth]
-Apr 22 17:58:10 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528465]: Connection closed by authenticating user root 91.109.114.213 port 41824 [preauth]
-Apr 22 17:58:36 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528468]: Connection reset by authenticating user root 45.148.10.141 port 24960 [preauth]
-Apr 22 17:59:29 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: Starting Cleanup of Temporary Directories...
-Apr 22 17:59:29 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: systemd-tmpfiles-clean.service: Deactivated successfully.
-Apr 22 17:59:29 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: Finished Cleanup of Temporary Directories.
-Apr 22 18:00:21 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528476]: Invalid user test from 91.109.114.213 port 51646
-Apr 22 18:00:22 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528476]: Connection closed by invalid user test 91.109.114.213 port 51646 [preauth]
-Apr 22 18:00:22 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528478]: Connection reset by authenticating user root 45.148.10.157 port 48244 [preauth]
-Apr 22 18:02:10 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528483]: Connection reset by authenticating user root 2.57.122.192 port 15858 [preauth]
-Apr 22 18:02:35 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528485]: Invalid user user from 91.109.114.213 port 45334
-Apr 22 18:02:36 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528485]: Connection closed by invalid user user 91.109.114.213 port 45334 [preauth]
-Apr 22 18:04:00 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528489]: Connection reset by authenticating user root 2.57.122.199 port 9766 [preauth]
-Apr 22 18:04:53 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528492]: Connection closed by authenticating user root 91.109.114.213 port 59344 [preauth]
-Apr 22 18:05:47 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528495]: Connection reset by authenticating user root 45.148.10.147 port 23344 [preauth]
-Apr 22 18:07:08 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528499]: Invalid user admin from 91.109.114.213 port 50700
-Apr 22 18:07:08 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528499]: Connection closed by invalid user admin 91.109.114.213 port 50700 [preauth]
-Apr 22 18:07:34 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528504]: Connection reset by authenticating user root 92.118.39.197 port 18564 [preauth]
-Apr 22 18:09:22 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528507]: Connection reset by authenticating user root 92.118.39.235 port 34124 [preauth]
-Apr 22 18:09:28 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528509]: Invalid user cirros from 91.109.114.213 port 55828
-Apr 22 18:09:28 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528509]: Connection closed by invalid user cirros 91.109.114.213 port 55828 [preauth]
-Apr 22 18:11:10 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528514]: Connection reset by authenticating user root 2.57.122.194 port 62676 [preauth]
-Apr 22 18:11:35 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528516]: Connection closed by authenticating user root 91.109.114.213 port 38222 [preauth]
-Apr 22 18:12:56 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528522]: Connection reset by authenticating user root 2.57.122.195 port 7530 [preauth]
-Apr 22 18:13:00 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528524]: error: kex_exchange_identification: Connection closed by remote host
-Apr 22 18:13:00 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528524]: Connection closed by 161.132.4.167 port 52310
-Apr 22 18:13:36 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528526]: Connection closed by authenticating user root 91.109.114.213 port 44616 [preauth]
-Apr 22 18:14:43 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528528]: Connection reset by authenticating user root 45.148.10.151 port 33680 [preauth]
-Apr 22 18:15:37 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528533]: Invalid user admin from 91.109.114.213 port 56480
-Apr 22 18:15:38 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528533]: Connection closed by invalid user admin 91.109.114.213 port 56480 [preauth]
-Apr 22 18:16:06 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528536]: Invalid user user from 2.57.121.25 port 13790
-Apr 22 18:16:06 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528536]: Received disconnect from 2.57.121.25 port 13790:11: Bye [preauth]
-Apr 22 18:16:06 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528536]: Disconnected from invalid user user 2.57.121.25 port 13790 [preauth]
-Apr 22 18:16:32 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528539]: Connection reset by authenticating user root 2.57.122.189 port 50192 [preauth]
-Apr 22 18:16:58 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528541]: Connection closed by authenticating user root 45.148.10.121 port 41796 [preauth]
-Apr 22 18:17:01 node0.testnode.lsm-pg0.wisc.cloudlab.us CRON[528543]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
-Apr 22 18:17:01 node0.testnode.lsm-pg0.wisc.cloudlab.us CRON[528544]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
-Apr 22 18:17:01 node0.testnode.lsm-pg0.wisc.cloudlab.us CRON[528543]: pam_unix(cron:session): session closed for user root
-Apr 22 18:17:08 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528548]: Invalid user lyndsay from 213.209.159.159 port 32358
-Apr 22 18:17:09 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528548]: Received disconnect from 213.209.159.159 port 32358:11: Bye [preauth]
-Apr 22 18:17:09 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528548]: Disconnected from invalid user lyndsay 213.209.159.159 port 32358 [preauth]
-Apr 22 18:17:40 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528551]: Connection closed by authenticating user root 91.109.114.213 port 42894 [preauth]
-Apr 22 18:17:45 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528553]: Invalid user 123 from 87.251.64.144 port 17386
-Apr 22 18:17:45 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528553]: Connection reset by invalid user 123 87.251.64.144 port 17386 [preauth]
-Apr 22 18:17:47 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528555]: Invalid user admin from 87.251.64.144 port 17402
-Apr 22 18:17:47 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528555]: Connection reset by invalid user admin 87.251.64.144 port 17402 [preauth]
-Apr 22 18:17:47 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528557]: Invalid user admin from 87.251.64.144 port 17416
-Apr 22 18:17:48 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528557]: Connection reset by invalid user admin 87.251.64.144 port 17416 [preauth]
-Apr 22 18:17:48 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528559]: Invalid user administrator from 87.251.64.144 port 17424
-Apr 22 18:17:49 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528559]: Connection reset by invalid user administrator 87.251.64.144 port 17424 [preauth]
-Apr 22 18:17:49 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528561]: Invalid user administrator from 87.251.64.144 port 17444
-Apr 22 18:17:49 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528561]: Connection reset by invalid user administrator 87.251.64.144 port 17444 [preauth]
-Apr 22 18:17:50 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528563]: Invalid user administrator from 87.251.64.144 port 17472
-Apr 22 18:17:50 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528563]: Connection reset by invalid user administrator 87.251.64.144 port 17472 [preauth]
-Apr 22 18:17:51 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528565]: Invalid user administrator from 87.251.64.144 port 35924
-Apr 22 18:17:51 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528565]: Connection reset by invalid user administrator 87.251.64.144 port 35924 [preauth]
-Apr 22 18:17:52 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528567]: Invalid user administrator from 87.251.64.144 port 35930
-Apr 22 18:17:52 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528567]: Connection reset by invalid user administrator 87.251.64.144 port 35930 [preauth]
-Apr 22 18:17:53 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528569]: Invalid user administrator from 87.251.64.144 port 35932
-Apr 22 18:17:53 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528569]: Connection reset by invalid user administrator 87.251.64.144 port 35932 [preauth]
-Apr 22 18:17:54 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528571]: Invalid user administrator from 87.251.64.144 port 35934
 Apr 22 18:17:54 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528571]: Connection reset by invalid user administrator 87.251.64.144 port 35934 [preauth]
 Apr 22 18:17:55 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528573]: Invalid user administrator from 87.251.64.144 port 35940
 Apr 22 18:17:55 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[528573]: Connection reset by invalid user administrator 87.251.64.144 port 35940 [preauth]
@@ -400,3 +215,188 @@ Apr 22 18:24:44 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[546194]:       LH :
 Apr 22 18:24:44 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[546194]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=20023)
 Apr 22 18:24:44 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: Reloading.
 Apr 22 18:24:44 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Apr 22 18:24:45 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: Reloading.
+Apr 22 18:24:45 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Apr 22 18:24:45 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: Stopping Crash log pusher...
+Apr 22 18:24:45 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[529207]: [2026-04-22T23:24:45Z] stopping
+Apr 22 18:24:45 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[546506]:     root : PWD=/users/LH/machine_log ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20023/vscode-git-c0aa6eaea4.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log add --all -- sys
+Apr 22 18:24:45 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[546506]: pam_unix(sudo:session): session opened for user LH(uid=20023) by (uid=0)
+Apr 22 18:24:45 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[546506]: pam_unix(sudo:session): session closed for user LH
+Apr 22 18:24:45 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[546511]:     root : PWD=/users/LH/machine_log ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20023/vscode-git-c0aa6eaea4.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log diff --cached --name-only -- sys
+Apr 22 18:24:45 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[546511]: pam_unix(sudo:session): session opened for user LH(uid=20023) by (uid=0)
+Apr 22 18:24:45 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[546511]: pam_unix(sudo:session): session closed for user LH
+Apr 22 18:24:45 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[546516]:     root : PWD=/users/LH/machine_log ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20023/vscode-git-c0aa6eaea4.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log -c user.name=crash-pusher -c user.email=crash-pusher@node0 commit -m 'sys capture node0 20260422T232213Z 2026-04-22T23:24:45Z' -- sys
+Apr 22 18:24:45 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[546516]: pam_unix(sudo:session): session opened for user LH(uid=20023) by (uid=0)
+Apr 22 18:24:46 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[546516]: pam_unix(sudo:session): session closed for user LH
+Apr 22 18:24:46 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[546647]:     root : PWD=/users/LH/machine_log ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20023/vscode-git-c0aa6eaea4.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log remote get-url origin
+Apr 22 18:24:46 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[546647]: pam_unix(sudo:session): session opened for user LH(uid=20023) by (uid=0)
+Apr 22 18:24:46 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[546647]: pam_unix(sudo:session): session closed for user LH
+Apr 22 18:24:46 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[546657]:     root : PWD=/users/LH/machine_log ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20023/vscode-git-c0aa6eaea4.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log push origin main
+Apr 22 18:24:46 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[546657]: pam_unix(sudo:session): session opened for user LH(uid=20023) by (uid=0)
+Apr 22 18:24:47 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[546657]: pam_unix(sudo:session): session closed for user LH
+Apr 22 18:24:47 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: crash-pusher.service: Main process exited, code=exited, status=143/n/a
+Apr 22 18:24:47 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: crash-pusher.service: Killing process 544756 (sleep) with signal SIGKILL.
+Apr 22 18:24:47 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: crash-pusher.service: Killing process 546737 (sleep) with signal SIGKILL.
+Apr 22 18:24:47 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: crash-pusher.service: Killing process 546810 (sleep) with signal SIGKILL.
+Apr 22 18:24:47 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: crash-pusher.service: Killing process 546818 (sleep) with signal SIGKILL.
+Apr 22 18:24:47 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: crash-pusher.service: Failed with result 'exit-code'.
+Apr 22 18:24:47 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: crash-pusher.service: Unit process 546818 (sleep) remains running after unit stopped.
+Apr 22 18:24:47 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: Stopped Crash log pusher.
+Apr 22 18:24:47 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: crash-pusher.service: Consumed 1min 16.884s CPU time.
+Apr 22 18:24:47 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: Started Crash log pusher.
+Apr 22 18:24:47 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[546194]: pam_unix(sudo:session): session closed for user root
+Apr 22 18:24:47 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[546822]: [2026-04-22T23:24:47Z] git user: LH
+Apr 22 18:24:47 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[546843]:     root : PWD=/users/LH/machine_log ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20023/vscode-git-c0aa6eaea4.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log remote get-url origin
+Apr 22 18:24:47 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[546843]: pam_unix(sudo:session): session opened for user LH(uid=20023) by (uid=0)
+Apr 22 18:24:47 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[546843]: pam_unix(sudo:session): session closed for user LH
+Apr 22 18:24:47 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[546852]:     root : PWD=/users/LH/machine_log ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20023/vscode-git-c0aa6eaea4.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log remote get-url origin
+Apr 22 18:24:47 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[546852]: pam_unix(sudo:session): session opened for user LH(uid=20023) by (uid=0)
+Apr 22 18:24:47 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[546852]: pam_unix(sudo:session): session closed for user LH
+Apr 22 18:24:47 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[546822]: [2026-04-22T23:24:47Z] origin remote: https://github.com/Linfeng-He/machine_log.git
+Apr 22 18:24:47 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[546860]:     root : PWD=/users/LH/machine_log ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20023/vscode-git-c0aa6eaea4.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log push --dry-run origin main
+Apr 22 18:24:47 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[546860]: pam_unix(sudo:session): session opened for user LH(uid=20023) by (uid=0)
+Apr 22 18:24:48 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[546860]: pam_unix(sudo:session): session closed for user LH
+Apr 22 18:24:49 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[546195]: pam_unix(sudo:session): session closed for user root
+Apr 22 18:24:52 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[547071]:     root : PWD=/users/LH/machine_log ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20023/vscode-git-c0aa6eaea4.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log add --all -- sys
+Apr 22 18:24:52 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[547071]: pam_unix(sudo:session): session opened for user LH(uid=20023) by (uid=0)
+Apr 22 18:24:52 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[547071]: pam_unix(sudo:session): session closed for user LH
+Apr 22 18:24:52 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[547056]: /users/LH/machine_log/install_crash_pusher.sh: line 214: 547071 Bus error               sudo -H -u "$REPO_OWNER_USER" env "${preserved_env[@]}" GIT_SSH_COMMAND="${GIT_SSH_COMMAND:-ssh -o StrictHostKeyChecking=accept-new}" git "$@"
+Apr 22 18:24:52 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[547107]:     root : PWD=/users/LH/machine_log ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20023/vscode-git-c0aa6eaea4.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log diff --cached --name-only -- sys
+Apr 22 18:24:52 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[547107]: pam_unix(sudo:session): session opened for user LH(uid=20023) by (uid=0)
+Apr 22 18:24:52 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[547107]: pam_unix(sudo:session): session closed for user LH
+Apr 22 18:24:52 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[547139]:     root : PWD=/users/LH/machine_log ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20023/vscode-git-c0aa6eaea4.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log -c user.name=crash-pusher -c user.email=crash-pusher@node0 commit -m 'sys capture node0 20260422T232447Z 2026-04-22T23:24:52Z' -- sys
+Apr 22 18:24:52 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[547139]: pam_unix(sudo:session): session opened for user LH(uid=20023) by (uid=0)
+Apr 22 18:24:52 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[547139]: pam_unix(sudo:session): session closed for user LH
+Apr 22 18:24:52 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[547056]: [2026-04-22T23:24:52Z] git commit failed
+Apr 22 18:24:52 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[547056]: [2026-04-22T23:24:52Z] git commit: fatal: Unable to create '/users/LH/machine_log/.git/index.lock': File exists.
+Apr 22 18:24:52 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[547056]: [2026-04-22T23:24:52Z] git commit: Another git process seems to be running in this repository, e.g.
+Apr 22 18:24:52 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[547056]: [2026-04-22T23:24:52Z] git commit: an editor opened by 'git commit'. Please make sure all processes
+Apr 22 18:24:52 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[547056]: [2026-04-22T23:24:52Z] git commit: are terminated then try again. If it still fails, a git process
+Apr 22 18:24:52 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[547056]: [2026-04-22T23:24:52Z] git commit: may have crashed in this repository earlier:
+Apr 22 18:24:52 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[547056]: [2026-04-22T23:24:52Z] git commit: remove the file manually to continue.
+Apr 22 18:24:53 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[547220]: Connection closed by authenticating user root 161.132.4.167 port 53316 [preauth]
+Apr 22 18:25:12 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[549369]:     root : PWD=/users/LH/machine_log ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20023/vscode-git-c0aa6eaea4.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log add --all -- sys
+Apr 22 18:25:12 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[549369]: pam_unix(sudo:session): session opened for user LH(uid=20023) by (uid=0)
+Apr 22 18:25:12 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[549379]: fatal: Unable to create '/users/LH/machine_log/.git/index.lock': File exists.
+Apr 22 18:25:12 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[549379]: Another git process seems to be running in this repository, e.g.
+Apr 22 18:25:12 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[549379]: an editor opened by 'git commit'. Please make sure all processes
+Apr 22 18:25:12 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[549379]: are terminated then try again. If it still fails, a git process
+Apr 22 18:25:12 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[549379]: may have crashed in this repository earlier:
+Apr 22 18:25:12 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[549379]: remove the file manually to continue.
+Apr 22 18:25:12 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[549369]: pam_unix(sudo:session): session closed for user LH
+Apr 22 18:25:12 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[549393]:     root : PWD=/users/LH/machine_log ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20023/vscode-git-c0aa6eaea4.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log diff --cached --name-only -- sys
+Apr 22 18:25:12 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[549393]: pam_unix(sudo:session): session opened for user LH(uid=20023) by (uid=0)
+Apr 22 18:25:12 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[549393]: pam_unix(sudo:session): session closed for user LH
+Apr 22 18:25:12 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[549417]:     root : PWD=/users/LH/machine_log ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20023/vscode-git-c0aa6eaea4.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log -c user.name=crash-pusher -c user.email=crash-pusher@node0 commit -m 'sys capture node0 20260422T232447Z 2026-04-22T23:25:12Z' -- sys
+Apr 22 18:25:12 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[549417]: pam_unix(sudo:session): session opened for user LH(uid=20023) by (uid=0)
+Apr 22 18:25:12 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[549417]: pam_unix(sudo:session): session closed for user LH
+Apr 22 18:25:12 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[547056]: [2026-04-22T23:25:12Z] git commit failed
+Apr 22 18:25:12 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[547056]: [2026-04-22T23:25:12Z] git commit: fatal: Unable to create '/users/LH/machine_log/.git/index.lock': File exists.
+Apr 22 18:25:12 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[547056]: [2026-04-22T23:25:12Z] git commit: Another git process seems to be running in this repository, e.g.
+Apr 22 18:25:12 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[547056]: [2026-04-22T23:25:12Z] git commit: an editor opened by 'git commit'. Please make sure all processes
+Apr 22 18:25:12 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[547056]: [2026-04-22T23:25:12Z] git commit: are terminated then try again. If it still fails, a git process
+Apr 22 18:25:12 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[547056]: [2026-04-22T23:25:12Z] git commit: may have crashed in this repository earlier:
+Apr 22 18:25:12 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[547056]: [2026-04-22T23:25:12Z] git commit: remove the file manually to continue.
+Apr 22 18:25:29 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[551208]: Connection reset by authenticating user root 2.57.122.194 port 20274 [preauth]
+Apr 22 18:25:32 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[551673]:     root : PWD=/users/LH/machine_log ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20023/vscode-git-c0aa6eaea4.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log add --all -- sys
+Apr 22 18:25:32 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[551673]: pam_unix(sudo:session): session opened for user LH(uid=20023) by (uid=0)
+Apr 22 18:25:32 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[551683]: fatal: Unable to create '/users/LH/machine_log/.git/index.lock': File exists.
+Apr 22 18:25:32 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[551683]: Another git process seems to be running in this repository, e.g.
+Apr 22 18:25:32 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[551683]: an editor opened by 'git commit'. Please make sure all processes
+Apr 22 18:25:32 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[551683]: are terminated then try again. If it still fails, a git process
+Apr 22 18:25:32 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[551683]: may have crashed in this repository earlier:
+Apr 22 18:25:32 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[551683]: remove the file manually to continue.
+Apr 22 18:25:32 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[551673]: pam_unix(sudo:session): session closed for user LH
+Apr 22 18:25:32 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[551678]:       LH : PWD=/users/LH ; USER=root ; COMMAND=/usr/bin/systemctl stop crash-pusher.service
+Apr 22 18:25:32 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[551678]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=20023)
+Apr 22 18:25:32 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: Stopping Crash log pusher...
+Apr 22 18:25:32 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[546822]: [2026-04-22T23:25:32Z] stopping
+Apr 22 18:25:32 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[551699]:     root : PWD=/users/LH/machine_log ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20023/vscode-git-c0aa6eaea4.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log diff --cached --name-only -- sys
+Apr 22 18:25:32 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[551699]: pam_unix(sudo:session): session opened for user LH(uid=20023) by (uid=0)
+Apr 22 18:25:32 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[551699]: pam_unix(sudo:session): session closed for user LH
+Apr 22 18:25:32 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[551719]:     root : PWD=/users/LH/machine_log ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20023/vscode-git-c0aa6eaea4.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log add --all -- sys
+Apr 22 18:25:32 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[551719]: pam_unix(sudo:session): session opened for user LH(uid=20023) by (uid=0)
+Apr 22 18:25:32 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[551735]: fatal: Unable to create '/users/LH/machine_log/.git/index.lock': File exists.
+Apr 22 18:25:32 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[551735]: Another git process seems to be running in this repository, e.g.
+Apr 22 18:25:32 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[551735]: an editor opened by 'git commit'. Please make sure all processes
+Apr 22 18:25:32 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[551735]: are terminated then try again. If it still fails, a git process
+Apr 22 18:25:32 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[551735]: may have crashed in this repository earlier:
+Apr 22 18:25:32 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[551735]: remove the file manually to continue.
+Apr 22 18:25:32 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[551719]: pam_unix(sudo:session): session closed for user LH
+Apr 22 18:25:32 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[551734]:     root : PWD=/users/LH/machine_log ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20023/vscode-git-c0aa6eaea4.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log -c user.name=crash-pusher -c user.email=crash-pusher@node0 commit -m 'sys capture node0 20260422T232447Z 2026-04-22T23:25:32Z' -- sys
+Apr 22 18:25:32 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[551734]: pam_unix(sudo:session): session opened for user LH(uid=20023) by (uid=0)
+Apr 22 18:25:33 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[551734]: pam_unix(sudo:session): session closed for user LH
+Apr 22 18:25:33 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[547056]: [2026-04-22T23:25:33Z] git commit failed
+Apr 22 18:25:33 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[551752]:     root : PWD=/users/LH/machine_log ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20023/vscode-git-c0aa6eaea4.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log diff --cached --name-only -- sys
+Apr 22 18:25:33 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[547056]: [2026-04-22T23:25:33Z] git commit: fatal: Unable to create '/users/LH/machine_log/.git/index.lock': File exists.
+Apr 22 18:25:33 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[551752]: pam_unix(sudo:session): session opened for user LH(uid=20023) by (uid=0)
+Apr 22 18:25:33 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[547056]: [2026-04-22T23:25:33Z] git commit: Another git process seems to be running in this repository, e.g.
+Apr 22 18:25:33 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[547056]: [2026-04-22T23:25:33Z] git commit: an editor opened by 'git commit'. Please make sure all processes
+Apr 22 18:25:33 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[551752]: pam_unix(sudo:session): session closed for user LH
+Apr 22 18:25:33 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[547056]: [2026-04-22T23:25:33Z] git commit: are terminated then try again. If it still fails, a git process
+Apr 22 18:25:33 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[547056]: [2026-04-22T23:25:33Z] git commit: may have crashed in this repository earlier:
+Apr 22 18:25:33 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[547056]: [2026-04-22T23:25:33Z] git commit: remove the file manually to continue.
+Apr 22 18:25:33 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[551787]:     root : PWD=/users/LH/machine_log ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20023/vscode-git-c0aa6eaea4.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log -c user.name=crash-pusher -c user.email=crash-pusher@node0 commit -m 'sys capture node0 20260422T232447Z 2026-04-22T23:25:32Z' -- sys
+Apr 22 18:25:33 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[551787]: pam_unix(sudo:session): session opened for user LH(uid=20023) by (uid=0)
+Apr 22 18:25:33 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[551787]: pam_unix(sudo:session): session closed for user LH
+Apr 22 18:25:33 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[546822]: [2026-04-22T23:25:33Z] git commit failed
+Apr 22 18:25:33 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[546822]: [2026-04-22T23:25:33Z] git commit: fatal: Unable to create '/users/LH/machine_log/.git/index.lock': File exists.
+Apr 22 18:25:33 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[546822]: [2026-04-22T23:25:33Z] git commit: Another git process seems to be running in this repository, e.g.
+Apr 22 18:25:33 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[546822]: [2026-04-22T23:25:33Z] git commit: an editor opened by 'git commit'. Please make sure all processes
+Apr 22 18:25:33 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[546822]: [2026-04-22T23:25:33Z] git commit: are terminated then try again. If it still fails, a git process
+Apr 22 18:25:33 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[546822]: [2026-04-22T23:25:33Z] git commit: may have crashed in this repository earlier:
+Apr 22 18:25:33 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[546822]: [2026-04-22T23:25:33Z] git commit: remove the file manually to continue.
+Apr 22 18:25:33 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: crash-pusher.service: Main process exited, code=exited, status=143/n/a
+Apr 22 18:25:33 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: crash-pusher.service: Killing process 551656 (sleep) with signal SIGKILL.
+Apr 22 18:25:33 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: crash-pusher.service: Killing process 551664 (sleep) with signal SIGKILL.
+Apr 22 18:25:33 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: crash-pusher.service: Killing process 551780 (sleep) with signal SIGKILL.
+Apr 22 18:25:33 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: crash-pusher.service: Killing process 551831 (bash) with signal SIGKILL.
+Apr 22 18:25:33 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: crash-pusher.service: Failed with result 'exit-code'.
+Apr 22 18:25:33 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: crash-pusher.service: Unit process 551831 (bash) remains running after unit stopped.
+Apr 22 18:25:33 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: Stopped Crash log pusher.
+Apr 22 18:25:33 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: crash-pusher.service: Consumed 22.766s CPU time.
+Apr 22 18:25:33 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[551678]: pam_unix(sudo:session): session closed for user root
+Apr 22 18:25:46 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[551858]: Connection closed by authenticating user root 91.109.114.213 port 32980 [preauth]
+Apr 22 18:26:20 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[551922]: error: kex_exchange_identification: Connection closed by remote host
+Apr 22 18:26:20 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[551922]: Connection closed by 161.132.4.167 port 53584
+Apr 22 18:26:24 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[551927]: Connection closed by authenticating user root 161.132.4.167 port 53596 [preauth]
+Apr 22 18:26:33 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[551931]:       LH : PWD=/users/LH ; USER=root ; ENV=DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 ELECTRON_RUN_AS_NODE=1 ; COMMAND=/usr/bin/bash -s -- --repo-dir /users/LH/machine_log --repo-url https://github.com/Linfeng-He/machine_log.git --repo-branch main --host-id node0 --snapshot-interval 1 --push-interval 30
+Apr 22 18:26:33 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[551931]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=20023)
+Apr 22 18:26:34 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[552031]:     root : PWD=/users/LH ; USER=LH ; COMMAND=/usr/bin/env DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 ELECTRON_RUN_AS_NODE=1 git -C /users/LH/machine_log remote get-url origin
+Apr 22 18:26:34 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[552031]: pam_unix(sudo:session): session opened for user LH(uid=20023) by (uid=0)
+Apr 22 18:26:34 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[552031]: pam_unix(sudo:session): session closed for user LH
+Apr 22 18:26:34 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[552036]:     root : PWD=/users/LH ; USER=LH ; COMMAND=/usr/bin/env DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 ELECTRON_RUN_AS_NODE=1 git -C /users/LH/machine_log push --dry-run origin main
+Apr 22 18:26:34 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[552036]: pam_unix(sudo:session): session opened for user LH(uid=20023) by (uid=0)
+Apr 22 18:26:34 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[552036]: pam_unix(sudo:session): session closed for user LH
+Apr 22 18:26:35 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[551931]: pam_unix(sudo:session): session closed for user root
+Apr 22 18:26:38 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[552054]:       LH : PWD=/users/LH ; USER=root ; COMMAND=/usr/bin/grep -E ^(REPO_DIR|REPO_BRANCH|PUSH_INTERVAL|CMMHI_CMD|CMMHI_TIMEOUT|GIT_ASKPASS|VSCODE_GIT_ASKPASS_NODE|VSCODE_GIT_ASKPASS_MAIN|VSCODE_GIT_IPC_HANDLE)= /etc/default/crash-pusher
+Apr 22 18:26:38 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[552054]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=20023)
+Apr 22 18:26:38 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[552054]: pam_unix(sudo:session): session closed for user root
+Apr 22 18:26:41 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[552060]:       LH : PWD=/users/LH ; USER=root ; ENV=DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 ELECTRON_RUN_AS_NODE=1 ; COMMAND=/usr/bin/bash -s -- --search --repo-dir /users/LH/machine_log --repo-branch main --host-id node0 --snapshot-interval 1 --push-interval 20
+Apr 22 18:26:41 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[552060]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=20023)
+Apr 22 18:26:45 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[552060]: pam_unix(sudo:session): session closed for user root
+Apr 22 18:26:48 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[552167]:       LH : PWD=/users/LH ; USER=root ; ENV=DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 ELECTRON_RUN_AS_NODE=1 ; COMMAND=/usr/bin/bash -s -- --reg --repo-dir /users/LH/machine_log --repo-branch main --host-id node0 --snapshot-interval 1 --push-interval 20
+Apr 22 18:26:48 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[552167]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=20023)
+Apr 22 18:26:49 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: Reloading.
+Apr 22 18:26:49 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Apr 22 18:26:49 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: Reloading.
+Apr 22 18:26:49 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Apr 22 18:26:50 node0.testnode.lsm-pg0.wisc.cloudlab.us systemd[1]: Started Crash log pusher.
+Apr 22 18:26:50 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[552167]: pam_unix(sudo:session): session closed for user root
+Apr 22 18:26:50 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[552236]: [2026-04-22T23:26:50Z] git user: LH
+Apr 22 18:26:50 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[552257]:     root : PWD=/users/LH/machine_log ; USER=LH ; COMMAND=/usr/bin/env DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 ELECTRON_RUN_AS_NODE=1 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log remote get-url origin
+Apr 22 18:26:50 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[552257]: pam_unix(sudo:session): session opened for user LH(uid=20023) by (uid=0)
+Apr 22 18:26:50 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[552257]: pam_unix(sudo:session): session closed for user LH
+Apr 22 18:26:50 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[552263]:     root : PWD=/users/LH/machine_log ; USER=LH ; COMMAND=/usr/bin/env DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 ELECTRON_RUN_AS_NODE=1 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log remote set-url origin https://github.com/Linfeng-He/machine_log.git
+Apr 22 18:26:50 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[552263]: pam_unix(sudo:session): session opened for user LH(uid=20023) by (uid=0)
+Apr 22 18:26:50 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[552263]: pam_unix(sudo:session): session closed for user LH
+Apr 22 18:26:50 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[552269]:     root : PWD=/users/LH/machine_log ; USER=LH ; COMMAND=/usr/bin/env DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 ELECTRON_RUN_AS_NODE=1 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log remote get-url origin
+Apr 22 18:26:50 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[552269]: pam_unix(sudo:session): session opened for user LH(uid=20023) by (uid=0)
+Apr 22 18:26:50 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[552269]: pam_unix(sudo:session): session closed for user LH
+Apr 22 18:26:50 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[552275]:     root : PWD=/users/LH/machine_log ; USER=LH ; COMMAND=/usr/bin/env DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 ELECTRON_RUN_AS_NODE=1 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log remote get-url origin
+Apr 22 18:26:50 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[552275]: pam_unix(sudo:session): session opened for user LH(uid=20023) by (uid=0)
+Apr 22 18:26:50 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[552275]: pam_unix(sudo:session): session closed for user LH
+Apr 22 18:26:50 node0.testnode.lsm-pg0.wisc.cloudlab.us bash[552236]: [2026-04-22T23:26:50Z] origin remote: https://github.com/Linfeng-He/machine_log.git
+Apr 22 18:26:50 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[552282]:     root : PWD=/users/LH/machine_log ; USER=LH ; COMMAND=/usr/bin/env DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 ELECTRON_RUN_AS_NODE=1 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log push --dry-run origin main
+Apr 22 18:26:50 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[552282]: pam_unix(sudo:session): session opened for user LH(uid=20023) by (uid=0)
+Apr 22 18:26:50 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[552282]: pam_unix(sudo:session): session closed for user LH

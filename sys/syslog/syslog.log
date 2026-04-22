@@ -1,4 +1,4 @@
-===== syslog snapshot host=node0 boot_started_utc=20260422T232213Z boot_id=e66596e1-a2c6-4d58-80f4-d1779cbb52ce captured_utc=20260422T232445Z =====
+===== syslog snapshot host=node0 boot_started_utc=20260422T232650Z boot_id=e66596e1-a2c6-4d58-80f4-d1779cbb52ce captured_utc=20260422T232655Z =====
 
 Apr 21 17:44:40 localhost systemd[1]: Starting GRUB failed boot detection...
 Apr 21 17:44:40 localhost systemd[1]: logrotate.service: Deactivated successfully.
@@ -2543,3 +2543,84 @@ Apr 22 18:22:13 localhost bash[529207]: [2026-04-22T23:22:13Z] git user: LH
 Apr 22 18:22:13 localhost bash[529207]: [2026-04-22T23:22:13Z] origin remote: https://github.com/Linfeng-He/machine_log.git
 Apr 22 18:24:44 localhost systemd[1]: Reloading.
 Apr 22 18:24:44 localhost systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Apr 22 18:24:45 localhost systemd[1]: Reloading.
+Apr 22 18:24:45 localhost systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Apr 22 18:24:45 localhost systemd[1]: Stopping Crash log pusher...
+Apr 22 18:24:45 localhost bash[529207]: [2026-04-22T23:24:45Z] stopping
+Apr 22 18:24:47 localhost systemd[1]: crash-pusher.service: Main process exited, code=exited, status=143/n/a
+Apr 22 18:24:47 localhost systemd[1]: crash-pusher.service: Killing process 544756 (sleep) with signal SIGKILL.
+Apr 22 18:24:47 localhost systemd[1]: crash-pusher.service: Killing process 546737 (sleep) with signal SIGKILL.
+Apr 22 18:24:47 localhost systemd[1]: crash-pusher.service: Killing process 546810 (sleep) with signal SIGKILL.
+Apr 22 18:24:47 localhost systemd[1]: crash-pusher.service: Killing process 546818 (sleep) with signal SIGKILL.
+Apr 22 18:24:47 localhost systemd[1]: crash-pusher.service: Failed with result 'exit-code'.
+Apr 22 18:24:47 localhost systemd[1]: crash-pusher.service: Unit process 546818 (sleep) remains running after unit stopped.
+Apr 22 18:24:47 localhost systemd[1]: Stopped Crash log pusher.
+Apr 22 18:24:47 localhost systemd[1]: crash-pusher.service: Consumed 1min 16.884s CPU time.
+Apr 22 18:24:47 localhost systemd[1]: Started Crash log pusher.
+Apr 22 18:24:47 localhost bash[546822]: [2026-04-22T23:24:47Z] git user: LH
+Apr 22 18:24:47 localhost bash[546822]: [2026-04-22T23:24:47Z] origin remote: https://github.com/Linfeng-He/machine_log.git
+Apr 22 18:24:52 localhost bash[547056]: /users/LH/machine_log/install_crash_pusher.sh: line 214: 547071 Bus error               sudo -H -u "$REPO_OWNER_USER" env "${preserved_env[@]}" GIT_SSH_COMMAND="${GIT_SSH_COMMAND:-ssh -o StrictHostKeyChecking=accept-new}" git "$@"
+Apr 22 18:24:52 localhost bash[547056]: [2026-04-22T23:24:52Z] git commit failed
+Apr 22 18:24:52 localhost bash[547056]: [2026-04-22T23:24:52Z] git commit: fatal: Unable to create '/users/LH/machine_log/.git/index.lock': File exists.
+Apr 22 18:24:52 localhost bash[547056]: [2026-04-22T23:24:52Z] git commit: Another git process seems to be running in this repository, e.g.
+Apr 22 18:24:52 localhost bash[547056]: [2026-04-22T23:24:52Z] git commit: an editor opened by 'git commit'. Please make sure all processes
+Apr 22 18:24:52 localhost bash[547056]: [2026-04-22T23:24:52Z] git commit: are terminated then try again. If it still fails, a git process
+Apr 22 18:24:52 localhost bash[547056]: [2026-04-22T23:24:52Z] git commit: may have crashed in this repository earlier:
+Apr 22 18:24:52 localhost bash[547056]: [2026-04-22T23:24:52Z] git commit: remove the file manually to continue.
+Apr 22 18:25:12 localhost bash[549379]: fatal: Unable to create '/users/LH/machine_log/.git/index.lock': File exists.
+Apr 22 18:25:12 localhost bash[549379]: Another git process seems to be running in this repository, e.g.
+Apr 22 18:25:12 localhost bash[549379]: an editor opened by 'git commit'. Please make sure all processes
+Apr 22 18:25:12 localhost bash[549379]: are terminated then try again. If it still fails, a git process
+Apr 22 18:25:12 localhost bash[549379]: may have crashed in this repository earlier:
+Apr 22 18:25:12 localhost bash[549379]: remove the file manually to continue.
+Apr 22 18:25:12 localhost bash[547056]: [2026-04-22T23:25:12Z] git commit failed
+Apr 22 18:25:12 localhost bash[547056]: [2026-04-22T23:25:12Z] git commit: fatal: Unable to create '/users/LH/machine_log/.git/index.lock': File exists.
+Apr 22 18:25:12 localhost bash[547056]: [2026-04-22T23:25:12Z] git commit: Another git process seems to be running in this repository, e.g.
+Apr 22 18:25:12 localhost bash[547056]: [2026-04-22T23:25:12Z] git commit: an editor opened by 'git commit'. Please make sure all processes
+Apr 22 18:25:12 localhost bash[547056]: [2026-04-22T23:25:12Z] git commit: are terminated then try again. If it still fails, a git process
+Apr 22 18:25:12 localhost bash[547056]: [2026-04-22T23:25:12Z] git commit: may have crashed in this repository earlier:
+Apr 22 18:25:12 localhost bash[547056]: [2026-04-22T23:25:12Z] git commit: remove the file manually to continue.
+Apr 22 18:25:32 localhost bash[551683]: fatal: Unable to create '/users/LH/machine_log/.git/index.lock': File exists.
+Apr 22 18:25:32 localhost bash[551683]: Another git process seems to be running in this repository, e.g.
+Apr 22 18:25:32 localhost bash[551683]: an editor opened by 'git commit'. Please make sure all processes
+Apr 22 18:25:32 localhost bash[551683]: are terminated then try again. If it still fails, a git process
+Apr 22 18:25:32 localhost bash[551683]: may have crashed in this repository earlier:
+Apr 22 18:25:32 localhost bash[551683]: remove the file manually to continue.
+Apr 22 18:25:32 localhost systemd[1]: Stopping Crash log pusher...
+Apr 22 18:25:32 localhost bash[546822]: [2026-04-22T23:25:32Z] stopping
+Apr 22 18:25:32 localhost bash[551735]: fatal: Unable to create '/users/LH/machine_log/.git/index.lock': File exists.
+Apr 22 18:25:32 localhost bash[551735]: Another git process seems to be running in this repository, e.g.
+Apr 22 18:25:32 localhost bash[551735]: an editor opened by 'git commit'. Please make sure all processes
+Apr 22 18:25:32 localhost bash[551735]: are terminated then try again. If it still fails, a git process
+Apr 22 18:25:32 localhost bash[551735]: may have crashed in this repository earlier:
+Apr 22 18:25:32 localhost bash[551735]: remove the file manually to continue.
+Apr 22 18:25:33 localhost bash[547056]: [2026-04-22T23:25:33Z] git commit failed
+Apr 22 18:25:33 localhost bash[547056]: [2026-04-22T23:25:33Z] git commit: fatal: Unable to create '/users/LH/machine_log/.git/index.lock': File exists.
+Apr 22 18:25:33 localhost bash[547056]: [2026-04-22T23:25:33Z] git commit: Another git process seems to be running in this repository, e.g.
+Apr 22 18:25:33 localhost bash[547056]: [2026-04-22T23:25:33Z] git commit: an editor opened by 'git commit'. Please make sure all processes
+Apr 22 18:25:33 localhost bash[547056]: [2026-04-22T23:25:33Z] git commit: are terminated then try again. If it still fails, a git process
+Apr 22 18:25:33 localhost bash[547056]: [2026-04-22T23:25:33Z] git commit: may have crashed in this repository earlier:
+Apr 22 18:25:33 localhost bash[547056]: [2026-04-22T23:25:33Z] git commit: remove the file manually to continue.
+Apr 22 18:25:33 localhost bash[546822]: [2026-04-22T23:25:33Z] git commit failed
+Apr 22 18:25:33 localhost bash[546822]: [2026-04-22T23:25:33Z] git commit: fatal: Unable to create '/users/LH/machine_log/.git/index.lock': File exists.
+Apr 22 18:25:33 localhost bash[546822]: [2026-04-22T23:25:33Z] git commit: Another git process seems to be running in this repository, e.g.
+Apr 22 18:25:33 localhost bash[546822]: [2026-04-22T23:25:33Z] git commit: an editor opened by 'git commit'. Please make sure all processes
+Apr 22 18:25:33 localhost bash[546822]: [2026-04-22T23:25:33Z] git commit: are terminated then try again. If it still fails, a git process
+Apr 22 18:25:33 localhost bash[546822]: [2026-04-22T23:25:33Z] git commit: may have crashed in this repository earlier:
+Apr 22 18:25:33 localhost bash[546822]: [2026-04-22T23:25:33Z] git commit: remove the file manually to continue.
+Apr 22 18:25:33 localhost systemd[1]: crash-pusher.service: Main process exited, code=exited, status=143/n/a
+Apr 22 18:25:33 localhost systemd[1]: crash-pusher.service: Killing process 551656 (sleep) with signal SIGKILL.
+Apr 22 18:25:33 localhost systemd[1]: crash-pusher.service: Killing process 551664 (sleep) with signal SIGKILL.
+Apr 22 18:25:33 localhost systemd[1]: crash-pusher.service: Killing process 551780 (sleep) with signal SIGKILL.
+Apr 22 18:25:33 localhost systemd[1]: crash-pusher.service: Killing process 551831 (bash) with signal SIGKILL.
+Apr 22 18:25:33 localhost systemd[1]: crash-pusher.service: Failed with result 'exit-code'.
+Apr 22 18:25:33 localhost systemd[1]: crash-pusher.service: Unit process 551831 (bash) remains running after unit stopped.
+Apr 22 18:25:33 localhost systemd[1]: Stopped Crash log pusher.
+Apr 22 18:25:33 localhost systemd[1]: crash-pusher.service: Consumed 22.766s CPU time.
+Apr 22 18:26:49 localhost systemd[1]: Reloading.
+Apr 22 18:26:49 localhost systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Apr 22 18:26:49 localhost systemd[1]: Reloading.
+Apr 22 18:26:49 localhost systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Apr 22 18:26:50 localhost systemd[1]: Started Crash log pusher.
+Apr 22 18:26:50 localhost bash[552236]: [2026-04-22T23:26:50Z] git user: LH
+Apr 22 18:26:50 localhost bash[552236]: [2026-04-22T23:26:50Z] origin remote: https://github.com/Linfeng-He/machine_log.git

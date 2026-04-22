@@ -249,7 +249,7 @@ node0.testnode.lsm-pg0.wisc.cloudlab.us
           bus info: cpu@0
           version: 6.85.4
           slot: CPU1
-          size: 799MHz
+          size: 800MHz
           capacity: 4GHz
           width: 64 bits
           clock: 100MHz
@@ -287,7 +287,7 @@ node0.testnode.lsm-pg0.wisc.cloudlab.us
           bus info: cpu@1
           version: 6.85.4
           slot: CPU2
-          size: 800MHz
+          size: 801MHz
           capacity: 4GHz
           width: 64 bits
           clock: 100MHz
