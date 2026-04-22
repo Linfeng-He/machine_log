@@ -1,4 +1,4 @@
-===== syslog snapshot host=node0 boot_started_utc=20260422T032427Z boot_id=62503c1c-026f-4d12-960b-226160d86543 captured_utc=20260422T032613Z =====
+===== syslog snapshot host=node0 boot_started_utc=20260422T032427Z boot_id=62503c1c-026f-4d12-960b-226160d86543 captured_utc=20260422T032634Z =====
 
 Apr 21 17:30:58 localhost systemd[1]: logrotate.service: Deactivated successfully.
 Apr 21 17:30:58 localhost systemd[1]: Finished Rotate log files.
@@ -2547,3 +2547,22 @@ Apr 21 21:25:54 localhost runner.sh[1112]: [2026-04-22T03:25:54Z] git push: }
 Apr 21 21:25:54 localhost runner.sh[1112]: [2026-04-22T03:25:54Z] git push: remote: No anonymous write access.
 Apr 21 21:25:54 localhost runner.sh[1112]: [2026-04-22T03:25:54Z] git push: fatal: Authentication failed for 'https://github.com/Linfeng-He/machine_log.git/'
 Apr 21 21:26:08 localhost rsyslogd: action 'action-2-builtin:omfwd' resumed (module 'builtin:omfwd') [v8.2112.0 try https://www.rsyslog.com/e/2359 ]
+Apr 21 21:26:14 localhost runner.sh[1112]: [2026-04-22T03:26:14Z] git push failed for origin/main
+Apr 21 21:26:14 localhost runner.sh[1112]: [2026-04-22T03:26:14Z] git push: Missing or invalid credentials.
+Apr 21 21:26:14 localhost runner.sh[1112]: [2026-04-22T03:26:14Z] git push: Error: connect ENOENT /run/user/20024/vscode-git-9b1f7ab212.sock
+Apr 21 21:26:14 localhost runner.sh[1112]: [2026-04-22T03:26:14Z] git push:     at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+Apr 21 21:26:14 localhost runner.sh[1112]: [2026-04-22T03:26:14Z] git push:   errno: -2,
+Apr 21 21:26:14 localhost runner.sh[1112]: [2026-04-22T03:26:14Z] git push:   code: 'ENOENT',
+Apr 21 21:26:14 localhost runner.sh[1112]: [2026-04-22T03:26:14Z] git push:   syscall: 'connect',
+Apr 21 21:26:14 localhost runner.sh[1112]: [2026-04-22T03:26:14Z] git push:   address: '/run/user/20024/vscode-git-9b1f7ab212.sock'
+Apr 21 21:26:14 localhost runner.sh[1112]: [2026-04-22T03:26:14Z] git push: }
+Apr 21 21:26:14 localhost runner.sh[1112]: [2026-04-22T03:26:14Z] git push: Missing or invalid credentials.
+Apr 21 21:26:14 localhost runner.sh[1112]: [2026-04-22T03:26:14Z] git push: Error: connect ENOENT /run/user/20024/vscode-git-9b1f7ab212.sock
+Apr 21 21:26:14 localhost runner.sh[1112]: [2026-04-22T03:26:14Z] git push:     at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+Apr 21 21:26:14 localhost runner.sh[1112]: [2026-04-22T03:26:14Z] git push:   errno: -2,
+Apr 21 21:26:14 localhost runner.sh[1112]: [2026-04-22T03:26:14Z] git push:   code: 'ENOENT',
+Apr 21 21:26:14 localhost runner.sh[1112]: [2026-04-22T03:26:14Z] git push:   syscall: 'connect',
+Apr 21 21:26:14 localhost runner.sh[1112]: [2026-04-22T03:26:14Z] git push:   address: '/run/user/20024/vscode-git-9b1f7ab212.sock'
+Apr 21 21:26:14 localhost runner.sh[1112]: [2026-04-22T03:26:14Z] git push: }
+Apr 21 21:26:14 localhost runner.sh[1112]: [2026-04-22T03:26:14Z] git push: remote: No anonymous write access.
+Apr 21 21:26:14 localhost runner.sh[1112]: [2026-04-22T03:26:14Z] git push: fatal: Authentication failed for 'https://github.com/Linfeng-He/machine_log.git/'

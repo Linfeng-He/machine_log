@@ -1,4 +1,4 @@
-===== dmesg snapshot host=node0 boot_started_utc=20260422T032427Z boot_id=62503c1c-026f-4d12-960b-226160d86543 captured_utc=20260422T032613Z =====
+===== dmesg snapshot host=node0 boot_started_utc=20260422T032427Z boot_id=62503c1c-026f-4d12-960b-226160d86543 captured_utc=20260422T032634Z =====
 
 [Tue Apr 21 21:24:07 2026] microcode: microcode updated early to revision 0x700001c, date = 2021-06-12
 [Tue Apr 21 21:24:07 2026] Linux version 5.15.0-168-generic (buildd@lcy02-amd64-116) (gcc (Ubuntu 11.4.0-1ubuntu1~22.04.2) 11.4.0, GNU ld (GNU Binutils for Ubuntu) 2.38) #178-Ubuntu SMP Fri Jan 9 19:05:03 UTC 2026 (Ubuntu 5.15.0-168.178-generic 5.15.193)
