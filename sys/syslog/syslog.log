@@ -1,4 +1,4 @@
-===== syslog snapshot host=node0 boot_started_utc=20260422T232213Z boot_id=e66596e1-a2c6-4d58-80f4-d1779cbb52ce captured_utc=20260422T232323Z =====
+===== syslog snapshot host=node0 boot_started_utc=20260422T232213Z boot_id=e66596e1-a2c6-4d58-80f4-d1779cbb52ce captured_utc=20260422T232345Z =====
 
 Apr 21 17:44:40 localhost systemd[1]: Starting GRUB failed boot detection...
 Apr 21 17:44:40 localhost systemd[1]: logrotate.service: Deactivated successfully.
