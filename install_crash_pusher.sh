@@ -4,39 +4,36 @@ set -Eeuo pipefail
 usage() {
   cat <<'EOF'
 Usage:
-  bash install_crash_pusher.sh \
-    [--cmmhi-cmd '/path/to/cmmhi_rtm -d']
+  bash install_crash_pusher.sh [options]
 
-  sudo bash install_crash_pusher.sh \
-    [--cmmhi-cmd '/path/to/cmmhi_rtm -d']
+  bash install_crash_pusher.sh --search
+
+  bash install_crash_pusher.sh --reg
+
+  sudo bash install_crash_pusher.sh --stop
 
 Options:
   --repo-dir DIR            Git repo that receives the sys updates. Default: git repo containing this script
                            If root cannot write DIR, a runtime clone is created under /var/lib/crash-pusher/repos
   --repo-url URL            Optional override for the repo's origin remote. Default: keep existing origin
   --repo-branch BRANCH      Git branch to push to. Default: current branch of the cloned repo
-  --cmmhi-cmd CMD           Temperature command to run every second. Default: auto-discover cmmhi_rtm and run it with -d
+  --cmmhi-cmd CMD           Temperature command to run every second. Default: leave unset unless provided or found via --search
   --host-id ID              Host label inside the repo. Default: hostname -s
   --snapshot-interval SEC   Seconds between system snapshots. Default: 1
   --push-interval SEC       Seconds between git commits/pushes after the initial push. Default: 20
+  --search                  Search for cmmhi_rtm only. Updates /etc/default/crash-pusher if it already exists.
+  --reg                     Register and restart the systemd service using the existing installed files.
   --staging-root DIR        Write files under DIR instead of /. Useful for local verification.
-  --no-start                Install files but do not start the service.
   --stop                    Stop and disable the crash-pusher service.
   --skip-sampler            Do not download / install sampler.
   --help                    Show this help.
 
 Examples:
-  bash install_crash_pusher.sh \
-    --cmmhi-cmd '/opt/cmmhi/cmmhi_rtm -d'
+  bash install_crash_pusher.sh
 
-  sudo bash install_crash_pusher.sh \
-    --cmmhi-cmd '/opt/cmmhi/cmmhi_rtm -d'
+  bash install_crash_pusher.sh --search
 
-  bash install_crash_pusher.sh \
-    --repo-dir /tmp/machine_log \
-    --cmmhi-cmd 'printf "temp_c=42\n"' \
-    --staging-root /tmp/crash-pusher-stage \
-    --no-start
+  bash install_crash_pusher.sh --reg
 
   sudo bash install_crash_pusher.sh --stop
 EOF
@@ -122,44 +119,34 @@ discover_cmmhi_cmd() {
   fi
 }
 
-write_runtime_runner() {
-  local dest="$1"
-  cat >"$dest" <<'EOF'
-#!/usr/bin/env bash
-set -Eeuo pipefail
+load_runtime_env() {
+  ENV_FILE="${CRASH_PUSHER_ENV_FILE:-/etc/default/crash-pusher}"
+  if [[ -f "$ENV_FILE" ]]; then
+    # shellcheck disable=SC1090
+    source "$ENV_FILE"
+  fi
 
-umask 022
+  HOST_ID="${HOST_ID:-$(hostname -s)}"
+  HOST_ID="${CRASH_PUSHER_HOST_ID:-$HOST_ID}"
+  REPO_DIR="${CRASH_PUSHER_REPO_DIR:-${REPO_DIR:-}}"
+  REPO_URL="${CRASH_PUSHER_REPO_URL:-${REPO_URL:-}}"
+  REPO_BRANCH="${CRASH_PUSHER_REPO_BRANCH:-${REPO_BRANCH:-}}"
+  SNAPSHOT_INTERVAL="${CRASH_PUSHER_SNAPSHOT_INTERVAL:-${SNAPSHOT_INTERVAL:-1}}"
+  PUSH_INTERVAL="${CRASH_PUSHER_PUSH_INTERVAL:-${PUSH_INTERVAL:-20}}"
+  GIT_AUTHOR_NAME="${CRASH_PUSHER_GIT_AUTHOR_NAME:-${GIT_AUTHOR_NAME:-crash-pusher}}"
+  GIT_AUTHOR_EMAIL="${CRASH_PUSHER_GIT_AUTHOR_EMAIL:-${GIT_AUTHOR_EMAIL:-crash-pusher@${HOST_ID}}}"
+  CMMHI_CMD="${CRASH_PUSHER_CMMHI_CMD:-${CMMHI_CMD:-}}"
+  CMMHI_TIMEOUT="${CRASH_PUSHER_CMMHI_TIMEOUT:-${CMMHI_TIMEOUT:-3}}"
 
-ENV_FILE="${CRASH_PUSHER_ENV_FILE:-/etc/default/crash-pusher}"
-if [[ -f "$ENV_FILE" ]]; then
-  # shellcheck disable=SC1090
-  source "$ENV_FILE"
-fi
+  [[ -n "$REPO_DIR" ]] || die "REPO_DIR is not set in $ENV_FILE"
 
-SERVICE_ROOT="${CRASH_PUSHER_SERVICE_ROOT:-/usr/local/lib/crash-pusher}"
-TEMP_HELPER="${SERVICE_ROOT}/capture_temp.sh"
+  REPO_OWNER_USER="$(stat -c %U "$REPO_DIR" 2>/dev/null || true)"
+  REPO_OWNER_UID="$(stat -c %u "$REPO_DIR" 2>/dev/null || true)"
 
-HOST_ID="${HOST_ID:-$(hostname -s)}"
-HOST_ID="${CRASH_PUSHER_HOST_ID:-$HOST_ID}"
-REPO_DIR="${CRASH_PUSHER_REPO_DIR:-${REPO_DIR:-}}"
-REPO_URL="${CRASH_PUSHER_REPO_URL:-${REPO_URL:-}}"
-REPO_BRANCH="${CRASH_PUSHER_REPO_BRANCH:-${REPO_BRANCH:-}}"
-SNAPSHOT_INTERVAL="${CRASH_PUSHER_SNAPSHOT_INTERVAL:-${SNAPSHOT_INTERVAL:-1}}"
-PUSH_INTERVAL="${CRASH_PUSHER_PUSH_INTERVAL:-${PUSH_INTERVAL:-20}}"
-GIT_AUTHOR_NAME="${CRASH_PUSHER_GIT_AUTHOR_NAME:-${GIT_AUTHOR_NAME:-crash-pusher}}"
-GIT_AUTHOR_EMAIL="${CRASH_PUSHER_GIT_AUTHOR_EMAIL:-${GIT_AUTHOR_EMAIL:-crash-pusher@${HOST_ID}}}"
-
-[[ -n "$REPO_DIR" ]] || {
-  echo "REPO_DIR is not set in $ENV_FILE" >&2
-  exit 1
+  BOOT_ID="$(cat /proc/sys/kernel/random/boot_id)"
+  BOOT_TS="$(date -u +%Y%m%dT%H%M%SZ)"
+  SYS_ROOT_REL="sys"
 }
-
-REPO_OWNER_USER="$(stat -c %U "$REPO_DIR" 2>/dev/null || true)"
-REPO_OWNER_UID="$(stat -c %u "$REPO_DIR" 2>/dev/null || true)"
-
-BOOT_ID="$(cat /proc/sys/kernel/random/boot_id)"
-BOOT_TS="$(date -u +%Y%m%dT%H%M%SZ)"
-SYS_ROOT_REL="sys"
 
 log() {
   printf '[%s] %s\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)" "$*" >&2
@@ -210,6 +197,7 @@ log_multiline() {
 
 run_git() {
   local -a preserved_env=()
+  local env_name
 
   for env_name in SSH_AUTH_SOCK GIT_ASKPASS SSH_ASKPASS DISPLAY WAYLAND_DISPLAY XAUTHORITY DBUS_SESSION_BUS_ADDRESS XDG_RUNTIME_DIR VSCODE_GIT_ASKPASS_NODE VSCODE_GIT_ASKPASS_MAIN VSCODE_GIT_IPC_HANDLE ELECTRON_RUN_AS_NODE; do
     if [[ -n "${!env_name:-}" ]]; then
@@ -231,10 +219,7 @@ run_git() {
 }
 
 ensure_repo() {
-  [[ -d "$REPO_DIR/.git" ]] || {
-    echo "REPO_DIR is not a git repo: $REPO_DIR" >&2
-    exit 1
-  }
+  [[ -d "$REPO_DIR/.git" ]] || die "REPO_DIR is not a git repo: $REPO_DIR"
 
   log "git user: ${REPO_OWNER_USER:-unknown}"
 
@@ -268,7 +253,9 @@ check_push_access() {
     return 0
   fi
 
-  remote_url="$(run_git -C "$REPO_DIR" remote get-url origin 2>/dev/null || true)"
+  if ! remote_url="$(run_git -C "$REPO_DIR" remote get-url origin 2>/dev/null)"; then
+    remote_url=""
+  fi
   log "origin remote: ${remote_url}"
 
   push_output="$(run_git -C "$REPO_DIR" push --dry-run origin "$REPO_BRANCH" 2>&1)" || {
@@ -424,6 +411,54 @@ snapshot_once() {
   sync_path "$ts_file"
 }
 
+emit_temperature_snapshot() {
+  echo "timestamp_utc=$(date -u +%Y%m%dT%H%M%SZ)"
+
+  echo
+  echo "== cmmhi_rtm =="
+  if [[ -n "$CMMHI_CMD" ]]; then
+    if command -v timeout >/dev/null 2>&1; then
+      timeout "${CMMHI_TIMEOUT}" bash -lc "$CMMHI_CMD" 2>&1 || true
+    else
+      bash -lc "$CMMHI_CMD" 2>&1 || true
+    fi
+  else
+    echo "cmmhi_rtm not configured"
+  fi
+
+  echo
+  echo "== thermal zones =="
+  for zone in /sys/class/thermal/thermal_zone*; do
+    [[ -e "$zone" ]] || continue
+    local zone_type zone_temp
+    zone_type="$(cat "$zone/type" 2>/dev/null || echo unknown)"
+    zone_temp="$(cat "$zone/temp" 2>/dev/null || echo unknown)"
+    echo "${zone}: type=${zone_type} temp=${zone_temp}"
+  done
+
+  echo
+  echo "== hwmon =="
+  for sensor in /sys/class/hwmon/hwmon*/temp*_input; do
+    [[ -e "$sensor" ]] || continue
+    local label_file label
+    label_file="${sensor%_input}_label"
+    if [[ -f "$label_file" ]]; then
+      label="$(cat "$label_file" 2>/dev/null || true)"
+    else
+      label="$(basename "$sensor")"
+    fi
+    echo "${sensor}: label=${label} value=$(cat "$sensor" 2>/dev/null || echo unknown)"
+  done
+
+  echo
+  echo "== sensors =="
+  if command -v sensors >/dev/null 2>&1; then
+    sensors 2>&1 || true
+  else
+    echo "sensors command not installed"
+  fi
+}
+
 capture_temperature_once() {
   local sys_root="$1"
   local ts_file ts_iso
@@ -432,15 +467,8 @@ capture_temperature_once() {
   {
     echo
     echo "===== temperature timestamp_utc=${ts_iso} host=${HOST_ID} boot_id=${BOOT_ID} ====="
-  } >>"$ts_file"
-  if [[ -x "$TEMP_HELPER" ]]; then
-    "$TEMP_HELPER" >>"$ts_file" 2>&1 || true
-  else
-    {
-      echo "capture helper missing: $TEMP_HELPER"
-      echo "timestamp_utc=${ts_iso}"
-    } >>"$ts_file"
-  fi
+    emit_temperature_snapshot
+  } >>"$ts_file" 2>&1 || true
   sync_path "$ts_file"
 }
 
@@ -492,8 +520,9 @@ refresh_live_logs_once() {
 }
 
 stop_workers() {
+  local pid_var pid
   for pid_var in SNAPSHOT_PID TEMP_PID PUSH_PID LOG_SYNC_PID; do
-    local pid="${!pid_var:-}"
+    pid="${!pid_var:-}"
     [[ -n "$pid" ]] || continue
     kill "$pid" 2>/dev/null || true
   done
@@ -531,7 +560,8 @@ git_sync_once() {
   fi
 }
 
-main() {
+run_service_main() {
+  load_runtime_env
   ensure_repo
   check_push_access
 
@@ -586,97 +616,19 @@ main() {
   ) &
   PUSH_PID=$!
 
-  wait "$SNAPSHOT_PID" "$TEMP_PID" "$PUSH_PID"
+  wait "$SNAPSHOT_PID" "$TEMP_PID" "$PUSH_PID" "$LOG_SYNC_PID"
 }
 
-main "$@"
-EOF
-  chmod 0755 "$dest"
-}
-
-write_temp_helper() {
-  local dest="$1"
-  cat >"$dest" <<'EOF'
-#!/usr/bin/env bash
-set -Eeuo pipefail
-
-ENV_FILE="${CRASH_PUSHER_ENV_FILE:-/etc/default/crash-pusher}"
-if [[ -f "$ENV_FILE" ]]; then
-  # shellcheck disable=SC1090
-  source "$ENV_FILE"
-fi
-
-CMMHI_CMD="${CMMHI_CMD:-}"
-CMMHI_TIMEOUT="${CMMHI_TIMEOUT:-3}"
-
-echo "timestamp_utc=$(date -u +%Y%m%dT%H%M%SZ)"
-
-echo
-echo "== cmmhi_rtm =="
-if [[ -n "$CMMHI_CMD" ]]; then
-  timeout "${CMMHI_TIMEOUT}" bash -lc "$CMMHI_CMD" 2>&1 || true
-else
-  echo "cmmhi_rtm not configured or not found"
-fi
-
-echo
-echo "== thermal zones =="
-for zone in /sys/class/thermal/thermal_zone*; do
-  [[ -e "$zone" ]] || continue
-  zone_type="$(cat "$zone/type" 2>/dev/null || echo unknown)"
-  zone_temp="$(cat "$zone/temp" 2>/dev/null || echo unknown)"
-  echo "${zone}: type=${zone_type} temp=${zone_temp}"
-done
-
-echo
-echo "== hwmon =="
-for sensor in /sys/class/hwmon/hwmon*/temp*_input; do
-  [[ -e "$sensor" ]] || continue
-  label_file="${sensor%_input}_label"
-  if [[ -f "$label_file" ]]; then
-    label="$(cat "$label_file" 2>/dev/null || true)"
-  else
-    label="$(basename "$sensor")"
-  fi
-  echo "${sensor}: label=${label} value=$(cat "$sensor" 2>/dev/null || echo unknown)"
-done
-
-echo
-echo "== sensors =="
-if command -v sensors >/dev/null 2>&1; then
-  sensors 2>&1 || true
-else
-  echo "sensors command not installed"
-fi
-EOF
-  chmod 0755 "$dest"
-}
-
-write_sampler_config() {
-  local dest="$1"
-  cat >"$dest" <<'EOF'
-variables:
-  env_file: /etc/default/crash-pusher
-  temp_helper: /usr/local/lib/crash-pusher/capture_temp.sh
-
-textboxes:
-  - title: Temperature
-    rate-ms: 1000
-    sample: CRASH_PUSHER_ENV_FILE=$env_file $temp_helper
-
-  - title: Failed Units
-    rate-ms: 1000
-    sample: systemctl --failed --no-pager
-
-  - title: Recent Journal
-    rate-ms: 1000
-    sample: journalctl -b -n 20 -o short-iso --no-pager
-EOF
+capture_temp_main() {
+  load_runtime_env
+  emit_temperature_snapshot
 }
 
 write_service_file() {
   local dest="$1"
-  cat >"$dest" <<'EOF'
+  local repo_dir="$2"
+  local repo_script="${repo_dir}/install_crash_pusher.sh"
+  cat >"$dest" <<EOF
 [Unit]
 Description=Crash log pusher
 Wants=network-online.target
@@ -686,7 +638,8 @@ StartLimitIntervalSec=0
 [Service]
 Type=simple
 EnvironmentFile=/etc/default/crash-pusher
-ExecStart=/usr/local/lib/crash-pusher/runner.sh
+WorkingDirectory=${repo_dir}
+ExecStart=/bin/bash ${repo_script} --run-service
 Restart=always
 RestartSec=2
 KillMode=mixed
@@ -815,22 +768,115 @@ EOF
   rm -f "$cred_tmp"
 }
 
-append_install_args() {
-  local -n args_ref="$1"
+upsert_env_setting() {
+  local file="$1"
+  local key="$2"
+  local value="$3"
+  local quoted_value
+  local tmp_file
 
-  if [[ "$STOP_SERVICE_MODE" -eq 1 ]]; then
-    args_ref+=(--stop)
+  quoted_value="$(quote_env_value "$value")"
+  tmp_file="$(mktemp)"
+
+  if [[ -f "$file" ]]; then
+    awk -v key="$key" -v replacement="${key}=${quoted_value}" '
+      BEGIN { updated = 0 }
+      $0 ~ ("^" key "=") {
+        if (updated == 0) {
+          print replacement
+          updated = 1
+        }
+        next
+      }
+      { print }
+      END {
+        if (updated == 0) {
+          print replacement
+        }
+      }
+    ' "$file" >"$tmp_file"
+  else
+    printf '%s=%s\n' "$key" "$quoted_value" >"$tmp_file"
+  fi
+
+  cat "$tmp_file" >"$file"
+  rm -f "$tmp_file"
+}
+
+search_cmmhi_main() {
+  local env_path
+  local found_cmd="${CMMHI_CMD:-}"
+
+  env_path="$(prefix_path /etc/default/crash-pusher)"
+
+  if [[ -z "$found_cmd" ]]; then
+    found_cmd="$(discover_cmmhi_cmd || true)"
+  fi
+
+  if [[ -n "$found_cmd" ]]; then
+    printf 'cmmhi command: %s\n' "$found_cmd"
+    if [[ -f "$env_path" ]]; then
+      upsert_env_setting "$env_path" "CMMHI_CMD" "$found_cmd"
+      upsert_env_setting "$env_path" "CMMHI_TIMEOUT" "3"
+      chmod 0600 "$env_path" || true
+      printf 'updated environment file: %s\n' "$env_path"
+    else
+      printf 'environment file not found: %s\n' "$env_path"
+    fi
+  else
+    echo "cmmhi command: not found"
+    if [[ -f "$env_path" ]]; then
+      echo "existing environment file left unchanged"
+    fi
+  fi
+}
+
+register_service_main() {
+  local env_path
+  local service_path
+
+  env_path="$(prefix_path /etc/default/crash-pusher)"
+  service_path="$(prefix_path /etc/systemd/system/crash-pusher.service)"
+
+  [[ -f "$env_path" ]] || die "environment file not found: $env_path; run the installer first"
+  [[ -f "$service_path" ]] || die "service file not found: $service_path; run the installer first"
+
+  if [[ -n "$STAGING_ROOT" ]]; then
+    echo "staging mode: real register commands are:"
+    echo "  systemctl daemon-reload"
+    echo "  systemctl enable crash-pusher.service"
+    echo "  systemctl restart crash-pusher.service"
     return 0
   fi
 
-  args_ref+=(--repo-dir "$REPO_DIR")
-  [[ -n "$REPO_URL" ]] && args_ref+=(--repo-url "$REPO_URL")
-  [[ -n "$REPO_BRANCH" ]] && args_ref+=(--repo-branch "$REPO_BRANCH")
-  [[ -n "$CMMHI_CMD" ]] && args_ref+=(--cmmhi-cmd "$CMMHI_CMD")
-  args_ref+=(--host-id "$HOST_ID")
-  args_ref+=(--snapshot-interval "$SNAPSHOT_INTERVAL")
-  args_ref+=(--push-interval "$PUSH_INTERVAL")
-  [[ "$START_SERVICE" -eq 1 ]] || args_ref+=(--no-start)
+  require_cmd systemctl
+  systemctl daemon-reload
+  systemctl enable crash-pusher.service
+  systemctl restart crash-pusher.service
+  echo "crash-pusher.service enabled and restarted"
+}
+
+append_install_args() {
+  local -n args_ref="$1"
+
+  [[ "$SEARCH_MODE" -eq 1 ]] && args_ref+=(--search)
+  [[ "$REGISTER_SERVICE_MODE" -eq 1 ]] && args_ref+=(--reg)
+  [[ "$STOP_SERVICE_MODE" -eq 1 ]] && args_ref+=(--stop)
+  [[ "$RUN_SERVICE_MODE" -eq 1 ]] && args_ref+=(--run-service)
+  [[ "$CAPTURE_TEMP_MODE" -eq 1 ]] && args_ref+=(--capture-temp)
+
+  if [[ "$RUN_SERVICE_MODE" -eq 1 || "$CAPTURE_TEMP_MODE" -eq 1 || "$STOP_SERVICE_MODE" -eq 1 ]]; then
+    return 0
+  fi
+
+  [[ -n "${REPO_DIR:-}" ]] && args_ref+=(--repo-dir "$REPO_DIR")
+  [[ -n "${REPO_URL:-}" ]] && args_ref+=(--repo-url "$REPO_URL")
+  [[ -n "${REPO_BRANCH:-}" ]] && args_ref+=(--repo-branch "$REPO_BRANCH")
+  [[ -n "${CMMHI_CMD:-}" ]] && args_ref+=(--cmmhi-cmd "$CMMHI_CMD")
+  [[ -n "${HOST_ID:-}" ]] && args_ref+=(--host-id "$HOST_ID")
+  [[ -n "${SNAPSHOT_INTERVAL:-}" ]] && args_ref+=(--snapshot-interval "$SNAPSHOT_INTERVAL")
+  [[ -n "${PUSH_INTERVAL:-}" ]] && args_ref+=(--push-interval "$PUSH_INTERVAL")
+  [[ -n "${STAGING_ROOT:-}" ]] && args_ref+=(--staging-root "$STAGING_ROOT")
   [[ "$INSTALL_SAMPLER" -eq 1 ]] || args_ref+=(--skip-sampler)
 }
 
@@ -839,7 +885,7 @@ rerun_via_sudo() {
 
   require_cmd sudo
 
-  if [[ "$STOP_SERVICE_MODE" -ne 1 ]]; then
+  if [[ "$STOP_SERVICE_MODE" -eq 0 && "$SEARCH_MODE" -eq 0 && "$REGISTER_SERVICE_MODE" -eq 0 ]]; then
     [[ -n "$REPO_DIR" ]] || die "--repo-dir resolved to an empty path"
     [[ -d "$REPO_DIR" ]] || die "repo dir does not exist: $REPO_DIR"
     [[ -d "$REPO_DIR/.git" ]] || die "repo dir is not a git repo: $REPO_DIR"
@@ -942,8 +988,11 @@ HOST_ID="$(hostname -s)"
 SNAPSHOT_INTERVAL="1"
 PUSH_INTERVAL="20"
 STAGING_ROOT=""
-START_SERVICE=1
+SEARCH_MODE=0
+REGISTER_SERVICE_MODE=0
 STOP_SERVICE_MODE=0
+RUN_SERVICE_MODE=0
+CAPTURE_TEMP_MODE=0
 INSTALL_SAMPLER=1
 SAMPLER_URL="https://github.com/sqshq/sampler/releases/download/v1.1.0/sampler-1.1.0-linux-amd64"
 
@@ -977,12 +1026,24 @@ while [[ $# -gt 0 ]]; do
       PUSH_INTERVAL="${2:-}"
       shift 2
       ;;
+    --search)
+      SEARCH_MODE=1
+      shift
+      ;;
+    --reg)
+      REGISTER_SERVICE_MODE=1
+      shift
+      ;;
     --staging-root)
       STAGING_ROOT="${2:-}"
       shift 2
       ;;
-    --no-start)
-      START_SERVICE=0
+    --run-service)
+      RUN_SERVICE_MODE=1
+      shift
+      ;;
+    --capture-temp)
+      CAPTURE_TEMP_MODE=1
       shift
       ;;
     --stop)
@@ -1003,8 +1064,39 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 
+MODE_COUNT=$((SEARCH_MODE + REGISTER_SERVICE_MODE + STOP_SERVICE_MODE + RUN_SERVICE_MODE + CAPTURE_TEMP_MODE))
+if [[ "$MODE_COUNT" -gt 1 ]]; then
+  die "use only one of --search, --reg, --stop, --run-service, or --capture-temp at a time"
+fi
+
+if [[ "$RUN_SERVICE_MODE" -eq 1 ]]; then
+  run_service_main
+  exit 0
+fi
+
+if [[ "$CAPTURE_TEMP_MODE" -eq 1 ]]; then
+  capture_temp_main
+  exit 0
+fi
+
 if [[ -z "$STAGING_ROOT" ]] && [[ "$(id -u)" -ne "$ROOT_UID" ]]; then
   rerun_via_sudo
+fi
+
+if [[ "$SEARCH_MODE" -eq 1 ]]; then
+  if [[ -n "$STAGING_ROOT" ]]; then
+    mkdir -p "$STAGING_ROOT"
+  fi
+  search_cmmhi_main
+  exit 0
+fi
+
+if [[ "$REGISTER_SERVICE_MODE" -eq 1 ]]; then
+  if [[ -n "$STAGING_ROOT" ]]; then
+    mkdir -p "$STAGING_ROOT"
+  fi
+  register_service_main
+  exit 0
 fi
 
 if [[ "$STOP_SERVICE_MODE" -eq 1 ]]; then
@@ -1032,10 +1124,6 @@ if [[ -n "$STAGING_ROOT" ]]; then
   mkdir -p "$STAGING_ROOT"
 else
   STAGING_ROOT=""
-fi
-
-if [[ -z "$CMMHI_CMD" ]]; then
-  CMMHI_CMD="$(discover_cmmhi_cmd || true)"
 fi
 
 [[ -n "$REPO_DIR" ]] || die "--repo-dir resolved to an empty path"
@@ -1068,23 +1156,18 @@ fi
 ensure_runtime_repo_dir "$ORIGINAL_REPO_DIR"
 
 BIN_DIR="$(prefix_path /usr/local/bin)"
-LIB_DIR="$(prefix_path /usr/local/lib/crash-pusher)"
 ETC_DEFAULT_DIR="$(prefix_path /etc/default)"
 SYSTEMD_DIR="$(prefix_path /etc/systemd/system)"
 
-install -d -m 0755 "$BIN_DIR" "$LIB_DIR" "$ETC_DEFAULT_DIR" "$SYSTEMD_DIR"
+install -d -m 0755 "$BIN_DIR" "$ETC_DEFAULT_DIR" "$SYSTEMD_DIR"
 
-RUNNER_PATH="${LIB_DIR}/runner.sh"
-TEMP_HELPER_PATH="${LIB_DIR}/capture_temp.sh"
-SAMPLER_CONFIG_PATH="${LIB_DIR}/sampler.yml"
+REPO_SCRIPT_PATH="${REPO_DIR}/install_crash_pusher.sh"
 ENV_PATH="${ETC_DEFAULT_DIR}/crash-pusher"
 SERVICE_PATH="${SYSTEMD_DIR}/crash-pusher.service"
 SAMPLER_PATH="${BIN_DIR}/sampler"
 
-write_runtime_runner "$RUNNER_PATH"
-write_temp_helper "$TEMP_HELPER_PATH"
-write_sampler_config "$SAMPLER_CONFIG_PATH"
-write_service_file "$SERVICE_PATH"
+[[ -f "$REPO_SCRIPT_PATH" ]] || die "repo script not found: $REPO_SCRIPT_PATH"
+write_service_file "$SERVICE_PATH" "$REPO_DIR"
 
 cat >"$ENV_PATH" <<EOF
 HOST_ID=$(quote_env_value "$HOST_ID")
@@ -1116,31 +1199,25 @@ fi
 
 ensure_hw_inventory_tools
 
-if [[ -z "$STAGING_ROOT" ]]; then
-  systemctl daemon-reload
-  systemctl enable crash-pusher.service
-  if [[ "$START_SERVICE" -eq 1 ]]; then
-    systemctl restart crash-pusher.service
-  fi
-else
+if [[ -n "$STAGING_ROOT" ]]; then
   echo "staging install completed at $STAGING_ROOT"
-  echo "manual runner test example:"
-  echo "  CRASH_PUSHER_ENV_FILE=$ENV_PATH timeout 5s $RUNNER_PATH"
+  echo "manual service test example:"
+  echo "  CRASH_PUSHER_ENV_FILE=$ENV_PATH /bin/bash $REPO_SCRIPT_PATH --run-service"
 fi
 
 echo "installer completed"
 echo "environment file: $ENV_PATH"
 echo "service file: $SERVICE_PATH"
-echo "runner: $RUNNER_PATH"
+echo "service entrypoint: $REPO_SCRIPT_PATH --run-service"
 echo "repo dir: $REPO_DIR"
-echo "to stop later: sudo bash install_crash_pusher.sh --stop"
+echo "to register and start: bash install_crash_pusher.sh --reg"
+echo "to stop later: bash install_crash_pusher.sh --stop"
 echo "manual stop command: sudo systemctl disable --now crash-pusher.service"
 if [[ -n "$CMMHI_CMD" ]]; then
   echo "cmmhi command: $CMMHI_CMD"
 else
-  echo "cmmhi command: not found; helper will log sysfs and sensors data only until configured"
+  echo "cmmhi command: not configured; run: bash install_crash_pusher.sh --search"
 fi
 if [[ "$INSTALL_SAMPLER" -eq 1 ]]; then
   echo "sampler: $SAMPLER_PATH"
-  echo "sampler config: $SAMPLER_CONFIG_PATH"
 fi
