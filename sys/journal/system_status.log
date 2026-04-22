@@ -1,0 +1,349 @@
+
+===== system_status host=node0 boot_started_utc=20260422T004555Z boot_id=e66596e1-a2c6-4d58-80f4-d1779cbb52ce =====
+
+===== snapshot timestamp_utc=20260422T004555Z host=node0 boot_id=e66596e1-a2c6-4d58-80f4-d1779cbb52ce =====
+timestamp_utc=20260422T004555Z
+
+== uptime ==
+ 19:45:55 up  2:01,  1 user,  load average: 0.50, 0.34, 0.23
+
+== loadavg ==
+0.50 0.34 0.23 1/613 486461
+
+== meminfo ==
+MemTotal:       196670076 kB
+MemFree:        191260264 kB
+MemAvailable:   192993684 kB
+Buffers:          268752 kB
+Cached:          2478504 kB
+SwapCached:            0 kB
+SwapTotal:       8389440 kB
+SwapFree:        8389440 kB
+Dirty:               352 kB
+Writeback:             0 kB
+WritebackTmp:          0 kB
+
+== pressure ==
+-- cpu --
+some avg10=0.00 avg60=0.00 avg300=0.00 total=6940266
+full avg10=0.00 avg60=0.00 avg300=0.00 total=0
+-- io --
+some avg10=0.00 avg60=0.00 avg300=0.00 total=17531124
+full avg10=0.00 avg60=0.00 avg300=0.00 total=17168927
+-- memory --
+some avg10=0.00 avg60=0.00 avg300=0.00 total=0
+full avg10=0.00 avg60=0.00 avg300=0.00 total=0
+
+== df ==
+Filesystem                         Type   Size  Used Avail Use% Mounted on
+tmpfs                              tmpfs   19G  2.0M   19G   1% /run
+/dev/sda3                          ext3    63G  4.9G   55G   9% /
+tmpfs                              tmpfs   94G     0   94G   0% /dev/shm
+tmpfs                              tmpfs  5.0M     0  5.0M   0% /run/lock
+/dev/sda1                          vfat   256M   11M  246M   4% /boot/efi
+ops.wisc.cloudlab.us:/proj/lsm-PG0 nfs    100G   56G   45G  56% /proj/lsm-PG0
+ops.wisc.cloudlab.us:/share        nfs     50G  2.1G   48G   5% /share
+tmpfs                              tmpfs   19G     0   19G   0% /run/user/20023
+
+== failed units ==
+  UNIT                 LOAD   ACTIVE SUB    DESCRIPTION
+● crash-pusher.service loaded failed failed Crash log pusher
+
+LOAD   = Reflects whether the unit definition was properly loaded.
+ACTIVE = The high-level unit activation state, i.e. generalization of SUB.
+SUB    = The low-level unit activation state, values depend on unit type.
+1 loaded units listed.
+
+== top processes by cpu ==
+    PID    PPID USER     STAT %CPU %MEM   RSS     ELAPSED COMMAND
+ 373366  372845 LH       Sl    7.4  0.0 111084   01:07:29 codex
+ 372845   10823 LH       Sl    5.9  0.4 804412   01:07:34 node
+ 486396  486395 root     S+    4.0  0.0  4004       00:01 bash
+ 486390  373366 root     Ss+   2.0  0.0  5648       00:01 sudo
+ 371916  371898 LH       Sl    1.9  0.0 23564    01:07:40 code-560a9dba96
+ 371878  371758 LH       S     1.5  0.0 10336    01:07:40 sshd
+  10823   10819 LH       Sl    0.7  0.0 171984   01:59:52 node
+      1       0 root     Ss    0.6  0.0 12932    02:01:35 systemd
+ 372926   10823 LH       Sl    0.5  0.0 67460    01:07:33 node
+   1594       1 message+ Ss    0.1  0.0  4976    02:01:16 dbus-daemon
+  10872   10823 LH       Sl    0.1  0.0 81668    01:59:50 node
+      2       0 root     S     0.0  0.0     0    02:01:35 kthreadd
+      3       2 root     I<    0.0  0.0     0    02:01:35 rcu_gp
+      4       2 root     I<    0.0  0.0     0    02:01:35 rcu_par_gp
+      5       2 root     I<    0.0  0.0     0    02:01:35 slub_flushwq
+      6       2 root     I<    0.0  0.0     0    02:01:35 netns
+      7       2 root     I     0.0  0.0     0    02:01:35 kworker/0:0-events
+      8       2 root     I<    0.0  0.0     0    02:01:35 kworker/0:0H-kblockd
+     11       2 root     I<    0.0  0.0     0    02:01:35 mm_percpu_wq
+     12       2 root     S     0.0  0.0     0    02:01:35 rcu_tasks_rude_
+     13       2 root     S     0.0  0.0     0    02:01:35 rcu_tasks_trace
+     14       2 root     S     0.0  0.0     0    02:01:35 ksoftirqd/0
+     15       2 root     I     0.0  0.0     0    02:01:35 rcu_sched
+     16       2 root     S     0.0  0.0     0    02:01:35 migration/0
+     17       2 root     S     0.0  0.0     0    02:01:35 idle_inject/0
+     19       2 root     S     0.0  0.0     0    02:01:35 cpuhp/0
+     20       2 root     S     0.0  0.0     0    02:01:35 cpuhp/1
+     21       2 root     S     0.0  0.0     0    02:01:35 idle_inject/1
+     22       2 root     S     0.0  0.0     0    02:01:35 migration/1
+     23       2 root     S     0.0  0.0     0    02:01:35 ksoftirqd/1
+     25       2 root     I<    0.0  0.0     0    02:01:35 kworker/1:0H-events_highpri
+     26       2 root     S     0.0  0.0     0    02:01:35 cpuhp/2
+     27       2 root     S     0.0  0.0     0    02:01:35 idle_inject/2
+     28       2 root     S     0.0  0.0     0    02:01:35 migration/2
+     29       2 root     S     0.0  0.0     0    02:01:35 ksoftirqd/2
+     31       2 root     I<    0.0  0.0     0    02:01:35 kworker/2:0H-events_highpri
+     32       2 root     S     0.0  0.0     0    02:01:35 cpuhp/3
+     33       2 root     S     0.0  0.0     0    02:01:35 idle_inject/3
+     34       2 root     S     0.0  0.0     0    02:01:35 migration/3
+
+== top processes by memory ==
+    PID    PPID USER     STAT %CPU %MEM   RSS     ELAPSED COMMAND
+ 372845   10823 LH       Sl    5.9  0.4 804412   01:07:34 node
+  10823   10819 LH       Sl    0.7  0.0 171984   01:59:52 node
+ 373366  372845 LH       Sl    7.4  0.0 111084   01:07:29 codex
+  10872   10823 LH       Sl    0.1  0.0 81668    01:59:50 node
+ 460271  372845 LH       Sl    0.0  0.0 70148       48:44 node
+ 372926   10823 LH       Sl    0.5  0.0 67460    01:07:33 node
+ 371916  371898 LH       Sl    1.9  0.0 23564    01:07:40 code-560a9dba96
+ 469288       1 root     Ssl   0.0  0.0 20508       40:40 packagekitd
+   1601       1 root     Ss    0.0  0.0 19124    02:01:16 networkd-dispat
+    839       1 root     S<s   0.0  0.0 18704    02:01:19 systemd-journal
+   1621       1 systemd+ Ss    0.0  0.0 14380    02:01:16 systemd-resolve
+      1       0 root     Ss    0.6  0.0 12932    02:01:35 systemd
+   9758       1 root     Ss    0.0  0.0 12300    02:00:53 watchdog
+  10501       1 root     Ss    0.0  0.0 11252    02:00:47 rc.progagent
+ 371758    1642 root     Ss    0.0  0.0 10972    01:07:41 sshd
+ 371878  371758 LH       S     1.5  0.0 10336    01:07:40 sshd
+  10617       1 LH       Ss    0.0  0.0  9860    02:00:00 systemd
+   1642       1 root     Ss    0.0  0.0  9440    02:01:15 sshd
+   9671       1 systemd+ Ss    0.0  0.0  8028    02:00:57 systemd-network
+   1607       1 root     Ss    0.0  0.0  7896    02:01:16 systemd-logind
+    455       1 root     Ss    0.0  0.0  7740    02:01:27 systemd-udevd
+ 373050   10872 LH       Ss+   0.0  0.0  6792    01:07:32 bash
+ 469292       1 root     Ssl   0.0  0.0  6604       40:40 polkitd
+    887       1 root     Ss    0.0  0.0  6328    02:01:18 systemd-udevd
+   1640       1 ntp      Ssl   0.0  0.0  6264    02:01:15 ntpd
+   1606       1 root     Ss    0.0  0.0  5976    02:01:16 smartd
+  10502   10501 geniuser S     0.0  0.0  5956    02:00:47 program-agent
+ 486390  373366 root     Ss+   2.0  0.0  5648       00:01 sudo
+   1609       1 root     Ss    0.0  0.0  5624    02:01:16 wpa_supplicant
+   1604       1 syslog   Ssl   0.0  0.0  5180    02:01:16 rsyslogd
+   1594       1 message+ Ss    0.1  0.0  4976    02:01:16 dbus-daemon
+   1599       1 root     Ssl   0.0  0.0  4384    02:01:16 irqbalance
+  10550       1 root     Ss    0.0  0.0  4112    02:00:44 linktest
+   1591       1 _rpc     Ss    0.0  0.0  4068    02:01:17 rpcbind
+ 486473  486396 root     R+    0.0  0.0  4016       00:00 ps
+ 486396  486395 root     S+    4.0  0.0  4004       00:01 bash
+ 371891  371878 LH       Ss    0.0  0.0  3884    01:07:40 bash
+  10618   10617 LH       S     0.0  0.0  3656    02:00:00 (sd-pam)
+ 469941   10617 LH       SLs   0.0  0.0  3280       24:37 gpg-agent
+
+== sockets ==
+Netid State     Recv-Q Send-Q                   Local Address:Port     Peer Address:Port Process                                                   
+udp   UNCONN    0      0                              0.0.0.0:58575         0.0.0.0:*     users:(("rsyslogd",pid=1604,fd=11))                      
+udp   UNCONN    0      0                        127.0.0.53%lo:53            0.0.0.0:*     users:(("systemd-resolve",pid=1621,fd=13))               
+udp   UNCONN    0      0                  128.105.144.18%eno1:68            0.0.0.0:*     users:(("systemd-network",pid=9671,fd=18))               
+udp   UNCONN    0      0                              0.0.0.0:111           0.0.0.0:*     users:(("rpcbind",pid=1591,fd=5),("systemd",pid=1,fd=71))
+udp   UNCONN    0      0                       128.105.144.18:123           0.0.0.0:*     users:(("ntpd",pid=1640,fd=19))                          
+udp   UNCONN    0      0                            127.0.0.1:123           0.0.0.0:*     users:(("ntpd",pid=1640,fd=18))                          
+udp   UNCONN    0      0                              0.0.0.0:123           0.0.0.0:*     users:(("ntpd",pid=1640,fd=17))                          
+udp   UNCONN    0      0                              0.0.0.0:16534         0.0.0.0:*     users:(("emulab-syncd",pid=10495,fd=4))                  
+udp   ESTAB     0      0                       128.105.144.18:36987   128.104.222.9:8509  users:(("slothd",pid=9756,fd=5))                         
+udp   UNCONN    0      0                                 [::]:111              [::]:*     users:(("rpcbind",pid=1591,fd=7),("systemd",pid=1,fd=73))
+udp   UNCONN    0      0      [fe80::25d:73ff:feef:d8fe]%eno1:123              [::]:*     users:(("ntpd",pid=1640,fd=24))                          
+udp   UNCONN    0      0                                [::1]:123              [::]:*     users:(("ntpd",pid=1640,fd=20))                          
+udp   UNCONN    0      0                                 [::]:123              [::]:*     users:(("ntpd",pid=1640,fd=16))                          
+tcp   LISTEN    0      4096                     127.0.0.53%lo:53            0.0.0.0:*     users:(("systemd-resolve",pid=1621,fd=14))               
+tcp   LISTEN    0      128                            0.0.0.0:16534         0.0.0.0:*     users:(("emulab-syncd",pid=10495,fd=3))                  
+tcp   LISTEN    0      128                            0.0.0.0:16505         0.0.0.0:*     users:(("pubsubd",pid=9782,fd=4))                        
+tcp   LISTEN    0      4096                           0.0.0.0:111           0.0.0.0:*     users:(("rpcbind",pid=1591,fd=4),("systemd",pid=1,fd=70))
+tcp   LISTEN    0      128                            0.0.0.0:22            0.0.0.0:*     users:(("sshd",pid=1642,fd=3))                           
+tcp   LISTEN    0      4096                         127.0.0.1:45019         0.0.0.0:*     users:(("code-560a9dba96",pid=371916,fd=9))              
+tcp   ESTAB     0      0                       128.105.144.18:677     128.104.222.8:2049                                                           
+tcp   ESTAB     0      134                          127.0.0.1:45019       127.0.0.1:33876 users:(("code-560a9dba96",pid=371916,fd=12))             
+tcp   ESTAB     0      0                       128.105.144.18:49806  172.64.155.209:443   users:(("codex",pid=373366,fd=18))                       
+tcp   ESTAB     0      0                            127.0.0.1:40338       127.0.0.1:16505 users:(("linktest",pid=10550,fd=3))                      
+tcp   ESTAB     0      0                            127.0.0.1:33876       127.0.0.1:45019 users:(("sshd",pid=371878,fd=9))                         
+tcp   ESTAB     0      0                            127.0.0.1:16505       127.0.0.1:40338 users:(("pubsubd",pid=9782,fd=7))                        
+tcp   ESTAB     0      0                            127.0.0.1:16505       127.0.0.1:40328 users:(("pubsubd",pid=9782,fd=6))                        
+tcp   ESTAB     0      0                            127.0.0.1:40328       127.0.0.1:16505 users:(("program-agent",pid=10502,fd=3))                 
+tcp   ESTAB     0      0                       128.105.144.18:45028  172.64.155.209:443   users:(("codex",pid=373366,fd=23))                       
+tcp   TIME-WAIT 0      0                       128.105.144.18:48134   128.104.222.9:7777                                                           
+tcp   ESTAB     0      344                     128.105.144.18:22    165.230.224.187:25002 users:(("sshd",pid=371878,fd=4),("sshd",pid=371758,fd=4))
+tcp   ESTAB     0      0                       128.105.144.18:46378   128.104.222.8:16505 users:(("pubsubd",pid=9782,fd=5))                        
+tcp   LISTEN    0      4096                              [::]:111              [::]:*     users:(("rpcbind",pid=1591,fd=6),("systemd",pid=1,fd=72))
+tcp   LISTEN    0      128                               [::]:22               [::]:*     users:(("sshd",pid=1642,fd=4))                           
+
+===== snapshot timestamp_utc=20260422T004600Z host=node0 boot_id=e66596e1-a2c6-4d58-80f4-d1779cbb52ce =====
+timestamp_utc=20260422T004600Z
+
+== uptime ==
+ 19:46:00 up  2:01,  1 user,  load average: 0.54, 0.35, 0.23
+
+== loadavg ==
+0.54 0.35 0.23 4/620 486613
+
+== meminfo ==
+MemTotal:       196670076 kB
+MemFree:        191258124 kB
+MemAvailable:   192991780 kB
+Buffers:          268848 kB
+Cached:          2478652 kB
+SwapCached:            0 kB
+SwapTotal:       8389440 kB
+SwapFree:        8389440 kB
+Dirty:               204 kB
+Writeback:             0 kB
+WritebackTmp:          0 kB
+
+== pressure ==
+-- cpu --
+some avg10=0.00 avg60=0.00 avg300=0.00 total=6941083
+full avg10=0.00 avg60=0.00 avg300=0.00 total=0
+-- io --
+some avg10=0.00 avg60=0.00 avg300=0.00 total=17532009
+full avg10=0.00 avg60=0.00 avg300=0.00 total=17169790
+-- memory --
+some avg10=0.00 avg60=0.00 avg300=0.00 total=0
+full avg10=0.00 avg60=0.00 avg300=0.00 total=0
+
+== df ==
+Filesystem                         Type   Size  Used Avail Use% Mounted on
+tmpfs                              tmpfs   19G  2.0M   19G   1% /run
+/dev/sda3                          ext3    63G  4.9G   55G   9% /
+tmpfs                              tmpfs   94G     0   94G   0% /dev/shm
+tmpfs                              tmpfs  5.0M     0  5.0M   0% /run/lock
+/dev/sda1                          vfat   256M   11M  246M   4% /boot/efi
+ops.wisc.cloudlab.us:/proj/lsm-PG0 nfs    100G   56G   45G  56% /proj/lsm-PG0
+ops.wisc.cloudlab.us:/share        nfs     50G  2.1G   48G   5% /share
+tmpfs                              tmpfs   19G     0   19G   0% /run/user/20023
+
+== failed units ==
+  UNIT                 LOAD   ACTIVE SUB    DESCRIPTION
+● crash-pusher.service loaded failed failed Crash log pusher
+
+LOAD   = Reflects whether the unit definition was properly loaded.
+ACTIVE = The high-level unit activation state, i.e. generalization of SUB.
+SUB    = The low-level unit activation state, values depend on unit type.
+1 loaded units listed.
+
+== top processes by cpu ==
+    PID    PPID USER     STAT %CPU %MEM   RSS     ELAPSED COMMAND
+ 373366  372845 LH       Sl    7.4  0.0 114672   01:07:33 codex
+ 372845   10823 LH       Sl    5.9  0.4 804684   01:07:38 node
+ 371916  371898 LH       Sl    1.9  0.0 23564    01:07:44 code-560a9dba96
+ 371878  371758 LH       S     1.5  0.0 10336    01:07:44 sshd
+ 486396  486395 root     S+    1.4  0.0  4004       00:05 bash
+  10823   10819 LH       Sl    0.7  0.0 171984   01:59:56 node
+      1       0 root     Ss    0.6  0.0 12932    02:01:39 systemd
+ 372926   10823 LH       Sl    0.5  0.0 67460    01:07:37 node
+ 486390  373366 root     Ss+   0.4  0.0  5648       00:05 sudo
+   1594       1 message+ Ss    0.1  0.0  4976    02:01:20 dbus-daemon
+  10872   10823 LH       Sl    0.1  0.0 81668    01:59:54 node
+      2       0 root     S     0.0  0.0     0    02:01:39 kthreadd
+      3       2 root     I<    0.0  0.0     0    02:01:39 rcu_gp
+      4       2 root     I<    0.0  0.0     0    02:01:39 rcu_par_gp
+      5       2 root     I<    0.0  0.0     0    02:01:39 slub_flushwq
+      6       2 root     I<    0.0  0.0     0    02:01:39 netns
+      7       2 root     I     0.0  0.0     0    02:01:39 kworker/0:0-events
+      8       2 root     I<    0.0  0.0     0    02:01:39 kworker/0:0H-kblockd
+     11       2 root     I<    0.0  0.0     0    02:01:39 mm_percpu_wq
+     12       2 root     S     0.0  0.0     0    02:01:39 rcu_tasks_rude_
+     13       2 root     S     0.0  0.0     0    02:01:39 rcu_tasks_trace
+     14       2 root     S     0.0  0.0     0    02:01:39 ksoftirqd/0
+     15       2 root     I     0.0  0.0     0    02:01:39 rcu_sched
+     16       2 root     S     0.0  0.0     0    02:01:39 migration/0
+     17       2 root     S     0.0  0.0     0    02:01:39 idle_inject/0
+     19       2 root     S     0.0  0.0     0    02:01:39 cpuhp/0
+     20       2 root     S     0.0  0.0     0    02:01:39 cpuhp/1
+     21       2 root     S     0.0  0.0     0    02:01:39 idle_inject/1
+     22       2 root     S     0.0  0.0     0    02:01:39 migration/1
+     23       2 root     S     0.0  0.0     0    02:01:39 ksoftirqd/1
+     25       2 root     I<    0.0  0.0     0    02:01:39 kworker/1:0H-events_highpri
+     26       2 root     S     0.0  0.0     0    02:01:39 cpuhp/2
+     27       2 root     S     0.0  0.0     0    02:01:39 idle_inject/2
+     28       2 root     S     0.0  0.0     0    02:01:39 migration/2
+     29       2 root     S     0.0  0.0     0    02:01:39 ksoftirqd/2
+     31       2 root     I<    0.0  0.0     0    02:01:39 kworker/2:0H-events_highpri
+     32       2 root     S     0.0  0.0     0    02:01:39 cpuhp/3
+     33       2 root     S     0.0  0.0     0    02:01:39 idle_inject/3
+     34       2 root     S     0.0  0.0     0    02:01:39 migration/3
+
+== top processes by memory ==
+    PID    PPID USER     STAT %CPU %MEM   RSS     ELAPSED COMMAND
+ 372845   10823 LH       Sl    5.9  0.4 804684   01:07:38 node
+  10823   10819 LH       Sl    0.7  0.0 171984   01:59:56 node
+ 373366  372845 LH       Sl    7.4  0.0 114672   01:07:33 codex
+  10872   10823 LH       Sl    0.1  0.0 81668    01:59:54 node
+ 460271  372845 LH       Sl    0.0  0.0 70148       48:48 node
+ 372926   10823 LH       Sl    0.5  0.0 67460    01:07:37 node
+ 371916  371898 LH       Sl    1.9  0.0 23564    01:07:44 code-560a9dba96
+ 469288       1 root     Ssl   0.0  0.0 20508       40:44 packagekitd
+   1601       1 root     Ss    0.0  0.0 19124    02:01:20 networkd-dispat
+    839       1 root     S<s   0.0  0.0 18704    02:01:23 systemd-journal
+   1621       1 systemd+ Ss    0.0  0.0 14380    02:01:20 systemd-resolve
+      1       0 root     Ss    0.6  0.0 12932    02:01:39 systemd
+   9758       1 root     Ss    0.0  0.0 12300    02:00:57 watchdog
+  10501       1 root     Ss    0.0  0.0 11252    02:00:51 rc.progagent
+ 371758    1642 root     Ss    0.0  0.0 10972    01:07:45 sshd
+ 371878  371758 LH       S     1.5  0.0 10336    01:07:44 sshd
+  10617       1 LH       Ss    0.0  0.0  9860    02:00:04 systemd
+   1642       1 root     Ss    0.0  0.0  9440    02:01:19 sshd
+   9671       1 systemd+ Ss    0.0  0.0  8028    02:01:01 systemd-network
+   1607       1 root     Ss    0.0  0.0  7896    02:01:20 systemd-logind
+    455       1 root     Ss    0.0  0.0  7740    02:01:31 systemd-udevd
+ 373050   10872 LH       Ss+   0.0  0.0  6792    01:07:36 bash
+ 469292       1 root     Ssl   0.0  0.0  6604       40:44 polkitd
+    887       1 root     Ss    0.0  0.0  6328    02:01:22 systemd-udevd
+   1640       1 ntp      Ssl   0.0  0.0  6264    02:01:19 ntpd
+   1606       1 root     Ss    0.0  0.0  5976    02:01:20 smartd
+  10502   10501 geniuser S     0.0  0.0  5956    02:00:51 program-agent
+ 486390  373366 root     Ss+   0.4  0.0  5648       00:05 sudo
+   1609       1 root     Ss    0.0  0.0  5624    02:01:20 wpa_supplicant
+   1604       1 syslog   Ssl   0.0  0.0  5180    02:01:20 rsyslogd
+   1594       1 message+ Ss    0.1  0.0  4976    02:01:20 dbus-daemon
+   1599       1 root     Ssl   0.0  0.0  4384    02:01:20 irqbalance
+  10550       1 root     Ss    0.0  0.0  4112    02:00:48 linktest
+   1591       1 _rpc     Ss    0.0  0.0  4068    02:01:21 rpcbind
+ 486396  486395 root     S+    1.4  0.0  4004       00:05 bash
+ 371891  371878 LH       Ss    0.0  0.0  3884    01:07:44 bash
+ 486661  486601 root     R+    0.0  0.0  3876       00:00 ps
+  10618   10617 LH       S     0.0  0.0  3656    02:00:04 (sd-pam)
+ 486610  486602 root     S+    0.0  0.0  3436       00:00 bash
+
+== sockets ==
+Netid State     Recv-Q Send-Q                   Local Address:Port     Peer Address:Port Process                                                   
+udp   UNCONN    0      0                              0.0.0.0:58575         0.0.0.0:*     users:(("rsyslogd",pid=1604,fd=11))                      
+udp   UNCONN    0      0                        127.0.0.53%lo:53            0.0.0.0:*     users:(("systemd-resolve",pid=1621,fd=13))               
+udp   UNCONN    0      0                  128.105.144.18%eno1:68            0.0.0.0:*     users:(("systemd-network",pid=9671,fd=18))               
+udp   UNCONN    0      0                              0.0.0.0:111           0.0.0.0:*     users:(("rpcbind",pid=1591,fd=5),("systemd",pid=1,fd=71))
+udp   UNCONN    0      0                       128.105.144.18:123           0.0.0.0:*     users:(("ntpd",pid=1640,fd=19))                          
+udp   UNCONN    0      0                            127.0.0.1:123           0.0.0.0:*     users:(("ntpd",pid=1640,fd=18))                          
+udp   UNCONN    0      0                              0.0.0.0:123           0.0.0.0:*     users:(("ntpd",pid=1640,fd=17))                          
+udp   UNCONN    0      0                              0.0.0.0:16534         0.0.0.0:*     users:(("emulab-syncd",pid=10495,fd=4))                  
+udp   ESTAB     0      0                       128.105.144.18:36987   128.104.222.9:8509  users:(("slothd",pid=9756,fd=5))                         
+udp   UNCONN    0      0                                 [::]:111              [::]:*     users:(("rpcbind",pid=1591,fd=7),("systemd",pid=1,fd=73))
+udp   UNCONN    0      0      [fe80::25d:73ff:feef:d8fe]%eno1:123              [::]:*     users:(("ntpd",pid=1640,fd=24))                          
+udp   UNCONN    0      0                                [::1]:123              [::]:*     users:(("ntpd",pid=1640,fd=20))                          
+udp   UNCONN    0      0                                 [::]:123              [::]:*     users:(("ntpd",pid=1640,fd=16))                          
+tcp   LISTEN    0      4096                     127.0.0.53%lo:53            0.0.0.0:*     users:(("systemd-resolve",pid=1621,fd=14))               
+tcp   LISTEN    0      128                            0.0.0.0:16534         0.0.0.0:*     users:(("emulab-syncd",pid=10495,fd=3))                  
+tcp   LISTEN    0      128                            0.0.0.0:16505         0.0.0.0:*     users:(("pubsubd",pid=9782,fd=4))                        
+tcp   LISTEN    0      4096                           0.0.0.0:111           0.0.0.0:*     users:(("rpcbind",pid=1591,fd=4),("systemd",pid=1,fd=70))
+tcp   LISTEN    0      128                            0.0.0.0:22            0.0.0.0:*     users:(("sshd",pid=1642,fd=3))                           
+tcp   LISTEN    0      4096                         127.0.0.1:45019         0.0.0.0:*     users:(("code-560a9dba96",pid=371916,fd=9))              
+tcp   ESTAB     0      0                       128.105.144.18:677     128.104.222.8:2049                                                           
+tcp   ESTAB     0      0                            127.0.0.1:45019       127.0.0.1:33876 users:(("code-560a9dba96",pid=371916,fd=12))             
+tcp   ESTAB     0      0                       128.105.144.18:49806  172.64.155.209:443   users:(("codex",pid=373366,fd=18))                       
+tcp   ESTAB     0      0                            127.0.0.1:40338       127.0.0.1:16505 users:(("linktest",pid=10550,fd=3))                      
+tcp   ESTAB     0      82                           127.0.0.1:33876       127.0.0.1:45019 users:(("sshd",pid=371878,fd=9))                         
+tcp   ESTAB     0      0                            127.0.0.1:16505       127.0.0.1:40338 users:(("pubsubd",pid=9782,fd=7))                        
+tcp   ESTAB     0      0                            127.0.0.1:16505       127.0.0.1:40328 users:(("pubsubd",pid=9782,fd=6))                        
+tcp   ESTAB     0      0                            127.0.0.1:40328       127.0.0.1:16505 users:(("program-agent",pid=10502,fd=3))                 
+tcp   SYN-RECV  0      0                       128.105.144.18:22     46.224.203.189:46906                                                          
+tcp   ESTAB     0      0                       128.105.144.18:45028  172.64.155.209:443   users:(("codex",pid=373366,fd=23))                       
+tcp   TIME-WAIT 0      0                       128.105.144.18:48134   128.104.222.9:7777                                                           
+tcp   ESTAB     0      0                       128.105.144.18:22    165.230.224.187:25002 users:(("sshd",pid=371878,fd=4),("sshd",pid=371758,fd=4))
+tcp   ESTAB     0      0                       128.105.144.18:46378   128.104.222.8:16505 users:(("pubsubd",pid=9782,fd=5))                        
+tcp   LISTEN    0      4096                              [::]:111              [::]:*     users:(("rpcbind",pid=1591,fd=6),("systemd",pid=1,fd=72))
+tcp   LISTEN    0      128                               [::]:22               [::]:*     users:(("sshd",pid=1642,fd=4))                           
