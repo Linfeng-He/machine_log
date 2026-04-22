@@ -1,402 +1,402 @@
-===== journal snapshot host=node0 boot_started_utc=20260422T005834Z boot_id=179612ea-2e99-4892-8219-f26f64b164e4 captured_utc=20260422T005953Z =====
+===== journal snapshot host=node0 boot_started_utc=20260422T032225Z boot_id=179612ea-2e99-4892-8219-f26f64b164e4 captured_utc=20260422T032227Z =====
 
-Apr 21 17:31:33 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd-logind[806]: New session 1 of user root.
-Apr 21 17:31:33 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Finished User Runtime Directory /run/user/0.
-Apr 21 17:31:33 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Starting User Manager for UID 0...
-Apr 21 17:31:33 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1797]: pam_unix(systemd-user:session): session opened for user root(uid=0) by (uid=0)
-Apr 21 17:31:33 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1797]: Queued start job for default target Main User Target.
-Apr 21 17:31:33 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1797]: Created slice User Application Slice.
-Apr 21 17:31:33 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1797]: Reached target Paths.
-Apr 21 17:31:33 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1797]: Reached target Timers.
-Apr 21 17:31:33 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1797]: Starting D-Bus User Message Bus Socket...
-Apr 21 17:31:33 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1797]: Listening on GnuPG network certificate management daemon.
-Apr 21 17:31:33 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1797]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
-Apr 21 17:31:33 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1797]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
-Apr 21 17:31:33 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1797]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
-Apr 21 17:31:33 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1797]: Listening on GnuPG cryptographic agent and passphrase cache.
-Apr 21 17:31:33 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1797]: Listening on debconf communication socket.
-Apr 21 17:31:33 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1797]: Listening on D-Bus User Message Bus Socket.
-Apr 21 17:31:33 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1797]: Reached target Sockets.
-Apr 21 17:31:33 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1797]: Reached target Basic System.
-Apr 21 17:31:33 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1797]: Reached target Main User Target.
-Apr 21 17:31:33 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1797]: Startup finished in 120ms.
-Apr 21 17:31:33 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Started User Manager for UID 0.
-Apr 21 17:31:33 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Started Session 1 of User root.
-Apr 21 17:31:33 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[1794]: Received disconnect from 128.110.156.4 port 41038:11: disconnected by user
-Apr 21 17:31:33 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[1794]: Disconnected from user root 128.110.156.4 port 41038
-Apr 21 17:31:33 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[1794]: pam_unix(sshd:session): session closed for user root
-Apr 21 17:31:33 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd-logind[806]: Session 1 logged out. Waiting for processes to exit.
-Apr 21 17:31:34 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: session-1.scope: Deactivated successfully.
-Apr 21 17:31:34 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd-logind[806]: Removed session 1.
-Apr 21 17:31:36 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: systemd-fsckd.service: Deactivated successfully.
-Apr 21 17:31:36 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Starting Online ext4 Metadata Check for All Filesystems...
-Apr 21 17:31:36 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: e2scrub_all.service: Deactivated successfully.
-Apr 21 17:31:36 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Finished Online ext4 Metadata Check for All Filesystems.
-Apr 21 17:31:44 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[1838]: Accepted publickey for LH from 165.230.224.187 port 4432 ssh2: RSA SHA256:hElkzd92JFx2Be3nEdpFzMpn+m1N3su9yosmOrbUAmU
-Apr 21 17:31:44 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[1838]: pam_unix(sshd:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 17:31:44 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Created slice User Slice of UID 20024.
-Apr 21 17:31:44 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Starting User Runtime Directory /run/user/20024...
-Apr 21 17:31:44 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd-logind[806]: New session 3 of user LH.
-Apr 21 17:31:44 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Finished User Runtime Directory /run/user/20024.
-Apr 21 17:31:44 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Starting User Manager for UID 20024...
-Apr 21 17:31:44 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1841]: pam_unix(systemd-user:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 17:31:44 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1841]: Queued start job for default target Main User Target.
-Apr 21 17:31:44 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1841]: Created slice User Application Slice.
-Apr 21 17:31:44 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1841]: Reached target Paths.
-Apr 21 17:31:44 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1841]: Reached target Timers.
-Apr 21 17:31:44 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1841]: Starting D-Bus User Message Bus Socket...
-Apr 21 17:31:44 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1841]: Listening on GnuPG network certificate management daemon.
-Apr 21 17:31:44 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1841]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
-Apr 21 17:31:44 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1841]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
-Apr 21 17:31:44 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1841]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
-Apr 21 17:31:44 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1841]: Listening on GnuPG cryptographic agent and passphrase cache.
-Apr 21 17:31:44 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1841]: Listening on debconf communication socket.
-Apr 21 17:31:44 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1841]: Listening on D-Bus User Message Bus Socket.
-Apr 21 17:31:44 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1841]: Reached target Sockets.
-Apr 21 17:31:44 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1841]: Reached target Basic System.
-Apr 21 17:31:44 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1841]: Reached target Main User Target.
-Apr 21 17:31:44 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1841]: Startup finished in 158ms.
-Apr 21 17:31:44 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Started User Manager for UID 20024.
-Apr 21 17:31:44 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Started Session 3 of User LH.
-Apr 21 17:31:45 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopping User Manager for UID 0...
-Apr 21 17:31:45 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1797]: Stopped target Main User Target.
-Apr 21 17:31:45 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1797]: Stopped target Basic System.
-Apr 21 17:31:45 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1797]: Stopped target Paths.
-Apr 21 17:31:45 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1797]: Stopped target Sockets.
-Apr 21 17:31:45 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1797]: Stopped target Timers.
-Apr 21 17:31:45 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1797]: Closed D-Bus User Message Bus Socket.
-Apr 21 17:31:45 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1797]: Closed GnuPG network certificate management daemon.
-Apr 21 17:31:45 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1797]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
-Apr 21 17:31:45 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1797]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
-Apr 21 17:31:45 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1797]: Closed GnuPG cryptographic agent (ssh-agent emulation).
-Apr 21 17:31:45 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1797]: Closed GnuPG cryptographic agent and passphrase cache.
-Apr 21 17:31:45 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1797]: Closed debconf communication socket.
-Apr 21 17:31:45 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1797]: Removed slice User Application Slice.
-Apr 21 17:31:45 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1797]: Reached target Shutdown.
-Apr 21 17:31:45 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1797]: Finished Exit the Session.
-Apr 21 17:31:45 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1797]: Reached target Exit the Session.
-Apr 21 17:31:45 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: user@0.service: Deactivated successfully.
-Apr 21 17:31:45 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopped User Manager for UID 0.
-Apr 21 17:31:45 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopping User Runtime Directory /run/user/0...
-Apr 21 17:31:45 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: run-user-0.mount: Deactivated successfully.
-Apr 21 17:31:45 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: user-runtime-dir@0.service: Deactivated successfully.
-Apr 21 17:31:45 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopped User Runtime Directory /run/user/0.
-Apr 21 17:31:45 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Removed slice User Slice of UID 0.
-Apr 21 17:32:31 node0.testnode1.lsm-pg0.utah.cloudlab.us vsce-sign[2094]: Package file size:  20335656
-Apr 21 17:32:31 node0.testnode1.lsm-pg0.utah.cloudlab.us vsce-sign[2094]: Signature archive file size:  15928
-Apr 21 17:32:32 node0.testnode1.lsm-pg0.utah.cloudlab.us vsce-sign[2094]: Manifest file size:  16701
-Apr 21 17:32:32 node0.testnode1.lsm-pg0.utah.cloudlab.us vsce-sign[2094]: Signature file size:  19347
-Apr 21 17:32:32 node0.testnode1.lsm-pg0.utah.cloudlab.us vsce-sign[2094]: ManifestPackageIntegrityPolicy succeeded.
-Apr 21 17:32:32 node0.testnode1.lsm-pg0.utah.cloudlab.us vsce-sign[2094]: SignatureIntegrityPolicy for primary signature succeeded.
-Apr 21 17:32:32 node0.testnode1.lsm-pg0.utah.cloudlab.us vsce-sign[2094]: SignatureValidityPolicy for primary signature succeeded.
-Apr 21 17:32:32 node0.testnode1.lsm-pg0.utah.cloudlab.us vsce-sign[2094]: SignatureIntegrityPolicy for primary timestamp signature succeeded.
-Apr 21 17:32:32 node0.testnode1.lsm-pg0.utah.cloudlab.us vsce-sign[2094]: SignatureValidityPolicy for primary timestamp signature succeeded.
-Apr 21 17:32:32 node0.testnode1.lsm-pg0.utah.cloudlab.us vsce-sign[2094]: X.509 certificate chain validation will use the fallback certificate bundle for timestamping.
-Apr 21 17:32:34 node0.testnode1.lsm-pg0.utah.cloudlab.us vsce-sign[2094]: SignatureTrustPolicy for publisher primary signature timestamp signature succeeded.
-Apr 21 17:32:34 node0.testnode1.lsm-pg0.utah.cloudlab.us vsce-sign[2094]: X.509 certificate chain validation will use the fallback certificate bundle for code signing.
-Apr 21 17:32:34 node0.testnode1.lsm-pg0.utah.cloudlab.us vsce-sign[2094]: SignatureTrustPolicy for publisher primary signature succeeded.
-Apr 21 17:32:34 node0.testnode1.lsm-pg0.utah.cloudlab.us vsce-sign[2094]: SignatureIntegrityPolicy for repository countersignature succeeded.
-Apr 21 17:32:34 node0.testnode1.lsm-pg0.utah.cloudlab.us vsce-sign[2094]: SignatureValidityPolicy for repository countersignature succeeded.
-Apr 21 17:32:34 node0.testnode1.lsm-pg0.utah.cloudlab.us vsce-sign[2094]: SignatureIntegrityPolicy for repository countersignature timestamp signature succeeded.
-Apr 21 17:32:34 node0.testnode1.lsm-pg0.utah.cloudlab.us vsce-sign[2094]: SignatureValidityPolicy for repository countersignature timestamp signature succeeded.
-Apr 21 17:32:34 node0.testnode1.lsm-pg0.utah.cloudlab.us vsce-sign[2094]: SignatureTrustPolicy for repository countersignature timestamp signature succeeded.
-Apr 21 17:32:34 node0.testnode1.lsm-pg0.utah.cloudlab.us vsce-sign[2094]: SignatureTrustPolicy for repository countersignature succeeded.
-Apr 21 17:32:34 node0.testnode1.lsm-pg0.utah.cloudlab.us vsce-sign[2094]: RepositoryCountersignaturePolicy for repository countersignature succeeded with OK.
-Apr 21 17:32:34 node0.testnode1.lsm-pg0.utah.cloudlab.us vsce-sign[2094]: Primary signature type:  publisher primary signature
-Apr 21 17:32:34 node0.testnode1.lsm-pg0.utah.cloudlab.us vsce-sign[2094]: Primary signature status:  OK
-Apr 21 17:32:34 node0.testnode1.lsm-pg0.utah.cloudlab.us vsce-sign[2094]: Timestamp signature status:  OK
-Apr 21 17:32:34 node0.testnode1.lsm-pg0.utah.cloudlab.us vsce-sign[2094]: Repository countersignature status:  OK
-Apr 21 17:32:34 node0.testnode1.lsm-pg0.utah.cloudlab.us vsce-sign[2094]: Repository countersignature timestamp status:  OK
-Apr 21 17:32:34 node0.testnode1.lsm-pg0.utah.cloudlab.us vsce-sign[2094]: Exit code:  Success
-Apr 21 17:37:14 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Starting Discard unused blocks on filesystems from /etc/fstab...
-Apr 21 17:37:16 node0.testnode1.lsm-pg0.utah.cloudlab.us fstrim[2159]: /boot/efi: 245.6 MiB (257544192 bytes) trimmed on /dev/disk/by-partlabel/EFI\x20System
-Apr 21 17:37:16 node0.testnode1.lsm-pg0.utah.cloudlab.us fstrim[2159]: /: 59.3 GiB (63637114880 bytes) trimmed on /dev/disk/by-uuid/571337a8-0ea6-44bd-9cfc-6cb9719427c1
-Apr 21 17:37:16 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: fstrim.service: Deactivated successfully.
-Apr 21 17:37:16 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Finished Discard unused blocks on filesystems from /etc/fstab.
-Apr 21 17:40:50 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2165]: Invalid user admin from 87.251.64.149 port 29446
-Apr 21 17:40:50 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2165]: Connection reset by invalid user admin 87.251.64.149 port 29446 [preauth]
-Apr 21 17:40:51 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2167]: Invalid user admin from 87.251.64.149 port 29460
-Apr 21 17:40:51 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2167]: Connection reset by invalid user admin 87.251.64.149 port 29460 [preauth]
-Apr 21 17:40:52 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2169]: Invalid user admin from 87.251.64.149 port 29464
-Apr 21 17:40:52 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2169]: Connection reset by invalid user admin 87.251.64.149 port 29464 [preauth]
-Apr 21 17:40:53 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2171]: Invalid user user from 87.251.64.149 port 29482
-Apr 21 17:40:53 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2171]: Connection reset by invalid user user 87.251.64.149 port 29482 [preauth]
-Apr 21 17:40:54 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2173]: Connection reset by authenticating user root 87.251.64.149 port 29490 [preauth]
-Apr 21 17:40:57 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2175]: Invalid user IEUser from 87.251.64.149 port 29518
-Apr 21 17:40:57 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2175]: Connection reset by invalid user IEUser 87.251.64.149 port 29518 [preauth]
-Apr 21 17:40:58 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2177]: Invalid user admin from 87.251.64.149 port 29540
-Apr 21 17:40:58 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2177]: Connection reset by invalid user admin 87.251.64.149 port 29540 [preauth]
-Apr 21 17:40:59 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2179]: Invalid user admin from 87.251.64.149 port 26590
-Apr 21 17:40:59 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2179]: Connection reset by invalid user admin 87.251.64.149 port 26590 [preauth]
-Apr 21 17:41:00 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2181]: Connection reset by authenticating user root 87.251.64.149 port 26612 [preauth]
-Apr 21 17:41:01 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2183]: Invalid user admin from 87.251.64.149 port 26618
-Apr 21 17:41:01 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2183]: Connection reset by invalid user admin 87.251.64.149 port 26618 [preauth]
-Apr 21 17:41:03 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2185]: Connection reset by authenticating user root 87.251.64.149 port 26622 [preauth]
-Apr 21 17:41:05 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2187]: Invalid user admin from 87.251.64.149 port 26628
-Apr 21 17:41:06 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2187]: Connection reset by invalid user admin 87.251.64.149 port 26628 [preauth]
-Apr 21 17:41:08 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2189]: Connection reset by authenticating user root 87.251.64.149 port 26652 [preauth]
-Apr 21 17:41:09 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2191]: Connection reset by authenticating user root 87.251.64.149 port 44702 [preauth]
-Apr 21 17:41:10 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2193]: Connection reset by authenticating user root 87.251.64.149 port 44726 [preauth]
-Apr 21 17:41:11 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2195]: Connection reset by authenticating user root 87.251.64.149 port 44728 [preauth]
-Apr 21 17:41:12 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2197]: Connection reset by authenticating user root 87.251.64.149 port 44740 [preauth]
-Apr 21 17:41:13 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2199]: Invalid user admin from 87.251.64.149 port 44792
-Apr 21 17:41:13 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2199]: Connection reset by invalid user admin 87.251.64.149 port 44792 [preauth]
-Apr 21 17:41:14 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2201]: Invalid user demo from 87.251.64.149 port 44818
-Apr 21 17:41:14 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2201]: Connection reset by invalid user demo 87.251.64.149 port 44818 [preauth]
-Apr 21 17:41:15 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2203]: Connection reset by authenticating user root 87.251.64.149 port 44828 [preauth]
-Apr 21 17:41:16 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2205]: Connection reset by authenticating user root 87.251.64.149 port 44860 [preauth]
-Apr 21 17:41:17 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2207]: Connection reset by authenticating user root 87.251.64.149 port 44868 [preauth]
-Apr 21 17:41:18 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2209]: Connection reset by authenticating user root 87.251.64.149 port 44886 [preauth]
-Apr 21 17:41:19 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2211]: Invalid user ubnt from 87.251.64.149 port 16246
-Apr 21 17:41:20 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2211]: Connection reset by invalid user ubnt 87.251.64.149 port 16246 [preauth]
-Apr 21 17:41:20 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2213]: Invalid user ui from 87.251.64.149 port 16260
-Apr 21 17:41:21 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2213]: Connection reset by invalid user ui 87.251.64.149 port 16260 [preauth]
-Apr 21 17:41:22 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2215]: Invalid user a from 87.251.64.149 port 16290
-Apr 21 17:41:22 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2215]: Connection reset by invalid user a 87.251.64.149 port 16290 [preauth]
-Apr 21 17:41:23 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2217]: Invalid user admin from 87.251.64.149 port 16292
-Apr 21 17:41:23 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2217]: Connection reset by invalid user admin 87.251.64.149 port 16292 [preauth]
-Apr 21 17:41:24 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2219]: Invalid user admin from 87.251.64.149 port 16294
-Apr 21 17:41:24 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2219]: Connection reset by invalid user admin 87.251.64.149 port 16294 [preauth]
-Apr 21 17:41:25 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2221]: Connection reset by authenticating user root 87.251.64.149 port 16310 [preauth]
-Apr 21 17:41:27 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2224]: Invalid user Admin from 87.251.64.149 port 16322
-Apr 21 17:41:27 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2224]: Connection reset by invalid user Admin 87.251.64.149 port 16322 [preauth]
-Apr 21 17:45:59 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2229]: Connection reset by authenticating user root 87.251.64.147 port 21186 [preauth]
-Apr 21 17:45:59 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Starting Cleanup of Temporary Directories...
-Apr 21 17:45:59 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: systemd-tmpfiles-clean.service: Deactivated successfully.
-Apr 21 17:45:59 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Finished Cleanup of Temporary Directories.
-Apr 21 17:46:00 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2232]: Connection reset by authenticating user root 87.251.64.147 port 21192 [preauth]
-Apr 21 17:46:01 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2234]: Connection reset by authenticating user root 87.251.64.147 port 21202 [preauth]
-Apr 21 17:46:02 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2236]: Connection reset by authenticating user root 87.251.64.147 port 21218 [preauth]
-Apr 21 17:46:03 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2238]: Connection reset by authenticating user root 87.251.64.147 port 21230 [preauth]
-Apr 21 17:46:04 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2240]: Connection reset by authenticating user root 87.251.64.147 port 21240 [preauth]
-Apr 21 17:46:05 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2242]: Connection reset by authenticating user root 87.251.64.147 port 21246 [preauth]
-Apr 21 17:46:06 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2244]: Connection reset by authenticating user root 87.251.64.147 port 21260 [preauth]
-Apr 21 17:46:08 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2246]: Connection reset by authenticating user root 87.251.64.147 port 21276 [preauth]
-Apr 21 17:46:10 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2248]: Connection reset by authenticating user root 87.251.64.147 port 16330 [preauth]
-Apr 21 17:46:11 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2250]: Connection reset by authenticating user root 87.251.64.147 port 16332 [preauth]
-Apr 21 17:46:12 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2252]: Connection reset by authenticating user root 87.251.64.147 port 16348 [preauth]
-Apr 21 17:46:13 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2254]: Connection reset by authenticating user root 87.251.64.147 port 16352 [preauth]
-Apr 21 17:46:14 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2256]: Connection reset by authenticating user root 87.251.64.147 port 16362 [preauth]
-Apr 21 17:46:15 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2259]: Connection reset by authenticating user root 87.251.64.147 port 16372 [preauth]
-Apr 21 17:46:17 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2261]: Connection reset by authenticating user root 87.251.64.147 port 16382 [preauth]
-Apr 21 17:46:18 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2263]: Connection reset by authenticating user root 87.251.64.147 port 24754 [preauth]
-Apr 21 17:46:20 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2265]: Connection reset by authenticating user root 87.251.64.147 port 24774 [preauth]
-Apr 21 17:46:21 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2267]: Connection reset by authenticating user root 87.251.64.147 port 24792 [preauth]
-Apr 21 17:46:22 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2269]: Connection reset by authenticating user root 87.251.64.147 port 24796 [preauth]
-Apr 21 17:46:23 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2271]: Connection reset by authenticating user root 87.251.64.147 port 24818 [preauth]
-Apr 21 17:46:24 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2273]: Connection reset by authenticating user root 87.251.64.147 port 24828 [preauth]
-Apr 21 17:46:25 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2275]: Connection reset by authenticating user root 87.251.64.147 port 24832 [preauth]
-Apr 21 17:46:27 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2277]: Connection reset by authenticating user root 87.251.64.147 port 24844 [preauth]
-Apr 21 17:46:28 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2279]: Connection reset by authenticating user root 87.251.64.147 port 18512 [preauth]
-Apr 21 17:46:29 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2281]: Connection reset by authenticating user root 87.251.64.147 port 18520 [preauth]
-Apr 21 17:46:30 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2283]: Connection reset by authenticating user root 87.251.64.147 port 18526 [preauth]
-Apr 21 17:46:31 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2285]: Connection reset by authenticating user root 87.251.64.147 port 18540 [preauth]
-Apr 21 17:46:33 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2287]: Connection reset by authenticating user root 87.251.64.147 port 18550 [preauth]
-Apr 21 17:46:34 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2289]: Connection reset by authenticating user root 87.251.64.147 port 18554 [preauth]
-Apr 21 17:48:11 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2292]: Connection closed by authenticating user root 8.217.191.159 port 35926 [preauth]
-Apr 21 17:52:14 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Starting Daily apt upgrade and clean activities...
-Apr 21 17:52:14 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: apt-daily-upgrade.service: Deactivated successfully.
-Apr 21 17:52:14 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Finished Daily apt upgrade and clean activities.
-Apr 21 17:52:32 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2357]: Invalid user eliezer from 213.209.159.159 port 59303
-Apr 21 17:52:33 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2357]: Received disconnect from 213.209.159.159 port 59303:11: Bye [preauth]
-Apr 21 17:52:33 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2357]: Disconnected from invalid user eliezer 213.209.159.159 port 59303 [preauth]
-Apr 21 17:53:28 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2360]: Connection reset by authenticating user root 87.251.64.145 port 33728 [preauth]
-Apr 21 17:53:29 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2362]: Connection reset by authenticating user root 87.251.64.145 port 33634 [preauth]
-Apr 21 17:53:30 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2364]: Connection reset by authenticating user root 87.251.64.145 port 33648 [preauth]
-Apr 21 17:53:31 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2366]: Connection reset by authenticating user root 87.251.64.145 port 33660 [preauth]
-Apr 21 17:53:33 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2368]: Connection reset by authenticating user root 87.251.64.145 port 33666 [preauth]
-Apr 21 17:53:34 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2370]: Connection reset by authenticating user root 87.251.64.145 port 33668 [preauth]
-Apr 21 17:53:35 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2372]: Connection reset by authenticating user root 87.251.64.145 port 33678 [preauth]
-Apr 21 17:53:36 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2374]: Connection reset by authenticating user root 87.251.64.145 port 33688 [preauth]
-Apr 21 17:53:37 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2376]: Connection reset by authenticating user root 87.251.64.145 port 33696 [preauth]
-Apr 21 17:53:39 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2378]: Connection reset by authenticating user root 87.251.64.145 port 33704 [preauth]
-Apr 21 17:53:40 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2380]: Connection reset by authenticating user root 87.251.64.145 port 16790 [preauth]
-Apr 21 17:53:41 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2382]: Connection reset by authenticating user root 87.251.64.145 port 16804 [preauth]
-Apr 21 17:53:42 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2384]: Connection reset by authenticating user root 87.251.64.145 port 16814 [preauth]
-Apr 21 17:53:43 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2386]: Connection reset by authenticating user root 87.251.64.145 port 16830 [preauth]
-Apr 21 17:53:45 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2388]: Connection reset by authenticating user root 87.251.64.145 port 16842 [preauth]
-Apr 21 17:53:47 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2390]: Connection reset by authenticating user root 87.251.64.145 port 16856 [preauth]
-Apr 21 17:53:48 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2392]: Connection reset by authenticating user root 87.251.64.145 port 16860 [preauth]
-Apr 21 17:53:49 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2394]: Connection reset by authenticating user root 87.251.64.145 port 59006 [preauth]
-Apr 21 17:53:51 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2396]: Connection reset by authenticating user root 87.251.64.145 port 59018 [preauth]
-Apr 21 17:53:52 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2398]: Connection reset by authenticating user root 87.251.64.145 port 59034 [preauth]
-Apr 21 17:53:53 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2400]: Connection reset by authenticating user root 87.251.64.145 port 59042 [preauth]
-Apr 21 17:53:54 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2402]: Connection reset by authenticating user root 87.251.64.145 port 59058 [preauth]
-Apr 21 17:53:55 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2404]: Connection reset by authenticating user root 87.251.64.145 port 59066 [preauth]
-Apr 21 17:53:57 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2406]: Connection reset by authenticating user root 87.251.64.145 port 59092 [preauth]
-Apr 21 17:53:58 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2408]: Connection reset by authenticating user root 87.251.64.145 port 59106 [preauth]
-Apr 21 17:53:59 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2410]: Connection reset by authenticating user root 87.251.64.145 port 7336 [preauth]
-Apr 21 17:54:00 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2412]: Connection reset by authenticating user root 87.251.64.145 port 7340 [preauth]
-Apr 21 17:54:03 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2414]: Connection reset by authenticating user root 87.251.64.145 port 7352 [preauth]
-Apr 21 17:54:04 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2416]: Connection reset by authenticating user root 87.251.64.145 port 7368 [preauth]
-Apr 21 17:54:05 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2418]: Connection reset by authenticating user root 87.251.64.145 port 7384 [preauth]
-Apr 21 17:56:35 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2422]: error: kex_exchange_identification: Connection closed by remote host
-Apr 21 17:56:35 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2422]: Connection closed by 180.76.134.19 port 60154
-Apr 21 17:59:57 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2428]: Invalid user admin from 2.57.121.112 port 57591
-Apr 21 17:59:57 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2428]: Received disconnect from 2.57.121.112 port 57591:11: Bye [preauth]
-Apr 21 17:59:57 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2428]: Disconnected from invalid user admin 2.57.121.112 port 57591 [preauth]
-Apr 21 18:03:41 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2436]: Invalid user frappe from 87.251.64.144 port 53970
-Apr 21 18:03:41 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2436]: Connection reset by invalid user frappe 87.251.64.144 port 53970 [preauth]
-Apr 21 18:03:42 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2438]: Invalid user git from 87.251.64.144 port 65026
-Apr 21 18:03:42 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2438]: Connection reset by invalid user git 87.251.64.144 port 65026 [preauth]
-Apr 21 18:03:43 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2440]: Invalid user git from 87.251.64.144 port 65030
-Apr 21 18:03:43 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2440]: Connection reset by invalid user git 87.251.64.144 port 65030 [preauth]
-Apr 21 18:03:44 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2442]: Invalid user grh from 87.251.64.144 port 65032
-Apr 21 18:03:44 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2442]: Connection reset by invalid user grh 87.251.64.144 port 65032 [preauth]
-Apr 21 18:03:46 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2444]: Invalid user guest from 87.251.64.144 port 65048
-Apr 21 18:03:46 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2444]: Connection reset by invalid user guest 87.251.64.144 port 65048 [preauth]
-Apr 21 18:03:47 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2446]: Invalid user gxk from 87.251.64.144 port 65062
-Apr 21 18:03:47 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2446]: Connection reset by invalid user gxk 87.251.64.144 port 65062 [preauth]
-Apr 21 18:03:48 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2448]: Invalid user hannes from 87.251.64.144 port 65066
-Apr 21 18:03:48 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2448]: Connection reset by invalid user hannes 87.251.64.144 port 65066 [preauth]
-Apr 21 18:03:49 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2450]: Invalid user hasegawa from 87.251.64.144 port 65074
-Apr 21 18:03:49 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2450]: Connection reset by invalid user hasegawa 87.251.64.144 port 65074 [preauth]
-Apr 21 18:03:50 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2452]: Invalid user hostmaster from 87.251.64.144 port 65080
-Apr 21 18:03:51 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2452]: Connection reset by invalid user hostmaster 87.251.64.144 port 65080 [preauth]
-Apr 21 18:03:53 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2454]: Invalid user huangwei from 87.251.64.144 port 29206
-Apr 21 18:03:53 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2454]: Connection reset by invalid user huangwei 87.251.64.144 port 29206 [preauth]
-Apr 21 18:03:54 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2457]: Invalid user jiashuo from 87.251.64.144 port 29210
-Apr 21 18:03:54 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2457]: Connection reset by invalid user jiashuo 87.251.64.144 port 29210 [preauth]
-Apr 21 18:03:55 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2459]: Invalid user jung from 87.251.64.144 port 29224
-Apr 21 18:03:55 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2459]: Connection reset by invalid user jung 87.251.64.144 port 29224 [preauth]
-Apr 21 18:03:56 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2461]: Invalid user kxh from 87.251.64.144 port 29230
-Apr 21 18:03:56 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2461]: Connection reset by invalid user kxh 87.251.64.144 port 29230 [preauth]
-Apr 21 18:03:57 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2463]: Invalid user ldc from 87.251.64.144 port 29244
-Apr 21 18:03:58 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2463]: Connection reset by invalid user ldc 87.251.64.144 port 29244 [preauth]
-Apr 21 18:03:58 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2465]: Invalid user lima from 87.251.64.144 port 29262
-Apr 21 18:03:59 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2465]: Connection reset by invalid user lima 87.251.64.144 port 29262 [preauth]
-Apr 21 18:04:00 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2467]: Invalid user lingboyang from 87.251.64.144 port 29276
-Apr 21 18:04:00 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2467]: Connection reset by invalid user lingboyang 87.251.64.144 port 29276 [preauth]
-Apr 21 18:04:00 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2469]: Invalid user linux from 87.251.64.144 port 29290
-Apr 21 18:04:01 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2469]: Connection reset by invalid user linux 87.251.64.144 port 29290 [preauth]
-Apr 21 18:04:01 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2471]: Invalid user login from 87.251.64.144 port 56804
-Apr 21 18:04:02 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2471]: Connection reset by invalid user login 87.251.64.144 port 56804 [preauth]
-Apr 21 18:04:03 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2473]: Invalid user lxy from 87.251.64.144 port 56830
-Apr 21 18:04:03 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2473]: Connection reset by invalid user lxy 87.251.64.144 port 56830 [preauth]
-Apr 21 18:04:04 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2475]: Invalid user ly from 87.251.64.144 port 56838
-Apr 21 18:04:04 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2475]: Connection reset by invalid user ly 87.251.64.144 port 56838 [preauth]
-Apr 21 18:04:05 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2477]: Invalid user ly from 87.251.64.144 port 56850
-Apr 21 18:04:05 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2477]: Connection reset by invalid user ly 87.251.64.144 port 56850 [preauth]
-Apr 21 18:04:07 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2479]: Invalid user lyw from 87.251.64.144 port 56856
-Apr 21 18:04:07 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2479]: Connection reset by invalid user lyw 87.251.64.144 port 56856 [preauth]
-Apr 21 18:04:08 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2481]: Invalid user lz from 87.251.64.144 port 56876
-Apr 21 18:04:08 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2481]: Connection reset by invalid user lz 87.251.64.144 port 56876 [preauth]
-Apr 21 18:04:09 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2483]: Invalid user lzc from 87.251.64.144 port 56892
-Apr 21 18:04:09 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2483]: Connection reset by invalid user lzc 87.251.64.144 port 56892 [preauth]
-Apr 21 18:04:12 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2485]: Invalid user lzm from 87.251.64.144 port 56908
-Apr 21 18:04:12 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2485]: Connection reset by invalid user lzm 87.251.64.144 port 56908 [preauth]
-Apr 21 18:04:13 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2487]: Invalid user maint from 87.251.64.144 port 19152
-Apr 21 18:04:13 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2487]: Connection reset by invalid user maint 87.251.64.144 port 19152 [preauth]
-Apr 21 18:04:14 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2489]: Invalid user manager from 87.251.64.144 port 19154
-Apr 21 18:04:14 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2489]: Connection reset by invalid user manager 87.251.64.144 port 19154 [preauth]
-Apr 21 18:04:15 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2492]: Invalid user manan from 87.251.64.144 port 19180
-Apr 21 18:04:15 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2492]: Connection reset by invalid user manan 87.251.64.144 port 19180 [preauth]
-Apr 21 18:04:17 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2494]: Invalid user maria from 87.251.64.144 port 19190
-Apr 21 18:04:17 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2494]: Connection reset by invalid user maria 87.251.64.144 port 19190 [preauth]
-Apr 21 18:04:18 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2496]: Invalid user marketing from 87.251.64.144 port 19202
-Apr 21 18:04:18 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2496]: Connection reset by invalid user marketing 87.251.64.144 port 19202 [preauth]
-Apr 21 18:10:59 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Starting Ubuntu Advantage Timer for running repeated jobs...
-Apr 21 18:10:59 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: ua-timer.service: Deactivated successfully.
-Apr 21 18:10:59 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Finished Ubuntu Advantage Timer for running repeated jobs.
-Apr 21 18:17:01 node0.testnode1.lsm-pg0.utah.cloudlab.us CRON[2517]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
-Apr 21 18:17:01 node0.testnode1.lsm-pg0.utah.cloudlab.us CRON[2518]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
-Apr 21 18:17:01 node0.testnode1.lsm-pg0.utah.cloudlab.us CRON[2517]: pam_unix(cron:session): session closed for user root
-Apr 21 18:22:17 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2525]: Received disconnect from 128.110.156.4 port 47929:11:  [preauth]
-Apr 21 18:22:17 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2524]: Received disconnect from 128.110.156.4 port 47928:11:  [preauth]
-Apr 21 18:22:17 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2525]: Disconnected from authenticating user root 128.110.156.4 port 47929 [preauth]
-Apr 21 18:22:17 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2528]: Received disconnect from 128.110.156.4 port 47930:11:  [preauth]
-Apr 21 18:22:17 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2524]: Disconnected from authenticating user root 128.110.156.4 port 47928 [preauth]
-Apr 21 18:22:17 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2528]: Disconnected from authenticating user root 128.110.156.4 port 47930 [preauth]
-Apr 21 18:22:17 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2526]: Received disconnect from 128.110.156.4 port 47926:11:  [preauth]
-Apr 21 18:22:17 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2527]: Received disconnect from 128.110.156.4 port 47927:11:  [preauth]
-Apr 21 18:22:17 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2527]: Disconnected from authenticating user root 128.110.156.4 port 47927 [preauth]
-Apr 21 18:22:17 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[2526]: Disconnected from authenticating user root 128.110.156.4 port 47926 [preauth]
-Apr 21 18:31:04 node0.testnode1.lsm-pg0.utah.cloudlab.us usermod[2544]: change user 'root' password
-Apr 21 18:36:28 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Starting Message of the Day...
-Apr 21 18:36:28 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: motd-news.service: Deactivated successfully.
-Apr 21 18:36:28 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Finished Message of the Day.
-Apr 21 18:58:19 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[3072]:       LH : TTY=pts/0 ; PWD=/users/LH/machine_log ; USER=root ; COMMAND=./install_crash_pusher.sh
-Apr 21 18:58:19 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[3072]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=20024)
-Apr 21 18:58:31 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[3312]:     root : TTY=pts/1 ; PWD=/users/LH/machine_log ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock git -C /users/LH/machine_log remote get-url origin
-Apr 21 18:58:31 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[3312]: pam_unix(sudo:session): session opened for user LH(uid=20024) by LH(uid=0)
-Apr 21 18:58:31 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[3312]: pam_unix(sudo:session): session closed for user LH
-Apr 21 18:58:31 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[3316]:     root : TTY=pts/1 ; PWD=/users/LH/machine_log ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock git -C /users/LH/machine_log push --dry-run origin main
-Apr 21 18:58:31 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[3316]: pam_unix(sudo:session): session opened for user LH(uid=20024) by LH(uid=0)
-Apr 21 18:58:32 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[3316]: pam_unix(sudo:session): session closed for user LH
-Apr 21 18:58:33 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Reloading.
-Apr 21 18:58:33 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
-Apr 21 18:58:34 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Reloading.
-Apr 21 18:58:34 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
-Apr 21 18:58:34 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Started Crash log pusher.
-Apr 21 18:58:34 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[3072]: pam_unix(sudo:session): session closed for user root
-Apr 21 18:58:34 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[3392]: [2026-04-22T00:58:34Z] git user: LH
-Apr 21 18:58:34 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[3402]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log remote get-url origin
-Apr 21 18:58:34 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[3402]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 18:58:34 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[3402]: pam_unix(sudo:session): session closed for user LH
-Apr 21 18:58:34 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[3406]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log remote get-url origin
-Apr 21 18:58:34 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[3406]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 18:58:34 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[3406]: pam_unix(sudo:session): session closed for user LH
-Apr 21 18:58:34 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[3392]: [2026-04-22T00:58:34Z] origin remote: https://github.com/Linfeng-He/machine_log.git
-Apr 21 18:58:34 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[3411]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log push --dry-run origin main
-Apr 21 18:58:34 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[3411]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 18:58:35 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[3411]: pam_unix(sudo:session): session closed for user LH
-Apr 21 18:58:36 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[3591]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log add --all -- sys
-Apr 21 18:58:36 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[3591]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 18:58:36 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[3591]: pam_unix(sudo:session): session closed for user LH
-Apr 21 18:58:36 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[3650]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log diff --cached --name-only -- sys
-Apr 21 18:58:36 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[3650]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 18:58:36 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[3650]: pam_unix(sudo:session): session closed for user LH
-Apr 21 18:58:36 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[3677]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log -c user.name=crash-pusher -c user.email=crash-pusher@node0 commit -m 'sys capture node0 20260422T005834Z 2026-04-22T00:58:36Z' -- sys
-Apr 21 18:58:36 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[3677]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 18:58:36 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[3677]: pam_unix(sudo:session): session closed for user LH
-Apr 21 18:58:36 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[3685]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log remote get-url origin
-Apr 21 18:58:36 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[3685]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 18:58:36 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[3685]: pam_unix(sudo:session): session closed for user LH
-Apr 21 18:58:36 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[3689]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log push origin main
-Apr 21 18:58:36 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[3689]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 18:58:38 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[3689]: pam_unix(sudo:session): session closed for user LH
-Apr 21 18:58:58 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[5456]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log add --all -- sys
-Apr 21 18:58:58 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[5456]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 18:58:58 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[5456]: pam_unix(sudo:session): session closed for user LH
-Apr 21 18:58:58 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[5460]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log diff --cached --name-only -- sys
-Apr 21 18:58:58 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[5460]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 18:58:58 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[5460]: pam_unix(sudo:session): session closed for user LH
-Apr 21 18:58:58 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[5464]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log -c user.name=crash-pusher -c user.email=crash-pusher@node0 commit -m 'sys capture node0 20260422T005834Z 2026-04-22T00:58:58Z' -- sys
-Apr 21 18:58:58 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[5464]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 18:58:58 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[5464]: pam_unix(sudo:session): session closed for user LH
-Apr 21 18:58:58 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[5468]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log remote get-url origin
-Apr 21 18:58:58 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[5468]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 18:58:58 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[5468]: pam_unix(sudo:session): session closed for user LH
-Apr 21 18:58:58 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[5472]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log push origin main
-Apr 21 18:58:58 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[5472]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 18:58:59 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[5472]: pam_unix(sudo:session): session closed for user LH
-Apr 21 18:59:19 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[7306]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log add --all -- sys
-Apr 21 18:59:19 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[7306]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 18:59:19 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[7306]: pam_unix(sudo:session): session closed for user LH
-Apr 21 18:59:19 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[7310]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log diff --cached --name-only -- sys
-Apr 21 18:59:19 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[7310]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 18:59:19 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[7310]: pam_unix(sudo:session): session closed for user LH
-Apr 21 18:59:19 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[7314]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log -c user.name=crash-pusher -c user.email=crash-pusher@node0 commit -m 'sys capture node0 20260422T005834Z 2026-04-22T00:59:19Z' -- sys
-Apr 21 18:59:19 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[7314]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 18:59:19 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[7314]: pam_unix(sudo:session): session closed for user LH
-Apr 21 18:59:19 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[7318]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log remote get-url origin
-Apr 21 18:59:19 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[7318]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 18:59:19 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[7318]: pam_unix(sudo:session): session closed for user LH
-Apr 21 18:59:19 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[7322]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log push origin main
-Apr 21 18:59:19 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[7322]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 18:59:21 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[7322]: pam_unix(sudo:session): session closed for user LH
-Apr 21 18:59:41 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[9096]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log add --all -- sys
-Apr 21 18:59:41 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[9096]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 18:59:41 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[9096]: pam_unix(sudo:session): session closed for user LH
-Apr 21 18:59:41 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[9100]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log diff --cached --name-only -- sys
-Apr 21 18:59:41 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[9100]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 18:59:41 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[9100]: pam_unix(sudo:session): session closed for user LH
-Apr 21 18:59:41 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[9104]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log -c user.name=crash-pusher -c user.email=crash-pusher@node0 commit -m 'sys capture node0 20260422T005834Z 2026-04-22T00:59:41Z' -- sys
-Apr 21 18:59:41 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[9104]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 18:59:41 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[9104]: pam_unix(sudo:session): session closed for user LH
-Apr 21 18:59:41 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[9118]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log remote get-url origin
-Apr 21 18:59:41 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[9118]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 18:59:41 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[9118]: pam_unix(sudo:session): session closed for user LH
-Apr 21 18:59:41 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[9122]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log push origin main
-Apr 21 18:59:41 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[9122]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 18:59:42 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[9122]: pam_unix(sudo:session): session closed for user LH
+Apr 21 18:59:54 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[10362]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
+Apr 21 18:59:54 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[10362]: pam_unix(sudo:session): session closed for user LH
+Apr 21 18:59:54 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[10367]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log push origin main
+Apr 21 18:59:54 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[10367]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
+Apr 21 18:59:56 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[10367]: pam_unix(sudo:session): session closed for user LH
+Apr 21 18:59:56 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: crash-pusher.service: Main process exited, code=exited, status=143/n/a
+Apr 21 18:59:56 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: crash-pusher.service: Killing process 9243 (sleep) with signal SIGKILL.
+Apr 21 18:59:56 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: crash-pusher.service: Killing process 10410 (sleep) with signal SIGKILL.
+Apr 21 18:59:56 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: crash-pusher.service: Killing process 10501 (sleep) with signal SIGKILL.
+Apr 21 18:59:56 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: crash-pusher.service: Killing process 10511 (sleep) with signal SIGKILL.
+Apr 21 18:59:56 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: crash-pusher.service: Failed with result 'exit-code'.
+Apr 21 18:59:56 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: crash-pusher.service: Unit process 10501 (sleep) remains running after unit stopped.
+Apr 21 18:59:56 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopped Crash log pusher.
+Apr 21 18:59:56 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: crash-pusher.service: Consumed 21.489s CPU time.
+Apr 21 18:59:56 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[10246]: pam_unix(sudo:session): session closed for user root
+Apr 21 19:02:38 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10571]: Connection reset by authenticating user root 45.148.10.141 port 1438 [preauth]
+Apr 21 19:04:51 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10577]: Connection reset by authenticating user root 92.118.39.235 port 48196 [preauth]
+Apr 21 19:06:44 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10580]: Connection reset by authenticating user root 92.118.39.236 port 47456 [preauth]
+Apr 21 19:08:34 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10584]: Connection reset by authenticating user root 92.118.39.235 port 22102 [preauth]
+Apr 21 19:10:23 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10588]: Connection reset by authenticating user root 2.57.122.189 port 29628 [preauth]
+Apr 21 19:12:15 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10591]: Connection reset by authenticating user root 2.57.122.193 port 52298 [preauth]
+Apr 21 19:14:05 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10595]: Connection reset by authenticating user root 92.118.39.195 port 35210 [preauth]
+Apr 21 19:15:44 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10599]: Invalid user ervin from 213.209.159.159 port 56780
+Apr 21 19:15:45 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10599]: Received disconnect from 213.209.159.159 port 56780:11: Bye [preauth]
+Apr 21 19:15:45 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10599]: Disconnected from invalid user ervin 213.209.159.159 port 56780 [preauth]
+Apr 21 19:15:52 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10601]: Connection reset by authenticating user root 92.118.39.236 port 16252 [preauth]
+Apr 21 19:17:01 node0.testnode1.lsm-pg0.utah.cloudlab.us CRON[10605]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Apr 21 19:17:01 node0.testnode1.lsm-pg0.utah.cloudlab.us CRON[10606]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Apr 21 19:17:01 node0.testnode1.lsm-pg0.utah.cloudlab.us CRON[10605]: pam_unix(cron:session): session closed for user root
+Apr 21 19:17:41 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10608]: Connection reset by authenticating user root 45.148.10.151 port 18798 [preauth]
+Apr 21 19:19:32 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10611]: Connection reset by authenticating user root 45.148.10.151 port 50370 [preauth]
+Apr 21 19:19:54 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10614]: Invalid user admin from 2.57.121.112 port 42803
+Apr 21 19:19:55 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10614]: Received disconnect from 2.57.121.112 port 42803:11: Bye [preauth]
+Apr 21 19:19:55 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10614]: Disconnected from invalid user admin 2.57.121.112 port 42803 [preauth]
+Apr 21 19:21:20 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10617]: Connection reset by authenticating user root 2.57.122.195 port 46834 [preauth]
+Apr 21 19:23:09 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10622]: Connection reset by authenticating user root 2.57.122.193 port 15862 [preauth]
+Apr 21 19:24:59 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10624]: Connection reset by authenticating user root 92.118.39.197 port 29520 [preauth]
+Apr 21 19:26:48 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10629]: Connection reset by authenticating user root 45.148.10.151 port 27258 [preauth]
+Apr 21 19:28:35 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10633]: Connection reset by authenticating user root 2.57.122.193 port 30208 [preauth]
+Apr 21 19:30:24 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10636]: Connection reset by authenticating user root 2.57.122.190 port 64674 [preauth]
+Apr 21 19:31:04 node0.testnode1.lsm-pg0.utah.cloudlab.us usermod[10642]: change user 'root' password
+Apr 21 19:32:16 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10658]: Connection reset by authenticating user root 2.57.122.196 port 7952 [preauth]
+Apr 21 19:33:30 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10660]: Invalid user  from 35.216.201.9 port 51082
+Apr 21 19:33:30 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10660]: Connection closed by invalid user  35.216.201.9 port 51082 [preauth]
+Apr 21 19:34:04 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10662]: Connection reset by authenticating user root 2.57.122.194 port 14574 [preauth]
+Apr 21 19:35:52 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10666]: Connection reset by authenticating user root 45.148.10.147 port 8798 [preauth]
+Apr 21 19:37:42 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10670]: Connection reset by authenticating user root 45.148.10.141 port 2288 [preauth]
+Apr 21 19:39:31 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10674]: Connection reset by authenticating user root 2.57.122.196 port 16340 [preauth]
+Apr 21 19:41:18 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10678]: Connection reset by authenticating user root 2.57.122.193 port 64676 [preauth]
+Apr 21 19:43:06 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10681]: Connection reset by authenticating user root 45.148.10.147 port 14836 [preauth]
+Apr 21 19:44:56 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10685]: Connection reset by authenticating user root 2.57.122.199 port 41124 [preauth]
+Apr 21 19:46:01 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[1838]: pam_unix(sshd:session): session closed for user LH
+Apr 21 19:46:01 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd-logind[806]: Session 3 logged out. Waiting for processes to exit.
+Apr 21 19:46:44 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10688]: Connection reset by authenticating user root 45.148.10.147 port 63248 [preauth]
+Apr 21 19:48:32 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10692]: Connection reset by authenticating user root 2.57.122.191 port 56972 [preauth]
+Apr 21 19:50:13 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10695]: Accepted publickey for LH from 71.187.248.113 port 54425 ssh2: RSA SHA256:hElkzd92JFx2Be3nEdpFzMpn+m1N3su9yosmOrbUAmU
+Apr 21 19:50:13 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10695]: pam_unix(sshd:session): session opened for user LH(uid=20024) by (uid=0)
+Apr 21 19:50:13 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd-logind[806]: New session 7 of user LH.
+Apr 21 19:50:13 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Started Session 7 of User LH.
+Apr 21 19:50:22 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10795]: Connection reset by authenticating user root 45.227.254.170 port 53920 [preauth]
+Apr 21 19:52:10 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10798]: Connection reset by authenticating user root 92.118.39.196 port 16150 [preauth]
+Apr 21 19:53:57 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10803]: Connection reset by authenticating user root 92.118.39.197 port 54186 [preauth]
+Apr 21 19:55:45 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10807]: Connection reset by authenticating user root 92.118.39.196 port 1642 [preauth]
+Apr 21 19:56:27 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10717]: Received disconnect from 71.187.248.113 port 54425:11: disconnected by user
+Apr 21 19:56:27 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10717]: Disconnected from user LH 71.187.248.113 port 54425
+Apr 21 19:56:27 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10695]: pam_unix(sshd:session): session closed for user LH
+Apr 21 19:56:27 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd-logind[806]: Session 7 logged out. Waiting for processes to exit.
+Apr 21 19:56:28 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10810]: Accepted publickey for LH from 71.187.248.113 port 54603 ssh2: RSA SHA256:hElkzd92JFx2Be3nEdpFzMpn+m1N3su9yosmOrbUAmU
+Apr 21 19:56:28 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10810]: pam_unix(sshd:session): session opened for user LH(uid=20024) by (uid=0)
+Apr 21 19:56:28 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd-logind[806]: New session 8 of user LH.
+Apr 21 19:56:28 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Started Session 8 of User LH.
+Apr 21 19:57:34 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10900]: Connection reset by authenticating user root 2.57.122.197 port 18760 [preauth]
+Apr 21 19:59:14 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: session-7.scope: Deactivated successfully.
+Apr 21 19:59:14 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd-logind[806]: Removed session 7.
+Apr 21 19:59:22 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10906]: Connection reset by authenticating user root 92.118.39.197 port 50888 [preauth]
+Apr 21 20:01:10 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10912]: Connection reset by authenticating user root 45.148.10.141 port 27540 [preauth]
+Apr 21 20:03:00 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10916]: Connection reset by authenticating user root 2.57.122.194 port 43686 [preauth]
+Apr 21 20:04:48 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10921]: Connection reset by authenticating user root 92.118.39.197 port 21068 [preauth]
+Apr 21 20:06:35 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10924]: Connection reset by authenticating user root 2.57.122.195 port 63052 [preauth]
+Apr 21 20:08:23 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10927]: Connection reset by authenticating user root 195.178.110.15 port 29604 [preauth]
+Apr 21 20:10:12 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10932]: Connection reset by authenticating user root 2.57.122.197 port 29096 [preauth]
+Apr 21 20:12:01 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10936]: Connection reset by authenticating user root 45.148.10.151 port 30542 [preauth]
+Apr 21 20:13:09 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10832]: Received disconnect from 71.187.248.113 port 54603:11: disconnected by user
+Apr 21 20:13:09 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10832]: Disconnected from user LH 71.187.248.113 port 54603
+Apr 21 20:13:09 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10810]: pam_unix(sshd:session): session closed for user LH
+Apr 21 20:13:09 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd-logind[806]: Session 8 logged out. Waiting for processes to exit.
+Apr 21 20:13:10 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10938]: Accepted publickey for LH from 71.187.248.113 port 54651 ssh2: RSA SHA256:hElkzd92JFx2Be3nEdpFzMpn+m1N3su9yosmOrbUAmU
+Apr 21 20:13:10 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10938]: pam_unix(sshd:session): session opened for user LH(uid=20024) by (uid=0)
+Apr 21 20:13:10 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd-logind[806]: New session 9 of user LH.
+Apr 21 20:13:10 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Started Session 9 of User LH.
+Apr 21 20:13:48 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11028]: Connection reset by authenticating user root 92.118.39.235 port 47688 [preauth]
+Apr 21 20:14:29 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: session-8.scope: Deactivated successfully.
+Apr 21 20:14:29 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd-logind[806]: Removed session 8.
+Apr 21 20:15:39 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11032]: Connection reset by authenticating user root 92.118.39.197 port 61766 [preauth]
+Apr 21 20:17:01 node0.testnode1.lsm-pg0.utah.cloudlab.us CRON[11036]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Apr 21 20:17:01 node0.testnode1.lsm-pg0.utah.cloudlab.us CRON[11037]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Apr 21 20:17:01 node0.testnode1.lsm-pg0.utah.cloudlab.us CRON[11036]: pam_unix(cron:session): session closed for user root
+Apr 21 20:17:28 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11039]: Connection reset by authenticating user root 2.57.122.192 port 1230 [preauth]
+Apr 21 20:19:15 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11043]: Connection reset by authenticating user root 2.57.122.197 port 29700 [preauth]
+Apr 21 20:21:03 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11047]: Connection reset by authenticating user root 2.57.122.190 port 24840 [preauth]
+Apr 21 20:22:16 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11055]: Received disconnect from 128.110.156.4 port 49397:11:  [preauth]
+Apr 21 20:22:16 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11055]: Disconnected from authenticating user root 128.110.156.4 port 49397 [preauth]
+Apr 21 20:22:16 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11051]: Received disconnect from 128.110.156.4 port 49394:11:  [preauth]
+Apr 21 20:22:16 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11053]: Received disconnect from 128.110.156.4 port 49395:11:  [preauth]
+Apr 21 20:22:16 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11051]: Disconnected from authenticating user root 128.110.156.4 port 49394 [preauth]
+Apr 21 20:22:16 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11053]: Disconnected from authenticating user root 128.110.156.4 port 49395 [preauth]
+Apr 21 20:22:16 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11054]: Received disconnect from 128.110.156.4 port 49398:11:  [preauth]
+Apr 21 20:22:16 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11054]: Disconnected from authenticating user root 128.110.156.4 port 49398 [preauth]
+Apr 21 20:22:16 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11052]: Received disconnect from 128.110.156.4 port 49396:11:  [preauth]
+Apr 21 20:22:16 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11052]: Disconnected from authenticating user root 128.110.156.4 port 49396 [preauth]
+Apr 21 20:22:24 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11061]: Connection reset by authenticating user root 87.251.64.149 port 49158 [preauth]
+Apr 21 20:22:25 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11063]: Connection reset by authenticating user root 87.251.64.149 port 49174 [preauth]
+Apr 21 20:22:26 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11065]: Invalid user admin from 87.251.64.149 port 49184
+Apr 21 20:22:26 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11065]: Connection reset by invalid user admin 87.251.64.149 port 49184 [preauth]
+Apr 21 20:22:27 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11067]: Connection reset by authenticating user nobody 87.251.64.149 port 49196 [preauth]
+Apr 21 20:22:28 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11069]: Invalid user ADMIN from 87.251.64.149 port 49200
+Apr 21 20:22:28 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11069]: Connection reset by invalid user ADMIN 87.251.64.149 port 49200 [preauth]
+Apr 21 20:22:29 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11071]: Connection reset by authenticating user root 87.251.64.149 port 22006 [preauth]
+Apr 21 20:22:30 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11073]: Invalid user test from 87.251.64.149 port 22016
+Apr 21 20:22:30 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11073]: Connection reset by invalid user test 87.251.64.149 port 22016 [preauth]
+Apr 21 20:22:31 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11075]: Connection reset by authenticating user sshd 87.251.64.149 port 22026 [preauth]
+Apr 21 20:22:32 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11077]: Invalid user admin from 87.251.64.149 port 22044
+Apr 21 20:22:32 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11077]: Connection reset by invalid user admin 87.251.64.149 port 22044 [preauth]
+Apr 21 20:22:33 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11079]: Invalid user admin from 87.251.64.149 port 22060
+Apr 21 20:22:33 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11079]: Connection reset by invalid user admin 87.251.64.149 port 22060 [preauth]
+Apr 21 20:22:35 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11081]: Connection reset by authenticating user root 87.251.64.149 port 22068 [preauth]
+Apr 21 20:22:36 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11083]: Invalid user admin from 87.251.64.149 port 22070
+Apr 21 20:22:36 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11083]: Connection reset by invalid user admin 87.251.64.149 port 22070 [preauth]
+Apr 21 20:22:37 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11085]: Invalid user dixell from 87.251.64.149 port 22086
+Apr 21 20:22:37 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11085]: Connection reset by invalid user dixell 87.251.64.149 port 22086 [preauth]
+Apr 21 20:22:38 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11087]: Connection reset by authenticating user root 87.251.64.149 port 22088 [preauth]
+Apr 21 20:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11089]: Invalid user admin from 87.251.64.149 port 10286
+Apr 21 20:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11089]: Connection reset by invalid user admin 87.251.64.149 port 10286 [preauth]
+Apr 21 20:22:41 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11091]: Connection reset by authenticating user root 87.251.64.149 port 10294 [preauth]
+Apr 21 20:22:42 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11093]: Invalid user admin from 87.251.64.149 port 10308
+Apr 21 20:22:42 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11093]: Connection reset by invalid user admin 87.251.64.149 port 10308 [preauth]
+Apr 21 20:22:43 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11095]: Invalid user osmc from 87.251.64.149 port 10312
+Apr 21 20:22:43 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11095]: Connection reset by invalid user osmc 87.251.64.149 port 10312 [preauth]
+Apr 21 20:22:44 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11097]: Invalid user sconsole from 87.251.64.149 port 10326
+Apr 21 20:22:44 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11097]: Connection reset by invalid user sconsole 87.251.64.149 port 10326 [preauth]
+Apr 21 20:22:45 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11099]: Connection reset by authenticating user root 87.251.64.149 port 10336 [preauth]
+Apr 21 20:22:46 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11101]: Invalid user admin from 87.251.64.149 port 10346
+Apr 21 20:22:47 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11101]: Connection reset by invalid user admin 87.251.64.149 port 10346 [preauth]
+Apr 21 20:22:48 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11103]: Invalid user admin from 87.251.64.149 port 10356
+Apr 21 20:22:48 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11103]: Connection reset by invalid user admin 87.251.64.149 port 10356 [preauth]
+Apr 21 20:22:49 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11105]: Connection reset by authenticating user root 87.251.64.149 port 63846 [preauth]
+Apr 21 20:22:50 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11107]: Connection reset by authenticating user root 87.251.64.149 port 63856 [preauth]
+Apr 21 20:22:51 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11109]: Connection reset by authenticating user root 87.251.64.149 port 63868 [preauth]
+Apr 21 20:22:52 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11111]: Connection reset by authenticating user root 2.57.122.191 port 37274 [preauth]
+Apr 21 20:22:52 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11113]: Connection reset by authenticating user root 87.251.64.149 port 63876 [preauth]
+Apr 21 20:22:53 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11115]: Invalid user postgres from 87.251.64.149 port 63878
+Apr 21 20:22:53 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11115]: Connection reset by invalid user postgres 87.251.64.149 port 63878 [preauth]
+Apr 21 20:22:54 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11117]: Connection reset by authenticating user root 87.251.64.149 port 63888 [preauth]
+Apr 21 20:22:55 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11119]: Invalid user user from 87.251.64.149 port 63896
+Apr 21 20:22:55 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11119]: Connection reset by invalid user user 87.251.64.149 port 63896 [preauth]
+Apr 21 20:22:56 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11121]: Invalid user 123456 from 87.251.64.149 port 63906
+Apr 21 20:22:56 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11121]: Connection reset by invalid user 123456 87.251.64.149 port 63906 [preauth]
+Apr 21 20:24:40 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11123]: Connection reset by authenticating user root 2.57.122.189 port 20768 [preauth]
+Apr 21 20:24:46 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11125]: Connection reset by authenticating user root 87.251.64.147 port 5542 [preauth]
+Apr 21 20:24:47 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11127]: Connection reset by authenticating user root 87.251.64.147 port 5554 [preauth]
+Apr 21 20:24:49 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11129]: Connection reset by authenticating user root 87.251.64.147 port 26894 [preauth]
+Apr 21 20:24:50 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11131]: Connection reset by authenticating user root 87.251.64.147 port 26904 [preauth]
+Apr 21 20:24:51 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11133]: Connection reset by authenticating user root 87.251.64.147 port 26914 [preauth]
+Apr 21 20:24:52 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11135]: Connection reset by authenticating user root 87.251.64.147 port 26920 [preauth]
+Apr 21 20:24:55 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11137]: Connection reset by authenticating user root 87.251.64.147 port 26922 [preauth]
+Apr 21 20:24:57 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11139]: Connection reset by authenticating user root 87.251.64.147 port 26946 [preauth]
+Apr 21 20:24:58 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11141]: Connection reset by authenticating user root 87.251.64.147 port 32406 [preauth]
+Apr 21 20:24:59 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11143]: Connection reset by authenticating user root 87.251.64.147 port 32468 [preauth]
+Apr 21 20:25:02 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11145]: Connection reset by authenticating user root 87.251.64.147 port 32508 [preauth]
+Apr 21 20:25:03 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11147]: Connection reset by authenticating user root 87.251.64.147 port 32586 [preauth]
+Apr 21 20:25:04 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11149]: Connection reset by authenticating user root 87.251.64.147 port 32592 [preauth]
+Apr 21 20:25:08 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11151]: Connection reset by authenticating user root 87.251.64.147 port 32596 [preauth]
+Apr 21 20:25:09 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11153]: Connection reset by authenticating user root 87.251.64.147 port 50390 [preauth]
+Apr 21 20:25:11 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11155]: Connection reset by authenticating user root 87.251.64.147 port 50398 [preauth]
+Apr 21 20:25:13 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11158]: Connection reset by authenticating user root 87.251.64.147 port 50410 [preauth]
+Apr 21 20:25:14 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11160]: Connection reset by authenticating user root 87.251.64.147 port 50436 [preauth]
+Apr 21 20:25:15 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11162]: Connection reset by authenticating user root 87.251.64.147 port 50446 [preauth]
+Apr 21 20:25:17 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11165]: Connection reset by authenticating user root 87.251.64.147 port 50462 [preauth]
+Apr 21 20:25:18 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11167]: Connection reset by authenticating user root 87.251.64.147 port 50476 [preauth]
+Apr 21 20:25:19 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11169]: Connection reset by authenticating user root 87.251.64.147 port 35270 [preauth]
+Apr 21 20:25:20 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11171]: Connection reset by authenticating user root 87.251.64.147 port 35280 [preauth]
+Apr 21 20:25:21 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11173]: Connection reset by authenticating user root 87.251.64.147 port 35292 [preauth]
+Apr 21 20:25:22 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11175]: Connection reset by authenticating user root 87.251.64.147 port 35302 [preauth]
+Apr 21 20:25:23 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11177]: Connection reset by authenticating user root 87.251.64.147 port 35314 [preauth]
+Apr 21 20:25:27 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11179]: Connection reset by authenticating user root 87.251.64.147 port 35336 [preauth]
+Apr 21 20:25:28 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11181]: Connection reset by authenticating user root 87.251.64.147 port 35350 [preauth]
+Apr 21 20:25:30 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11183]: Connection reset by authenticating user root 87.251.64.147 port 16504 [preauth]
+Apr 21 20:25:32 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11185]: Connection reset by authenticating user root 87.251.64.147 port 16518 [preauth]
+Apr 21 20:26:28 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11188]: Connection reset by authenticating user root 2.57.122.190 port 25986 [preauth]
+Apr 21 20:27:05 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11190]: error: kex_exchange_identification: Connection closed by remote host
+Apr 21 20:27:05 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11190]: Connection closed by 80.94.92.184 port 57676
+Apr 21 20:28:17 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11193]: Connection reset by authenticating user root 2.57.122.194 port 32354 [preauth]
+Apr 21 20:30:06 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11195]: Connection reset by authenticating user root 2.57.122.196 port 13826 [preauth]
+Apr 21 20:30:20 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10938]: pam_unix(sshd:session): session closed for user LH
+Apr 21 20:30:20 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd-logind[806]: Session 9 logged out. Waiting for processes to exit.
+Apr 21 20:31:04 node0.testnode1.lsm-pg0.utah.cloudlab.us usermod[11201]: change user 'root' password
+Apr 21 20:31:11 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: session-9.scope: Deactivated successfully.
+Apr 21 20:31:11 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd-logind[806]: Removed session 9.
+Apr 21 20:31:40 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11216]: Invalid user solv from 80.94.92.184 port 60904
+Apr 21 20:31:41 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11216]: Connection closed by invalid user solv 80.94.92.184 port 60904 [preauth]
+Apr 21 20:31:54 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11218]: Connection reset by authenticating user root 92.118.39.235 port 24472 [preauth]
+Apr 21 20:32:17 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11220]: Connection reset by authenticating user root 87.251.64.145 port 45860 [preauth]
+Apr 21 20:32:18 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11222]: Connection reset by authenticating user root 87.251.64.145 port 45876 [preauth]
+Apr 21 20:32:19 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11224]: Connection reset by authenticating user root 87.251.64.145 port 45884 [preauth]
+Apr 21 20:32:20 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11226]: Connection reset by authenticating user root 87.251.64.145 port 58174 [preauth]
+Apr 21 20:32:21 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11228]: Connection reset by authenticating user root 87.251.64.145 port 58190 [preauth]
+Apr 21 20:32:22 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11230]: Connection reset by authenticating user root 87.251.64.145 port 58206 [preauth]
+Apr 21 20:32:24 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11232]: Connection reset by authenticating user root 87.251.64.145 port 58220 [preauth]
+Apr 21 20:32:25 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11234]: Connection reset by authenticating user root 87.251.64.145 port 58230 [preauth]
+Apr 21 20:32:26 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11236]: Connection reset by authenticating user root 87.251.64.145 port 58258 [preauth]
+Apr 21 20:32:28 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11238]: Connection reset by authenticating user root 87.251.64.145 port 58268 [preauth]
+Apr 21 20:32:29 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11240]: Connection reset by authenticating user root 87.251.64.145 port 52766 [preauth]
+Apr 21 20:32:30 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11242]: Connection reset by authenticating user root 87.251.64.145 port 52778 [preauth]
+Apr 21 20:32:31 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11244]: Connection reset by authenticating user root 87.251.64.145 port 52792 [preauth]
+Apr 21 20:32:32 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11246]: Connection reset by authenticating user root 87.251.64.145 port 52802 [preauth]
+Apr 21 20:32:34 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11248]: Connection reset by authenticating user root 87.251.64.145 port 52812 [preauth]
+Apr 21 20:32:36 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11250]: Connection reset by authenticating user root 87.251.64.145 port 52814 [preauth]
+Apr 21 20:32:37 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11252]: Connection reset by authenticating user root 87.251.64.145 port 52824 [preauth]
+Apr 21 20:32:38 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11254]: Connection reset by authenticating user root 87.251.64.145 port 52840 [preauth]
+Apr 21 20:32:39 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11256]: Connection reset by authenticating user root 87.251.64.145 port 52848 [preauth]
+Apr 21 20:32:40 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11258]: Connection reset by authenticating user root 87.251.64.145 port 24448 [preauth]
+Apr 21 20:32:42 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11260]: Connection reset by authenticating user root 87.251.64.145 port 24452 [preauth]
+Apr 21 20:32:46 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11262]: Connection reset by authenticating user root 87.251.64.145 port 24462 [preauth]
+Apr 21 20:32:48 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11264]: Connection reset by authenticating user root 87.251.64.145 port 24480 [preauth]
+Apr 21 20:32:50 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11266]: Connection reset by authenticating user root 87.251.64.145 port 24490 [preauth]
+Apr 21 20:32:51 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11268]: Connection reset by authenticating user root 87.251.64.145 port 36524 [preauth]
+Apr 21 20:32:52 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11270]: Connection reset by authenticating user root 87.251.64.145 port 36526 [preauth]
+Apr 21 20:32:54 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11272]: Connection reset by authenticating user root 87.251.64.145 port 36540 [preauth]
+Apr 21 20:32:56 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11274]: Connection reset by authenticating user root 87.251.64.145 port 36546 [preauth]
+Apr 21 20:32:57 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11276]: Connection reset by authenticating user root 87.251.64.145 port 36566 [preauth]
+Apr 21 20:32:58 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11278]: Connection reset by authenticating user root 87.251.64.145 port 36572 [preauth]
+Apr 21 20:33:42 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11280]: Connection reset by authenticating user root 92.118.39.195 port 4026 [preauth]
+Apr 21 20:34:40 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11283]: Invalid user solv from 80.94.92.184 port 35422
+Apr 21 20:34:41 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11283]: Connection closed by invalid user solv 80.94.92.184 port 35422 [preauth]
+Apr 21 20:35:31 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11285]: Connection reset by authenticating user root 2.57.122.194 port 47970 [preauth]
+Apr 21 20:37:19 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11290]: Connection reset by authenticating user root 92.118.39.236 port 8678 [preauth]
+Apr 21 20:37:48 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11292]: Invalid user solv from 80.94.92.184 port 38156
+Apr 21 20:37:49 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11292]: Connection closed by invalid user solv 80.94.92.184 port 38156 [preauth]
+Apr 21 20:38:17 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11294]: Invalid user gannon from 213.209.159.159 port 27494
+Apr 21 20:38:18 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11294]: Received disconnect from 213.209.159.159 port 27494:11: Bye [preauth]
+Apr 21 20:38:18 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11294]: Disconnected from invalid user gannon 213.209.159.159 port 27494 [preauth]
+Apr 21 20:39:06 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11296]: Connection reset by authenticating user root 2.57.122.195 port 3170 [preauth]
+Apr 21 20:39:33 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11298]: Invalid user admin from 2.57.121.112 port 49596
+Apr 21 20:39:34 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11298]: Received disconnect from 2.57.121.112 port 49596:11: Bye [preauth]
+Apr 21 20:39:34 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11298]: Disconnected from invalid user admin 2.57.121.112 port 49596 [preauth]
+Apr 21 20:40:53 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11301]: Invalid user solv from 80.94.92.184 port 40876
+Apr 21 20:40:53 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11301]: Connection closed by invalid user solv 80.94.92.184 port 40876 [preauth]
+Apr 21 20:40:56 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11303]: Connection reset by authenticating user root 2.57.122.193 port 26942 [preauth]
+Apr 21 20:41:59 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11305]: Connection closed by 211.170.168.202 port 53017 [preauth]
+Apr 21 20:42:45 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11309]: Connection reset by authenticating user root 2.57.122.193 port 39620 [preauth]
+Apr 21 20:43:55 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11312]: Invalid user solv from 80.94.92.184 port 43600
+Apr 21 20:43:55 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11312]: Connection closed by invalid user solv 80.94.92.184 port 43600 [preauth]
+Apr 21 20:44:32 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11314]: Connection reset by authenticating user root 2.57.122.193 port 18638 [preauth]
+Apr 21 20:46:20 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11317]: Connection reset by authenticating user root 45.148.10.141 port 4170 [preauth]
+Apr 21 20:46:33 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11319]: Accepted publickey for LH from 71.187.248.113 port 54999 ssh2: RSA SHA256:hElkzd92JFx2Be3nEdpFzMpn+m1N3su9yosmOrbUAmU
+Apr 21 20:46:33 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11319]: pam_unix(sshd:session): session opened for user LH(uid=20024) by (uid=0)
+Apr 21 20:46:33 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd-logind[806]: New session 11 of user LH.
+Apr 21 20:46:33 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Started Session 11 of User LH.
+Apr 21 20:46:42 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11407]: Invalid user solv from 80.94.92.184 port 46370
+Apr 21 20:46:43 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11407]: Connection closed by invalid user solv 80.94.92.184 port 46370 [preauth]
+Apr 21 20:47:58 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11410]: Invalid user me from 87.251.64.144 port 9430
+Apr 21 20:47:58 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11410]: Connection reset by invalid user me 87.251.64.144 port 9430 [preauth]
+Apr 21 20:47:59 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11412]: Invalid user metabase from 87.251.64.144 port 9444
+Apr 21 20:47:59 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11412]: Connection reset by invalid user metabase 87.251.64.144 port 9444 [preauth]
+Apr 21 20:48:00 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11416]: Invalid user nifi from 87.251.64.144 port 9450
+Apr 21 20:48:00 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11416]: Connection reset by invalid user nifi 87.251.64.144 port 9450 [preauth]
+Apr 21 20:48:01 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11418]: Invalid user nova from 87.251.64.144 port 8928
+Apr 21 20:48:01 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11418]: Connection reset by invalid user nova 87.251.64.144 port 8928 [preauth]
+Apr 21 20:48:02 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11420]: Invalid user office from 87.251.64.144 port 8940
+Apr 21 20:48:02 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11420]: Connection reset by invalid user office 87.251.64.144 port 8940 [preauth]
+Apr 21 20:48:04 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11422]: Invalid user operator from 87.251.64.144 port 8944
+Apr 21 20:48:04 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11422]: Connection reset by invalid user operator 87.251.64.144 port 8944 [preauth]
+Apr 21 20:48:05 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11424]: Invalid user operator from 87.251.64.144 port 8950
+Apr 21 20:48:05 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11424]: Connection reset by invalid user operator 87.251.64.144 port 8950 [preauth]
+Apr 21 20:48:07 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11426]: Invalid user operator from 87.251.64.144 port 8956
+Apr 21 20:48:07 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11426]: Connection reset by invalid user operator 87.251.64.144 port 8956 [preauth]
+Apr 21 20:48:08 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11428]: Invalid user oracle from 87.251.64.144 port 8964
+Apr 21 20:48:08 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11428]: Connection reset by invalid user oracle 87.251.64.144 port 8964 [preauth]
+Apr 21 20:48:09 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11430]: Invalid user ozj from 87.251.64.144 port 8970
+Apr 21 20:48:09 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11430]: Connection reset by invalid user ozj 87.251.64.144 port 8970 [preauth]
+Apr 21 20:48:10 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11432]: Connection reset by authenticating user root 92.118.39.236 port 38894 [preauth]
+Apr 21 20:48:10 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11434]: Invalid user postgres from 87.251.64.144 port 8982
+Apr 21 20:48:10 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11434]: Connection reset by invalid user postgres 87.251.64.144 port 8982 [preauth]
+Apr 21 20:48:11 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11436]: Invalid user postgres from 87.251.64.144 port 55006
+Apr 21 20:48:11 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11436]: Connection reset by invalid user postgres 87.251.64.144 port 55006 [preauth]
+Apr 21 20:48:12 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11438]: Invalid user public from 87.251.64.144 port 55008
+Apr 21 20:48:12 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11438]: Connection reset by invalid user public 87.251.64.144 port 55008 [preauth]
+Apr 21 20:48:13 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11440]: Invalid user qf from 87.251.64.144 port 55038
+Apr 21 20:48:14 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11440]: Connection reset by invalid user qf 87.251.64.144 port 55038 [preauth]
+Apr 21 20:48:15 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11442]: Invalid user qiniuyun from 87.251.64.144 port 55050
+Apr 21 20:48:16 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11442]: Connection reset by invalid user qiniuyun 87.251.64.144 port 55050 [preauth]
+Apr 21 20:48:17 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11444]: Connection reset by authenticating user root 87.251.64.144 port 55064 [preauth]
+Apr 21 20:48:19 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11446]: Connection reset by authenticating user root 87.251.64.144 port 55070 [preauth]
+Apr 21 20:48:20 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11448]: Connection reset by authenticating user root 87.251.64.144 port 55086 [preauth]
+Apr 21 20:48:21 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11450]: Connection reset by authenticating user root 87.251.64.144 port 55100 [preauth]
+Apr 21 20:48:22 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11452]: Connection reset by authenticating user root 87.251.64.144 port 14066 [preauth]
+Apr 21 20:48:23 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11454]: Connection reset by authenticating user root 87.251.64.144 port 14096 [preauth]
+Apr 21 20:48:24 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11456]: Connection reset by authenticating user root 87.251.64.144 port 14102 [preauth]
+Apr 21 20:48:25 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11458]: Connection reset by authenticating user root 87.251.64.144 port 14118 [preauth]
+Apr 21 20:48:26 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11460]: Connection reset by authenticating user root 87.251.64.144 port 14126 [preauth]
+Apr 21 20:48:27 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11462]: Connection reset by authenticating user root 87.251.64.144 port 14154 [preauth]
+Apr 21 20:48:28 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11464]: Connection reset by authenticating user root 87.251.64.144 port 14168 [preauth]
+Apr 21 20:48:29 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11466]: Connection reset by authenticating user root 87.251.64.144 port 14174 [preauth]
+Apr 21 20:48:31 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11468]: Connection reset by authenticating user root 87.251.64.144 port 14190 [preauth]
+Apr 21 20:48:33 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11470]: Connection reset by authenticating user root 87.251.64.144 port 44964 [preauth]
+Apr 21 20:48:34 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11472]: Connection reset by authenticating user root 87.251.64.144 port 44994 [preauth]
+Apr 21 20:48:57 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11414]: Connection closed by 103.146.159.173 port 37722 [preauth]
+Apr 21 20:49:24 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11475]: Invalid user solv from 80.94.92.184 port 49058
+Apr 21 20:49:24 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11475]: Connection closed by invalid user solv 80.94.92.184 port 49058 [preauth]
+Apr 21 20:49:58 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11480]: Connection reset by authenticating user root 45.148.10.152 port 57494 [preauth]
+Apr 21 20:51:46 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11482]: Connection reset by authenticating user root 45.148.10.151 port 53056 [preauth]
+Apr 21 20:52:06 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11484]: Invalid user solv from 80.94.92.184 port 51768
+Apr 21 20:52:07 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11484]: Connection closed by invalid user solv 80.94.92.184 port 51768 [preauth]
+Apr 21 20:53:36 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11489]: Connection reset by authenticating user root 2.57.122.197 port 48656 [preauth]
+Apr 21 20:54:55 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11491]: Invalid user solv from 80.94.92.184 port 54490
+Apr 21 20:54:55 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11491]: Connection closed by invalid user solv 80.94.92.184 port 54490 [preauth]
+Apr 21 20:55:25 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11495]: Connection reset by authenticating user root 2.57.122.193 port 37354 [preauth]
+Apr 21 20:57:12 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11498]: Connection reset by authenticating user root 2.57.122.191 port 51612 [preauth]
+Apr 21 20:57:45 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11500]: Invalid user solv from 80.94.92.184 port 57234
+Apr 21 20:57:45 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11500]: Connection closed by invalid user solv 80.94.92.184 port 57234 [preauth]
+Apr 21 20:59:00 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11505]: Connection reset by authenticating user root 92.118.39.196 port 44354 [preauth]
+Apr 21 21:00:32 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11507]: Invalid user solv from 80.94.92.184 port 59968
+Apr 21 21:00:32 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11507]: Connection closed by invalid user solv 80.94.92.184 port 59968 [preauth]
+Apr 21 21:00:50 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11510]: Connection reset by authenticating user root 92.118.39.197 port 38434 [preauth]
+Apr 21 21:02:37 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11517]: Connection reset by authenticating user root 45.148.10.141 port 57410 [preauth]
+Apr 21 21:03:20 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11519]: Invalid user solv from 80.94.92.184 port 34492
+Apr 21 21:03:20 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11519]: Connection closed by invalid user solv 80.94.92.184 port 34492 [preauth]
+Apr 21 21:03:47 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11319]: pam_unix(sshd:session): session closed for user LH
+Apr 21 21:03:47 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd-logind[806]: Session 11 logged out. Waiting for processes to exit.
+Apr 21 21:04:25 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11523]: Connection reset by authenticating user root 45.148.10.141 port 37916 [preauth]
+Apr 21 21:04:34 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: session-11.scope: Deactivated successfully.
+Apr 21 21:04:34 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd-logind[806]: Removed session 11.
+Apr 21 21:06:00 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11526]: Invalid user solv from 80.94.92.184 port 37210
+Apr 21 21:06:01 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11526]: Connection closed by invalid user solv 80.94.92.184 port 37210 [preauth]
+Apr 21 21:06:12 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11529]: error: kex_exchange_identification: Connection closed by remote host
+Apr 21 21:06:12 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11529]: Connection closed by 80.94.92.168 port 56888
+Apr 21 21:06:15 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11530]: Connection reset by authenticating user root 92.118.39.236 port 53530 [preauth]
+Apr 21 21:08:05 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11533]: Connection reset by authenticating user root 45.148.10.141 port 11792 [preauth]
+Apr 21 21:08:49 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11535]: Invalid user solv from 80.94.92.184 port 39946
+Apr 21 21:08:49 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11535]: Connection closed by invalid user solv 80.94.92.184 port 39946 [preauth]
+Apr 21 21:09:52 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11538]: Connection reset by authenticating user root 2.57.122.190 port 1190 [preauth]
+Apr 21 21:11:40 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11541]: Connection reset by authenticating user root 45.148.10.151 port 53164 [preauth]
+Apr 21 21:11:42 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11543]: Invalid user solv from 80.94.92.184 port 42678
+Apr 21 21:11:42 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11543]: Connection closed by invalid user solv 80.94.92.184 port 42678 [preauth]
+Apr 21 21:12:18 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11545]: Invalid user solana from 80.94.92.168 port 60582
+Apr 21 21:12:18 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11545]: Connection closed by invalid user solana 80.94.92.168 port 60582 [preauth]
+Apr 21 21:13:29 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11548]: Connection reset by authenticating user root 2.57.122.195 port 42384 [preauth]
+Apr 21 21:14:30 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11550]: Invalid user solv from 80.94.92.184 port 45376
+Apr 21 21:14:30 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11550]: Connection closed by invalid user solv 80.94.92.184 port 45376 [preauth]
+Apr 21 21:15:17 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11554]: Connection reset by authenticating user root 2.57.122.193 port 32192 [preauth]
+Apr 21 21:17:01 node0.testnode1.lsm-pg0.utah.cloudlab.us CRON[11557]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Apr 21 21:17:01 node0.testnode1.lsm-pg0.utah.cloudlab.us CRON[11558]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Apr 21 21:17:01 node0.testnode1.lsm-pg0.utah.cloudlab.us CRON[11557]: pam_unix(cron:session): session closed for user root
+Apr 21 21:17:04 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11560]: Connection reset by authenticating user root 92.118.39.23 port 53560 [preauth]
+Apr 21 21:17:30 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11562]: Invalid user solv from 80.94.92.184 port 48094
+Apr 21 21:17:30 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11562]: Connection closed by invalid user solv 80.94.92.184 port 48094 [preauth]
+Apr 21 21:17:35 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11564]: Accepted publickey for LH from 71.187.248.113 port 55411 ssh2: RSA SHA256:hElkzd92JFx2Be3nEdpFzMpn+m1N3su9yosmOrbUAmU
+Apr 21 21:17:35 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11564]: pam_unix(sshd:session): session opened for user LH(uid=20024) by (uid=0)
+Apr 21 21:17:35 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd-logind[806]: New session 13 of user LH.
+Apr 21 21:17:35 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Started Session 13 of User LH.
+Apr 21 21:18:54 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11652]: Connection reset by authenticating user root 195.178.110.15 port 10432 [preauth]
+Apr 21 21:20:35 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11656]: Invalid user solv from 80.94.92.184 port 50844
+Apr 21 21:20:36 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11656]: Connection closed by invalid user solv 80.94.92.184 port 50844 [preauth]
+Apr 21 21:20:44 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11659]: Connection reset by authenticating user root 2.57.122.199 port 25276 [preauth]
+Apr 21 21:21:37 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11586]: Received disconnect from 71.187.248.113 port 55411:11: disconnected by user
+Apr 21 21:21:37 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11586]: Disconnected from user LH 71.187.248.113 port 55411
+Apr 21 21:21:37 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11564]: pam_unix(sshd:session): session closed for user LH
+Apr 21 21:21:37 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd-logind[806]: Session 13 logged out. Waiting for processes to exit.
+Apr 21 21:21:38 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11661]: Accepted publickey for LH from 71.187.248.113 port 55468 ssh2: RSA SHA256:hElkzd92JFx2Be3nEdpFzMpn+m1N3su9yosmOrbUAmU
+Apr 21 21:21:38 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11661]: pam_unix(sshd:session): session opened for user LH(uid=20024) by (uid=0)
+Apr 21 21:21:38 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd-logind[806]: New session 14 of user LH.
+Apr 21 21:21:38 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Started Session 14 of User LH.
+Apr 21 21:22:01 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[11761]:       LH : TTY=pts/0 ; PWD=/users/LH/machine_log ; USER=root ; COMMAND=./install_crash_pusher.sh
+Apr 21 21:22:01 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[11761]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=20024)
+Apr 21 21:22:22 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12005]:     root : TTY=pts/1 ; PWD=/users/LH/machine_log ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock git -C /users/LH/machine_log remote get-url origin
+Apr 21 21:22:22 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12005]: pam_unix(sudo:session): session opened for user LH(uid=20024) by LH(uid=0)
+Apr 21 21:22:22 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12005]: pam_unix(sudo:session): session closed for user LH
+Apr 21 21:22:22 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12009]:     root : TTY=pts/1 ; PWD=/users/LH/machine_log ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock git -C /users/LH/machine_log push --dry-run origin main
+Apr 21 21:22:22 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12009]: pam_unix(sudo:session): session opened for user LH(uid=20024) by LH(uid=0)
+Apr 21 21:22:23 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12009]: pam_unix(sudo:session): session closed for user LH
+Apr 21 21:22:24 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Reloading.
+Apr 21 21:22:24 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Apr 21 21:22:24 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Reloading.
+Apr 21 21:22:25 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Apr 21 21:22:25 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Starting Daily apt download activities...
+Apr 21 21:22:25 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Started Crash log pusher.
+Apr 21 21:22:25 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[11761]: pam_unix(sudo:session): session closed for user root
+Apr 21 21:22:25 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[12087]: [2026-04-22T03:22:25Z] git user: LH
+Apr 21 21:22:25 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12101]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log remote get-url origin
+Apr 21 21:22:25 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12101]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
+Apr 21 21:22:25 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12101]: pam_unix(sudo:session): session closed for user LH
+Apr 21 21:22:25 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12111]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log remote get-url origin
+Apr 21 21:22:25 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12111]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
+Apr 21 21:22:25 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12111]: pam_unix(sudo:session): session closed for user LH
+Apr 21 21:22:25 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[12087]: [2026-04-22T03:22:25Z] origin remote: https://github.com/Linfeng-He/machine_log.git
+Apr 21 21:22:25 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12121]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log push --dry-run origin main
+Apr 21 21:22:25 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12121]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
+Apr 21 21:22:25 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: apt-daily.service: Deactivated successfully.
+Apr 21 21:22:25 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Finished Daily apt download activities.
+Apr 21 21:22:26 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12121]: pam_unix(sudo:session): session closed for user LH

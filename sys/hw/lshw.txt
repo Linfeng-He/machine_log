@@ -45,7 +45,7 @@ node0.testnode1.lsm-pg0.utah.cloudlab.us
           bus info: cpu@0
           version: 6.86.3
           slot: Proc 1
-          size: 799MHz
+          size: 798MHz
           capacity: 4GHz
           width: 64 bits
           clock: 100MHz

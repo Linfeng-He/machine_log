@@ -1,4 +1,4 @@
-===== syslog snapshot host=node0 boot_started_utc=20260422T005834Z boot_id=179612ea-2e99-4892-8219-f26f64b164e4 captured_utc=20260422T005953Z =====
+===== syslog snapshot host=node0 boot_started_utc=20260422T032225Z boot_id=179612ea-2e99-4892-8219-f26f64b164e4 captured_utc=20260422T032227Z =====
 
 Apr 21 17:30:58 localhost systemd[1]: logrotate.service: Deactivated successfully.
 Apr 21 17:30:58 localhost systemd[1]: Finished Rotate log files.
@@ -365,3 +365,39 @@ Apr 21 18:58:34 localhost systemd[1]: Configuration file /run/systemd/system/net
 Apr 21 18:58:34 localhost systemd[1]: Started Crash log pusher.
 Apr 21 18:58:34 localhost runner.sh[3392]: [2026-04-22T00:58:34Z] git user: LH
 Apr 21 18:58:34 localhost runner.sh[3392]: [2026-04-22T00:58:34Z] origin remote: https://github.com/Linfeng-He/machine_log.git
+Apr 21 18:59:54 localhost systemd[1]: Reloading.
+Apr 21 18:59:54 localhost systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Apr 21 18:59:54 localhost systemd[1]: Stopping Crash log pusher...
+Apr 21 18:59:54 localhost runner.sh[3392]: [2026-04-22T00:59:54Z] stopping
+Apr 21 18:59:56 localhost systemd[1]: crash-pusher.service: Main process exited, code=exited, status=143/n/a
+Apr 21 18:59:56 localhost systemd[1]: crash-pusher.service: Killing process 9243 (sleep) with signal SIGKILL.
+Apr 21 18:59:56 localhost systemd[1]: crash-pusher.service: Killing process 10410 (sleep) with signal SIGKILL.
+Apr 21 18:59:56 localhost systemd[1]: crash-pusher.service: Killing process 10501 (sleep) with signal SIGKILL.
+Apr 21 18:59:56 localhost systemd[1]: crash-pusher.service: Killing process 10511 (sleep) with signal SIGKILL.
+Apr 21 18:59:56 localhost systemd[1]: crash-pusher.service: Failed with result 'exit-code'.
+Apr 21 18:59:56 localhost systemd[1]: crash-pusher.service: Unit process 10501 (sleep) remains running after unit stopped.
+Apr 21 18:59:56 localhost systemd[1]: Stopped Crash log pusher.
+Apr 21 18:59:56 localhost systemd[1]: crash-pusher.service: Consumed 21.489s CPU time.
+Apr 21 19:17:01 localhost CRON[10606]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Apr 21 19:50:13 localhost systemd[1]: Started Session 7 of User LH.
+Apr 21 19:56:28 localhost systemd[1]: Started Session 8 of User LH.
+Apr 21 19:59:14 localhost systemd[1]: session-7.scope: Deactivated successfully.
+Apr 21 20:13:10 localhost systemd[1]: Started Session 9 of User LH.
+Apr 21 20:14:29 localhost systemd[1]: session-8.scope: Deactivated successfully.
+Apr 21 20:17:01 localhost CRON[11037]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Apr 21 20:31:11 localhost systemd[1]: session-9.scope: Deactivated successfully.
+Apr 21 20:46:33 localhost systemd[1]: Started Session 11 of User LH.
+Apr 21 21:04:34 localhost systemd[1]: session-11.scope: Deactivated successfully.
+Apr 21 21:17:01 localhost CRON[11558]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Apr 21 21:17:35 localhost systemd[1]: Started Session 13 of User LH.
+Apr 21 21:21:38 localhost systemd[1]: Started Session 14 of User LH.
+Apr 21 21:22:24 localhost systemd[1]: Reloading.
+Apr 21 21:22:24 localhost systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Apr 21 21:22:24 localhost systemd[1]: Reloading.
+Apr 21 21:22:25 localhost systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Apr 21 21:22:25 localhost systemd[1]: Starting Daily apt download activities...
+Apr 21 21:22:25 localhost systemd[1]: Started Crash log pusher.
+Apr 21 21:22:25 localhost runner.sh[12087]: [2026-04-22T03:22:25Z] git user: LH
+Apr 21 21:22:25 localhost runner.sh[12087]: [2026-04-22T03:22:25Z] origin remote: https://github.com/Linfeng-He/machine_log.git
+Apr 21 21:22:25 localhost systemd[1]: apt-daily.service: Deactivated successfully.
+Apr 21 21:22:25 localhost systemd[1]: Finished Daily apt download activities.
