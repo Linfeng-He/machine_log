@@ -1,4 +1,4 @@
-===== syslog snapshot host=node0 boot_started_utc=20260422T032427Z boot_id=62503c1c-026f-4d12-960b-226160d86543 captured_utc=20260422T032716Z =====
+===== syslog snapshot host=node0 boot_started_utc=20260422T032427Z boot_id=62503c1c-026f-4d12-960b-226160d86543 captured_utc=20260422T032737Z =====
 
 Apr 21 17:30:58 localhost systemd[1]: logrotate.service: Deactivated successfully.
 Apr 21 17:30:58 localhost systemd[1]: Finished Rotate log files.
@@ -2604,3 +2604,44 @@ Apr 21 21:26:56 localhost runner.sh[1112]: [2026-04-22T03:26:56Z] git push:   ad
 Apr 21 21:26:56 localhost runner.sh[1112]: [2026-04-22T03:26:56Z] git push: }
 Apr 21 21:26:56 localhost runner.sh[1112]: [2026-04-22T03:26:56Z] git push: remote: No anonymous write access.
 Apr 21 21:26:56 localhost runner.sh[1112]: [2026-04-22T03:26:56Z] git push: fatal: Authentication failed for 'https://github.com/Linfeng-He/machine_log.git/'
+Apr 21 21:27:17 localhost runner.sh[1112]: [2026-04-22T03:27:17Z] git push failed for origin/main
+Apr 21 21:27:17 localhost runner.sh[1112]: [2026-04-22T03:27:17Z] git push: Missing or invalid credentials.
+Apr 21 21:27:17 localhost runner.sh[1112]: [2026-04-22T03:27:17Z] git push: Error: connect ENOENT /run/user/20024/vscode-git-9b1f7ab212.sock
+Apr 21 21:27:17 localhost runner.sh[1112]: [2026-04-22T03:27:17Z] git push:     at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+Apr 21 21:27:17 localhost runner.sh[1112]: [2026-04-22T03:27:17Z] git push:   errno: -2,
+Apr 21 21:27:17 localhost runner.sh[1112]: [2026-04-22T03:27:17Z] git push:   code: 'ENOENT',
+Apr 21 21:27:17 localhost runner.sh[1112]: [2026-04-22T03:27:17Z] git push:   syscall: 'connect',
+Apr 21 21:27:17 localhost runner.sh[1112]: [2026-04-22T03:27:17Z] git push:   address: '/run/user/20024/vscode-git-9b1f7ab212.sock'
+Apr 21 21:27:17 localhost runner.sh[1112]: [2026-04-22T03:27:17Z] git push: }
+Apr 21 21:27:17 localhost runner.sh[1112]: [2026-04-22T03:27:17Z] git push: Missing or invalid credentials.
+Apr 21 21:27:17 localhost runner.sh[1112]: [2026-04-22T03:27:17Z] git push: Error: connect ENOENT /run/user/20024/vscode-git-9b1f7ab212.sock
+Apr 21 21:27:17 localhost runner.sh[1112]: [2026-04-22T03:27:17Z] git push:     at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+Apr 21 21:27:17 localhost runner.sh[1112]: [2026-04-22T03:27:17Z] git push:   errno: -2,
+Apr 21 21:27:17 localhost runner.sh[1112]: [2026-04-22T03:27:17Z] git push:   code: 'ENOENT',
+Apr 21 21:27:17 localhost runner.sh[1112]: [2026-04-22T03:27:17Z] git push:   syscall: 'connect',
+Apr 21 21:27:17 localhost runner.sh[1112]: [2026-04-22T03:27:17Z] git push:   address: '/run/user/20024/vscode-git-9b1f7ab212.sock'
+Apr 21 21:27:17 localhost runner.sh[1112]: [2026-04-22T03:27:17Z] git push: }
+Apr 21 21:27:17 localhost runner.sh[1112]: [2026-04-22T03:27:17Z] git push: remote: No anonymous write access.
+Apr 21 21:27:17 localhost runner.sh[1112]: [2026-04-22T03:27:17Z] git push: fatal: Authentication failed for 'https://github.com/Linfeng-He/machine_log.git/'
+Apr 21 21:27:36 localhost systemd[1]: Created slice User Slice of UID 20024.
+Apr 21 21:27:36 localhost systemd[1]: Starting User Runtime Directory /run/user/20024...
+Apr 21 21:27:36 localhost systemd[1]: Finished User Runtime Directory /run/user/20024.
+Apr 21 21:27:36 localhost systemd[1]: Starting User Manager for UID 20024...
+Apr 21 21:27:37 localhost systemd[17321]: Queued start job for default target Main User Target.
+Apr 21 21:27:37 localhost systemd[17321]: Created slice User Application Slice.
+Apr 21 21:27:37 localhost systemd[17321]: Reached target Paths.
+Apr 21 21:27:37 localhost systemd[17321]: Reached target Timers.
+Apr 21 21:27:37 localhost systemd[17321]: Starting D-Bus User Message Bus Socket...
+Apr 21 21:27:37 localhost systemd[17321]: Listening on GnuPG network certificate management daemon.
+Apr 21 21:27:37 localhost systemd[17321]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Apr 21 21:27:37 localhost systemd[17321]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Apr 21 21:27:37 localhost systemd[17321]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Apr 21 21:27:37 localhost systemd[17321]: Listening on GnuPG cryptographic agent and passphrase cache.
+Apr 21 21:27:37 localhost systemd[17321]: Listening on debconf communication socket.
+Apr 21 21:27:37 localhost systemd[17321]: Listening on D-Bus User Message Bus Socket.
+Apr 21 21:27:37 localhost systemd[17321]: Reached target Sockets.
+Apr 21 21:27:37 localhost systemd[17321]: Reached target Basic System.
+Apr 21 21:27:37 localhost systemd[17321]: Reached target Main User Target.
+Apr 21 21:27:37 localhost systemd[17321]: Startup finished in 172ms.
+Apr 21 21:27:37 localhost systemd[1]: Started User Manager for UID 20024.
+Apr 21 21:27:37 localhost systemd[1]: Started Session 1 of User LH.

@@ -1,65 +1,5 @@
-===== journal snapshot host=node0 boot_started_utc=20260422T032427Z boot_id=62503c1c-026f-4d12-960b-226160d86543 captured_utc=20260422T032716Z =====
+===== journal snapshot host=node0 boot_started_utc=20260422T032427Z boot_id=62503c1c-026f-4d12-960b-226160d86543 captured_utc=20260422T032737Z =====
 
-Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] push preflight: Missing or invalid credentials.
-Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] push preflight: Error: connect ENOENT /run/user/20024/vscode-git-9b1f7ab212.sock
-Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] push preflight:     at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
-Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] push preflight:   errno: -2,
-Apr 21 21:24:28 localhost sh[754]: Restarting pubsubd...
-Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] push preflight:   code: 'ENOENT',
-Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] push preflight:   syscall: 'connect',
-Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] push preflight:   address: '/run/user/20024/vscode-git-9b1f7ab212.sock'
-Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] push preflight: }
-Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] push preflight: Missing or invalid credentials.
-Apr 21 21:24:28 localhost systemd[1]: Stopping The Emulab publish/subscribe daemon...
-Apr 21 21:24:28 localhost pubsubd[736]: Caught a signal: 15
-Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] push preflight: Error: connect ENOENT /run/user/20024/vscode-git-9b1f7ab212.sock
-Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] push preflight:     at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
-Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] push preflight:   errno: -2,
-Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] push preflight:   code: 'ENOENT',
-Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] push preflight:   syscall: 'connect',
-Apr 21 21:24:28 localhost systemd[1]: pubsubd.service: Deactivated successfully.
-Apr 21 21:24:28 localhost systemd[1]: Stopped The Emulab publish/subscribe daemon.
-Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] push preflight:   address: '/run/user/20024/vscode-git-9b1f7ab212.sock'
-Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] push preflight: }
-Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] push preflight: remote: No anonymous write access.
-Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] push preflight: fatal: Authentication failed for 'https://github.com/Linfeng-He/machine_log.git/'
-Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] github https remote detected; configure a credential helper/token or switch origin to ssh for unattended pushes
-Apr 21 21:24:28 localhost systemd[1]: Starting The Emulab publish/subscribe daemon...
-Apr 21 21:24:28 localhost pubsubd[900]: daemon starting (version 2, debug=0xd22, maxclients=1024, sockbufsize=64KB)
-Apr 21 21:24:28 localhost pubsubd[900]: Built 19-Jun-2024 by root@runner-kseey9dt-project-2299-concurrent-0:/builds/emulab/pubsub-deb/pubsub-0.99.1/debian/build
-Apr 21 21:24:28 localhost pubsubd[900]: listening on TCP port 16505
-Apr 21 21:24:28 localhost pubsubd[900]: Connecting to parent: event-server:16505
-Apr 21 21:24:28 localhost pubsubd[900]: Adding parent subscription: (EXPT == "lsm-PG0/Testnode1") && SCHEDULER == 0
-Apr 21 21:24:28 localhost pubsubd[903]: Using MSG_NOSIGNAL to block SIGPIPE
-Apr 21 21:24:28 localhost pubsubd[903]: 128.110.156.34: Client Connected: cport:16505 sock:5
-Apr 21 21:24:28 localhost systemd[1]: Started The Emulab publish/subscribe daemon.
-Apr 21 21:24:28 localhost sh[754]: Running config scripts
-Apr 21 21:24:28 localhost sh[754]: Checking manifest...
-Apr 21 21:24:28 localhost sh[754]: Checking Testbed localization configuration ...
-Apr 21 21:24:28 localhost sh[754]: Checking Testbed keys ...
-Apr 21 21:24:28 localhost sh[754]: Checking Testbed local storage configuration ...
-Apr 21 21:24:28 localhost sh[754]:   Checking 'disk0'...
-Apr 21 21:24:28 localhost sh[754]:   disk0: local disk at /dev/nvme0n1, exists
-Apr 21 21:24:28 localhost ntpd[719]: Listen normally on 7 eno1 [fe80::1658:d0ff:fe58:1f92%2]:123
-Apr 21 21:24:28 localhost ntpd[719]: new interface(s) found: waking up resolver
-Apr 21 21:24:29 localhost sh[754]: Mounting project and home directories ...
-Apr 21 21:24:29 localhost sh[754]:   Mount type is NFS (using TCP transport)
-Apr 21 21:24:29 localhost sh[754]:   Mounting ops.utah.cloudlab.us:/proj/lsm-PG0 on /proj/lsm-PG0
-Apr 21 21:24:29 localhost kernel: FS-Cache: Loaded
-Apr 21 21:24:29 localhost kernel: FS-Cache: Netfs 'nfs' registered for caching
-Apr 21 21:24:29 localhost sh[754]:   Mounting ops.utah.cloudlab.us:/share on /share
-Apr 21 21:24:29 localhost sh[754]: Checking Testbed Blobs configuration ...
-Apr 21 21:24:29 localhost sh[754]: Checking Testbed user accounts configuration ...
-Apr 21 21:24:29 localhost sh[754]: Checking Testbed route configuration ...
-Apr 21 21:24:29 localhost sh[754]: net.ipv4.conf.all.forwarding = 1
-Apr 21 21:24:29 localhost sh[754]: Checking Testbed tunnel configuration ...
-Apr 21 21:24:29 localhost sudo[1124]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log add --all -- sys
-Apr 21 21:24:29 localhost sudo[1124]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 21:24:29 localhost sh[754]: Checking Testbed interface configuration ...
-Apr 21 21:24:29 localhost sudo[1124]: pam_unix(sudo:session): session closed for user LH
-Apr 21 21:24:29 localhost sudo[1209]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log diff --cached --name-only -- sys
-Apr 21 21:24:29 localhost sudo[1209]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 21:24:29 localhost sudo[1209]: pam_unix(sudo:session): session closed for user LH
 Apr 21 21:24:29 localhost sudo[1213]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log -c user.name=crash-pusher -c user.email=crash-pusher@node0 commit -m 'sys capture node0 20260422T032427Z 2026-04-22T03:24:29Z' -- sys
 Apr 21 21:24:29 localhost sudo[1213]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
 Apr 21 21:24:29 localhost sudo[1213]: pam_unix(sudo:session): session closed for user LH
@@ -400,3 +340,63 @@ Apr 21 21:26:56 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-
 Apr 21 21:26:56 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:26:56Z] git push: }
 Apr 21 21:26:56 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:26:56Z] git push: remote: No anonymous write access.
 Apr 21 21:26:56 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:26:56Z] git push: fatal: Authentication failed for 'https://github.com/Linfeng-He/machine_log.git/'
+Apr 21 21:27:16 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[15564]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log add --all -- sys
+Apr 21 21:27:16 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[15564]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
+Apr 21 21:27:16 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[15564]: pam_unix(sudo:session): session closed for user LH
+Apr 21 21:27:16 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[15568]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log diff --cached --name-only -- sys
+Apr 21 21:27:16 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[15568]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
+Apr 21 21:27:16 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[15568]: pam_unix(sudo:session): session closed for user LH
+Apr 21 21:27:16 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[15572]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log -c user.name=crash-pusher -c user.email=crash-pusher@node0 commit -m 'sys capture node0 20260422T032427Z 2026-04-22T03:27:16Z' -- sys
+Apr 21 21:27:16 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[15572]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
+Apr 21 21:27:16 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[15572]: pam_unix(sudo:session): session closed for user LH
+Apr 21 21:27:16 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[15577]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log remote get-url origin
+Apr 21 21:27:16 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[15577]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
+Apr 21 21:27:16 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[15577]: pam_unix(sudo:session): session closed for user LH
+Apr 21 21:27:16 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[15591]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log push origin main
+Apr 21 21:27:16 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[15591]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
+Apr 21 21:27:17 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[15591]: pam_unix(sudo:session): session closed for user LH
+Apr 21 21:27:17 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:27:17Z] git push failed for origin/main
+Apr 21 21:27:17 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:27:17Z] git push: Missing or invalid credentials.
+Apr 21 21:27:17 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:27:17Z] git push: Error: connect ENOENT /run/user/20024/vscode-git-9b1f7ab212.sock
+Apr 21 21:27:17 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:27:17Z] git push:     at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+Apr 21 21:27:17 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:27:17Z] git push:   errno: -2,
+Apr 21 21:27:17 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:27:17Z] git push:   code: 'ENOENT',
+Apr 21 21:27:17 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:27:17Z] git push:   syscall: 'connect',
+Apr 21 21:27:17 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:27:17Z] git push:   address: '/run/user/20024/vscode-git-9b1f7ab212.sock'
+Apr 21 21:27:17 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:27:17Z] git push: }
+Apr 21 21:27:17 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:27:17Z] git push: Missing or invalid credentials.
+Apr 21 21:27:17 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:27:17Z] git push: Error: connect ENOENT /run/user/20024/vscode-git-9b1f7ab212.sock
+Apr 21 21:27:17 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:27:17Z] git push:     at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+Apr 21 21:27:17 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:27:17Z] git push:   errno: -2,
+Apr 21 21:27:17 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:27:17Z] git push:   code: 'ENOENT',
+Apr 21 21:27:17 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:27:17Z] git push:   syscall: 'connect',
+Apr 21 21:27:17 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:27:17Z] git push:   address: '/run/user/20024/vscode-git-9b1f7ab212.sock'
+Apr 21 21:27:17 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:27:17Z] git push: }
+Apr 21 21:27:17 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:27:17Z] git push: remote: No anonymous write access.
+Apr 21 21:27:17 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[1112]: [2026-04-22T03:27:17Z] git push: fatal: Authentication failed for 'https://github.com/Linfeng-He/machine_log.git/'
+Apr 21 21:27:36 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[17253]: Accepted publickey for LH from 71.187.248.113 port 55684 ssh2: RSA SHA256:hElkzd92JFx2Be3nEdpFzMpn+m1N3su9yosmOrbUAmU
+Apr 21 21:27:36 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[17253]: pam_unix(sshd:session): session opened for user LH(uid=20024) by (uid=0)
+Apr 21 21:27:36 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Created slice User Slice of UID 20024.
+Apr 21 21:27:36 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Starting User Runtime Directory /run/user/20024...
+Apr 21 21:27:36 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd-logind[692]: New session 1 of user LH.
+Apr 21 21:27:36 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Finished User Runtime Directory /run/user/20024.
+Apr 21 21:27:36 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Starting User Manager for UID 20024...
+Apr 21 21:27:36 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[17321]: pam_unix(systemd-user:session): session opened for user LH(uid=20024) by (uid=0)
+Apr 21 21:27:37 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[17321]: Queued start job for default target Main User Target.
+Apr 21 21:27:37 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[17321]: Created slice User Application Slice.
+Apr 21 21:27:37 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[17321]: Reached target Paths.
+Apr 21 21:27:37 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[17321]: Reached target Timers.
+Apr 21 21:27:37 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[17321]: Starting D-Bus User Message Bus Socket...
+Apr 21 21:27:37 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[17321]: Listening on GnuPG network certificate management daemon.
+Apr 21 21:27:37 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[17321]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Apr 21 21:27:37 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[17321]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Apr 21 21:27:37 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[17321]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Apr 21 21:27:37 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[17321]: Listening on GnuPG cryptographic agent and passphrase cache.
+Apr 21 21:27:37 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[17321]: Listening on debconf communication socket.
+Apr 21 21:27:37 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[17321]: Listening on D-Bus User Message Bus Socket.
+Apr 21 21:27:37 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[17321]: Reached target Sockets.
+Apr 21 21:27:37 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[17321]: Reached target Basic System.
+Apr 21 21:27:37 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[17321]: Reached target Main User Target.
+Apr 21 21:27:37 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[17321]: Startup finished in 172ms.
+Apr 21 21:27:37 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Started User Manager for UID 20024.
+Apr 21 21:27:37 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Started Session 1 of User LH.
