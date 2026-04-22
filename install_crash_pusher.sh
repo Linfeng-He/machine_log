@@ -5,17 +5,16 @@ usage() {
   cat <<'EOF'
 Usage:
   sudo bash install_crash_pusher.sh \
-    --repo-branch main \
     [--cmmhi-cmd '/path/to/cmmhi_rtm -d']
 
 Options:
-  --repo-url URL            Git remote that will receive the logs. Default: git@github.com:Linfeng-He/machine_log.git
-  --repo-branch BRANCH      Git branch to push to. Default: main
+  --repo-dir DIR            Git repo that receives the sys updates. Default: git repo containing this script
+  --repo-url URL            Optional override for the repo's origin remote. Default: keep existing origin
+  --repo-branch BRANCH      Git branch to push to. Default: current branch of the cloned repo
   --cmmhi-cmd CMD           Temperature command to run every second. Default: auto-discover cmmhi_rtm and run it with -d
   --host-id ID              Host label inside the repo. Default: hostname -s
-  --state-dir DIR           Local working dir on target machine. Default: /var/lib/crash-pusher
   --snapshot-interval SEC   Seconds between system snapshots. Default: 1
-  --push-interval SEC       Seconds between git commits/pushes after the initial push. Default: 5
+  --push-interval SEC       Seconds between git commits/pushes after the initial push. Default: 20
   --staging-root DIR        Write files under DIR instead of /. Useful for local verification.
   --no-start                Install files but do not start the service.
   --stop                    Stop and disable the crash-pusher service.
@@ -24,13 +23,10 @@ Options:
 
 Examples:
   sudo bash install_crash_pusher.sh \
-    --repo-branch main \
     --cmmhi-cmd '/opt/cmmhi/cmmhi_rtm -d'
 
-  sudo bash install_crash_pusher.sh --repo-branch main
-
   bash install_crash_pusher.sh \
-    --repo-url /tmp/crash-pusher-test-remote.git \
+    --repo-dir /tmp/machine_log \
     --cmmhi-cmd 'printf "temp_c=42\n"' \
     --staging-root /tmp/crash-pusher-stage \
     --no-start
@@ -53,19 +49,62 @@ prefix_path() {
   printf '%s%s\n' "${STAGING_ROOT%/}" "$path"
 }
 
+script_dir() {
+  local source_path="${BASH_SOURCE[0]:-$0}"
+  local source_dir
+  source_dir="$(cd -- "$(dirname -- "$source_path")" && pwd -P)"
+  printf '%s\n' "$source_dir"
+}
+
+discover_repo_dir() {
+  local start_dir="$1"
+  if git -C "$start_dir" rev-parse --show-toplevel >/dev/null 2>&1; then
+    git -C "$start_dir" rev-parse --show-toplevel
+    return 0
+  fi
+  printf '%s\n' "$start_dir"
+}
+
+current_repo_branch() {
+  local repo_dir="$1"
+  git -C "$repo_dir" symbolic-ref --quiet --short HEAD 2>/dev/null || true
+}
+
 discover_cmmhi_cmd() {
   local roots=()
+  local seen_roots=""
   local candidate=""
   local root
+  local parent_dir=""
+
+  add_search_root() {
+    local candidate_root="$1"
+    [[ -n "$candidate_root" ]] || return 0
+    [[ -d "$candidate_root" ]] || return 0
+    case ",${seen_roots}," in
+      *,"${candidate_root}",*) return 0 ;;
+    esac
+    roots+=("$candidate_root")
+    seen_roots+=",${candidate_root}"
+  }
 
   if command -v cmmhi_rtm >/dev/null 2>&1; then
     printf '%s -d\n' "$(command -v cmmhi_rtm)"
     return 0
   fi
 
-  for root in /usr/local /usr /opt /root /home /mnt; do
-    [[ -d "$root" ]] && roots+=("$root")
+  for root in /usr/local /usr /opt /mnt; do
+    add_search_root "$root"
   done
+
+  add_search_root "${HOME:-}"
+
+  while IFS=: read -r _ _ _ _ _ passwd_home _; do
+    [[ -n "$passwd_home" ]] || continue
+    add_search_root "$passwd_home"
+    parent_dir="$(dirname "$passwd_home")"
+    add_search_root "$parent_dir"
+  done < <(getent passwd 2>/dev/null || cat /etc/passwd 2>/dev/null || true)
 
   if [[ "${#roots[@]}" -gt 0 ]]; then
     candidate="$(find "${roots[@]}" -maxdepth 6 -type f -name 'cmmhi_rtm' -perm -111 2>/dev/null | head -n 1 || true)"
@@ -95,35 +134,18 @@ TEMP_HELPER="${SERVICE_ROOT}/capture_temp.sh"
 
 HOST_ID="${HOST_ID:-$(hostname -s)}"
 HOST_ID="${CRASH_PUSHER_HOST_ID:-$HOST_ID}"
+REPO_DIR="${CRASH_PUSHER_REPO_DIR:-${REPO_DIR:-}}"
 REPO_URL="${CRASH_PUSHER_REPO_URL:-${REPO_URL:-}}"
-REPO_BRANCH="${CRASH_PUSHER_REPO_BRANCH:-${REPO_BRANCH:-main}}"
-STATE_DIR="${CRASH_PUSHER_STATE_DIR:-${STATE_DIR:-/var/lib/crash-pusher}}"
-if [[ -n "${CRASH_PUSHER_REPO_DIR:-}" ]]; then
-  REPO_DIR="${CRASH_PUSHER_REPO_DIR}"
-elif [[ -n "${CRASH_PUSHER_STATE_DIR:-}" ]]; then
-  REPO_DIR="${STATE_DIR}/repo"
-else
-  REPO_DIR="${REPO_DIR:-${STATE_DIR}/repo}"
-fi
-
-if [[ -n "${CRASH_PUSHER_RUNTIME_DIR:-}" ]]; then
-  RUNTIME_DIR="${CRASH_PUSHER_RUNTIME_DIR}"
-elif [[ -n "${CRASH_PUSHER_STATE_DIR:-}" ]]; then
-  RUNTIME_DIR="${STATE_DIR}/runtime"
-else
-  RUNTIME_DIR="${RUNTIME_DIR:-${STATE_DIR}/runtime}"
-fi
+REPO_BRANCH="${CRASH_PUSHER_REPO_BRANCH:-${REPO_BRANCH:-}}"
 SNAPSHOT_INTERVAL="${CRASH_PUSHER_SNAPSHOT_INTERVAL:-${SNAPSHOT_INTERVAL:-1}}"
-PUSH_INTERVAL="${CRASH_PUSHER_PUSH_INTERVAL:-${PUSH_INTERVAL:-5}}"
+PUSH_INTERVAL="${CRASH_PUSHER_PUSH_INTERVAL:-${PUSH_INTERVAL:-20}}"
 GIT_AUTHOR_NAME="${CRASH_PUSHER_GIT_AUTHOR_NAME:-${GIT_AUTHOR_NAME:-crash-pusher}}"
 GIT_AUTHOR_EMAIL="${CRASH_PUSHER_GIT_AUTHOR_EMAIL:-${GIT_AUTHOR_EMAIL:-crash-pusher@${HOST_ID}}}"
 
-[[ -n "$REPO_URL" ]] || {
-  echo "REPO_URL is not set in $ENV_FILE" >&2
+[[ -n "$REPO_DIR" ]] || {
+  echo "REPO_DIR is not set in $ENV_FILE" >&2
   exit 1
 }
-
-mkdir -p "$STATE_DIR" "$RUNTIME_DIR"
 
 BOOT_ID="$(cat /proc/sys/kernel/random/boot_id)"
 BOOT_TS="$(date -u +%Y%m%dT%H%M%SZ)"
@@ -165,29 +187,66 @@ sync_path() {
   sync -f "$path" 2>/dev/null || sync 2>/dev/null || true
 }
 
+log_multiline() {
+  local prefix="$1"
+  local text="$2"
+  local line
+
+  while IFS= read -r line; do
+    [[ -n "$line" ]] || continue
+    log "${prefix}${line}"
+  done <<<"$text"
+}
+
 ensure_repo() {
-  mkdir -p "$REPO_DIR"
-
-  if [[ -d "$REPO_DIR/.git" ]]; then
-    git -C "$REPO_DIR" remote set-url origin "$REPO_URL" || true
-    git -C "$REPO_DIR" fetch origin "$REPO_BRANCH" >/dev/null 2>&1 || true
-    git -C "$REPO_DIR" checkout "$REPO_BRANCH" >/dev/null 2>&1 || git -C "$REPO_DIR" checkout -B "$REPO_BRANCH" >/dev/null 2>&1
-    git -C "$REPO_DIR" pull --rebase origin "$REPO_BRANCH" >/dev/null 2>&1 || true
-    return
-  fi
-
-  if [[ -n "$(find "$REPO_DIR" -mindepth 1 -maxdepth 1 2>/dev/null | head -n 1)" ]]; then
-    echo "REPO_DIR exists but is not a git repo: $REPO_DIR" >&2
+  [[ -d "$REPO_DIR/.git" ]] || {
+    echo "REPO_DIR is not a git repo: $REPO_DIR" >&2
     exit 1
+  }
+
+  git config --global --add safe.directory "$REPO_DIR" >/dev/null 2>&1 || true
+
+  if [[ -n "$REPO_URL" ]]; then
+    if git -C "$REPO_DIR" remote get-url origin >/dev/null 2>&1; then
+      git -C "$REPO_DIR" remote set-url origin "$REPO_URL" >/dev/null 2>&1 || true
+    else
+      git -C "$REPO_DIR" remote add origin "$REPO_URL" >/dev/null 2>&1 || true
+    fi
   fi
 
-  if git clone --branch "$REPO_BRANCH" "$REPO_URL" "$REPO_DIR" >/dev/null 2>&1; then
-    return
+  if [[ -z "$REPO_BRANCH" ]]; then
+    REPO_BRANCH="$(git -C "$REPO_DIR" symbolic-ref --quiet --short HEAD 2>/dev/null || true)"
   fi
 
-  git -c init.defaultBranch="$REPO_BRANCH" -C "$REPO_DIR" init >/dev/null
-  git -C "$REPO_DIR" checkout -B "$REPO_BRANCH" >/dev/null
-  git -C "$REPO_DIR" remote add origin "$REPO_URL"
+  if [[ -z "$REPO_BRANCH" ]]; then
+    REPO_BRANCH="$(git -C "$REPO_DIR" rev-parse --abbrev-ref origin/HEAD 2>/dev/null | sed 's#^origin/##' || true)"
+  fi
+
+  if [[ -z "$REPO_BRANCH" || "$REPO_BRANCH" == "HEAD" ]]; then
+    REPO_BRANCH="main"
+  fi
+}
+
+check_push_access() {
+  local remote_url=""
+  local push_output=""
+
+  if ! git -C "$REPO_DIR" remote get-url origin >/dev/null 2>&1; then
+    log "origin remote is not configured; commits will stay local"
+    return 0
+  fi
+
+  remote_url="$(git -C "$REPO_DIR" remote get-url origin 2>/dev/null || true)"
+  log "origin remote: ${remote_url}"
+
+  push_output="$(git -C "$REPO_DIR" push --dry-run origin "$REPO_BRANCH" 2>&1)" || {
+    log "push preflight failed for origin/${REPO_BRANCH}"
+    log_multiline "push preflight: " "$push_output"
+    if [[ "$remote_url" == https://github.com/* ]]; then
+      log "github https remote detected; configure a credential helper/token or switch origin to ssh for unattended pushes"
+    fi
+    return 0
+  }
 }
 
 append_boot_marker() {
@@ -207,11 +266,13 @@ prepare_sys_tree() {
   local journal_dir="${sys_root}/journal"
   local dmesg_dir="${sys_root}/dmesg"
   local temp_dir="${sys_root}/temp"
-  local metadata_file="${journal_dir}/boot_meta_${BOOT_TS}_${BOOT_ID}.env"
+  local metadata_file="${journal_dir}/boot_meta.env"
   local status_log="${journal_dir}/system_status.log"
-  local baseline_file="${journal_dir}/system_baseline_${BOOT_TS}.log"
-  local boot_journal_file="${journal_dir}/boot_journal_${BOOT_TS}.log"
-  local dmesg_file="${dmesg_dir}/dmesg_${BOOT_TS}.log"
+  local baseline_file="${journal_dir}/system_baseline.log"
+  local journal_file="${journal_dir}/journal.log"
+  local dmesg_file="${dmesg_dir}/dmesg.log"
+  local syslog_file="${syslog_dir}/syslog.log"
+  local temp_file="${temp_dir}/temperature.log"
 
   mkdir -p "$hw_dir" "$syslog_dir" "$journal_dir" "$dmesg_dir" "$temp_dir"
 
@@ -226,9 +287,14 @@ prepare_sys_tree() {
   sync_path "$metadata_file"
 
   append_boot_marker "$status_log" "system_status"
-  append_boot_marker "${journal_dir}/journal.log" "journal"
-  append_boot_marker "${dmesg_dir}/dmesg.log" "dmesg"
-  append_boot_marker "${syslog_dir}/syslog.log" "syslog"
+  : >"$journal_file"
+  : >"$dmesg_file"
+  : >"$syslog_file"
+  : >"$temp_file"
+  sync_path "$journal_file"
+  sync_path "$dmesg_file"
+  sync_path "$syslog_file"
+  sync_path "$temp_file"
 
   {
     echo "===== system baseline host=${HOST_ID} boot_started_utc=${BOOT_TS} boot_id=${BOOT_ID} ====="
@@ -270,11 +336,6 @@ prepare_sys_tree() {
     done
   } >"$baseline_file"
   sync_path "$baseline_file"
-
-  run_to_file "$boot_journal_file" journalctl -b --no-pager -n 400
-  sync_path "$boot_journal_file"
-  run_to_file "$dmesg_file" dmesg -T
-  sync_path "$dmesg_file"
 }
 
 capture_hw_once() {
@@ -335,48 +396,71 @@ capture_temperature_once() {
   local sys_root="$1"
   local ts_file ts_iso
   ts_iso="$(date -u +%Y%m%dT%H%M%SZ)"
-  ts_file="${sys_root}/temp/${ts_iso}.txt"
+  ts_file="${sys_root}/temp/temperature.log"
+  {
+    echo
+    echo "===== temperature timestamp_utc=${ts_iso} host=${HOST_ID} boot_id=${BOOT_ID} ====="
+  } >>"$ts_file"
   if [[ -x "$TEMP_HELPER" ]]; then
-    "$TEMP_HELPER" >"$ts_file" 2>&1 || true
+    "$TEMP_HELPER" >>"$ts_file" 2>&1 || true
   else
     {
       echo "capture helper missing: $TEMP_HELPER"
       echo "timestamp_utc=${ts_iso}"
-    } >"$ts_file"
+    } >>"$ts_file"
   fi
   sync_path "$ts_file"
 }
 
-start_followers() {
+refresh_journal_once() {
   local sys_root="$1"
-  JOURNAL_LOG="${sys_root}/journal/journal.log"
-  KERNEL_LOG="${sys_root}/dmesg/dmesg.log"
-  SYSLOG_LOG="${sys_root}/syslog/syslog.log"
+  local outfile="${sys_root}/journal/journal.log"
+  {
+    echo "===== journal snapshot host=${HOST_ID} boot_started_utc=${BOOT_TS} boot_id=${BOOT_ID} captured_utc=$(date -u +%Y%m%dT%H%M%SZ) ====="
+    echo
+    journalctl -b --no-pager -n 400
+  } >"$outfile" 2>&1 || true
+  sync_path "$outfile"
+}
 
-  stdbuf -oL -eL journalctl -b -f -o short-iso --no-pager >>"$JOURNAL_LOG" 2>&1 &
-  JOURNAL_PID=$!
+refresh_dmesg_once() {
+  local sys_root="$1"
+  local outfile="${sys_root}/dmesg/dmesg.log"
+  {
+    echo "===== dmesg snapshot host=${HOST_ID} boot_started_utc=${BOOT_TS} boot_id=${BOOT_ID} captured_utc=$(date -u +%Y%m%dT%H%M%SZ) ====="
+    echo
+    dmesg -T
+  } >"$outfile" 2>&1 || true
+  sync_path "$outfile"
+}
 
-  stdbuf -oL -eL journalctl -k -b -f -o short-iso --no-pager >>"$KERNEL_LOG" 2>&1 &
-  KERNEL_PID=$!
-
+refresh_syslog_once() {
+  local sys_root="$1"
+  local outfile="${sys_root}/syslog/syslog.log"
   if [[ -f /var/log/syslog ]]; then
-    stdbuf -oL -eL tail -n +1 -F /var/log/syslog >>"$SYSLOG_LOG" 2>&1 &
-    SYSLOG_PID=$!
+    {
+      echo "===== syslog snapshot host=${HOST_ID} boot_started_utc=${BOOT_TS} boot_id=${BOOT_ID} captured_utc=$(date -u +%Y%m%dT%H%M%SZ) ====="
+      echo
+      cat /var/log/syslog
+    } >"$outfile" 2>&1 || true
   else
-    SYSLOG_PID=""
-    SYSLOG_LOG=""
+    {
+      echo "syslog_missing=/var/log/syslog"
+      echo "timestamp_utc=$(date -u +%Y%m%dT%H%M%SZ)"
+    } >"$outfile"
   fi
+  sync_path "$outfile"
 }
 
-sync_live_logs_once() {
-  for log_file in "${JOURNAL_LOG:-}" "${KERNEL_LOG:-}" "${SYSLOG_LOG:-}"; do
-    [[ -n "$log_file" && -f "$log_file" ]] || continue
-    sync_path "$log_file"
-  done
+refresh_live_logs_once() {
+  local sys_root="$1"
+  refresh_journal_once "$sys_root"
+  refresh_dmesg_once "$sys_root"
+  refresh_syslog_once "$sys_root"
 }
 
-stop_followers() {
-  for pid_var in JOURNAL_PID KERNEL_PID SYSLOG_PID SNAPSHOT_PID TEMP_PID PUSH_PID LOG_SYNC_PID; do
+stop_workers() {
+  for pid_var in SNAPSHOT_PID TEMP_PID PUSH_PID LOG_SYNC_PID; do
     local pid="${!pid_var:-}"
     [[ -n "$pid" ]] || continue
     kill "$pid" 2>/dev/null || true
@@ -387,32 +471,37 @@ stop_followers() {
 git_sync_once() {
   local now
   local staged_files
+  local commit_output
+  local push_output
   now="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
 
-  git -C "$REPO_DIR" add --all "$SYS_ROOT_REL"
-  staged_files="$(git -C "$REPO_DIR" diff --cached --name-only)"
+  git -C "$REPO_DIR" add --all -- "$SYS_ROOT_REL"
+  staged_files="$(git -C "$REPO_DIR" diff --cached --name-only -- "$SYS_ROOT_REL")"
   if [[ -z "$staged_files" ]]; then
     return 0
   fi
 
-  git -C "$REPO_DIR" pull --rebase --autostash origin "$REPO_BRANCH" >/dev/null 2>&1 || true
-  git -C "$REPO_DIR" add --all "$SYS_ROOT_REL"
-
-  staged_files="$(git -C "$REPO_DIR" diff --cached --name-only)"
-  if [[ -z "$staged_files" ]]; then
-    return 0
-  fi
-
-  git -C "$REPO_DIR" \
+  commit_output="$(git -C "$REPO_DIR" \
     -c user.name="$GIT_AUTHOR_NAME" \
     -c user.email="$GIT_AUTHOR_EMAIL" \
-    commit -m "sys capture ${HOST_ID} ${BOOT_TS} ${now}" >/dev/null 2>&1 || true
+    commit -m "sys capture ${HOST_ID} ${BOOT_TS} ${now}" -- "$SYS_ROOT_REL" 2>&1)" || {
+    log "git commit failed"
+    log_multiline "git commit: " "$commit_output"
+    return 1
+  }
 
-  git -C "$REPO_DIR" push origin "$REPO_BRANCH" >/dev/null 2>&1 || true
+  if git -C "$REPO_DIR" remote get-url origin >/dev/null 2>&1; then
+    push_output="$(git -C "$REPO_DIR" push origin "$REPO_BRANCH" 2>&1)" || {
+      log "git push failed for origin/${REPO_BRANCH}"
+      log_multiline "git push: " "$push_output"
+      return 1
+    }
+  fi
 }
 
 main() {
   ensure_repo
+  check_push_access
 
   local sys_root="${REPO_DIR}/${SYS_ROOT_REL}"
   local cleanup_done=0
@@ -422,20 +511,16 @@ main() {
     cleanup_done=1
     log "stopping"
     git_sync_once || true
-    stop_followers
+    stop_workers
   }
 
   prepare_sys_tree "$sys_root"
-  start_followers "$sys_root"
   trap cleanup EXIT INT TERM
 
-  git_sync_once
   snapshot_once "$sys_root"
-  git_sync_once
   capture_temperature_once "$sys_root"
-  git_sync_once
   capture_hw_once "$sys_root"
-  git_sync_once
+  refresh_live_logs_once "$sys_root"
 
   (
     while true; do
@@ -455,7 +540,7 @@ main() {
 
   (
     while true; do
-      sync_live_logs_once
+      refresh_live_logs_once "$sys_root"
       sleep "$SNAPSHOT_INTERVAL"
     done
   ) &
@@ -493,6 +578,7 @@ CMMHI_CMD="${CMMHI_CMD:-}"
 CMMHI_TIMEOUT="${CMMHI_TIMEOUT:-3}"
 
 echo "timestamp_utc=$(date -u +%Y%m%dT%H%M%SZ)"
+
 echo
 echo "== cmmhi_rtm =="
 if [[ -n "$CMMHI_CMD" ]]; then
@@ -609,13 +695,14 @@ ensure_hw_inventory_tools() {
 }
 
 ROOT_UID=0
-REPO_URL="git@github.com:Linfeng-He/machine_log.git"
-REPO_BRANCH="main"
+SCRIPT_DIR="$(script_dir)"
+REPO_DIR="$(discover_repo_dir "$SCRIPT_DIR")"
+REPO_URL=""
+REPO_BRANCH="$(current_repo_branch "$REPO_DIR")"
 CMMHI_CMD=""
 HOST_ID="$(hostname -s)"
-STATE_DIR="/var/lib/crash-pusher"
 SNAPSHOT_INTERVAL="1"
-PUSH_INTERVAL="5"
+PUSH_INTERVAL="20"
 STAGING_ROOT=""
 START_SERVICE=1
 STOP_SERVICE_MODE=0
@@ -624,6 +711,10 @@ SAMPLER_URL="https://github.com/sqshq/sampler/releases/download/v1.1.0/sampler-1
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
+    --repo-dir)
+      REPO_DIR="${2:-}"
+      shift 2
+      ;;
     --repo-url)
       REPO_URL="${2:-}"
       shift 2
@@ -638,10 +729,6 @@ while [[ $# -gt 0 ]]; do
       ;;
     --host-id)
       HOST_ID="${2:-}"
-      shift 2
-      ;;
-    --state-dir)
-      STATE_DIR="${2:-}"
       shift 2
       ;;
     --snapshot-interval)
@@ -713,6 +800,15 @@ if [[ -z "$CMMHI_CMD" ]]; then
   CMMHI_CMD="$(discover_cmmhi_cmd || true)"
 fi
 
+[[ -n "$REPO_DIR" ]] || die "--repo-dir resolved to an empty path"
+[[ -d "$REPO_DIR" ]] || die "repo dir does not exist: $REPO_DIR"
+[[ -d "$REPO_DIR/.git" ]] || die "repo dir is not a git repo: $REPO_DIR"
+REPO_DIR="$(cd -- "$REPO_DIR" && pwd -P)"
+
+if [[ -z "$REPO_BRANCH" ]]; then
+  REPO_BRANCH="$(current_repo_branch "$REPO_DIR")"
+fi
+
 BIN_DIR="$(prefix_path /usr/local/bin)"
 LIB_DIR="$(prefix_path /usr/local/lib/crash-pusher)"
 ETC_DEFAULT_DIR="$(prefix_path /etc/default)"
@@ -734,11 +830,9 @@ write_service_file "$SERVICE_PATH"
 
 cat >"$ENV_PATH" <<EOF
 HOST_ID=$(quote_env_value "$HOST_ID")
+REPO_DIR=$(quote_env_value "$REPO_DIR")
 REPO_URL=$(quote_env_value "$REPO_URL")
 REPO_BRANCH=$(quote_env_value "$REPO_BRANCH")
-STATE_DIR=$(quote_env_value "$STATE_DIR")
-REPO_DIR=$(quote_env_value "${STATE_DIR}/repo")
-RUNTIME_DIR=$(quote_env_value "${STATE_DIR}/runtime")
 SNAPSHOT_INTERVAL=$(quote_env_value "$SNAPSHOT_INTERVAL")
 PUSH_INTERVAL=$(quote_env_value "$PUSH_INTERVAL")
 GIT_AUTHOR_NAME=$(quote_env_value "crash-pusher")
@@ -771,6 +865,7 @@ echo "installer completed"
 echo "environment file: $ENV_PATH"
 echo "service file: $SERVICE_PATH"
 echo "runner: $RUNNER_PATH"
+echo "repo dir: $REPO_DIR"
 echo "to stop later: sudo bash install_crash_pusher.sh --stop"
 echo "manual stop command: sudo systemctl disable --now crash-pusher.service"
 if [[ -n "$CMMHI_CMD" ]]; then
