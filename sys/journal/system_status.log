@@ -23153,3 +23153,482 @@ tcp   TIME-WAIT 0      0                 127.0.0.1:16505      127.0.0.1:45052
 tcp   ESTAB     0      0           128.110.217.163:891   128.110.156.34:2049                                                          
 tcp   TIME-WAIT 0      0                 127.0.0.1:16505      127.0.0.1:45046                                                         
 tcp   LISTEN    0      4096                   [::]:111             [::]:*     users:(("rpcbind",pid=786,fd=6),("systemd",pid=1,fd=65))
+
+===== snapshot timestamp_utc=20260422T032241Z host=node0 boot_id=179612ea-2e99-4892-8219-f26f64b164e4 =====
+timestamp_utc=20260422T032241Z
+
+== uptime ==
+ 21:22:41 up  3:51,  0 users,  load average: 0.40, 0.11, 0.04
+
+== loadavg ==
+0.40 0.11 0.04 1/244 13721
+
+== meminfo ==
+MemTotal:       65708512 kB
+MemFree:        64299800 kB
+MemAvailable:   64534444 kB
+Buffers:           91880 kB
+Cached:           687028 kB
+SwapCached:            0 kB
+SwapTotal:       8388928 kB
+SwapFree:        8388928 kB
+Dirty:               212 kB
+Writeback:             0 kB
+WritebackTmp:          0 kB
+
+== pressure ==
+-- cpu --
+some avg10=0.09 avg60=0.14 avg300=0.04 total=2222892
+full avg10=0.00 avg60=0.00 avg300=0.00 total=0
+-- io --
+some avg10=0.00 avg60=0.00 avg300=0.00 total=9710487
+full avg10=0.00 avg60=0.00 avg300=0.00 total=9648923
+-- memory --
+some avg10=0.00 avg60=0.00 avg300=0.00 total=0
+full avg10=0.00 avg60=0.00 avg300=0.00 total=0
+
+== df ==
+Filesystem     Type   Size  Used Avail Use% Mounted on
+tmpfs          tmpfs  6.3G  1.1M  6.3G   1% /run
+/dev/nvme0n1p3 ext3    63G  3.2G   57G   6% /
+tmpfs          tmpfs   32G     0   32G   0% /dev/shm
+tmpfs          tmpfs  5.0M     0  5.0M   0% /run/lock
+/dev/nvme0n1p1 vfat   256M   11M  246M   4% /boot/efi
+
+== failed units ==
+  UNIT LOAD ACTIVE SUB DESCRIPTION
+0 loaded units listed.
+
+== top processes by cpu ==
+    PID    PPID USER     STAT %CPU %MEM   RSS     ELAPSED COMMAND
+  13415       2 root     I     3.5  0.0     0       00:02 kworker/u32:13-events_unbound
+  13416       2 root     I     3.0  0.0     0       00:02 kworker/u32:14-writeback
+  12319   12087 root     S     0.8  0.0  2880       00:14 bash
+  12322   12087 root     S     0.5  0.0  2688       00:14 bash
+  12087       1 root     Ss    0.3  0.0  4120       00:16 bash
+  12320   12087 root     S     0.2  0.0  2688       00:14 bash
+      1       0 root     Ss    0.0  0.0 12764    03:51:52 systemd
+      2       0 root     S     0.0  0.0     0    03:51:52 kthreadd
+      3       2 root     I<    0.0  0.0     0    03:51:52 rcu_gp
+      4       2 root     I<    0.0  0.0     0    03:51:52 rcu_par_gp
+      5       2 root     I<    0.0  0.0     0    03:51:52 slub_flushwq
+      6       2 root     I<    0.0  0.0     0    03:51:52 netns
+      8       2 root     I<    0.0  0.0     0    03:51:52 kworker/0:0H-events_highpri
+     10       2 root     I<    0.0  0.0     0    03:51:52 mm_percpu_wq
+     11       2 root     S     0.0  0.0     0    03:51:52 rcu_tasks_rude_
+     12       2 root     S     0.0  0.0     0    03:51:52 rcu_tasks_trace
+     13       2 root     S     0.0  0.0     0    03:51:52 ksoftirqd/0
+     14       2 root     I     0.0  0.0     0    03:51:52 rcu_sched
+     15       2 root     S     0.0  0.0     0    03:51:52 migration/0
+     16       2 root     S     0.0  0.0     0    03:51:52 idle_inject/0
+     17       2 root     I     0.0  0.0     0    03:51:52 kworker/0:1-events
+     18       2 root     S     0.0  0.0     0    03:51:52 cpuhp/0
+     19       2 root     S     0.0  0.0     0    03:51:52 cpuhp/1
+     20       2 root     S     0.0  0.0     0    03:51:52 idle_inject/1
+     21       2 root     S     0.0  0.0     0    03:51:52 migration/1
+     22       2 root     S     0.0  0.0     0    03:51:52 ksoftirqd/1
+     24       2 root     I<    0.0  0.0     0    03:51:52 kworker/1:0H-kblockd
+     25       2 root     S     0.0  0.0     0    03:51:52 cpuhp/2
+     26       2 root     S     0.0  0.0     0    03:51:52 idle_inject/2
+     27       2 root     S     0.0  0.0     0    03:51:52 migration/2
+     28       2 root     S     0.0  0.0     0    03:51:52 ksoftirqd/2
+     30       2 root     I<    0.0  0.0     0    03:51:52 kworker/2:0H-events_highpri
+     31       2 root     S     0.0  0.0     0    03:51:52 cpuhp/3
+     32       2 root     S     0.0  0.0     0    03:51:52 idle_inject/3
+     33       2 root     S     0.0  0.0     0    03:51:52 migration/3
+     34       2 root     S     0.0  0.0     0    03:51:52 ksoftirqd/3
+     36       2 root     I<    0.0  0.0     0    03:51:52 kworker/3:0H-events_highpri
+     37       2 root     S     0.0  0.0     0    03:51:52 cpuhp/4
+     38       2 root     S     0.0  0.0     0    03:51:52 idle_inject/4
+
+== top processes by memory ==
+    PID    PPID USER     STAT %CPU %MEM   RSS     ELAPSED COMMAND
+    516       1 root     R<s   0.0  0.0 18084    03:51:36 systemd-journal
+    824       1 systemd+ Ss    0.0  0.0 14476    03:51:34 systemd-resolve
+      1       0 root     Ss    0.0  0.0 12764    03:51:52 systemd
+   1007       1 root     Ss    0.0  0.0 12236    03:51:27 watchdog
+    895       1 systemd+ Ss    0.0  0.0  6588    03:51:32 systemd-network
+    555       1 root     Ss    0.0  0.0  5908    03:51:35 systemd-udevd
+    808       1 root     Ss    0.0  0.0  5840    03:51:34 wpa_supplicant
+    792       1 message+ Ss    0.0  0.0  4796    03:51:34 dbus-daemon
+    786       1 _rpc     Ss    0.0  0.0  4192    03:51:34 rpcbind
+  12087       1 root     Ss    0.3  0.0  4120       00:16 bash
+  13747   12319 root     R     0.0  0.0  3736       00:00 ps
+  12319   12087 root     S     0.8  0.0  2880       00:14 bash
+  13617     555 root     S     0.0  0.0  2880       00:01 systemd-udevd
+  13703     555 root     S     0.0  0.0  2836       00:00 systemd-udevd
+  13704     555 root     S     0.0  0.0  2836       00:00 systemd-udevd
+  12320   12087 root     S     0.2  0.0  2688       00:14 bash
+  12322   12087 root     S     0.5  0.0  2688       00:14 bash
+  12323   12087 root     S     0.0  0.0  2604       00:14 bash
+  13694   12320 root     S     0.0  0.0  1052       00:00 sleep
+  12552   12323 root     S     0.0  0.0  1020       00:12 sleep
+  13748   12319 root     S     0.0  0.0  1008       00:00 head
+  13580   12322 root     S     0.0  0.0  1004       00:01 sleep
+      2       0 root     S     0.0  0.0     0    03:51:52 kthreadd
+      3       2 root     I<    0.0  0.0     0    03:51:52 rcu_gp
+      4       2 root     I<    0.0  0.0     0    03:51:52 rcu_par_gp
+      5       2 root     I<    0.0  0.0     0    03:51:52 slub_flushwq
+      6       2 root     I<    0.0  0.0     0    03:51:52 netns
+      8       2 root     I<    0.0  0.0     0    03:51:52 kworker/0:0H-events_highpri
+     10       2 root     I<    0.0  0.0     0    03:51:52 mm_percpu_wq
+     11       2 root     S     0.0  0.0     0    03:51:52 rcu_tasks_rude_
+     12       2 root     S     0.0  0.0     0    03:51:52 rcu_tasks_trace
+     13       2 root     S     0.0  0.0     0    03:51:52 ksoftirqd/0
+     14       2 root     I     0.0  0.0     0    03:51:52 rcu_sched
+     15       2 root     S     0.0  0.0     0    03:51:52 migration/0
+     16       2 root     S     0.0  0.0     0    03:51:52 idle_inject/0
+     17       2 root     I     0.0  0.0     0    03:51:52 kworker/0:1-events
+     18       2 root     S     0.0  0.0     0    03:51:52 cpuhp/0
+     19       2 root     S     0.0  0.0     0    03:51:52 cpuhp/1
+     20       2 root     S     0.0  0.0     0    03:51:52 idle_inject/1
+
+== sockets ==
+Netid State     Recv-Q Send-Q        Local Address:Port    Peer Address:Port Process                                                  
+udp   UNCONN    0      0             127.0.0.53%lo:53           0.0.0.0:*     users:(("systemd-resolve",pid=824,fd=13))               
+udp   UNCONN    0      0      128.110.217.163%eno1:68           0.0.0.0:*     users:(("systemd-network",pid=895,fd=18))               
+udp   UNCONN    0      0                   0.0.0.0:111          0.0.0.0:*     users:(("rpcbind",pid=786,fd=5),("systemd",pid=1,fd=62))
+udp   UNCONN    0      0                      [::]:111             [::]:*     users:(("rpcbind",pid=786,fd=7),("systemd",pid=1,fd=66))
+tcp   LISTEN    0      4096          127.0.0.53%lo:53           0.0.0.0:*     users:(("systemd-resolve",pid=824,fd=14))               
+tcp   LISTEN    0      4096                0.0.0.0:111          0.0.0.0:*     users:(("rpcbind",pid=786,fd=4),("systemd",pid=1,fd=61))
+tcp   TIME-WAIT 0      0           128.110.217.163:36952 128.110.156.34:111                                                           
+tcp   TIME-WAIT 0      0           128.110.217.163:46910 128.110.156.34:900                                                           
+tcp   TIME-WAIT 0      0           128.110.217.163:33822 128.110.156.34:16505                                                         
+tcp   TIME-WAIT 0      0           128.110.217.163:39160   20.189.173.9:443                                                           
+tcp   TIME-WAIT 0      0                 127.0.0.1:16505      127.0.0.1:45052                                                         
+tcp   TIME-WAIT 0      0           128.110.217.163:647   128.110.156.34:900                                                           
+tcp   TIME-WAIT 0      0           128.110.217.163:36946 128.110.156.34:111                                                           
+tcp   TIME-WAIT 0      0           128.110.217.163:891   128.110.156.34:2049                                                          
+tcp   TIME-WAIT 0      0                 127.0.0.1:16505      127.0.0.1:45046                                                         
+tcp   TIME-WAIT 0      0           128.110.217.163:46922 128.110.156.34:900                                                           
+tcp   TIME-WAIT 0      0           128.110.217.163:43832  128.110.156.4:7777                                                          
+tcp   TIME-WAIT 0      0           128.110.217.163:644   128.110.156.34:900                                                           
+tcp   LISTEN    0      4096                   [::]:111             [::]:*     users:(("rpcbind",pid=786,fd=6),("systemd",pid=1,fd=65))
+
+===== system_status host=node0 boot_started_utc=20260422T032427Z boot_id=62503c1c-026f-4d12-960b-226160d86543 =====
+
+===== snapshot timestamp_utc=20260422T032428Z host=node0 boot_id=62503c1c-026f-4d12-960b-226160d86543 =====
+timestamp_utc=20260422T032428Z
+
+== uptime ==
+ 21:24:28 up 0 min,  0 users,  load average: 1.07, 0.24, 0.08
+
+== loadavg ==
+1.07 0.24 0.08 2/254 937
+
+== meminfo ==
+MemTotal:       65708508 kB
+MemFree:        64986896 kB
+MemAvailable:   64623248 kB
+Buffers:           17864 kB
+Cached:           152628 kB
+SwapCached:            0 kB
+SwapTotal:       8388928 kB
+SwapFree:        8388928 kB
+Dirty:               408 kB
+Writeback:             0 kB
+WritebackTmp:          0 kB
+
+== pressure ==
+-- cpu --
+some avg10=2.93 avg60=1.57 avg300=0.40 total=1548059
+full avg10=0.00 avg60=0.00 avg300=0.00 total=0
+-- io --
+some avg10=0.14 avg60=0.03 avg300=0.00 total=77483
+full avg10=0.00 avg60=0.00 avg300=0.00 total=69842
+-- memory --
+some avg10=0.00 avg60=0.00 avg300=0.00 total=0
+full avg10=0.00 avg60=0.00 avg300=0.00 total=0
+
+== df ==
+Filesystem     Type   Size  Used Avail Use% Mounted on
+tmpfs          tmpfs  6.3G  1.1M  6.3G   1% /run
+/dev/nvme0n1p3 ext3    63G  3.2G   57G   6% /
+tmpfs          tmpfs   32G     0   32G   0% /dev/shm
+tmpfs          tmpfs  5.0M     0  5.0M   0% /run/lock
+/dev/nvme0n1p1 vfat   256M   11M  246M   4% /boot/efi
+
+== failed units ==
+  UNIT LOAD ACTIVE SUB DESCRIPTION
+0 loaded units listed.
+
+== top processes by cpu ==
+    PID    PPID USER     STAT %CPU %MEM   RSS     ELAPSED COMMAND
+    199       2 root     I    33.1  0.0     0       00:18 kworker/0:7-events
+      1       0 root     Ss   30.4  0.0 11468       00:20 systemd
+    910     768 root     S    14.0  0.0 12436       00:01 rc.config
+    754     750 root     S     8.0  0.0 14276       00:01 rc.bootsetup
+    410       1 root     S<s   7.1  0.0 15588       00:06 systemd-journal
+     69       2 root     S     6.6  0.0     0       00:20 migration/9
+     75       2 root     S     6.6  0.0     0       00:20 migration/10
+     81       2 root     S     6.6  0.0     0       00:20 migration/11
+     87       2 root     S     6.6  0.0     0       00:20 migration/12
+     93       2 root     S     6.6  0.0     0       00:20 migration/13
+     99       2 root     S     6.6  0.0     0       00:20 migration/14
+    105       2 root     S     6.6  0.0     0       00:20 migration/15
+     51       2 root     S     6.5  0.0     0       00:20 migration/6
+     57       2 root     S     6.5  0.0     0       00:20 migration/7
+     63       2 root     S     6.5  0.0     0       00:20 migration/8
+     33       2 root     S     6.4  0.0     0       00:20 migration/3
+     39       2 root     S     6.4  0.0     0       00:20 migration/4
+     45       2 root     S     6.4  0.0     0       00:20 migration/5
+     21       2 root     S     6.3  0.0     0       00:20 migration/1
+     27       2 root     S     6.3  0.0     0       00:20 migration/2
+    448       1 root     Ss    5.8  0.0  5932       00:05 systemd-udevd
+      9       2 root     I     5.2  0.0     0       00:20 kworker/u32:0-mlx4_en
+    708       1 systemd+ Ss    4.0  0.0 13484       00:03 systemd-resolve
+    685       1 root     Ss    3.3  0.0 19128       00:03 networkd-dispat
+    677       1 systemd+ Ss    2.5  0.0  7932       00:04 systemd-network
+    689       1 syslog   Ssl   2.3  0.0  5308       00:03 rsyslogd
+    722       1 root     Ss    2.0  0.0  3996       00:02 bash
+    768     754 root     S     2.0  0.0 10980       00:01 rc.bootsetup
+    691       1 root     Ss    1.6  0.0  5364       00:03 smartd
+    692       1 root     Ss    1.6  0.0  6496       00:03 systemd-logind
+    178       2 root     I     1.3  0.0     0       00:19 kworker/8:1-mm_percpu_wq
+     17       2 root     I     1.1  0.0     0       00:20 kworker/0:1-pm
+    678       1 message+ Ss    1.0  0.0  4740       00:03 dbus-daemon
+    176       2 root     I     0.6  0.0     0       00:20 kworker/u32:1-flush-259:0
+    193       2 root     I     0.6  0.0     0       00:19 kworker/3:1-events
+    195       2 root     I     0.6  0.0     0       00:18 kworker/0:3-events
+    684       1 root     Ssl   0.6  0.0  3904       00:03 irqbalance
+    189       2 root     I     0.5  0.0     0       00:19 kworker/13:1-mm_percpu_wq
+    739       1 root     Ss    0.5  0.0  4004       00:02 testbed
+
+== top processes by memory ==
+    PID    PPID USER     STAT %CPU %MEM   RSS     ELAPSED COMMAND
+    685       1 root     Ss    3.3  0.0 19128       00:03 networkd-dispat
+    410       1 root     S<s   7.1  0.0 15588       00:06 systemd-journal
+    754     750 root     S     8.0  0.0 14276       00:01 rc.bootsetup
+    708       1 systemd+ Ss    4.0  0.0 13484       00:03 systemd-resolve
+    910     768 root     S    14.0  0.0 12436       00:01 rc.config
+    843       1 root     Ss    0.0  0.0 12288       00:01 watchdog
+      1       0 root     Ss   30.4  0.0 11468       00:20 systemd
+    768     754 root     S     2.0  0.0 10980       00:01 rc.bootsetup
+    940     910 root     R     0.0  0.0  9784       00:00 rc.firewall
+    721       1 root     Ss    0.3  0.0  8524       00:03 sshd
+    677       1 systemd+ Ss    2.5  0.0  7932       00:04 systemd-network
+    692       1 root     Ss    1.6  0.0  6496       00:03 systemd-logind
+    629       1 root     Ss    0.0  0.0  6308       00:04 systemd-fsckd
+    719       1 ntp      Ssl   0.0  0.0  6300       00:03 ntpd
+    610     602 root     S     0.0  0.0  6040       00:04 systemd-network
+    611     599 root     S     0.0  0.0  5980       00:04 systemd-network
+    448       1 root     Ss    5.8  0.0  5932       00:05 systemd-udevd
+    694       1 root     Ss    0.0  0.0  5792       00:03 wpa_supplicant
+    691       1 root     Ss    1.6  0.0  5364       00:03 smartd
+    689       1 syslog   Ssl   2.3  0.0  5308       00:03 rsyslogd
+    678       1 message+ Ss    1.0  0.0  4740       00:03 dbus-daemon
+    672       1 _rpc     Ss    0.0  0.0  4124       00:04 rpcbind
+    739       1 root     Ss    0.5  0.0  4004       00:02 testbed
+    722       1 root     Ss    2.0  0.0  3996       00:02 bash
+    684       1 root     Ssl   0.6  0.0  3904       00:03 irqbalance
+    950     722 root     R     0.0  0.0  3900       00:00 ps
+    808     448 root     S     0.0  0.0  3104       00:01 systemd-udevd
+    758       1 root     S     0.0  0.0  3028       00:01 (agetty)
+    746       1 root     S     0.0  0.0  2980       00:02 (agetty)
+    679       1 root     S     0.0  0.0  2780       00:03 (savelog)
+    734       1 root     Ss    0.0  0.0  1252       00:02 cron
+    750     739 root     S     0.0  0.0  1028       00:01 rc.testbed
+    602       1 root     Ss    0.0  0.0   996       00:04 emulab-networkd
+    951     722 root     S     0.0  0.0   988       00:00 head
+    599       1 root     Ss    0.2  0.0   944       00:04 emulab-networkd
+    903       1 root     Ss    0.0  0.0   604       00:01 pubsubd
+    833       1 root     Ss    0.0  0.0   216       00:01 slothd
+      2       0 root     S     0.0  0.0     0       00:20 kthreadd
+      3       2 root     I<    0.0  0.0     0       00:20 rcu_gp
+
+== sockets ==
+Netid State     Recv-Q Send-Q        Local Address:Port    Peer Address:Port Process                                                                                                                                 
+udp   UNCONN    0      0             127.0.0.53%lo:53           0.0.0.0:*     users:(("systemd-resolve",pid=708,fd=13))                                                                                              
+udp   UNCONN    0      0      128.110.217.163%eno1:68           0.0.0.0:*     users:(("systemd-network",pid=677,fd=15))                                                                                              
+udp   UNCONN    0      0                   0.0.0.0:111          0.0.0.0:*     users:(("(agetty",pid=758,fd=38),("(agetty",pid=746,fd=38),("(savelog",pid=679,fd=38),("rpcbind",pid=672,fd=5),("systemd",pid=1,fd=38))
+udp   UNCONN    0      0           128.110.217.163:123          0.0.0.0:*     users:(("ntpd",pid=719,fd=19))                                                                                                         
+udp   UNCONN    0      0                 127.0.0.1:123          0.0.0.0:*     users:(("ntpd",pid=719,fd=18))                                                                                                         
+udp   UNCONN    0      0                   0.0.0.0:123          0.0.0.0:*     users:(("ntpd",pid=719,fd=17))                                                                                                         
+udp   ESTAB     0      0           128.110.217.163:36484  128.110.156.4:8509  users:(("slothd",pid=833,fd=5))                                                                                                        
+udp   UNCONN    0      0                      [::]:111             [::]:*     users:(("(agetty",pid=758,fd=40),("(agetty",pid=746,fd=40),("(savelog",pid=679,fd=40),("rpcbind",pid=672,fd=7),("systemd",pid=1,fd=40))
+udp   UNCONN    0      0                     [::1]:123             [::]:*     users:(("ntpd",pid=719,fd=20))                                                                                                         
+udp   UNCONN    0      0                      [::]:123             [::]:*     users:(("ntpd",pid=719,fd=16))                                                                                                         
+tcp   LISTEN    0      128                 0.0.0.0:22           0.0.0.0:*     users:(("sshd",pid=721,fd=3))                                                                                                          
+tcp   LISTEN    0      4096                0.0.0.0:111          0.0.0.0:*     users:(("(agetty",pid=758,fd=37),("(agetty",pid=746,fd=37),("(savelog",pid=679,fd=37),("rpcbind",pid=672,fd=4),("systemd",pid=1,fd=37))
+tcp   LISTEN    0      4096          127.0.0.53%lo:53           0.0.0.0:*     users:(("systemd-resolve",pid=708,fd=14))                                                                                              
+tcp   LISTEN    0      128                 0.0.0.0:16505        0.0.0.0:*     users:(("pubsubd",pid=903,fd=4))                                                                                                       
+tcp   TIME-WAIT 0      0           128.110.217.163:48716  128.110.156.4:7777                                                                                                                                         
+tcp   TIME-WAIT 0      0           128.110.217.163:48704  128.110.156.4:7777                                                                                                                                         
+tcp   TIME-WAIT 0      0           128.110.217.163:48708  128.110.156.4:7777                                                                                                                                         
+tcp   ESTAB     0      0           128.110.217.163:56146 128.110.156.34:16505 users:(("pubsubd",pid=903,fd=5))                                                                                                       
+tcp   TIME-WAIT 0      0           128.110.217.163:48696  128.110.156.4:7777                                                                                                                                         
+tcp   TIME-WAIT 0      0           128.110.217.163:48720  128.110.156.4:7777                                                                                                                                         
+tcp   TIME-WAIT 0      0           128.110.217.163:56144 128.110.156.34:16505                                                                                                                                        
+tcp   LISTEN    0      128                    [::]:22              [::]:*     users:(("sshd",pid=721,fd=4))                                                                                                          
+tcp   LISTEN    0      4096                   [::]:111             [::]:*     users:(("(agetty",pid=758,fd=39),("(agetty",pid=746,fd=39),("(savelog",pid=679,fd=39),("rpcbind",pid=672,fd=6),("systemd",pid=1,fd=39))
+
+===== snapshot timestamp_utc=20260422T032429Z host=node0 boot_id=62503c1c-026f-4d12-960b-226160d86543 =====
+timestamp_utc=20260422T032429Z
+
+== uptime ==
+ 21:24:29 up 0 min,  0 users,  load average: 1.14, 0.27, 0.09
+
+== loadavg ==
+1.14 0.27 0.09 5/271 1121
+
+== meminfo ==
+MemTotal:       65708508 kB
+MemFree:        64944840 kB
+MemAvailable:   64588252 kB
+Buffers:           21212 kB
+Cached:           160656 kB
+SwapCached:            0 kB
+SwapTotal:       8388928 kB
+SwapFree:        8388928 kB
+Dirty:               528 kB
+Writeback:             0 kB
+WritebackTmp:          0 kB
+
+== pressure ==
+-- cpu --
+some avg10=2.93 avg60=1.57 avg300=0.40 total=1549421
+full avg10=0.00 avg60=0.00 avg300=0.00 total=0
+-- io --
+some avg10=0.14 avg60=0.03 avg300=0.00 total=84670
+full avg10=0.00 avg60=0.00 avg300=0.00 total=76998
+-- memory --
+some avg10=0.00 avg60=0.00 avg300=0.00 total=0
+full avg10=0.00 avg60=0.00 avg300=0.00 total=0
+
+== df ==
+Filesystem                         Type   Size  Used Avail Use% Mounted on
+tmpfs                              tmpfs  6.3G  1.1M  6.3G   1% /run
+/dev/nvme0n1p3                     ext3    63G  3.2G   57G   6% /
+tmpfs                              tmpfs   32G     0   32G   0% /dev/shm
+tmpfs                              tmpfs  5.0M     0  5.0M   0% /run/lock
+/dev/nvme0n1p1                     vfat   256M   11M  246M   4% /boot/efi
+ops.utah.cloudlab.us:/proj/lsm-PG0 nfs    100G  2.4G   98G   3% /proj/lsm-PG0
+ops.utah.cloudlab.us:/share        nfs     14T   25G   14T   1% /share
+
+== failed units ==
+  UNIT LOAD ACTIVE SUB DESCRIPTION
+0 loaded units listed.
+
+== top processes by cpu ==
+    PID    PPID USER     STAT %CPU %MEM   RSS     ELAPSED COMMAND
+    199       2 root     I    31.4  0.0     0       00:19 kworker/0:7-events
+      1       0 root     Ss   29.2  0.0 11524       00:21 systemd
+    910     768 root     S     7.5  0.0 12580       00:02 rc.config
+     87       2 root     S     6.3  0.0     0       00:21 migration/12
+     99       2 root     S     6.3  0.0     0       00:21 migration/14
+    105       2 root     S     6.3  0.0     0       00:21 migration/15
+     69       2 root     S     6.2  0.0     0       00:21 migration/9
+     75       2 root     S     6.2  0.0     0       00:21 migration/10
+     81       2 root     S     6.2  0.0     0       00:21 migration/11
+     93       2 root     S     6.2  0.0     0       00:21 migration/13
+     51       2 root     S     6.1  0.0     0       00:21 migration/6
+     57       2 root     S     6.1  0.0     0       00:21 migration/7
+     63       2 root     S     6.1  0.0     0       00:21 migration/8
+    410       1 root     S<s   6.1  0.0 15620       00:07 systemd-journal
+     21       2 root     S     6.0  0.0     0       00:21 migration/1
+     27       2 root     S     6.0  0.0     0       00:21 migration/2
+     33       2 root     S     6.0  0.0     0       00:21 migration/3
+     39       2 root     S     6.0  0.0     0       00:21 migration/4
+     45       2 root     S     6.0  0.0     0       00:21 migration/5
+    448       1 root     Ss    5.6  0.0  6000       00:06 systemd-udevd
+      9       2 root     I     5.0  0.0     0       00:21 kworker/u32:0-flush-259:0
+    754     750 root     S     4.0  0.0 14276       00:02 rc.bootsetup
+    708       1 systemd+ Ss    3.0  0.0 13484       00:04 systemd-resolve
+   1047     448 root     S     3.0  0.0  3708       00:01 systemd-udevd
+    685       1 root     Ss    2.5  0.0 19128       00:04 networkd-dispat
+    677       1 systemd+ Ss    2.0  0.0  7932       00:05 systemd-network
+    678       1 message+ Ss    1.7  0.0  4772       00:04 dbus-daemon
+    689       1 syslog   Ssl   1.7  0.0  5308       00:04 rsyslogd
+    692       1 root     Ss    1.7  0.0  6496       00:04 systemd-logind
+    722       1 root     Ss    1.6  0.0  3996       00:03 bash
+    178       2 root     I     1.3  0.0     0       00:20 kworker/8:1-events
+    691       1 root     Ss    1.2  0.0  5364       00:04 smartd
+     17       2 root     I     1.0  0.0     0       00:21 kworker/0:1-pm
+    768     754 root     S     1.0  0.0 10980       00:02 rc.bootsetup
+    808     448 root     S     1.0  0.0  3708       00:02 systemd-udevd
+   1044     448 root     S     1.0  0.0  3464       00:01 systemd-udevd
+   1046     448 root     S     1.0  0.0  3708       00:01 systemd-udevd
+    193       2 root     I     0.6  0.0     0       00:20 kworker/3:1-events
+    195       2 root     I     0.6  0.0     0       00:19 kworker/0:3-events
+
+== top processes by memory ==
+    PID    PPID USER     STAT %CPU %MEM   RSS     ELAPSED COMMAND
+    685       1 root     Ss    2.5  0.0 19128       00:04 networkd-dispat
+    410       1 root     S<s   6.1  0.0 15620       00:07 systemd-journal
+    754     750 root     S     4.0  0.0 14276       00:02 rc.bootsetup
+    708       1 systemd+ Ss    3.0  0.0 13484       00:04 systemd-resolve
+    910     768 root     S     7.5  0.0 12580       00:02 rc.config
+    843       1 root     Ss    0.0  0.0 12288       00:02 watchdog
+   1107     910 root     R     0.0  0.0 11836       00:00 rc.ifconfig
+      1       0 root     Ss   29.2  0.0 11524       00:21 systemd
+    768     754 root     S     1.0  0.0 10980       00:02 rc.bootsetup
+    721       1 root     Ss    0.2  0.0  8524       00:04 sshd
+    677       1 systemd+ Ss    2.0  0.0  7932       00:05 systemd-network
+   1141    1124 LH       R     0.0  0.0  6504       00:00 git
+    692       1 root     Ss    1.7  0.0  6496       00:04 systemd-logind
+    629       1 root     Ss    0.0  0.0  6308       00:05 systemd-fsckd
+    719       1 ntp      Ssl   0.0  0.0  6300       00:04 ntpd
+    610     602 root     S     0.0  0.0  6040       00:05 systemd-network
+    448       1 root     Ss    5.6  0.0  6000       00:06 systemd-udevd
+    611     599 root     S     0.0  0.0  5980       00:05 systemd-network
+    694       1 root     Ss    0.0  0.0  5792       00:04 wpa_supplicant
+   1124    1112 root     S     0.0  0.0  5640       00:00 sudo
+    691       1 root     Ss    1.2  0.0  5364       00:04 smartd
+    689       1 syslog   Ssl   1.7  0.0  5308       00:04 rsyslogd
+    678       1 message+ Ss    1.7  0.0  4772       00:04 dbus-daemon
+    672       1 _rpc     Ss    0.0  0.0  4124       00:05 rpcbind
+    739       1 root     Ss    0.3  0.0  4004       00:03 testbed
+    722       1 root     Ss    1.6  0.0  3996       00:03 bash
+    684       1 root     Ssl   0.5  0.0  3904       00:04 irqbalance
+   1169    1108 root     R     0.0  0.0  3872       00:00 ps
+    808     448 root     S     1.0  0.0  3708       00:02 systemd-udevd
+   1046     448 root     S     1.0  0.0  3708       00:01 systemd-udevd
+   1047     448 root     S     3.0  0.0  3708       00:01 systemd-udevd
+   1117    1109 root     S     0.0  0.0  3640       00:00 bash
+   1044     448 root     S     1.0  0.0  3464       00:01 systemd-udevd
+   1064     448 root     S     0.0  0.0  3108       00:01 systemd-udevd
+   1065     448 root     S     0.0  0.0  3108       00:01 systemd-udevd
+    758       1 root     S     0.0  0.0  3028       00:02 (agetty)
+    746       1 root     S     0.0  0.0  2980       00:03 (agetty)
+    679       1 root     S     0.0  0.0  2780       00:04 (savelog)
+   1108     722 root     S     0.0  0.0  2592       00:00 bash
+
+== sockets ==
+Netid State     Recv-Q Send-Q                    Local Address:Port    Peer Address:Port Process                                                                                                                                 
+udp   UNCONN    0      0                         127.0.0.53%lo:53           0.0.0.0:*     users:(("systemd-resolve",pid=708,fd=13))                                                                                              
+udp   UNCONN    0      0                  128.110.217.163%eno1:68           0.0.0.0:*     users:(("systemd-network",pid=677,fd=15))                                                                                              
+udp   UNCONN    0      0                               0.0.0.0:111          0.0.0.0:*     users:(("(agetty",pid=758,fd=38),("(agetty",pid=746,fd=38),("(savelog",pid=679,fd=38),("rpcbind",pid=672,fd=5),("systemd",pid=1,fd=38))
+udp   UNCONN    0      0                       128.110.217.163:123          0.0.0.0:*     users:(("ntpd",pid=719,fd=19))                                                                                                         
+udp   UNCONN    0      0                             127.0.0.1:123          0.0.0.0:*     users:(("ntpd",pid=719,fd=18))                                                                                                         
+udp   UNCONN    0      0                               0.0.0.0:123          0.0.0.0:*     users:(("ntpd",pid=719,fd=17))                                                                                                         
+udp   ESTAB     0      0                       128.110.217.163:36484  128.110.156.4:8509  users:(("slothd",pid=833,fd=5))                                                                                                        
+udp   UNCONN    0      0                                  [::]:111             [::]:*     users:(("(agetty",pid=758,fd=40),("(agetty",pid=746,fd=40),("(savelog",pid=679,fd=40),("rpcbind",pid=672,fd=7),("systemd",pid=1,fd=40))
+udp   UNCONN    0      0      [fe80::1658:d0ff:fe58:1f92]%eno1:123             [::]:*     users:(("ntpd",pid=719,fd=24))                                                                                                         
+udp   UNCONN    0      0                                 [::1]:123             [::]:*     users:(("ntpd",pid=719,fd=20))                                                                                                         
+udp   UNCONN    0      0                                  [::]:123             [::]:*     users:(("ntpd",pid=719,fd=16))                                                                                                         
+tcp   LISTEN    0      128                             0.0.0.0:22           0.0.0.0:*     users:(("sshd",pid=721,fd=3))                                                                                                          
+tcp   LISTEN    0      4096                            0.0.0.0:111          0.0.0.0:*     users:(("(agetty",pid=758,fd=37),("(agetty",pid=746,fd=37),("(savelog",pid=679,fd=37),("rpcbind",pid=672,fd=4),("systemd",pid=1,fd=37))
+tcp   LISTEN    0      4096                      127.0.0.53%lo:53           0.0.0.0:*     users:(("systemd-resolve",pid=708,fd=14))                                                                                              
+tcp   LISTEN    0      128                             0.0.0.0:16505        0.0.0.0:*     users:(("pubsubd",pid=903,fd=4))                                                                                                       
+tcp   TIME-WAIT 0      0                       128.110.217.163:48716  128.110.156.4:7777                                                                                                                                         
+tcp   TIME-WAIT 0      0                       128.110.217.163:48704  128.110.156.4:7777                                                                                                                                         
+tcp   TIME-WAIT 0      0                       128.110.217.163:809   128.110.156.34:900                                                                                                                                          
+tcp   TIME-WAIT 0      0                       128.110.217.163:57266 128.110.156.34:900                                                                                                                                          
+tcp   TIME-WAIT 0      0                       128.110.217.163:57270 128.110.156.34:900                                                                                                                                          
+tcp   TIME-WAIT 0      0                       128.110.217.163:53634 128.110.156.34:111                                                                                                                                          
+tcp   TIME-WAIT 0      0                       128.110.217.163:48708  128.110.156.4:7777                                                                                                                                         
+tcp   TIME-WAIT 0      0                       128.110.217.163:53644 128.110.156.34:111                                                                                                                                          
+tcp   TIME-WAIT 0      0                       128.110.217.163:34954 128.110.156.34:2049                                                                                                                                         
+tcp   ESTAB     0      0                       128.110.217.163:788   128.110.156.34:2049                                                                                                                                         
+tcp   TIME-WAIT 0      0                       128.110.217.163:786   128.110.156.34:900                                                                                                                                          
+tcp   TIME-WAIT 0      0                       128.110.217.163:53632 128.110.156.34:111                                                                                                                                          
+tcp   ESTAB     0      0                       128.110.217.163:56146 128.110.156.34:16505 users:(("pubsubd",pid=903,fd=5))                                                                                                       
+tcp   TIME-WAIT 0      0                       128.110.217.163:53660 128.110.156.34:111                                                                                                                                          
+tcp   TIME-WAIT 0      0                       128.110.217.163:34946 128.110.156.34:2049                                                                                                                                         
+tcp   TIME-WAIT 0      0                       128.110.217.163:48696  128.110.156.4:7777                                                                                                                                         
+tcp   TIME-WAIT 0      0                       128.110.217.163:48720  128.110.156.4:7777                                                                                                                                         
+tcp   TIME-WAIT 0      0                       128.110.217.163:49672  128.110.156.4:7777                                                                                                                                         
+tcp   TIME-WAIT 0      0                       128.110.217.163:53672 128.110.156.34:111                                                                                                                                          
+tcp   TIME-WAIT 0      0                       128.110.217.163:56144 128.110.156.34:16505                                                                                                                                        
+tcp   LISTEN    0      128                                [::]:22              [::]:*     users:(("sshd",pid=721,fd=4))                                                                                                          
+tcp   LISTEN    0      4096                               [::]:111             [::]:*     users:(("(agetty",pid=758,fd=39),("(agetty",pid=746,fd=39),("(savelog",pid=679,fd=39),("rpcbind",pid=672,fd=6),("systemd",pid=1,fd=39))

@@ -1,402 +1,402 @@
-===== journal snapshot host=node0 boot_started_utc=20260422T032225Z boot_id=179612ea-2e99-4892-8219-f26f64b164e4 captured_utc=20260422T032240Z =====
+===== journal snapshot host=node0 boot_started_utc=20260422T032427Z boot_id=62503c1c-026f-4d12-960b-226160d86543 captured_utc=20260422T032429Z =====
 
-Apr 21 20:22:53 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11115]: Connection reset by invalid user postgres 87.251.64.149 port 63878 [preauth]
-Apr 21 20:22:54 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11117]: Connection reset by authenticating user root 87.251.64.149 port 63888 [preauth]
-Apr 21 20:22:55 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11119]: Invalid user user from 87.251.64.149 port 63896
-Apr 21 20:22:55 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11119]: Connection reset by invalid user user 87.251.64.149 port 63896 [preauth]
-Apr 21 20:22:56 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11121]: Invalid user 123456 from 87.251.64.149 port 63906
-Apr 21 20:22:56 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11121]: Connection reset by invalid user 123456 87.251.64.149 port 63906 [preauth]
-Apr 21 20:24:40 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11123]: Connection reset by authenticating user root 2.57.122.189 port 20768 [preauth]
-Apr 21 20:24:46 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11125]: Connection reset by authenticating user root 87.251.64.147 port 5542 [preauth]
-Apr 21 20:24:47 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11127]: Connection reset by authenticating user root 87.251.64.147 port 5554 [preauth]
-Apr 21 20:24:49 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11129]: Connection reset by authenticating user root 87.251.64.147 port 26894 [preauth]
-Apr 21 20:24:50 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11131]: Connection reset by authenticating user root 87.251.64.147 port 26904 [preauth]
-Apr 21 20:24:51 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11133]: Connection reset by authenticating user root 87.251.64.147 port 26914 [preauth]
-Apr 21 20:24:52 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11135]: Connection reset by authenticating user root 87.251.64.147 port 26920 [preauth]
-Apr 21 20:24:55 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11137]: Connection reset by authenticating user root 87.251.64.147 port 26922 [preauth]
-Apr 21 20:24:57 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11139]: Connection reset by authenticating user root 87.251.64.147 port 26946 [preauth]
-Apr 21 20:24:58 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11141]: Connection reset by authenticating user root 87.251.64.147 port 32406 [preauth]
-Apr 21 20:24:59 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11143]: Connection reset by authenticating user root 87.251.64.147 port 32468 [preauth]
-Apr 21 20:25:02 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11145]: Connection reset by authenticating user root 87.251.64.147 port 32508 [preauth]
-Apr 21 20:25:03 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11147]: Connection reset by authenticating user root 87.251.64.147 port 32586 [preauth]
-Apr 21 20:25:04 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11149]: Connection reset by authenticating user root 87.251.64.147 port 32592 [preauth]
-Apr 21 20:25:08 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11151]: Connection reset by authenticating user root 87.251.64.147 port 32596 [preauth]
-Apr 21 20:25:09 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11153]: Connection reset by authenticating user root 87.251.64.147 port 50390 [preauth]
-Apr 21 20:25:11 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11155]: Connection reset by authenticating user root 87.251.64.147 port 50398 [preauth]
-Apr 21 20:25:13 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11158]: Connection reset by authenticating user root 87.251.64.147 port 50410 [preauth]
-Apr 21 20:25:14 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11160]: Connection reset by authenticating user root 87.251.64.147 port 50436 [preauth]
-Apr 21 20:25:15 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11162]: Connection reset by authenticating user root 87.251.64.147 port 50446 [preauth]
-Apr 21 20:25:17 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11165]: Connection reset by authenticating user root 87.251.64.147 port 50462 [preauth]
-Apr 21 20:25:18 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11167]: Connection reset by authenticating user root 87.251.64.147 port 50476 [preauth]
-Apr 21 20:25:19 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11169]: Connection reset by authenticating user root 87.251.64.147 port 35270 [preauth]
-Apr 21 20:25:20 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11171]: Connection reset by authenticating user root 87.251.64.147 port 35280 [preauth]
-Apr 21 20:25:21 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11173]: Connection reset by authenticating user root 87.251.64.147 port 35292 [preauth]
-Apr 21 20:25:22 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11175]: Connection reset by authenticating user root 87.251.64.147 port 35302 [preauth]
-Apr 21 20:25:23 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11177]: Connection reset by authenticating user root 87.251.64.147 port 35314 [preauth]
-Apr 21 20:25:27 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11179]: Connection reset by authenticating user root 87.251.64.147 port 35336 [preauth]
-Apr 21 20:25:28 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11181]: Connection reset by authenticating user root 87.251.64.147 port 35350 [preauth]
-Apr 21 20:25:30 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11183]: Connection reset by authenticating user root 87.251.64.147 port 16504 [preauth]
-Apr 21 20:25:32 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11185]: Connection reset by authenticating user root 87.251.64.147 port 16518 [preauth]
-Apr 21 20:26:28 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11188]: Connection reset by authenticating user root 2.57.122.190 port 25986 [preauth]
-Apr 21 20:27:05 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11190]: error: kex_exchange_identification: Connection closed by remote host
-Apr 21 20:27:05 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11190]: Connection closed by 80.94.92.184 port 57676
-Apr 21 20:28:17 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11193]: Connection reset by authenticating user root 2.57.122.194 port 32354 [preauth]
-Apr 21 20:30:06 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11195]: Connection reset by authenticating user root 2.57.122.196 port 13826 [preauth]
-Apr 21 20:30:20 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[10938]: pam_unix(sshd:session): session closed for user LH
-Apr 21 20:30:20 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd-logind[806]: Session 9 logged out. Waiting for processes to exit.
-Apr 21 20:31:04 node0.testnode1.lsm-pg0.utah.cloudlab.us usermod[11201]: change user 'root' password
-Apr 21 20:31:11 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: session-9.scope: Deactivated successfully.
-Apr 21 20:31:11 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd-logind[806]: Removed session 9.
-Apr 21 20:31:40 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11216]: Invalid user solv from 80.94.92.184 port 60904
-Apr 21 20:31:41 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11216]: Connection closed by invalid user solv 80.94.92.184 port 60904 [preauth]
-Apr 21 20:31:54 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11218]: Connection reset by authenticating user root 92.118.39.235 port 24472 [preauth]
-Apr 21 20:32:17 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11220]: Connection reset by authenticating user root 87.251.64.145 port 45860 [preauth]
-Apr 21 20:32:18 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11222]: Connection reset by authenticating user root 87.251.64.145 port 45876 [preauth]
-Apr 21 20:32:19 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11224]: Connection reset by authenticating user root 87.251.64.145 port 45884 [preauth]
-Apr 21 20:32:20 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11226]: Connection reset by authenticating user root 87.251.64.145 port 58174 [preauth]
-Apr 21 20:32:21 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11228]: Connection reset by authenticating user root 87.251.64.145 port 58190 [preauth]
-Apr 21 20:32:22 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11230]: Connection reset by authenticating user root 87.251.64.145 port 58206 [preauth]
-Apr 21 20:32:24 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11232]: Connection reset by authenticating user root 87.251.64.145 port 58220 [preauth]
-Apr 21 20:32:25 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11234]: Connection reset by authenticating user root 87.251.64.145 port 58230 [preauth]
-Apr 21 20:32:26 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11236]: Connection reset by authenticating user root 87.251.64.145 port 58258 [preauth]
-Apr 21 20:32:28 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11238]: Connection reset by authenticating user root 87.251.64.145 port 58268 [preauth]
-Apr 21 20:32:29 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11240]: Connection reset by authenticating user root 87.251.64.145 port 52766 [preauth]
-Apr 21 20:32:30 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11242]: Connection reset by authenticating user root 87.251.64.145 port 52778 [preauth]
-Apr 21 20:32:31 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11244]: Connection reset by authenticating user root 87.251.64.145 port 52792 [preauth]
-Apr 21 20:32:32 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11246]: Connection reset by authenticating user root 87.251.64.145 port 52802 [preauth]
-Apr 21 20:32:34 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11248]: Connection reset by authenticating user root 87.251.64.145 port 52812 [preauth]
-Apr 21 20:32:36 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11250]: Connection reset by authenticating user root 87.251.64.145 port 52814 [preauth]
-Apr 21 20:32:37 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11252]: Connection reset by authenticating user root 87.251.64.145 port 52824 [preauth]
-Apr 21 20:32:38 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11254]: Connection reset by authenticating user root 87.251.64.145 port 52840 [preauth]
-Apr 21 20:32:39 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11256]: Connection reset by authenticating user root 87.251.64.145 port 52848 [preauth]
-Apr 21 20:32:40 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11258]: Connection reset by authenticating user root 87.251.64.145 port 24448 [preauth]
-Apr 21 20:32:42 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11260]: Connection reset by authenticating user root 87.251.64.145 port 24452 [preauth]
-Apr 21 20:32:46 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11262]: Connection reset by authenticating user root 87.251.64.145 port 24462 [preauth]
-Apr 21 20:32:48 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11264]: Connection reset by authenticating user root 87.251.64.145 port 24480 [preauth]
-Apr 21 20:32:50 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11266]: Connection reset by authenticating user root 87.251.64.145 port 24490 [preauth]
-Apr 21 20:32:51 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11268]: Connection reset by authenticating user root 87.251.64.145 port 36524 [preauth]
-Apr 21 20:32:52 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11270]: Connection reset by authenticating user root 87.251.64.145 port 36526 [preauth]
-Apr 21 20:32:54 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11272]: Connection reset by authenticating user root 87.251.64.145 port 36540 [preauth]
-Apr 21 20:32:56 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11274]: Connection reset by authenticating user root 87.251.64.145 port 36546 [preauth]
-Apr 21 20:32:57 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11276]: Connection reset by authenticating user root 87.251.64.145 port 36566 [preauth]
-Apr 21 20:32:58 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11278]: Connection reset by authenticating user root 87.251.64.145 port 36572 [preauth]
-Apr 21 20:33:42 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11280]: Connection reset by authenticating user root 92.118.39.195 port 4026 [preauth]
-Apr 21 20:34:40 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11283]: Invalid user solv from 80.94.92.184 port 35422
-Apr 21 20:34:41 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11283]: Connection closed by invalid user solv 80.94.92.184 port 35422 [preauth]
-Apr 21 20:35:31 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11285]: Connection reset by authenticating user root 2.57.122.194 port 47970 [preauth]
-Apr 21 20:37:19 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11290]: Connection reset by authenticating user root 92.118.39.236 port 8678 [preauth]
-Apr 21 20:37:48 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11292]: Invalid user solv from 80.94.92.184 port 38156
-Apr 21 20:37:49 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11292]: Connection closed by invalid user solv 80.94.92.184 port 38156 [preauth]
-Apr 21 20:38:17 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11294]: Invalid user gannon from 213.209.159.159 port 27494
-Apr 21 20:38:18 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11294]: Received disconnect from 213.209.159.159 port 27494:11: Bye [preauth]
-Apr 21 20:38:18 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11294]: Disconnected from invalid user gannon 213.209.159.159 port 27494 [preauth]
-Apr 21 20:39:06 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11296]: Connection reset by authenticating user root 2.57.122.195 port 3170 [preauth]
-Apr 21 20:39:33 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11298]: Invalid user admin from 2.57.121.112 port 49596
-Apr 21 20:39:34 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11298]: Received disconnect from 2.57.121.112 port 49596:11: Bye [preauth]
-Apr 21 20:39:34 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11298]: Disconnected from invalid user admin 2.57.121.112 port 49596 [preauth]
-Apr 21 20:40:53 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11301]: Invalid user solv from 80.94.92.184 port 40876
-Apr 21 20:40:53 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11301]: Connection closed by invalid user solv 80.94.92.184 port 40876 [preauth]
-Apr 21 20:40:56 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11303]: Connection reset by authenticating user root 2.57.122.193 port 26942 [preauth]
-Apr 21 20:41:59 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11305]: Connection closed by 211.170.168.202 port 53017 [preauth]
-Apr 21 20:42:45 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11309]: Connection reset by authenticating user root 2.57.122.193 port 39620 [preauth]
-Apr 21 20:43:55 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11312]: Invalid user solv from 80.94.92.184 port 43600
-Apr 21 20:43:55 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11312]: Connection closed by invalid user solv 80.94.92.184 port 43600 [preauth]
-Apr 21 20:44:32 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11314]: Connection reset by authenticating user root 2.57.122.193 port 18638 [preauth]
-Apr 21 20:46:20 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11317]: Connection reset by authenticating user root 45.148.10.141 port 4170 [preauth]
-Apr 21 20:46:33 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11319]: Accepted publickey for LH from 71.187.248.113 port 54999 ssh2: RSA SHA256:hElkzd92JFx2Be3nEdpFzMpn+m1N3su9yosmOrbUAmU
-Apr 21 20:46:33 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11319]: pam_unix(sshd:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 20:46:33 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd-logind[806]: New session 11 of user LH.
-Apr 21 20:46:33 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Started Session 11 of User LH.
-Apr 21 20:46:42 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11407]: Invalid user solv from 80.94.92.184 port 46370
-Apr 21 20:46:43 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11407]: Connection closed by invalid user solv 80.94.92.184 port 46370 [preauth]
-Apr 21 20:47:58 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11410]: Invalid user me from 87.251.64.144 port 9430
-Apr 21 20:47:58 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11410]: Connection reset by invalid user me 87.251.64.144 port 9430 [preauth]
-Apr 21 20:47:59 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11412]: Invalid user metabase from 87.251.64.144 port 9444
-Apr 21 20:47:59 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11412]: Connection reset by invalid user metabase 87.251.64.144 port 9444 [preauth]
-Apr 21 20:48:00 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11416]: Invalid user nifi from 87.251.64.144 port 9450
-Apr 21 20:48:00 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11416]: Connection reset by invalid user nifi 87.251.64.144 port 9450 [preauth]
-Apr 21 20:48:01 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11418]: Invalid user nova from 87.251.64.144 port 8928
-Apr 21 20:48:01 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11418]: Connection reset by invalid user nova 87.251.64.144 port 8928 [preauth]
-Apr 21 20:48:02 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11420]: Invalid user office from 87.251.64.144 port 8940
-Apr 21 20:48:02 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11420]: Connection reset by invalid user office 87.251.64.144 port 8940 [preauth]
-Apr 21 20:48:04 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11422]: Invalid user operator from 87.251.64.144 port 8944
-Apr 21 20:48:04 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11422]: Connection reset by invalid user operator 87.251.64.144 port 8944 [preauth]
-Apr 21 20:48:05 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11424]: Invalid user operator from 87.251.64.144 port 8950
-Apr 21 20:48:05 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11424]: Connection reset by invalid user operator 87.251.64.144 port 8950 [preauth]
-Apr 21 20:48:07 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11426]: Invalid user operator from 87.251.64.144 port 8956
-Apr 21 20:48:07 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11426]: Connection reset by invalid user operator 87.251.64.144 port 8956 [preauth]
-Apr 21 20:48:08 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11428]: Invalid user oracle from 87.251.64.144 port 8964
-Apr 21 20:48:08 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11428]: Connection reset by invalid user oracle 87.251.64.144 port 8964 [preauth]
-Apr 21 20:48:09 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11430]: Invalid user ozj from 87.251.64.144 port 8970
-Apr 21 20:48:09 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11430]: Connection reset by invalid user ozj 87.251.64.144 port 8970 [preauth]
-Apr 21 20:48:10 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11432]: Connection reset by authenticating user root 92.118.39.236 port 38894 [preauth]
-Apr 21 20:48:10 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11434]: Invalid user postgres from 87.251.64.144 port 8982
-Apr 21 20:48:10 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11434]: Connection reset by invalid user postgres 87.251.64.144 port 8982 [preauth]
-Apr 21 20:48:11 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11436]: Invalid user postgres from 87.251.64.144 port 55006
-Apr 21 20:48:11 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11436]: Connection reset by invalid user postgres 87.251.64.144 port 55006 [preauth]
-Apr 21 20:48:12 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11438]: Invalid user public from 87.251.64.144 port 55008
-Apr 21 20:48:12 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11438]: Connection reset by invalid user public 87.251.64.144 port 55008 [preauth]
-Apr 21 20:48:13 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11440]: Invalid user qf from 87.251.64.144 port 55038
-Apr 21 20:48:14 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11440]: Connection reset by invalid user qf 87.251.64.144 port 55038 [preauth]
-Apr 21 20:48:15 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11442]: Invalid user qiniuyun from 87.251.64.144 port 55050
-Apr 21 20:48:16 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11442]: Connection reset by invalid user qiniuyun 87.251.64.144 port 55050 [preauth]
-Apr 21 20:48:17 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11444]: Connection reset by authenticating user root 87.251.64.144 port 55064 [preauth]
-Apr 21 20:48:19 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11446]: Connection reset by authenticating user root 87.251.64.144 port 55070 [preauth]
-Apr 21 20:48:20 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11448]: Connection reset by authenticating user root 87.251.64.144 port 55086 [preauth]
-Apr 21 20:48:21 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11450]: Connection reset by authenticating user root 87.251.64.144 port 55100 [preauth]
-Apr 21 20:48:22 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11452]: Connection reset by authenticating user root 87.251.64.144 port 14066 [preauth]
-Apr 21 20:48:23 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11454]: Connection reset by authenticating user root 87.251.64.144 port 14096 [preauth]
-Apr 21 20:48:24 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11456]: Connection reset by authenticating user root 87.251.64.144 port 14102 [preauth]
-Apr 21 20:48:25 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11458]: Connection reset by authenticating user root 87.251.64.144 port 14118 [preauth]
-Apr 21 20:48:26 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11460]: Connection reset by authenticating user root 87.251.64.144 port 14126 [preauth]
-Apr 21 20:48:27 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11462]: Connection reset by authenticating user root 87.251.64.144 port 14154 [preauth]
-Apr 21 20:48:28 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11464]: Connection reset by authenticating user root 87.251.64.144 port 14168 [preauth]
-Apr 21 20:48:29 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11466]: Connection reset by authenticating user root 87.251.64.144 port 14174 [preauth]
-Apr 21 20:48:31 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11468]: Connection reset by authenticating user root 87.251.64.144 port 14190 [preauth]
-Apr 21 20:48:33 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11470]: Connection reset by authenticating user root 87.251.64.144 port 44964 [preauth]
-Apr 21 20:48:34 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11472]: Connection reset by authenticating user root 87.251.64.144 port 44994 [preauth]
-Apr 21 20:48:57 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11414]: Connection closed by 103.146.159.173 port 37722 [preauth]
-Apr 21 20:49:24 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11475]: Invalid user solv from 80.94.92.184 port 49058
-Apr 21 20:49:24 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11475]: Connection closed by invalid user solv 80.94.92.184 port 49058 [preauth]
-Apr 21 20:49:58 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11480]: Connection reset by authenticating user root 45.148.10.152 port 57494 [preauth]
-Apr 21 20:51:46 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11482]: Connection reset by authenticating user root 45.148.10.151 port 53056 [preauth]
-Apr 21 20:52:06 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11484]: Invalid user solv from 80.94.92.184 port 51768
-Apr 21 20:52:07 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11484]: Connection closed by invalid user solv 80.94.92.184 port 51768 [preauth]
-Apr 21 20:53:36 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11489]: Connection reset by authenticating user root 2.57.122.197 port 48656 [preauth]
-Apr 21 20:54:55 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11491]: Invalid user solv from 80.94.92.184 port 54490
-Apr 21 20:54:55 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11491]: Connection closed by invalid user solv 80.94.92.184 port 54490 [preauth]
-Apr 21 20:55:25 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11495]: Connection reset by authenticating user root 2.57.122.193 port 37354 [preauth]
-Apr 21 20:57:12 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11498]: Connection reset by authenticating user root 2.57.122.191 port 51612 [preauth]
-Apr 21 20:57:45 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11500]: Invalid user solv from 80.94.92.184 port 57234
-Apr 21 20:57:45 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11500]: Connection closed by invalid user solv 80.94.92.184 port 57234 [preauth]
-Apr 21 20:59:00 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11505]: Connection reset by authenticating user root 92.118.39.196 port 44354 [preauth]
-Apr 21 21:00:32 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11507]: Invalid user solv from 80.94.92.184 port 59968
-Apr 21 21:00:32 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11507]: Connection closed by invalid user solv 80.94.92.184 port 59968 [preauth]
-Apr 21 21:00:50 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11510]: Connection reset by authenticating user root 92.118.39.197 port 38434 [preauth]
-Apr 21 21:02:37 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11517]: Connection reset by authenticating user root 45.148.10.141 port 57410 [preauth]
-Apr 21 21:03:20 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11519]: Invalid user solv from 80.94.92.184 port 34492
-Apr 21 21:03:20 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11519]: Connection closed by invalid user solv 80.94.92.184 port 34492 [preauth]
-Apr 21 21:03:47 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11319]: pam_unix(sshd:session): session closed for user LH
-Apr 21 21:03:47 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd-logind[806]: Session 11 logged out. Waiting for processes to exit.
-Apr 21 21:04:25 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11523]: Connection reset by authenticating user root 45.148.10.141 port 37916 [preauth]
-Apr 21 21:04:34 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: session-11.scope: Deactivated successfully.
-Apr 21 21:04:34 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd-logind[806]: Removed session 11.
-Apr 21 21:06:00 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11526]: Invalid user solv from 80.94.92.184 port 37210
-Apr 21 21:06:01 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11526]: Connection closed by invalid user solv 80.94.92.184 port 37210 [preauth]
-Apr 21 21:06:12 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11529]: error: kex_exchange_identification: Connection closed by remote host
-Apr 21 21:06:12 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11529]: Connection closed by 80.94.92.168 port 56888
-Apr 21 21:06:15 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11530]: Connection reset by authenticating user root 92.118.39.236 port 53530 [preauth]
-Apr 21 21:08:05 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11533]: Connection reset by authenticating user root 45.148.10.141 port 11792 [preauth]
-Apr 21 21:08:49 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11535]: Invalid user solv from 80.94.92.184 port 39946
-Apr 21 21:08:49 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11535]: Connection closed by invalid user solv 80.94.92.184 port 39946 [preauth]
-Apr 21 21:09:52 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11538]: Connection reset by authenticating user root 2.57.122.190 port 1190 [preauth]
-Apr 21 21:11:40 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11541]: Connection reset by authenticating user root 45.148.10.151 port 53164 [preauth]
-Apr 21 21:11:42 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11543]: Invalid user solv from 80.94.92.184 port 42678
-Apr 21 21:11:42 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11543]: Connection closed by invalid user solv 80.94.92.184 port 42678 [preauth]
-Apr 21 21:12:18 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11545]: Invalid user solana from 80.94.92.168 port 60582
-Apr 21 21:12:18 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11545]: Connection closed by invalid user solana 80.94.92.168 port 60582 [preauth]
-Apr 21 21:13:29 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11548]: Connection reset by authenticating user root 2.57.122.195 port 42384 [preauth]
-Apr 21 21:14:30 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11550]: Invalid user solv from 80.94.92.184 port 45376
-Apr 21 21:14:30 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11550]: Connection closed by invalid user solv 80.94.92.184 port 45376 [preauth]
-Apr 21 21:15:17 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11554]: Connection reset by authenticating user root 2.57.122.193 port 32192 [preauth]
-Apr 21 21:17:01 node0.testnode1.lsm-pg0.utah.cloudlab.us CRON[11557]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
-Apr 21 21:17:01 node0.testnode1.lsm-pg0.utah.cloudlab.us CRON[11558]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
-Apr 21 21:17:01 node0.testnode1.lsm-pg0.utah.cloudlab.us CRON[11557]: pam_unix(cron:session): session closed for user root
-Apr 21 21:17:04 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11560]: Connection reset by authenticating user root 92.118.39.23 port 53560 [preauth]
-Apr 21 21:17:30 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11562]: Invalid user solv from 80.94.92.184 port 48094
-Apr 21 21:17:30 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11562]: Connection closed by invalid user solv 80.94.92.184 port 48094 [preauth]
-Apr 21 21:17:35 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11564]: Accepted publickey for LH from 71.187.248.113 port 55411 ssh2: RSA SHA256:hElkzd92JFx2Be3nEdpFzMpn+m1N3su9yosmOrbUAmU
-Apr 21 21:17:35 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11564]: pam_unix(sshd:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 21:17:35 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd-logind[806]: New session 13 of user LH.
-Apr 21 21:17:35 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Started Session 13 of User LH.
-Apr 21 21:18:54 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11652]: Connection reset by authenticating user root 195.178.110.15 port 10432 [preauth]
-Apr 21 21:20:35 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11656]: Invalid user solv from 80.94.92.184 port 50844
-Apr 21 21:20:36 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11656]: Connection closed by invalid user solv 80.94.92.184 port 50844 [preauth]
-Apr 21 21:20:44 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11659]: Connection reset by authenticating user root 2.57.122.199 port 25276 [preauth]
-Apr 21 21:21:37 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11586]: Received disconnect from 71.187.248.113 port 55411:11: disconnected by user
-Apr 21 21:21:37 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11586]: Disconnected from user LH 71.187.248.113 port 55411
-Apr 21 21:21:37 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11564]: pam_unix(sshd:session): session closed for user LH
-Apr 21 21:21:37 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd-logind[806]: Session 13 logged out. Waiting for processes to exit.
-Apr 21 21:21:38 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11661]: Accepted publickey for LH from 71.187.248.113 port 55468 ssh2: RSA SHA256:hElkzd92JFx2Be3nEdpFzMpn+m1N3su9yosmOrbUAmU
-Apr 21 21:21:38 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11661]: pam_unix(sshd:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 21:21:38 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd-logind[806]: New session 14 of user LH.
-Apr 21 21:21:38 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Started Session 14 of User LH.
-Apr 21 21:22:01 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[11761]:       LH : TTY=pts/0 ; PWD=/users/LH/machine_log ; USER=root ; COMMAND=./install_crash_pusher.sh
-Apr 21 21:22:01 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[11761]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=20024)
-Apr 21 21:22:22 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12005]:     root : TTY=pts/1 ; PWD=/users/LH/machine_log ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock git -C /users/LH/machine_log remote get-url origin
-Apr 21 21:22:22 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12005]: pam_unix(sudo:session): session opened for user LH(uid=20024) by LH(uid=0)
-Apr 21 21:22:22 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12005]: pam_unix(sudo:session): session closed for user LH
-Apr 21 21:22:22 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12009]:     root : TTY=pts/1 ; PWD=/users/LH/machine_log ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock git -C /users/LH/machine_log push --dry-run origin main
-Apr 21 21:22:22 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12009]: pam_unix(sudo:session): session opened for user LH(uid=20024) by LH(uid=0)
-Apr 21 21:22:23 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12009]: pam_unix(sudo:session): session closed for user LH
-Apr 21 21:22:24 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Reloading.
-Apr 21 21:22:24 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
-Apr 21 21:22:24 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Reloading.
-Apr 21 21:22:25 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
-Apr 21 21:22:25 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Starting Daily apt download activities...
-Apr 21 21:22:25 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Started Crash log pusher.
-Apr 21 21:22:25 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[11761]: pam_unix(sudo:session): session closed for user root
-Apr 21 21:22:25 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[12087]: [2026-04-22T03:22:25Z] git user: LH
-Apr 21 21:22:25 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12101]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log remote get-url origin
-Apr 21 21:22:25 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12101]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 21:22:25 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12101]: pam_unix(sudo:session): session closed for user LH
-Apr 21 21:22:25 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12111]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log remote get-url origin
-Apr 21 21:22:25 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12111]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 21:22:25 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12111]: pam_unix(sudo:session): session closed for user LH
-Apr 21 21:22:25 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[12087]: [2026-04-22T03:22:25Z] origin remote: https://github.com/Linfeng-He/machine_log.git
-Apr 21 21:22:25 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12121]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log push --dry-run origin main
-Apr 21 21:22:25 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12121]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 21:22:25 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: apt-daily.service: Deactivated successfully.
-Apr 21 21:22:25 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Finished Daily apt download activities.
-Apr 21 21:22:26 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12121]: pam_unix(sudo:session): session closed for user LH
-Apr 21 21:22:27 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12334]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log add --all -- sys
-Apr 21 21:22:27 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12334]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 21:22:27 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12334]: pam_unix(sudo:session): session closed for user LH
-Apr 21 21:22:27 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12415]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log diff --cached --name-only -- sys
-Apr 21 21:22:27 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12415]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 21:22:27 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12415]: pam_unix(sudo:session): session closed for user LH
-Apr 21 21:22:27 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12423]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log -c user.name=crash-pusher -c user.email=crash-pusher@node0 commit -m 'sys capture node0 20260422T032225Z 2026-04-22T03:22:27Z' -- sys
-Apr 21 21:22:27 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12423]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 21:22:27 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12423]: pam_unix(sudo:session): session closed for user LH
-Apr 21 21:22:28 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12427]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log remote get-url origin
-Apr 21 21:22:28 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12427]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 21:22:28 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12427]: pam_unix(sudo:session): session closed for user LH
-Apr 21 21:22:28 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12431]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log push origin main
-Apr 21 21:22:28 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12431]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 21:22:29 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[12431]: pam_unix(sudo:session): session closed for user LH
-Apr 21 21:22:30 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[12641]: Connection reset by authenticating user root 45.148.10.141 port 46314 [preauth]
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[13389]:       LH : TTY=pts/0 ; PWD=/users/LH/machine_log ; USER=root ; COMMAND=/usr/sbin/reboot
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[13389]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=20024)
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopping Session 13 of User LH...
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopping Session 14 of User LH...
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[11661]: pam_unix(sshd:session): session closed for user LH
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopping Session 3 of User LH...
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[13389]: pam_unix(sudo:session): session closed for user root
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Removed slice Slice /system/emulab-networkd.
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Removed slice Slice /system/modprobe.
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopped target Graphical Interface.
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopped target Multi-User System.
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopped target Login Prompts.
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopped target rpc_pipefs.target.
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopped target RPC Port Mapper.
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopped target Timer Units.
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: apt-daily-upgrade.timer: Deactivated successfully.
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopped Daily apt upgrade and clean activities.
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: apt-daily.timer: Deactivated successfully.
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopped Daily apt download activities.
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: dpkg-db-backup.timer: Deactivated successfully.
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopped Daily dpkg database backup timer.
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: e2scrub_all.timer: Deactivated successfully.
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopped Periodic ext4 Online Metadata Check for All Filesystems.
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: fstrim.timer: Deactivated successfully.
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopped Discard unused blocks once a week.
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: logrotate.timer: Deactivated successfully.
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopped Daily rotation of log files.
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: man-db.timer: Deactivated successfully.
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopped Daily man-db regeneration.
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: motd-news.timer: Deactivated successfully.
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopped Message of the Day.
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: systemd-tmpfiles-clean.timer: Deactivated successfully.
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopped Daily Cleanup of Temporary Directories.
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: ua-timer.timer: Deactivated successfully.
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopped Ubuntu Advantage Timer for running repeated jobs.
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: lvm2-lvmpolld.socket: Deactivated successfully.
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Closed LVM2 poll daemon socket.
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: systemd-rfkill.socket: Deactivated successfully.
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Closed Load/Save RF Kill Switch Status /dev/rfkill Watch.
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Unmounting RPC Pipe File System...
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopping Availability of block devices...
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopping Crash log pusher...
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopping Regular background program processing daemon...
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopping Getty on tty1...
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopping irqbalance daemon...
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopping Dispatcher daemon for systemd-networkd...
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us ntpd[842]: ntpd exiting on signal 15 (Terminated)
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us ntpd[842]: 128.110.156.34 local addr 128.110.217.163 -> <null>
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopping Network Time Service...
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us pubsubd[1031]: Caught a signal: 15
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopping The Emulab publish/subscribe daemon...
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us runner.sh[12087]: [2026-04-22T03:22:39Z] stopping
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us rsyslogd[803]: [origin software="rsyslogd" swVersion="8.2112.0" x-pid="803" x-info="https://www.rsyslog.com"] exiting on signal 15.
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopping System Logging Service...
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopping Serial Getty on ttyS0...
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us blkdeactivate[13397]: Deactivating block devices:
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopping Self Monitoring and Reporting Technology (SMART) Daemon...
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us smartd[805]: smartd received signal 15: Terminated
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us smartd[805]: Device: /dev/nvme0, state written to /var/lib/smartmontools/smartd.THNSN5256GPU7_TOSHIBA-563S106UTUFV.nvme.state
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us smartd[805]: smartd is exiting (exit status 0)
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us sshd[844]: Received signal 15; terminating.
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopping OpenBSD Secure Shell server...
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: systemd-machine-id-commit.service: Deactivated successfully.
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopped Commit a transient machine-id on disk.
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopping Load/Save Random Seed...
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopping Testbed Services...
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: irqbalance.service: Deactivated successfully.
-Apr 21 21:22:39 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopped irqbalance daemon.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: irqbalance.service: Consumed 2.270s CPU time.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: networkd-dispatcher.service: Deactivated successfully.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopped Dispatcher daemon for systemd-networkd.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: rsyslog.service: Deactivated successfully.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopped System Logging Service.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: smartmontools.service: Deactivated successfully.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopped Self Monitoring and Reporting Technology (SMART) Daemon.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: ntp.service: Deactivated successfully.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopped Network Time Service.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: ssh.service: Deactivated successfully.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopped OpenBSD Secure Shell server.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: ssh.service: Consumed 14.814s CPU time.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: cron.service: Deactivated successfully.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopped Regular background program processing daemon.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopped Serial Getty on ttyS0.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: getty@tty1.service: Deactivated successfully.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopped Getty on tty1.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: pubsubd.service: Deactivated successfully.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopped The Emulab publish/subscribe daemon.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: run-rpc_pipefs.mount: Deactivated successfully.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Unmounted RPC Pipe File System.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: blk-availability.service: Deactivated successfully.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopped Availability of block devices.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: systemd-random-seed.service: Deactivated successfully.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopped Load/Save Random Seed.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: session-3.scope: Deactivated successfully.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopped Session 3 of User LH.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: session-3.scope: Consumed 1min 57.433s CPU time.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: session-13.scope: Deactivated successfully.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopped Session 13 of User LH.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd-logind[806]: Removed session 13.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd-logind[806]: Removed session 3.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[13407]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log add --all -- sys
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: session-14.scope: Deactivated successfully.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopped Session 14 of User LH.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us sh[13494]: Shutting down testbed daemons (some may fail)...
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us sh[13494]:   trafgen:
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us sh[13494]:   program-agent:
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[13407]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd-logind[806]: Session 14 logged out. Waiting for processes to exit.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us slothd[1005]: exiting.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Removed slice Slice /system/getty.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us sudo[13407]: pam_unix(sudo:session): session closed for user LH
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Removed slice Slice /system/serial-getty.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopped target Host and Network Name Lookups.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopping User Login Management...
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopping User Manager for UID 20024...
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1841]: Stopped target Main User Target.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1841]: Stopped target Basic System.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1841]: Stopped target Paths.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1841]: Stopped target Sockets.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1841]: Stopped target Timers.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1841]: Closed D-Bus User Message Bus Socket.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1841]: Closed GnuPG network certificate management daemon.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1841]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1841]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1841]: Closed GnuPG cryptographic agent (ssh-agent emulation).
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1841]: Closed GnuPG cryptographic agent and passphrase cache.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1841]: Closed debconf communication socket.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1841]: Removed slice User Application Slice.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1841]: Reached target Shutdown.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1841]: Finished Exit the Session.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1841]: Reached target Exit the Session.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1842]: pam_unix(systemd-user:session): session closed for user LH
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: user@20024.service: Deactivated successfully.
-Apr 21 21:22:40 node0.testnode1.lsm-pg0.utah.cloudlab.us systemd[1]: Stopped User Manager for UID 20024.
+Apr 21 21:24:25 localhost sbkeysync[709]:     39dbc2288ef44b5f95332cb777e31103e840dba680634aa806f5c9b100061802
+Apr 21 21:24:25 localhost sbkeysync[709]:     e19dae83c02e6f281358d4ebd11d7723b4f5ea0e357907d5443decc5f93c1e9d
+Apr 21 21:24:25 localhost sbkeysync[709]:     b92af298dc08049b78c77492d6551b710cd72aada3d77be54609e43278ef6e4d
+Apr 21 21:24:25 localhost sbkeysync[709]:     81d8fb4c9e2e7a8225656b4b8273b7cba4b03ef2e9eb20e0a0291624eca1ba86
+Apr 21 21:24:25 localhost sbkeysync[709]:     45c7c8ae750acfbb48fc37527d6412dd644daed8913ccd8a24c94d856967df8e
+Apr 21 21:24:25 localhost sbkeysync[709]:     64575bd912789a2e14ad56f6341f52af6bf80cf94400785975e9f04e2d64d745
+Apr 21 21:24:25 localhost sbkeysync[709]:     939aeef4f5fa51e23340c3f2e49048ce8872526afdf752c3a7f3a3f2bc9f6049
+Apr 21 21:24:25 localhost sbkeysync[709]:     3b0287533e0cc3d0ec1aa823cbf0a941aad8721579d1c499802dd1c3a636b8a9
+Apr 21 21:24:25 localhost sbkeysync[709]:     c83cb13922ad99f560744675dd37cc94dcad5a1fcba6472fee341171d939e884
+Apr 21 21:24:25 localhost sbkeysync[709]:     77dd190fa30d88ff5e3b011a0ae61e6209780c130b535ecb87e6f0888a0b6b2f
+Apr 21 21:24:25 localhost sbkeysync[709]:     55b99b0de53dbcfe485aa9c737cf3fb616ef3d91fab599aa7cab19eda763b5ba
+Apr 21 21:24:25 localhost sbkeysync[709]:     ca171d614a8d7e121c93948cd0fe55d39981f9d11aa96e03450a415227c2c65b
+Apr 21 21:24:25 localhost sbkeysync[709]:     fecfb232d12e994b6d485d2c7167728aa5525984ad5ca61e7516221f079a1436
+Apr 21 21:24:25 localhost sbkeysync[709]:     fe63a84f782cc9d3fcf2ccf9fc11fbd03760878758d26285ed12669bdc6e6d01
+Apr 21 21:24:25 localhost sbkeysync[709]:     fddd6e3d29ea84c7743dad4a1bdbc700b5fec1b391f932409086acc71dd6dbd8
+Apr 21 21:24:25 localhost sbkeysync[709]:     e92c22eb3b5642d65c1ec2caf247d2594738eebb7fb3841a44956f59e2b0d1fa
+Apr 21 21:24:25 localhost sbkeysync[709]:     d8cbeb9735f5672b367e4f96cdc74969615d17074ae96c724d42ce0216f8f3fa
+Apr 21 21:24:25 localhost sbkeysync[709]:     ce3bfabe59d67ce8ac8dfd4a16f7c43ef9c224513fbc655957d735fa29f540ce
+Apr 21 21:24:25 localhost sbkeysync[709]:     cb6b858b40d3a098765815b592c1514a49604fafd60819da88d7a76e9778fef7
+Apr 21 21:24:25 localhost sbkeysync[709]:     c90f336617b8e7f983975413c997f10b73eb267fd8a10cb9e3bdbfc667abdb8b
+Apr 21 21:24:25 localhost sbkeysync[709]:     c617c1a8b1ee2a811c28b5a81b4c83d7c98b5b0c27281d610207ebe692c2967f
+Apr 21 21:24:25 localhost sbkeysync[709]:     c409bdac4775add8db92aa22b5b718fb8c94a1462c1fe9a416b95d8a3388c2fc
+Apr 21 21:24:25 localhost sbkeysync[709]:     bc87a668e81966489cb508ee805183c19e6acd24cf17799ca062d2e384da0ea7
+Apr 21 21:24:25 localhost sbkeysync[709]:     b97a0889059c035ff1d54b6db53b11b9766668d9f955247c028b2837d7a04cd9
+Apr 21 21:24:25 localhost sbkeysync[709]:     b8f078d983a24ac433216393883514cd932c33af18e7dd70884c8235f4275736
+Apr 21 21:24:25 localhost sbkeysync[709]:     b54f1ee636631fad68058d3b0937031ac1b90ccb17062a391cca68afdbe40d55
+Apr 21 21:24:25 localhost sbkeysync[709]:     afe2030afb7d2cda13f9fa333a02e34f6751afec11b010dbcd441fdf4c4002b3
+Apr 21 21:24:25 localhost sbkeysync[709]:     aeebae3151271273ed95aa2e671139ed31a98567303a332298f83709a9d55aa1
+Apr 21 21:24:25 localhost sbkeysync[709]:     ad6826e1946d26d3eaf3685c88d97d85de3b4dcb3d0ee2ae81c70560d13c5720
+Apr 21 21:24:25 localhost sbkeysync[709]:     a7f32f508d4eb0fead9a087ef94ed1ba0aec5de6f7ef6ff0a62b93bedf5d458d
+Apr 21 21:24:25 localhost sbkeysync[709]:     a6b5151f3655d3a2af0d472759796be4a4200e5495a7d869754c4848857408a7
+Apr 21 21:24:25 localhost sbkeysync[709]:     9e4a69173161682e55fde8fef560eb88ec1ffedcaf04001f66c0caf707b2b734
+Apr 21 21:24:25 localhost sbkeysync[709]:     9998d363c491be16bd74ba10b94d9291001611736fdca643a36664bc0f315a42
+Apr 21 21:24:25 localhost sbkeysync[709]:     8d8ea289cfe70a1c07ab7365cb28ee51edd33cf2506de888fbadd60ebf80481c
+Apr 21 21:24:25 localhost sbkeysync[709]:     8bf434b49e00ccf71502a2cd900865cb01ec3b3da03c35be505fdf7bd563f521
+Apr 21 21:24:25 localhost sbkeysync[709]:     8ad64859f195b5f58dafaa940b6a6167acd67a886e8f469364177221c55945b9
+Apr 21 21:24:25 localhost sbkeysync[709]:     895a9785f617ca1d7ed44fc1a1470b71f3f1223862d9ff9dcc3ae2df92163daf
+Apr 21 21:24:25 localhost sbkeysync[709]:     82db3bceb4f60843ce9d97c3d187cd9b5941cd3de8100e586f2bda5637575f67
+Apr 21 21:24:25 localhost sbkeysync[709]:     81a8b965bb84d3876b9429a95481cc955318cfaa1412d808c8a33bfd33fff0e4
+Apr 21 21:24:25 localhost sbkeysync[709]:     7827af99362cfaf0717dade4b1bfe0438ad171c15addc248b75bf8caa44bb2c5
+Apr 21 21:24:25 localhost sbkeysync[709]:     72e0bd1867cf5d9d56ab158adf3bddbc82bf32a8d8aa1d8c5e2f6df29428d6d8
+Apr 21 21:24:25 localhost sbkeysync[709]:     726b3eb654046a30f3f83d9b96ce03f670e9a806d1708a0371e62dc49d2c23c1
+Apr 21 21:24:25 localhost sbkeysync[709]:     71f2906fd222497e54a34662ab2497fcc81020770ff51368e9e3d9bfcbfd6375
+Apr 21 21:24:25 localhost sbkeysync[709]:     6f1428ff71c9db0ed5af1f2e7bbfcbab647cc265ddf5b293cdb626f50a3a785e
+Apr 21 21:24:25 localhost sbkeysync[709]:     6c8854478dd559e29351b826c06cb8bfef2b94ad3538358772d193f82ed1ca11
+Apr 21 21:24:25 localhost sbkeysync[709]:     6b1d138078e4418aa68deb7bb35e066092cf479eeb8ce4cd12e7d072ccb42f66
+Apr 21 21:24:25 localhost sbkeysync[709]:     5ae949ea8855eb93e439dbc65bda2e42852c2fdf6789fa146736e3c3410f2b5c
+Apr 21 21:24:25 localhost sbkeysync[709]:     518831fe7382b514d03e15c621228b8ab65479bd0cbfa3c5c1d0f48d9c306135
+Apr 21 21:24:25 localhost sbkeysync[709]:     47cc086127e2069a86e03a6bef2cd410f8c55a6d6bdb362168c31b2ce32a5adf
+Apr 21 21:24:25 localhost sbkeysync[709]:     4397daca839e7f63077cb50c92df43bc2d2fb2a8f59f26fc7a0e4bd4d9751692
+Apr 21 21:24:25 localhost sbkeysync[709]:     3fce9b9fdf3ef09d5452b0f95ee481c2b7f06d743a737971558e70136ace3e73
+Apr 21 21:24:25 localhost sbkeysync[709]:     3841d221368d1583d75c0a02e62160394d6c4e0a6760b6f607b90362bc855b02
+Apr 21 21:24:25 localhost sbkeysync[709]:     3608edbaf5ad0f41a414a1777abf2faf5e670334675ec3995e6935829e0caad2
+Apr 21 21:24:25 localhost sbkeysync[709]:     306628fa5477305728ba4a467de7d0387a54f569d3769fce5e75ec89d28d1593
+Apr 21 21:24:25 localhost sbkeysync[709]:     2e70916786a6f773511fa7181fab0f1d70b557c6322ea923b2a8d3b92b51af7d
+Apr 21 21:24:25 localhost sbkeysync[709]:     2c73d93325ba6dcbe589d4a4c63c5b935559ef92fbf050ed50c4e2085206f17d
+Apr 21 21:24:25 localhost sbkeysync[709]:     2bbf2ca7b8f1d91f27ee52b6fb2a5dd049b85a2b9b529c5d6662068104b055f8
+Apr 21 21:24:25 localhost sbkeysync[709]:     2b99cf26422e92fe365fbf4bc30d27086c9ee14b7a6fff44fb2f6b9001699939
+Apr 21 21:24:25 localhost sbkeysync[709]:     18333429ff0562ed9f97033e1148dceee52dbe2e496d5410b5cfd6c864d2d10f
+Apr 21 21:24:25 localhost sbkeysync[709]:     174e3a0b5b43c6a607bbd3404f05341e3dcf396267ce94f8b50e2e23a9da920c
+Apr 21 21:24:25 localhost sbkeysync[709]:     106faceacfecfd4e303b74f480a08098e2d0802b936f8ec774ce21f31686689c
+Apr 21 21:24:25 localhost sbkeysync[709]:     0dc9f3fb99962148c3ca833632758d3ed4fc8d0b0007b95b31e6528f2acd5bfc
+Apr 21 21:24:25 localhost sbkeysync[709]:     0d0dbeca6f29eca06f331a7d72e4884b12097fb348983a2a14a0d73f4f10140f
+Apr 21 21:24:25 localhost sbkeysync[709]:     0c189339762df336ab3dd006a463df715a39cfb0f492465c600e6c6bd7bd898c
+Apr 21 21:24:25 localhost sbkeysync[709]:     0bbb4392daac7ab89b30a4ac657531b97bfaab04f90b0dafe5f9b6eb90a06374
+Apr 21 21:24:25 localhost sbkeysync[709]:     09df5f4e511208ec78b96d12d08125fdb603868de39f6f72927852599b659c26
+Apr 21 21:24:25 localhost sbkeysync[709]:     07e6c6a858646fb1efc67903fe28b116011f2367fe92e6be2b36999eff39d09e
+Apr 21 21:24:25 localhost sbkeysync[709]:     075eea060589548ba060b2feed10da3c20c7fe9b17cd026b94e8a683b8115238
+Apr 21 21:24:25 localhost sbkeysync[709]:     90fbe70e69d633408d3e170c6832dbb2d209e0272527dfb63d49d29572a6f44c
+Apr 21 21:24:25 localhost sbkeysync[709]:     29c6eb52b43c3aa18b2cd8ed6ea8607cef3cfae1bafe1165755cf2e614844a44
+Apr 21 21:24:25 localhost sbkeysync[709]:     d063ec28f67eba53f1642dbf7dff33c6a32add869f6013fe162e2c32f1cbe56d
+Apr 21 21:24:25 localhost sbkeysync[709]:     d626157e1d6a718bc124ab8da27cbb65072ca03a7b6b257dbdcbbd60f65ef3d1
+Apr 21 21:24:25 localhost sbkeysync[709]:     5391c3a2fb112102a6aa1edc25ae77e19f5d6f09cd09eeb2509922bfcd5992ea
+Apr 21 21:24:25 localhost sbkeysync[709]:     58fb941aef95a25943b3fb5f2510a0df3fe44c58c95e0ab80487297568ab9771
+Apr 21 21:24:25 localhost sbkeysync[709]:     c3a99a460da464a057c3586d83cef5f4ae08b7103979ed8932742df0ed530c66
+Apr 21 21:24:25 localhost sbkeysync[709]:     e6ca68e94146629af03f69c2f86e6bef62f930b37c6fbcc878b78df98c0334e5
+Apr 21 21:24:25 localhost sbkeysync[709]:     1aec84b84b6c65a51220a9be7181965230210d62d6d33c48999c6b295a2b0a06
+Apr 21 21:24:25 localhost sbkeysync[709]:     363384d14d1f2e0b7815626484c459ad57a318ef4396266048d058c5a19bbf76
+Apr 21 21:24:25 localhost sbkeysync[709]:     c5d9d8a186e2c82d09afaa2a6f7f2e73870d3e64f72c4e08ef67796a840f0fbd
+Apr 21 21:24:25 localhost sbkeysync[709]:     f52f83a3fa9cfbd6920f722824dbe4034534d25b8507246b3b957dac6e1bce7a
+Apr 21 21:24:25 localhost sbkeysync[709]:     80b4d96931bf0d02fd91a61e19d14f1da452e66db2408ca8604d411f92659f0a
+Apr 21 21:24:25 localhost sbkeysync[709]: filesystem keys:
+Apr 21 21:24:25 localhost sbkeysync[709]:   PK:
+Apr 21 21:24:25 localhost sbkeysync[709]:   KEK:
+Apr 21 21:24:25 localhost sbkeysync[709]:   db:
+Apr 21 21:24:25 localhost sbkeysync[709]:   dbx:
+Apr 21 21:24:25 localhost sbkeysync[709]:     45c7c8ae750acfbb48fc37527d6412dd644daed8913ccd8a24c94d856967df8e
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     64575bd912789a2e14ad56f6341f52af6bf80cf94400785975e9f04e2d64d745
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     939aeef4f5fa51e23340c3f2e49048ce8872526afdf752c3a7f3a3f2bc9f6049
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     3b0287533e0cc3d0ec1aa823cbf0a941aad8721579d1c499802dd1c3a636b8a9
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     c83cb13922ad99f560744675dd37cc94dcad5a1fcba6472fee341171d939e884
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     77dd190fa30d88ff5e3b011a0ae61e6209780c130b535ecb87e6f0888a0b6b2f
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     55b99b0de53dbcfe485aa9c737cf3fb616ef3d91fab599aa7cab19eda763b5ba
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     ca171d614a8d7e121c93948cd0fe55d39981f9d11aa96e03450a415227c2c65b
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     fecfb232d12e994b6d485d2c7167728aa5525984ad5ca61e7516221f079a1436
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     fe63a84f782cc9d3fcf2ccf9fc11fbd03760878758d26285ed12669bdc6e6d01
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     fddd6e3d29ea84c7743dad4a1bdbc700b5fec1b391f932409086acc71dd6dbd8
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     e92c22eb3b5642d65c1ec2caf247d2594738eebb7fb3841a44956f59e2b0d1fa
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     d8cbeb9735f5672b367e4f96cdc74969615d17074ae96c724d42ce0216f8f3fa
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     ce3bfabe59d67ce8ac8dfd4a16f7c43ef9c224513fbc655957d735fa29f540ce
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     cb6b858b40d3a098765815b592c1514a49604fafd60819da88d7a76e9778fef7
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     c90f336617b8e7f983975413c997f10b73eb267fd8a10cb9e3bdbfc667abdb8b
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     c617c1a8b1ee2a811c28b5a81b4c83d7c98b5b0c27281d610207ebe692c2967f
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     c409bdac4775add8db92aa22b5b718fb8c94a1462c1fe9a416b95d8a3388c2fc
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     bc87a668e81966489cb508ee805183c19e6acd24cf17799ca062d2e384da0ea7
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     b97a0889059c035ff1d54b6db53b11b9766668d9f955247c028b2837d7a04cd9
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     b8f078d983a24ac433216393883514cd932c33af18e7dd70884c8235f4275736
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     b54f1ee636631fad68058d3b0937031ac1b90ccb17062a391cca68afdbe40d55
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     afe2030afb7d2cda13f9fa333a02e34f6751afec11b010dbcd441fdf4c4002b3
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     aeebae3151271273ed95aa2e671139ed31a98567303a332298f83709a9d55aa1
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     ad6826e1946d26d3eaf3685c88d97d85de3b4dcb3d0ee2ae81c70560d13c5720
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     a7f32f508d4eb0fead9a087ef94ed1ba0aec5de6f7ef6ff0a62b93bedf5d458d
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     a6b5151f3655d3a2af0d472759796be4a4200e5495a7d869754c4848857408a7
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     9e4a69173161682e55fde8fef560eb88ec1ffedcaf04001f66c0caf707b2b734
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     9998d363c491be16bd74ba10b94d9291001611736fdca643a36664bc0f315a42
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     8d8ea289cfe70a1c07ab7365cb28ee51edd33cf2506de888fbadd60ebf80481c
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     8bf434b49e00ccf71502a2cd900865cb01ec3b3da03c35be505fdf7bd563f521
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     8ad64859f195b5f58dafaa940b6a6167acd67a886e8f469364177221c55945b9
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     895a9785f617ca1d7ed44fc1a1470b71f3f1223862d9ff9dcc3ae2df92163daf
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     82db3bceb4f60843ce9d97c3d187cd9b5941cd3de8100e586f2bda5637575f67
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     81a8b965bb84d3876b9429a95481cc955318cfaa1412d808c8a33bfd33fff0e4
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     7827af99362cfaf0717dade4b1bfe0438ad171c15addc248b75bf8caa44bb2c5
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     72e0bd1867cf5d9d56ab158adf3bddbc82bf32a8d8aa1d8c5e2f6df29428d6d8
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     726b3eb654046a30f3f83d9b96ce03f670e9a806d1708a0371e62dc49d2c23c1
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     71f2906fd222497e54a34662ab2497fcc81020770ff51368e9e3d9bfcbfd6375
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     6f1428ff71c9db0ed5af1f2e7bbfcbab647cc265ddf5b293cdb626f50a3a785e
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     6c8854478dd559e29351b826c06cb8bfef2b94ad3538358772d193f82ed1ca11
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     6b1d138078e4418aa68deb7bb35e066092cf479eeb8ce4cd12e7d072ccb42f66
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     5ae949ea8855eb93e439dbc65bda2e42852c2fdf6789fa146736e3c3410f2b5c
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     518831fe7382b514d03e15c621228b8ab65479bd0cbfa3c5c1d0f48d9c306135
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     47cc086127e2069a86e03a6bef2cd410f8c55a6d6bdb362168c31b2ce32a5adf
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     4397daca839e7f63077cb50c92df43bc2d2fb2a8f59f26fc7a0e4bd4d9751692
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     3fce9b9fdf3ef09d5452b0f95ee481c2b7f06d743a737971558e70136ace3e73
+Apr 21 21:24:25 localhost systemd-resolved[708]: Positive Trust Anchors:
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     3841d221368d1583d75c0a02e62160394d6c4e0a6760b6f607b90362bc855b02
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     3608edbaf5ad0f41a414a1777abf2faf5e670334675ec3995e6935829e0caad2
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     306628fa5477305728ba4a467de7d0387a54f569d3769fce5e75ec89d28d1593
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     2e70916786a6f773511fa7181fab0f1d70b557c6322ea923b2a8d3b92b51af7d
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     2c73d93325ba6dcbe589d4a4c63c5b935559ef92fbf050ed50c4e2085206f17d
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     2bbf2ca7b8f1d91f27ee52b6fb2a5dd049b85a2b9b529c5d6662068104b055f8
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     2b99cf26422e92fe365fbf4bc30d27086c9ee14b7a6fff44fb2f6b9001699939
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     18333429ff0562ed9f97033e1148dceee52dbe2e496d5410b5cfd6c864d2d10f
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     174e3a0b5b43c6a607bbd3404f05341e3dcf396267ce94f8b50e2e23a9da920c
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     106faceacfecfd4e303b74f480a08098e2d0802b936f8ec774ce21f31686689c
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     0dc9f3fb99962148c3ca833632758d3ed4fc8d0b0007b95b31e6528f2acd5bfc
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     0d0dbeca6f29eca06f331a7d72e4884b12097fb348983a2a14a0d73f4f10140f
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     0c189339762df336ab3dd006a463df715a39cfb0f492465c600e6c6bd7bd898c
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     0bbb4392daac7ab89b30a4ac657531b97bfaab04f90b0dafe5f9b6eb90a06374
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     09df5f4e511208ec78b96d12d08125fdb603868de39f6f72927852599b659c26
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost systemd-resolved[708]: . IN DS 20326 8 2 e06d44b80b8f1d39a95c0b0d7c65d08458e880409bbc683457104237c7f8ec8d
+Apr 21 21:24:25 localhost sbkeysync[709]:     07e6c6a858646fb1efc67903fe28b116011f2367fe92e6be2b36999eff39d09e
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     075eea060589548ba060b2feed10da3c20c7fe9b17cd026b94e8a683b8115238
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     90fbe70e69d633408d3e170c6832dbb2d209e0272527dfb63d49d29572a6f44c
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     29c6eb52b43c3aa18b2cd8ed6ea8607cef3cfae1bafe1165755cf2e614844a44
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     d063ec28f67eba53f1642dbf7dff33c6a32add869f6013fe162e2c32f1cbe56d
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     d626157e1d6a718bc124ab8da27cbb65072ca03a7b6b257dbdcbbd60f65ef3d1
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     5391c3a2fb112102a6aa1edc25ae77e19f5d6f09cd09eeb2509922bfcd5992ea
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     58fb941aef95a25943b3fb5f2510a0df3fe44c58c95e0ab80487297568ab9771
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     c3a99a460da464a057c3586d83cef5f4ae08b7103979ed8932742df0ed530c66
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     e6ca68e94146629af03f69c2f86e6bef62f930b37c6fbcc878b78df98c0334e5
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     1aec84b84b6c65a51220a9be7181965230210d62d6d33c48999c6b295a2b0a06
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     363384d14d1f2e0b7815626484c459ad57a318ef4396266048d058c5a19bbf76
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     c5d9d8a186e2c82d09afaa2a6f7f2e73870d3e64f72c4e08ef67796a840f0fbd
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     f52f83a3fa9cfbd6920f722824dbe4034534d25b8507246b3b957dac6e1bce7a
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]:     80b4d96931bf0d02fd91a61e19d14f1da452e66db2408ca8604d411f92659f0a
+Apr 21 21:24:25 localhost sbkeysync[709]:      from /usr/share/secureboot/updates/dbx/dbxupdate_x64.bin
+Apr 21 21:24:25 localhost sbkeysync[709]: New keys in filesystem:
+Apr 21 21:24:25 localhost systemd-resolved[708]: Negative trust anchors: home.arpa 10.in-addr.arpa 16.172.in-addr.arpa 17.172.in-addr.arpa 18.172.in-addr.arpa 19.172.in-addr.arpa 20.172.in-addr.arpa 21.172.in-addr.arpa 22.172.in-addr.arpa 23.172.in-addr.arpa 24.172.in-addr.arpa 25.172.in-addr.arpa 26.172.in-addr.arpa 27.172.in-addr.arpa 28.172.in-addr.arpa 29.172.in-addr.arpa 30.172.in-addr.arpa 31.172.in-addr.arpa 168.192.in-addr.arpa d.f.ip6.arpa corp home internal intranet lan local private test
+Apr 21 21:24:25 localhost systemd-resolved[708]: Defaulting to hostname 'linux'.
+Apr 21 21:24:25 localhost systemd[1]: Started Network Name Resolution.
+Apr 21 21:24:25 localhost systemd[1]: Reached target Network.
+Apr 21 21:24:25 localhost systemd[1]: Reached target Host and Network Name Lookups.
+Apr 21 21:24:25 localhost systemd[1]: Starting Network Time Service...
+Apr 21 21:24:25 localhost systemd[1]: Starting OpenBSD Secure Shell server...
+Apr 21 21:24:25 localhost ntpd[712]: ntpd 4.2.8p15@1.3728-o Wed Feb 16 17:13:02 UTC 2022 (1): Starting
+Apr 21 21:24:25 localhost ntpd[712]: Command line: /usr/sbin/ntpd -p /var/run/ntpd.pid -g -u 113:117
+Apr 21 21:24:25 localhost ntpd[712]: ----------------------------------------------------
+Apr 21 21:24:25 localhost ntpd[712]: ntp-4 is maintained by Network Time Foundation,
+Apr 21 21:24:25 localhost ntpd[712]: Inc. (NTF), a non-profit 501(c)(3) public-benefit
+Apr 21 21:24:25 localhost ntpd[712]: corporation.  Support and training for ntp-4 are
+Apr 21 21:24:25 localhost ntpd[712]: available at https://www.nwtime.org/support
+Apr 21 21:24:25 localhost ntpd[712]: ----------------------------------------------------
+Apr 21 21:24:25 localhost ntpd[719]: proto: precision = 0.086 usec (-23)
+Apr 21 21:24:25 localhost ntpd[719]: basedate set to 2022-02-04
+Apr 21 21:24:25 localhost ntpd[719]: gps base set to 2022-02-06 (week 2196)
+Apr 21 21:24:25 localhost audit[719]: AVC apparmor="DENIED" operation="open" profile="/usr/sbin/ntpd" name="/etc/ssl/openssl.cnf" pid=719 comm="ntpd" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+Apr 21 21:24:25 localhost ntpd[719]: Listen and drop on 0 v6wildcard [::]:123
+Apr 21 21:24:25 localhost ntpd[719]: Listen and drop on 1 v4wildcard 0.0.0.0:123
+Apr 21 21:24:25 localhost ntpd[719]: Listen normally on 2 lo 127.0.0.1:123
+Apr 21 21:24:25 localhost ntpd[719]: Listen normally on 3 eno1 128.110.217.163:123
+Apr 21 21:24:25 localhost ntpd[719]: Listen normally on 4 lo [::1]:123
+Apr 21 21:24:25 localhost ntpd[719]: bind(21) AF_INET6 fe80::1658:d0ff:fe58:1f92%2#123 flags 0x11 failed: Cannot assign requested address
+Apr 21 21:24:25 localhost ntpd[719]: unable to create socket on eno1 (5) for fe80::1658:d0ff:fe58:1f92%2#123
+Apr 21 21:24:25 localhost ntpd[719]: failed to init interface for address fe80::1658:d0ff:fe58:1f92%2
+Apr 21 21:24:25 localhost ntpd[719]: Listening on routing socket on fd #21 for interface updates
+Apr 21 21:24:25 localhost ntpd[719]: kernel reports TIME_ERROR: 0x41: Clock Unsynchronized
+Apr 21 21:24:25 localhost ntpd[719]: kernel reports TIME_ERROR: 0x41: Clock Unsynchronized
+Apr 21 21:24:25 localhost systemd[1]: Started Network Time Service.
+Apr 21 21:24:25 localhost sshd[721]: Server listening on 0.0.0.0 port 22.
+Apr 21 21:24:25 localhost sshd[721]: Server listening on :: port 22.
+Apr 21 21:24:25 localhost systemd[1]: Started OpenBSD Secure Shell server.
+Apr 21 21:24:26 localhost ntpd[719]: bind(24) AF_INET6 fe80::1658:d0ff:fe58:1f92%2#123 flags 0x11 failed: Cannot assign requested address
+Apr 21 21:24:26 localhost ntpd[719]: unable to create socket on eno1 (6) for fe80::1658:d0ff:fe58:1f92%2#123
+Apr 21 21:24:26 localhost ntpd[719]: failed to init interface for address fe80::1658:d0ff:fe58:1f92%2
+Apr 21 21:24:26 localhost systemd-networkd[677]: eno1: Gained IPv6LL
+Apr 21 21:24:26 localhost systemd[1]: Finished Wait for Network to be Configured.
+Apr 21 21:24:27 localhost systemd[1]: Reached target Network is Online.
+Apr 21 21:24:27 localhost systemd[1]: Started Crash log pusher.
+Apr 21 21:24:27 localhost systemd[1]: Started ntp-systemd-netif.service.
+Apr 21 21:24:27 localhost runner.sh[722]: [2026-04-22T03:24:27Z] git user: LH
+Apr 21 21:24:27 localhost systemd[1]: Condition check resulted in Login to default iSCSI targets being skipped.
+Apr 21 21:24:27 localhost systemd[1]: Reached target Preparation for Remote File Systems.
+Apr 21 21:24:27 localhost systemd[1]: Reached target Remote File Systems.
+Apr 21 21:24:27 localhost systemd[1]: Finished Availability of block devices.
+Apr 21 21:24:27 localhost systemd[1]: Started Regular background program processing daemon.
+Apr 21 21:24:27 localhost cron[734]: (CRON) INFO (pidfile fd = 3)
+Apr 21 21:24:27 localhost cron[734]: (CRON) INFO (Running @reboot jobs)
+Apr 21 21:24:27 localhost systemd[1]: Starting The Emulab publish/subscribe daemon...
+Apr 21 21:24:27 localhost pubsubd[735]: daemon starting (version 2, debug=0xd22, maxclients=1024, sockbufsize=64KB)
+Apr 21 21:24:27 localhost pubsubd[735]: Built 19-Jun-2024 by root@runner-kseey9dt-project-2299-concurrent-0:/builds/emulab/pubsub-deb/pubsub-0.99.1/debian/build
+Apr 21 21:24:27 localhost pubsubd[735]: listening on TCP port 16505
+Apr 21 21:24:27 localhost pubsubd[735]: Connecting to parent: event-server:16505
+Apr 21 21:24:27 localhost pubsubd[735]: Adding parent subscription: (EXPT == "lsm-PG0/Testnode1") && SCHEDULER == 0
+Apr 21 21:24:27 localhost pubsubd[736]: Using MSG_NOSIGNAL to block SIGPIPE
+Apr 21 21:24:27 localhost pubsubd[736]: 128.110.156.34: Client Connected: cport:16505 sock:5
+Apr 21 21:24:27 localhost systemd[1]: Starting Notify NFS peers of a restart...
+Apr 21 21:24:27 localhost sm-notify[737]: Version 2.6.1 starting
+Apr 21 21:24:27 localhost systemd[1]: Starting Permit User Sessions...
+Apr 21 21:24:27 localhost systemd[1]: Starting Testbed Services...
+Apr 21 21:24:27 localhost systemd[1]: Condition check resulted in Ubuntu Pro Background Auto Attach being skipped.
+Apr 21 21:24:27 localhost systemd[1]: ntp-systemd-netif.service: Deactivated successfully.
+Apr 21 21:24:27 localhost systemd[1]: Started The Emulab publish/subscribe daemon.
+Apr 21 21:24:27 localhost systemd[1]: Started Notify NFS peers of a restart.
+Apr 21 21:24:27 localhost systemd[1]: Finished Permit User Sessions.
+Apr 21 21:24:27 localhost systemd[1]: Started Serial Getty on ttyS0.
+Apr 21 21:24:27 localhost sudo[733]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log remote get-url origin
+Apr 21 21:24:27 localhost systemd[1]: Starting Set console scheme...
+Apr 21 21:24:27 localhost systemd[1]: Finished Set console scheme.
+Apr 21 21:24:27 localhost sudo[733]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
+Apr 21 21:24:27 localhost systemd[1]: Created slice Slice /system/getty.
+Apr 21 21:24:27 localhost sudo[733]: pam_unix(sudo:session): session closed for user LH
+Apr 21 21:24:27 localhost systemd[1]: Started Getty on tty1.
+Apr 21 21:24:27 localhost systemd[1]: Reached target Login Prompts.
+Apr 21 21:24:27 localhost sudo[757]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log remote get-url origin
+Apr 21 21:24:27 localhost sudo[757]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
+Apr 21 21:24:27 localhost sudo[757]: pam_unix(sudo:session): session closed for user LH
+Apr 21 21:24:27 localhost runner.sh[722]: [2026-04-22T03:24:27Z] origin remote: https://github.com/Linfeng-He/machine_log.git
+Apr 21 21:24:27 localhost sudo[763]:     root : PWD=/ ; USER=LH ; COMMAND=/usr/bin/env GIT_ASKPASS=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass.sh DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20024/bus XDG_RUNTIME_DIR=/run/user/20024 VSCODE_GIT_ASKPASS_NODE=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/node VSCODE_GIT_ASKPASS_MAIN=/users/LH/.vscode-server/cli/servers/Stable-560a9dba96f961efea7b1612916f89e5d5d4d679/server/extensions/git/dist/askpass-main.js VSCODE_GIT_IPC_HANDLE=/run/user/20024/vscode-git-9b1f7ab212.sock 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log push --dry-run origin main
+Apr 21 21:24:27 localhost sudo[763]: pam_unix(sudo:session): session opened for user LH(uid=20024) by (uid=0)
+Apr 21 21:24:27 localhost sh[739]: testbed config:
+Apr 21 21:24:27 localhost sh[754]: Checking manifest...
+Apr 21 21:24:27 localhost sh[754]: Running os dependent initialization script rc.linux
+Apr 21 21:24:27 localhost sh[754]: Informing Emulab Control that we have rebooted
+Apr 21 21:24:27 localhost sh[754]: Checking Testbed reservation status
+Apr 21 21:24:27 localhost sh[754]: Cleaning node; removing configuration files
+Apr 21 21:24:27 localhost sh[754]:   Allocated! lsm-PG0/Testnode1/node0
+Apr 21 21:24:27 localhost sh[754]: Setting up for SFS ...
+Apr 21 21:24:27 localhost sh[754]: Setting up Ping of Death
+Apr 21 21:24:27 localhost kernel: ipod: loading out-of-tree module taints kernel.
+Apr 21 21:24:27 localhost kernel: ipod: module verification failed: signature and/or required key missing - tainting kernel
+Apr 21 21:24:27 localhost kernel: initializing IPOD
+Apr 21 21:24:27 localhost sh[754]: Authenticated IPOD enabled from 128.110.156.4/255.255.255.255
+Apr 21 21:24:27 localhost sh[754]: Starting node health monitoring daemon
+Apr 21 21:24:27 localhost sh[754]: WARNING: health mointoring not supported on nodetype m510
+Apr 21 21:24:27 localhost sh[754]: Starting slothd usage detector
+Apr 21 21:24:27 localhost slothd[833]: Slothd started
+Apr 21 21:24:27 localhost slothd[833]: Built 30-Apr-2025 by root@runner-kseey9dt-project-2308-concurrent-1:/builds/emulab/emulab-client-deb/emulab-client-1.44.19/debian/build/sensors/slothd
+Apr 21 21:24:27 localhost sh[754]: Starting testbed update watchdog
+Apr 21 21:24:27 localhost usermod[862]: change user 'root' password
+Apr 21 21:24:28 localhost sudo[763]: pam_unix(sudo:session): session closed for user LH
+Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] push preflight failed for origin/main
+Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] push preflight: Missing or invalid credentials.
+Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] push preflight: Error: connect ENOENT /run/user/20024/vscode-git-9b1f7ab212.sock
+Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] push preflight:     at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] push preflight:   errno: -2,
+Apr 21 21:24:28 localhost sh[754]: Restarting pubsubd...
+Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] push preflight:   code: 'ENOENT',
+Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] push preflight:   syscall: 'connect',
+Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] push preflight:   address: '/run/user/20024/vscode-git-9b1f7ab212.sock'
+Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] push preflight: }
+Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] push preflight: Missing or invalid credentials.
+Apr 21 21:24:28 localhost systemd[1]: Stopping The Emulab publish/subscribe daemon...
+Apr 21 21:24:28 localhost pubsubd[736]: Caught a signal: 15
+Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] push preflight: Error: connect ENOENT /run/user/20024/vscode-git-9b1f7ab212.sock
+Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] push preflight:     at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] push preflight:   errno: -2,
+Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] push preflight:   code: 'ENOENT',
+Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] push preflight:   syscall: 'connect',
+Apr 21 21:24:28 localhost systemd[1]: pubsubd.service: Deactivated successfully.
+Apr 21 21:24:28 localhost systemd[1]: Stopped The Emulab publish/subscribe daemon.
+Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] push preflight:   address: '/run/user/20024/vscode-git-9b1f7ab212.sock'
+Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] push preflight: }
+Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] push preflight: remote: No anonymous write access.
+Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] push preflight: fatal: Authentication failed for 'https://github.com/Linfeng-He/machine_log.git/'
+Apr 21 21:24:28 localhost runner.sh[722]: [2026-04-22T03:24:28Z] github https remote detected; configure a credential helper/token or switch origin to ssh for unattended pushes
+Apr 21 21:24:28 localhost systemd[1]: Starting The Emulab publish/subscribe daemon...
+Apr 21 21:24:28 localhost pubsubd[900]: daemon starting (version 2, debug=0xd22, maxclients=1024, sockbufsize=64KB)
+Apr 21 21:24:28 localhost pubsubd[900]: Built 19-Jun-2024 by root@runner-kseey9dt-project-2299-concurrent-0:/builds/emulab/pubsub-deb/pubsub-0.99.1/debian/build
+Apr 21 21:24:28 localhost pubsubd[900]: listening on TCP port 16505
+Apr 21 21:24:28 localhost pubsubd[900]: Connecting to parent: event-server:16505
+Apr 21 21:24:28 localhost pubsubd[900]: Adding parent subscription: (EXPT == "lsm-PG0/Testnode1") && SCHEDULER == 0
+Apr 21 21:24:28 localhost pubsubd[903]: Using MSG_NOSIGNAL to block SIGPIPE
+Apr 21 21:24:28 localhost pubsubd[903]: 128.110.156.34: Client Connected: cport:16505 sock:5
+Apr 21 21:24:28 localhost systemd[1]: Started The Emulab publish/subscribe daemon.
+Apr 21 21:24:28 localhost sh[754]: Running config scripts
+Apr 21 21:24:28 localhost sh[754]: Checking manifest...
+Apr 21 21:24:28 localhost sh[754]: Checking Testbed localization configuration ...
+Apr 21 21:24:28 localhost sh[754]: Checking Testbed keys ...
+Apr 21 21:24:28 localhost sh[754]: Checking Testbed local storage configuration ...
+Apr 21 21:24:28 localhost sh[754]:   Checking 'disk0'...
+Apr 21 21:24:28 localhost sh[754]:   disk0: local disk at /dev/nvme0n1, exists
+Apr 21 21:24:28 localhost ntpd[719]: Listen normally on 7 eno1 [fe80::1658:d0ff:fe58:1f92%2]:123
+Apr 21 21:24:28 localhost ntpd[719]: new interface(s) found: waking up resolver
+Apr 21 21:24:29 localhost sh[754]: Mounting project and home directories ...
+Apr 21 21:24:29 localhost sh[754]:   Mount type is NFS (using TCP transport)
+Apr 21 21:24:29 localhost sh[754]:   Mounting ops.utah.cloudlab.us:/proj/lsm-PG0 on /proj/lsm-PG0
+Apr 21 21:24:29 localhost kernel: FS-Cache: Loaded
+Apr 21 21:24:29 localhost kernel: FS-Cache: Netfs 'nfs' registered for caching
+Apr 21 21:24:29 localhost sh[754]:   Mounting ops.utah.cloudlab.us:/share on /share
+Apr 21 21:24:29 localhost sh[754]: Checking Testbed Blobs configuration ...
+Apr 21 21:24:29 localhost sh[754]: Checking Testbed user accounts configuration ...
+Apr 21 21:24:29 localhost sh[754]: Checking Testbed route configuration ...
+Apr 21 21:24:29 localhost sh[754]: net.ipv4.conf.all.forwarding = 1
+Apr 21 21:24:29 localhost sh[754]: Checking Testbed tunnel configuration ...
