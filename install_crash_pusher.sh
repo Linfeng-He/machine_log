@@ -204,7 +204,7 @@ log_multiline() {
 run_git() {
   local -a preserved_env=()
 
-  for env_name in SSH_AUTH_SOCK GIT_ASKPASS SSH_ASKPASS DISPLAY WAYLAND_DISPLAY XAUTHORITY DBUS_SESSION_BUS_ADDRESS XDG_RUNTIME_DIR VSCODE_GIT_ASKPASS_NODE VSCODE_GIT_ASKPASS_MAIN VSCODE_GIT_ASKPASS_HANDLE ELECTRON_RUN_AS_NODE; do
+  for env_name in SSH_AUTH_SOCK GIT_ASKPASS SSH_ASKPASS DISPLAY WAYLAND_DISPLAY XAUTHORITY DBUS_SESSION_BUS_ADDRESS XDG_RUNTIME_DIR VSCODE_GIT_ASKPASS_NODE VSCODE_GIT_ASKPASS_MAIN VSCODE_GIT_IPC_HANDLE ELECTRON_RUN_AS_NODE; do
     if [[ -n "${!env_name:-}" ]]; then
       preserved_env+=("${env_name}=${!env_name}")
     fi
@@ -719,6 +719,93 @@ ensure_hw_inventory_tools() {
   apt-get install -y "${missing[@]}"
 }
 
+discover_repo_owner_user() {
+  local repo_dir="$1"
+  stat -c %U "$repo_dir" 2>/dev/null || true
+}
+
+discover_repo_owner_home() {
+  local owner_user="$1"
+  local passwd_line=""
+
+  [[ -n "$owner_user" ]] || return 0
+
+  passwd_line="$(getent passwd "$owner_user" 2>/dev/null || true)"
+  if [[ -z "$passwd_line" ]]; then
+    passwd_line="$(grep -E "^${owner_user}:" /etc/passwd 2>/dev/null | head -n 1 || true)"
+  fi
+
+  [[ -n "$passwd_line" ]] || return 0
+  printf '%s\n' "$passwd_line" | cut -d: -f6
+}
+
+add_preserved_git_env() {
+  local -n preserved_ref="$1"
+  local env_name
+
+  for env_name in SSH_AUTH_SOCK GIT_ASKPASS SSH_ASKPASS DISPLAY WAYLAND_DISPLAY XAUTHORITY DBUS_SESSION_BUS_ADDRESS XDG_RUNTIME_DIR VSCODE_GIT_ASKPASS_NODE VSCODE_GIT_ASKPASS_MAIN VSCODE_GIT_IPC_HANDLE ELECTRON_RUN_AS_NODE; do
+    if [[ -n "${!env_name:-}" ]]; then
+      preserved_ref+=("${env_name}=${!env_name}")
+    fi
+  done
+}
+
+run_repo_git() {
+  local repo_owner_user="$1"
+  shift
+  local -a preserved_env=()
+
+  add_preserved_git_env preserved_env
+
+  if [[ -n "$repo_owner_user" && "$repo_owner_user" != "$(id -un)" ]] && command -v sudo >/dev/null 2>&1; then
+    sudo -H -u "$repo_owner_user" env "${preserved_env[@]}" git "$@"
+    return $?
+  fi
+
+  env "${preserved_env[@]}" git "$@"
+}
+
+bootstrap_repo_https_credentials() {
+  local repo_dir="$1"
+  local repo_branch="$2"
+  local repo_owner_user="$3"
+  local repo_owner_home="$4"
+  local remote_url=""
+  local cred_tmp=""
+
+  remote_url="$(run_repo_git "$repo_owner_user" -C "$repo_dir" remote get-url origin 2>/dev/null || true)"
+  [[ "$remote_url" == https://github.com/* ]] || return 0
+
+  if run_repo_git "$repo_owner_user" -C "$repo_dir" push --dry-run origin "$repo_branch" >/dev/null 2>&1; then
+    return 0
+  fi
+
+  [[ -n "${GIT_ASKPASS:-}" ]] || return 0
+  [[ -n "${VSCODE_GIT_ASKPASS_NODE:-}" ]] || return 0
+  [[ -n "${VSCODE_GIT_ASKPASS_MAIN:-}" ]] || return 0
+  [[ -n "${VSCODE_GIT_IPC_HANDLE:-}" ]] || return 0
+
+  cred_tmp="$(mktemp)"
+  chmod 0600 "$cred_tmp"
+
+  if run_repo_git "$repo_owner_user" credential fill <<'EOF' >"$cred_tmp"
+protocol=https
+host=github.com
+
+EOF
+  then
+    if grep -q '^password=' "$cred_tmp"; then
+      run_repo_git "$repo_owner_user" config --global credential.helper store >/dev/null 2>&1 || true
+      run_repo_git "$repo_owner_user" credential approve <"$cred_tmp" || true
+      if [[ -n "$repo_owner_home" && -f "$repo_owner_home/.git-credentials" ]]; then
+        chmod 0600 "$repo_owner_home/.git-credentials" || true
+      fi
+    fi
+  fi
+
+  rm -f "$cred_tmp"
+}
+
 ROOT_UID=0
 SCRIPT_DIR="$(script_dir)"
 REPO_DIR="$(discover_repo_dir "$SCRIPT_DIR")"
@@ -829,6 +916,8 @@ fi
 [[ -d "$REPO_DIR" ]] || die "repo dir does not exist: $REPO_DIR"
 [[ -d "$REPO_DIR/.git" ]] || die "repo dir is not a git repo: $REPO_DIR"
 REPO_DIR="$(cd -- "$REPO_DIR" && pwd -P)"
+REPO_OWNER_USER="$(discover_repo_owner_user "$REPO_DIR")"
+REPO_OWNER_HOME="$(discover_repo_owner_home "$REPO_OWNER_USER")"
 
 if [[ -z "$REPO_BRANCH" ]]; then
   REPO_BRANCH="$(current_repo_branch "$REPO_DIR")"
@@ -866,13 +955,15 @@ CMMHI_CMD=$(quote_env_value "$CMMHI_CMD")
 CMMHI_TIMEOUT=$(quote_env_value "3")
 EOF
 
-for env_name in SSH_AUTH_SOCK GIT_ASKPASS SSH_ASKPASS DISPLAY WAYLAND_DISPLAY XAUTHORITY DBUS_SESSION_BUS_ADDRESS XDG_RUNTIME_DIR VSCODE_GIT_ASKPASS_NODE VSCODE_GIT_ASKPASS_MAIN VSCODE_GIT_ASKPASS_HANDLE ELECTRON_RUN_AS_NODE; do
+for env_name in SSH_AUTH_SOCK GIT_ASKPASS SSH_ASKPASS DISPLAY WAYLAND_DISPLAY XAUTHORITY DBUS_SESSION_BUS_ADDRESS XDG_RUNTIME_DIR VSCODE_GIT_ASKPASS_NODE VSCODE_GIT_ASKPASS_MAIN VSCODE_GIT_IPC_HANDLE ELECTRON_RUN_AS_NODE; do
   if [[ -n "${!env_name:-}" ]]; then
     printf '%s=%s\n' "$env_name" "$(quote_env_value "${!env_name}")" >>"$ENV_PATH"
   fi
 done
 
 chmod 0600 "$ENV_PATH"
+
+bootstrap_repo_https_credentials "$REPO_DIR" "$REPO_BRANCH" "$REPO_OWNER_USER" "$REPO_OWNER_HOME"
 
 if [[ "$INSTALL_SAMPLER" -eq 1 ]]; then
   curl -fsSL "$SAMPLER_URL" -o "$SAMPLER_PATH"
