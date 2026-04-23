@@ -1,70 +1,5 @@
-===== journal snapshot host=memexpand boot_started_utc=20260423T182916Z boot_id=230a16fb-d4d9-4460-b551-e1f54133a8d7 captured_utc=20260423T184542Z =====
+===== journal snapshot host=memexpand boot_started_utc=20260423T182916Z boot_id=230a16fb-d4d9-4460-b551-e1f54133a8d7 captured_utc=20260423T184617Z =====
 
-Apr 23 14:34:49 memexpand.cs.rutgers.edu anacron[148688]: Normal exit (0 jobs run)
-Apr 23 14:34:49 memexpand.cs.rutgers.edu systemd[1]: anacron.service: Deactivated successfully.
-Apr 23 14:34:49 memexpand.cs.rutgers.edu audispd[4077]: type=SERVICE_STOP msg=audit(1776969289.262:652): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=anacron comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success' UID="root" AUID="unset"
-Apr 23 14:35:00 memexpand.cs.rutgers.edu sudo[152796]: telegraf : PWD=/ ; USER=root ; COMMAND=/usr/bin/ipmitool sdr
-Apr 23 14:35:00 memexpand.cs.rutgers.edu audispd[4077]: type=USER_ACCT msg=audit(1776969300.006:653): pid=152796 uid=995 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="telegraf" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success' UID="telegraf" AUID="unset"
-Apr 23 14:35:00 memexpand.cs.rutgers.edu audispd[4077]: type=USER_CMD msg=audit(1776969300.007:654): pid=152796 uid=995 auid=4294967295 ses=4294967295 subj=unconfined msg='cwd="/" cmd=2F7573722F62696E2F69706D69746F6F6C20736472 exe="/usr/bin/sudo" terminal=? res=success' UID="telegraf" AUID="unset"
-Apr 23 14:35:00 memexpand.cs.rutgers.edu audispd[4077]: type=CRED_REFR msg=audit(1776969300.007:655): pid=152796 uid=995 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success' UID="telegraf" AUID="unset"
-Apr 23 14:35:00 memexpand.cs.rutgers.edu sudo[152796]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=995)
-Apr 23 14:35:00 memexpand.cs.rutgers.edu sudo[152796]: pam_succeed_if(sudo:session): requirement "service in cron:atd" not met by user "root"
-Apr 23 14:35:00 memexpand.cs.rutgers.edu sudo[152796]: pam_unix(sudo:session): session closed for user root
-Apr 23 14:35:00 memexpand.cs.rutgers.edu sudo[152796]: pam_succeed_if(sudo:session): requirement "service in cron:atd" not met by user "root"
-Apr 23 14:35:01 memexpand.cs.rutgers.edu audispd[4077]: type=USER_ACCT msg=audit(1776969301.597:656): pid=153384 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success' UID="root" AUID="unset"
-Apr 23 14:35:01 memexpand.cs.rutgers.edu audispd[4077]: type=USER_ACCT msg=audit(1776969301.597:657): pid=153383 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success' UID="root" AUID="unset"
-Apr 23 14:35:01 memexpand.cs.rutgers.edu CRON[153384]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
-Apr 23 14:35:01 memexpand.cs.rutgers.edu CRON[153383]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
-Apr 23 14:35:01 memexpand.cs.rutgers.edu CRON[153384]: pam_succeed_if(cron:session): requirement "service in cron:atd" was met by user "root"
-Apr 23 14:35:01 memexpand.cs.rutgers.edu CRON[153383]: pam_succeed_if(cron:session): requirement "service in cron:atd" was met by user "root"
-Apr 23 14:35:01 memexpand.cs.rutgers.edu CRON[153384]: pam_reg_cc(cron:session): registering ccname (null)
-Apr 23 14:35:01 memexpand.cs.rutgers.edu CRON[153383]: pam_reg_cc(cron:session): registering ccname (null)
-Apr 23 14:35:01 memexpand.cs.rutgers.edu CRON[153395]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
-Apr 23 14:35:01 memexpand.cs.rutgers.edu audispd[4077]: type=CRED_REFR msg=audit(1776969301.628:658): pid=153395 uid=0 auid=0 ses=19 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success' UID="root" AUID="root"
-Apr 23 14:35:01 memexpand.cs.rutgers.edu CRON[153396]: (root) CMD (/usr/local/sbin/thermalwatch)
-Apr 23 14:35:01 memexpand.cs.rutgers.edu audispd[4077]: type=CRED_REFR msg=audit(1776969301.629:659): pid=153396 uid=0 auid=0 ses=18 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success' UID="root" AUID="root"
-Apr 23 14:35:01 memexpand.cs.rutgers.edu CRON[153383]: pam_unix(cron:session): session closed for user root
-Apr 23 14:35:01 memexpand.cs.rutgers.edu CRON[153383]: pam_succeed_if(cron:session): requirement "service in cron:atd" was met by user "root"
-Apr 23 14:35:01 memexpand.cs.rutgers.edu CRON[153384]: pam_unix(cron:session): session closed for user root
-Apr 23 14:35:01 memexpand.cs.rutgers.edu CRON[153384]: pam_succeed_if(cron:session): requirement "service in cron:atd" was met by user "root"
-Apr 23 14:35:30 memexpand.cs.rutgers.edu sudo[165115]: telegraf : PWD=/ ; USER=root ; COMMAND=/usr/bin/ipmitool sdr
-Apr 23 14:35:30 memexpand.cs.rutgers.edu audispd[4077]: type=USER_ACCT msg=audit(1776969330.008:660): pid=165115 uid=995 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="telegraf" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success' UID="telegraf" AUID="unset"
-Apr 23 14:35:30 memexpand.cs.rutgers.edu audispd[4077]: type=USER_CMD msg=audit(1776969330.008:661): pid=165115 uid=995 auid=4294967295 ses=4294967295 subj=unconfined msg='cwd="/" cmd=2F7573722F62696E2F69706D69746F6F6C20736472 exe="/usr/bin/sudo" terminal=? res=success' UID="telegraf" AUID="unset"
-Apr 23 14:35:30 memexpand.cs.rutgers.edu audispd[4077]: type=CRED_REFR msg=audit(1776969330.008:662): pid=165115 uid=995 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success' UID="telegraf" AUID="unset"
-Apr 23 14:35:30 memexpand.cs.rutgers.edu sudo[165115]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=995)
-Apr 23 14:35:30 memexpand.cs.rutgers.edu sudo[165115]: pam_succeed_if(sudo:session): requirement "service in cron:atd" not met by user "root"
-Apr 23 14:35:30 memexpand.cs.rutgers.edu sudo[165115]: pam_unix(sudo:session): session closed for user root
-Apr 23 14:35:30 memexpand.cs.rutgers.edu sudo[165115]: pam_succeed_if(sudo:session): requirement "service in cron:atd" not met by user "root"
-Apr 23 14:36:00 memexpand.cs.rutgers.edu sudo[177406]: telegraf : PWD=/ ; USER=root ; COMMAND=/usr/bin/ipmitool sdr
-Apr 23 14:36:00 memexpand.cs.rutgers.edu audispd[4077]: type=USER_ACCT msg=audit(1776969360.008:663): pid=177406 uid=995 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="telegraf" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success' UID="telegraf" AUID="unset"
-Apr 23 14:36:00 memexpand.cs.rutgers.edu audispd[4077]: type=USER_CMD msg=audit(1776969360.008:664): pid=177406 uid=995 auid=4294967295 ses=4294967295 subj=unconfined msg='cwd="/" cmd=2F7573722F62696E2F69706D69746F6F6C20736472 exe="/usr/bin/sudo" terminal=? res=success' UID="telegraf" AUID="unset"
-Apr 23 14:36:00 memexpand.cs.rutgers.edu audispd[4077]: type=CRED_REFR msg=audit(1776969360.008:665): pid=177406 uid=995 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success' UID="telegraf" AUID="unset"
-Apr 23 14:36:00 memexpand.cs.rutgers.edu sudo[177406]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=995)
-Apr 23 14:36:00 memexpand.cs.rutgers.edu sudo[177406]: pam_succeed_if(sudo:session): requirement "service in cron:atd" not met by user "root"
-Apr 23 14:36:00 memexpand.cs.rutgers.edu sudo[177406]: pam_unix(sudo:session): session closed for user root
-Apr 23 14:36:00 memexpand.cs.rutgers.edu sudo[177406]: pam_succeed_if(sudo:session): requirement "service in cron:atd" not met by user "root"
-Apr 23 14:36:01 memexpand.cs.rutgers.edu audispd[4077]: type=USER_ACCT msg=audit(1776969361.723:666): pid=178003 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success' UID="root" AUID="unset"
-Apr 23 14:36:01 memexpand.cs.rutgers.edu audispd[4077]: type=USER_ACCT msg=audit(1776969361.723:667): pid=178004 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success' UID="root" AUID="unset"
-Apr 23 14:36:01 memexpand.cs.rutgers.edu CRON[178003]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
-Apr 23 14:36:01 memexpand.cs.rutgers.edu CRON[178004]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
-Apr 23 14:36:01 memexpand.cs.rutgers.edu CRON[178003]: pam_succeed_if(cron:session): requirement "service in cron:atd" was met by user "root"
-Apr 23 14:36:01 memexpand.cs.rutgers.edu CRON[178004]: pam_succeed_if(cron:session): requirement "service in cron:atd" was met by user "root"
-Apr 23 14:36:01 memexpand.cs.rutgers.edu CRON[178004]: pam_reg_cc(cron:session): registering ccname (null)
-Apr 23 14:36:01 memexpand.cs.rutgers.edu CRON[178003]: pam_reg_cc(cron:session): registering ccname (null)
-Apr 23 14:36:01 memexpand.cs.rutgers.edu CRON[178029]: (root) CMD (/usr/local/sbin/thermalwatch)
-Apr 23 14:36:01 memexpand.cs.rutgers.edu audispd[4077]: type=CRED_REFR msg=audit(1776969361.748:668): pid=178029 uid=0 auid=0 ses=20 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success' UID="root" AUID="root"
-Apr 23 14:36:01 memexpand.cs.rutgers.edu CRON[178030]: (root) CMD (/usr/sbin/renewd.sh > /var/log/renewd.log 2>&1)
-Apr 23 14:36:01 memexpand.cs.rutgers.edu audispd[4077]: type=CRED_REFR msg=audit(1776969361.749:669): pid=178030 uid=0 auid=0 ses=21 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success' UID="root" AUID="root"
-Apr 23 14:36:01 memexpand.cs.rutgers.edu CRON[178003]: pam_unix(cron:session): session closed for user root
-Apr 23 14:36:01 memexpand.cs.rutgers.edu CRON[178003]: pam_succeed_if(cron:session): requirement "service in cron:atd" was met by user "root"
-Apr 23 14:36:02 memexpand.cs.rutgers.edu sudo[178059]:     root : PWD=/root ; USER=thayes ; COMMAND=/usr/bin/klist -l
-Apr 23 14:36:02 memexpand.cs.rutgers.edu audispd[4077]: type=USER_ACCT msg=audit(1776969362.053:670): pid=178059 uid=0 auid=0 ses=21 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success' UID="root" AUID="root"
-Apr 23 14:36:02 memexpand.cs.rutgers.edu audispd[4077]: type=USER_CMD msg=audit(1776969362.053:671): pid=178059 uid=0 auid=0 ses=21 subj=unconfined msg='cwd="/root" cmd=6B6C697374202D6C exe="/usr/bin/sudo" terminal=? res=success' UID="root" AUID="root"
-Apr 23 14:36:02 memexpand.cs.rutgers.edu audispd[4077]: type=CRED_REFR msg=audit(1776969362.053:672): pid=178059 uid=0 auid=0 ses=21 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="thayes" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success' UID="root" AUID="root"
-Apr 23 14:36:02 memexpand.cs.rutgers.edu sudo[178059]: pam_unix(sudo:session): session opened for user thayes(uid=1257) by root(uid=0)
-Apr 23 14:36:02 memexpand.cs.rutgers.edu sudo[178059]: pam_succeed_if(sudo:session): requirement "service in cron:atd" not met by user "thayes"
-Apr 23 14:36:02 memexpand.cs.rutgers.edu sudo[178059]: pam_unix(sudo:session): session closed for user thayes
-Apr 23 14:36:02 memexpand.cs.rutgers.edu sudo[178059]: pam_succeed_if(sudo:session): requirement "service in cron:atd" not met by user "thayes"
 Apr 23 14:36:02 memexpand.cs.rutgers.edu audispd[4077]: type=USER_ACCT msg=audit(1776969362.068:673): pid=178069 uid=0 auid=0 ses=21 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success' UID="root" AUID="root"
 Apr 23 14:36:02 memexpand.cs.rutgers.edu sudo[178069]:     root : PWD=/root ; USER=lh818 ; COMMAND=/usr/bin/klist -l
 Apr 23 14:36:02 memexpand.cs.rutgers.edu audispd[4077]: type=USER_CMD msg=audit(1776969362.068:674): pid=178069 uid=0 auid=0 ses=21 subj=unconfined msg='cwd="/root" cmd=6B6C697374202D6C exe="/usr/bin/sudo" terminal=? res=success' UID="root" AUID="root"
@@ -400,3 +335,68 @@ Apr 23 14:45:30 memexpand.cs.rutgers.edu sudo[408969]: pam_unix(sudo:session): s
 Apr 23 14:45:30 memexpand.cs.rutgers.edu sudo[408969]: pam_succeed_if(sudo:session): requirement "service in cron:atd" not met by user "root"
 Apr 23 14:45:30 memexpand.cs.rutgers.edu sudo[408969]: pam_unix(sudo:session): session closed for user root
 Apr 23 14:45:30 memexpand.cs.rutgers.edu sudo[408969]: pam_succeed_if(sudo:session): requirement "service in cron:atd" not met by user "root"
+Apr 23 14:46:00 memexpand.cs.rutgers.edu sudo[420961]: telegraf : PWD=/ ; USER=root ; COMMAND=/usr/bin/ipmitool sdr
+Apr 23 14:46:00 memexpand.cs.rutgers.edu audispd[4077]: type=USER_ACCT msg=audit(1776969960.008:786): pid=420961 uid=995 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="telegraf" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success' UID="telegraf" AUID="unset"
+Apr 23 14:46:00 memexpand.cs.rutgers.edu audispd[4077]: type=USER_CMD msg=audit(1776969960.008:787): pid=420961 uid=995 auid=4294967295 ses=4294967295 subj=unconfined msg='cwd="/" cmd=2F7573722F62696E2F69706D69746F6F6C20736472 exe="/usr/bin/sudo" terminal=? res=success' UID="telegraf" AUID="unset"
+Apr 23 14:46:00 memexpand.cs.rutgers.edu audispd[4077]: type=CRED_REFR msg=audit(1776969960.009:788): pid=420961 uid=995 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success' UID="telegraf" AUID="unset"
+Apr 23 14:46:00 memexpand.cs.rutgers.edu sudo[420961]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=995)
+Apr 23 14:46:00 memexpand.cs.rutgers.edu sudo[420961]: pam_succeed_if(sudo:session): requirement "service in cron:atd" not met by user "root"
+Apr 23 14:46:00 memexpand.cs.rutgers.edu sudo[420961]: pam_unix(sudo:session): session closed for user root
+Apr 23 14:46:00 memexpand.cs.rutgers.edu sudo[420961]: pam_succeed_if(sudo:session): requirement "service in cron:atd" not met by user "root"
+Apr 23 14:46:01 memexpand.cs.rutgers.edu audispd[4077]: type=USER_ACCT msg=audit(1776969961.348:789): pid=421558 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success' UID="root" AUID="unset"
+Apr 23 14:46:01 memexpand.cs.rutgers.edu audispd[4077]: type=USER_ACCT msg=audit(1776969961.348:790): pid=421559 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success' UID="root" AUID="unset"
+Apr 23 14:46:01 memexpand.cs.rutgers.edu CRON[421558]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Apr 23 14:46:01 memexpand.cs.rutgers.edu CRON[421559]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Apr 23 14:46:01 memexpand.cs.rutgers.edu CRON[421558]: pam_succeed_if(cron:session): requirement "service in cron:atd" was met by user "root"
+Apr 23 14:46:01 memexpand.cs.rutgers.edu CRON[421559]: pam_succeed_if(cron:session): requirement "service in cron:atd" was met by user "root"
+Apr 23 14:46:01 memexpand.cs.rutgers.edu CRON[421558]: pam_reg_cc(cron:session): registering ccname (null)
+Apr 23 14:46:01 memexpand.cs.rutgers.edu CRON[421559]: pam_reg_cc(cron:session): registering ccname (null)
+Apr 23 14:46:01 memexpand.cs.rutgers.edu CRON[421570]: (root) CMD (/usr/sbin/renewd.sh > /var/log/renewd.log 2>&1)
+Apr 23 14:46:01 memexpand.cs.rutgers.edu audispd[4077]: type=CRED_REFR msg=audit(1776969961.374:791): pid=421570 uid=0 auid=0 ses=34 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success' UID="root" AUID="root"
+Apr 23 14:46:01 memexpand.cs.rutgers.edu CRON[421571]: (root) CMD (/usr/local/sbin/thermalwatch)
+Apr 23 14:46:01 memexpand.cs.rutgers.edu audispd[4077]: type=CRED_REFR msg=audit(1776969961.375:792): pid=421571 uid=0 auid=0 ses=33 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success' UID="root" AUID="root"
+Apr 23 14:46:01 memexpand.cs.rutgers.edu CRON[421558]: pam_unix(cron:session): session closed for user root
+Apr 23 14:46:01 memexpand.cs.rutgers.edu CRON[421558]: pam_succeed_if(cron:session): requirement "service in cron:atd" was met by user "root"
+Apr 23 14:46:01 memexpand.cs.rutgers.edu audispd[4077]: type=USER_ACCT msg=audit(1776969961.641:793): pid=421592 uid=0 auid=0 ses=34 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success' UID="root" AUID="root"
+Apr 23 14:46:01 memexpand.cs.rutgers.edu sudo[421592]:     root : PWD=/root ; USER=thayes ; COMMAND=/usr/bin/klist -l
+Apr 23 14:46:01 memexpand.cs.rutgers.edu audispd[4077]: type=USER_CMD msg=audit(1776969961.641:794): pid=421592 uid=0 auid=0 ses=34 subj=unconfined msg='cwd="/root" cmd=6B6C697374202D6C exe="/usr/bin/sudo" terminal=? res=success' UID="root" AUID="root"
+Apr 23 14:46:01 memexpand.cs.rutgers.edu audispd[4077]: type=CRED_REFR msg=audit(1776969961.641:795): pid=421592 uid=0 auid=0 ses=34 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="thayes" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success' UID="root" AUID="root"
+Apr 23 14:46:01 memexpand.cs.rutgers.edu sudo[421592]: pam_unix(sudo:session): session opened for user thayes(uid=1257) by root(uid=0)
+Apr 23 14:46:01 memexpand.cs.rutgers.edu sudo[421592]: pam_succeed_if(sudo:session): requirement "service in cron:atd" not met by user "thayes"
+Apr 23 14:46:01 memexpand.cs.rutgers.edu sudo[421592]: pam_unix(sudo:session): session closed for user thayes
+Apr 23 14:46:01 memexpand.cs.rutgers.edu sudo[421592]: pam_succeed_if(sudo:session): requirement "service in cron:atd" not met by user "thayes"
+Apr 23 14:46:01 memexpand.cs.rutgers.edu audispd[4077]: type=USER_ACCT msg=audit(1776969961.661:796): pid=421606 uid=0 auid=0 ses=34 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success' UID="root" AUID="root"
+Apr 23 14:46:01 memexpand.cs.rutgers.edu sudo[421606]:     root : PWD=/root ; USER=lh818 ; COMMAND=/usr/bin/klist -l
+Apr 23 14:46:01 memexpand.cs.rutgers.edu audispd[4077]: type=USER_CMD msg=audit(1776969961.661:797): pid=421606 uid=0 auid=0 ses=34 subj=unconfined msg='cwd="/root" cmd=6B6C697374202D6C exe="/usr/bin/sudo" terminal=? res=success' UID="root" AUID="root"
+Apr 23 14:46:01 memexpand.cs.rutgers.edu audispd[4077]: type=CRED_REFR msg=audit(1776969961.661:798): pid=421606 uid=0 auid=0 ses=34 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="lh818" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success' UID="root" AUID="root"
+Apr 23 14:46:01 memexpand.cs.rutgers.edu sudo[421606]: pam_unix(sudo:session): session opened for user lh818(uid=1905239618) by root(uid=0)
+Apr 23 14:46:01 memexpand.cs.rutgers.edu sudo[421606]: pam_succeed_if(sudo:session): requirement "service in cron:atd" not met by user "lh818"
+Apr 23 14:46:01 memexpand.cs.rutgers.edu sudo[421606]: pam_unix(sudo:session): session closed for user lh818
+Apr 23 14:46:01 memexpand.cs.rutgers.edu sudo[421606]: pam_succeed_if(sudo:session): requirement "service in cron:atd" not met by user "lh818"
+Apr 23 14:46:01 memexpand.cs.rutgers.edu audispd[4077]: type=USER_ACCT msg=audit(1776969961.673:799): pid=421622 uid=0 auid=0 ses=34 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success' UID="root" AUID="root"
+Apr 23 14:46:01 memexpand.cs.rutgers.edu sudo[421622]:     root : PWD=/root ; USER=lh818 ; COMMAND=/usr/bin/klist -c KCM:1905239618:44599
+Apr 23 14:46:01 memexpand.cs.rutgers.edu audispd[4077]: type=USER_CMD msg=audit(1776969961.674:800): pid=421622 uid=0 auid=0 ses=34 subj=unconfined msg='cwd="/root" cmd=6B6C697374202D63204B434D3A313930353233393631383A3434353939 exe="/usr/bin/sudo" terminal=? res=success' UID="root" AUID="root"
+Apr 23 14:46:01 memexpand.cs.rutgers.edu audispd[4077]: type=CRED_REFR msg=audit(1776969961.674:801): pid=421622 uid=0 auid=0 ses=34 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="lh818" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success' UID="root" AUID="root"
+Apr 23 14:46:01 memexpand.cs.rutgers.edu sudo[421622]: pam_unix(sudo:session): session opened for user lh818(uid=1905239618) by root(uid=0)
+Apr 23 14:46:01 memexpand.cs.rutgers.edu sudo[421622]: pam_succeed_if(sudo:session): requirement "service in cron:atd" not met by user "lh818"
+Apr 23 14:46:01 memexpand.cs.rutgers.edu sudo[421622]: pam_unix(sudo:session): session closed for user lh818
+Apr 23 14:46:01 memexpand.cs.rutgers.edu sudo[421622]: pam_succeed_if(sudo:session): requirement "service in cron:atd" not met by user "lh818"
+Apr 23 14:46:01 memexpand.cs.rutgers.edu audispd[4077]: type=USER_ACCT msg=audit(1776969961.691:802): pid=421642 uid=0 auid=0 ses=34 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success' UID="root" AUID="root"
+Apr 23 14:46:01 memexpand.cs.rutgers.edu sudo[421642]:     root : PWD=/root ; USER=lh818 ; COMMAND=/usr/bin/klist -c KCM:1905239618:44599
+Apr 23 14:46:01 memexpand.cs.rutgers.edu audispd[4077]: type=USER_CMD msg=audit(1776969961.692:803): pid=421642 uid=0 auid=0 ses=34 subj=unconfined msg='cwd="/root" cmd=6B6C697374202D63204B434D3A313930353233393631383A3434353939 exe="/usr/bin/sudo" terminal=? res=success' UID="root" AUID="root"
+Apr 23 14:46:01 memexpand.cs.rutgers.edu audispd[4077]: type=CRED_REFR msg=audit(1776969961.692:804): pid=421642 uid=0 auid=0 ses=34 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="lh818" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success' UID="root" AUID="root"
+Apr 23 14:46:01 memexpand.cs.rutgers.edu sudo[421642]: pam_unix(sudo:session): session opened for user lh818(uid=1905239618) by root(uid=0)
+Apr 23 14:46:01 memexpand.cs.rutgers.edu sudo[421642]: pam_succeed_if(sudo:session): requirement "service in cron:atd" not met by user "lh818"
+Apr 23 14:46:01 memexpand.cs.rutgers.edu sudo[421642]: pam_unix(sudo:session): session closed for user lh818
+Apr 23 14:46:01 memexpand.cs.rutgers.edu sudo[421642]: pam_succeed_if(sudo:session): requirement "service in cron:atd" not met by user "lh818"
+Apr 23 14:46:01 memexpand.cs.rutgers.edu audispd[4077]: type=USER_ACCT msg=audit(1776969961.704:805): pid=421658 uid=0 auid=0 ses=34 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success' UID="root" AUID="root"
+Apr 23 14:46:01 memexpand.cs.rutgers.edu sudo[421658]:     root : PWD=/root ; USER=lh818 ; COMMAND=/usr/bin/klist -c KCM:1905239618:44599
+Apr 23 14:46:01 memexpand.cs.rutgers.edu audispd[4077]: type=USER_CMD msg=audit(1776969961.704:806): pid=421658 uid=0 auid=0 ses=34 subj=unconfined msg='cwd="/root" cmd=6B6C697374202D63204B434D3A313930353233393631383A3434353939 exe="/usr/bin/sudo" terminal=? res=success' UID="root" AUID="root"
+Apr 23 14:46:01 memexpand.cs.rutgers.edu audispd[4077]: type=CRED_REFR msg=audit(1776969961.704:807): pid=421658 uid=0 auid=0 ses=34 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="lh818" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success' UID="root" AUID="root"
+Apr 23 14:46:01 memexpand.cs.rutgers.edu sudo[421658]: pam_unix(sudo:session): session opened for user lh818(uid=1905239618) by root(uid=0)
+Apr 23 14:46:01 memexpand.cs.rutgers.edu sudo[421658]: pam_succeed_if(sudo:session): requirement "service in cron:atd" not met by user "lh818"
+Apr 23 14:46:01 memexpand.cs.rutgers.edu sudo[421658]: pam_unix(sudo:session): session closed for user lh818
+Apr 23 14:46:01 memexpand.cs.rutgers.edu sudo[421658]: pam_succeed_if(sudo:session): requirement "service in cron:atd" not met by user "lh818"
+Apr 23 14:46:01 memexpand.cs.rutgers.edu renewd[421689]: not time to renew yet KCM:1905239618:44599
+Apr 23 14:46:01 memexpand.cs.rutgers.edu CRON[421559]: pam_unix(cron:session): session closed for user root
+Apr 23 14:46:01 memexpand.cs.rutgers.edu CRON[421559]: pam_succeed_if(cron:session): requirement "service in cron:atd" was met by user "root"
