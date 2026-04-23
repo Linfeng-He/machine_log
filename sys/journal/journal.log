@@ -1,13 +1,5 @@
-===== journal snapshot host=memexpand boot_started_utc=20260423T182916Z boot_id=230a16fb-d4d9-4460-b551-e1f54133a8d7 captured_utc=20260423T191009Z =====
+===== journal snapshot host=memexpand boot_started_utc=20260423T182916Z boot_id=230a16fb-d4d9-4460-b551-e1f54133a8d7 captured_utc=20260423T191047Z =====
 
-Apr 23 15:01:37 memexpand.cs.rutgers.edu audispd[4077]: type=SYSCALL msg=audit(1776970897.070:1268): arch=c000003e syscall=157 success=no exit=-1 a0=18 a1=0 a2=0 a3=0 items=0 ppid=811638 pid=811639 auid=1905239618 uid=1905239618 gid=1905239618 euid=1905239618 suid=1905239618 fsuid=1905239618 egid=1905239618 sgid=1905239618 fsgid=1905239618 tty=(none) ses=59 comm="bwrap" exe="/usr/bin/bwrap" subj=unprivileged_userns key=(null) ARCH=x86_64 SYSCALL=prctl AUID="lh818" UID="lh818" GID="lh818" EUID="lh818" SUID="lh818" FSUID="lh818" EGID="lh818" SGID="lh818" FSGID="lh818"
-Apr 23 15:01:37 memexpand.cs.rutgers.edu audispd[4077]: type=AVC msg=audit(1776970897.070:1269): apparmor="DENIED" operation="capable" class="cap" profile="unprivileged_userns" pid=811639 comm="bwrap" capability=12  capname="net_admin"
-Apr 23 15:01:37 memexpand.cs.rutgers.edu audispd[4077]: type=SYSCALL msg=audit(1776970897.070:1269): arch=c000003e syscall=44 success=yes exit=40 a0=4 a1=7ffe97ba2ca0 a2=28 a3=0 items=0 ppid=811638 pid=811639 auid=1905239618 uid=1905239618 gid=1905239618 euid=1905239618 suid=1905239618 fsuid=1905239618 egid=1905239618 sgid=1905239618 fsgid=1905239618 tty=(none) ses=59 comm="bwrap" exe="/usr/bin/bwrap" subj=unprivileged_userns key=(null) ARCH=x86_64 SYSCALL=sendto AUID="lh818" UID="lh818" GID="lh818" EUID="lh818" SUID="lh818" FSUID="lh818" EGID="lh818" SGID="lh818" FSGID="lh818"
-Apr 23 15:01:49 memexpand.cs.rutgers.edu systemd[1]: session-38.scope: Deactivated successfully.
-Apr 23 15:01:49 memexpand.cs.rutgers.edu systemd[1]: session-38.scope: Consumed 2.591s CPU time.
-Apr 23 15:01:49 memexpand.cs.rutgers.edu systemd-logind[4319]: Removed session 38.
-Apr 23 15:01:51 memexpand.cs.rutgers.edu automount[4655]: key "pnpm-lock.yaml" not found in map source(s).
-Apr 23 15:01:51 memexpand.cs.rutgers.edu automount[4655]: key "package.json" not found in map source(s).
 Apr 23 15:02:00 memexpand.cs.rutgers.edu sudo[821350]: telegraf : PWD=/ ; USER=root ; COMMAND=/usr/bin/ipmitool sdr
 Apr 23 15:02:00 memexpand.cs.rutgers.edu audispd[4077]: type=USER_ACCT msg=audit(1776970920.007:1270): pid=821350 uid=995 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="telegraf" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success' UID="telegraf" AUID="unset"
 Apr 23 15:02:00 memexpand.cs.rutgers.edu audispd[4077]: type=USER_CMD msg=audit(1776970920.008:1271): pid=821350 uid=995 auid=4294967295 ses=4294967295 subj=unconfined msg='cwd="/" cmd=2F7573722F62696E2F69706D69746F6F6C20736472 exe="/usr/bin/sudo" terminal=? res=success' UID="telegraf" AUID="unset"
@@ -400,3 +392,11 @@ Apr 23 15:10:01 memexpand.cs.rutgers.edu CRON[1016473]: (root) CMD (/usr/local/s
 Apr 23 15:10:01 memexpand.cs.rutgers.edu audispd[4077]: type=CRED_REFR msg=audit(1776971401.104:1406): pid=1016473 uid=0 auid=0 ses=70 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success' UID="root" AUID="root"
 Apr 23 15:10:01 memexpand.cs.rutgers.edu CRON[1016448]: pam_unix(cron:session): session closed for user root
 Apr 23 15:10:01 memexpand.cs.rutgers.edu CRON[1016448]: pam_succeed_if(cron:session): requirement "service in cron:atd" was met by user "root"
+Apr 23 15:10:30 memexpand.cs.rutgers.edu sudo[1028187]: telegraf : PWD=/ ; USER=root ; COMMAND=/usr/bin/ipmitool sdr
+Apr 23 15:10:30 memexpand.cs.rutgers.edu audispd[4077]: type=USER_ACCT msg=audit(1776971430.008:1407): pid=1028187 uid=995 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="telegraf" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success' UID="telegraf" AUID="unset"
+Apr 23 15:10:30 memexpand.cs.rutgers.edu audispd[4077]: type=USER_CMD msg=audit(1776971430.008:1408): pid=1028187 uid=995 auid=4294967295 ses=4294967295 subj=unconfined msg='cwd="/" cmd=2F7573722F62696E2F69706D69746F6F6C20736472 exe="/usr/bin/sudo" terminal=? res=success' UID="telegraf" AUID="unset"
+Apr 23 15:10:30 memexpand.cs.rutgers.edu audispd[4077]: type=CRED_REFR msg=audit(1776971430.008:1409): pid=1028187 uid=995 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success' UID="telegraf" AUID="unset"
+Apr 23 15:10:30 memexpand.cs.rutgers.edu sudo[1028187]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=995)
+Apr 23 15:10:30 memexpand.cs.rutgers.edu sudo[1028187]: pam_succeed_if(sudo:session): requirement "service in cron:atd" not met by user "root"
+Apr 23 15:10:30 memexpand.cs.rutgers.edu sudo[1028187]: pam_unix(sudo:session): session closed for user root
+Apr 23 15:10:30 memexpand.cs.rutgers.edu sudo[1028187]: pam_succeed_if(sudo:session): requirement "service in cron:atd" not met by user "root"
