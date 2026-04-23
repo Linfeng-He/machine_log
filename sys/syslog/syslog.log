@@ -1,4 +1,4 @@
-===== syslog snapshot host=memexpand boot_started_utc=20260423T182916Z boot_id=230a16fb-d4d9-4460-b551-e1f54133a8d7 captured_utc=20260423T191550Z =====
+===== syslog snapshot host=memexpand boot_started_utc=20260423T182916Z boot_id=230a16fb-d4d9-4460-b551-e1f54133a8d7 captured_utc=20260423T191628Z =====
 
 2026-04-23T14:23:15.228213-04:00 memexpand.cs.rutgers.edu rsyslogd: [origin software="rsyslogd" swVersion="8.2312.0" x-pid="4311" x-info="https://www.rsyslog.com"] rsyslogd was HUPed
 2026-04-23T14:23:15.330467-04:00 memexpand.cs.rutgers.edu systemd[1]: logrotate.service: Deactivated successfully.
@@ -574,3 +574,7 @@
 2026-04-23T15:15:48.816207-04:00 memexpand.cs.rutgers.edu wireplumber[1157771]: PipeWire's libcamera SPA missing or broken. libcamera not supported.
 2026-04-23T15:15:48.827478-04:00 memexpand.cs.rutgers.edu wireplumber[1157771]: Failed to get percentage from UPower: org.freedesktop.DBus.Error.NameHasNoOwner
 2026-04-23T15:15:48.828756-04:00 memexpand.cs.rutgers.edu wireplumber[1157771]: BlueZ system service is not available
+2026-04-23T15:16:01.942540-04:00 memexpand.cs.rutgers.edu CRON[1163173]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T15:16:01.942723-04:00 memexpand.cs.rutgers.edu CRON[1163174]: (root) CMD (/usr/sbin/renewd.sh > /var/log/renewd.log 2>&1)
+2026-04-23T15:16:02.063791-04:00 memexpand.cs.rutgers.edu renewd: not time to renew yet KCM:1056:31856
+2026-04-23T15:16:02.610984-04:00 memexpand.cs.rutgers.edu renewd: not time to renew yet KCM:1905239618:44599
