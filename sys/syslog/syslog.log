@@ -1,4 +1,4 @@
-===== syslog snapshot host=memexpand boot_started_utc=20260423T182916Z boot_id=230a16fb-d4d9-4460-b551-e1f54133a8d7 captured_utc=20260423T191706Z =====
+===== syslog snapshot host=memexpand boot_started_utc=20260423T182916Z boot_id=230a16fb-d4d9-4460-b551-e1f54133a8d7 captured_utc=20260423T191745Z =====
 
 2026-04-23T14:23:15.228213-04:00 memexpand.cs.rutgers.edu rsyslogd: [origin software="rsyslogd" swVersion="8.2312.0" x-pid="4311" x-info="https://www.rsyslog.com"] rsyslogd was HUPed
 2026-04-23T14:23:15.330467-04:00 memexpand.cs.rutgers.edu systemd[1]: logrotate.service: Deactivated successfully.
@@ -580,3 +580,25 @@
 2026-04-23T15:16:02.610984-04:00 memexpand.cs.rutgers.edu renewd: not time to renew yet KCM:1905239618:44599
 2026-04-23T15:17:01.671064-04:00 memexpand.cs.rutgers.edu CRON[1187281]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
 2026-04-23T15:17:01.673190-04:00 memexpand.cs.rutgers.edu CRON[1187285]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T15:17:17.903092-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting fwupd-refresh.service - Refresh fwupd metadata and update motd...
+2026-04-23T15:17:17.936464-04:00 memexpand.cs.rutgers.edu dbus-daemon[4203]: [system] Activating via systemd: service name='org.freedesktop.fwupd' unit='fwupd.service' requested by ':1.147' (uid=989 pid=1193754 comm="/usr/bin/fwupdmgr refresh" label="unconfined")
+2026-04-23T15:17:17.965063-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting fwupd.service - Firmware update daemon...
+2026-04-23T15:17:18.034868-04:00 memexpand.cs.rutgers.edu dbus-daemon[4203]: [system] Activating via systemd: service name='org.bluez' unit='dbus-org.bluez.service' requested by ':1.148' (uid=0 pid=1193764 comm="/usr/libexec/fwupd/fwupd" label="unconfined")
+2026-04-23T15:17:18.036661-04:00 memexpand.cs.rutgers.edu systemd[1]: bluetooth.service - Bluetooth service was skipped because of an unmet condition check (ConditionPathIsDirectory=/sys/class/bluetooth).
+2026-04-23T15:17:19.541319-04:00 memexpand.cs.rutgers.edu dbus-daemon[4203]: [system] Activating via systemd: service name='org.freedesktop.UPower' unit='upower.service' requested by ':1.149' (uid=0 pid=1193764 comm="/usr/libexec/fwupd/fwupd" label="unconfined")
+2026-04-23T15:17:19.561140-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting upower.service - Daemon for power management...
+2026-04-23T15:17:19.605319-04:00 memexpand.cs.rutgers.edu dbus-daemon[4203]: [system] Successfully activated service 'org.freedesktop.UPower'
+2026-04-23T15:17:19.605595-04:00 memexpand.cs.rutgers.edu systemd[1]: Started upower.service - Daemon for power management.
+2026-04-23T15:17:19.611450-04:00 memexpand.cs.rutgers.edu dbus-daemon[4203]: [system] Activating via systemd: service name='org.freedesktop.UDisks2' unit='udisks2.service' requested by ':1.149' (uid=0 pid=1193764 comm="/usr/libexec/fwupd/fwupd" label="unconfined")
+2026-04-23T15:17:19.629911-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting udisks2.service - Disk Manager...
+2026-04-23T15:17:19.636443-04:00 memexpand.cs.rutgers.edu udisksd[1194606]: udisks daemon version 2.10.1 starting
+2026-04-23T15:17:19.667092-04:00 memexpand.cs.rutgers.edu dbus-daemon[4203]: [system] Successfully activated service 'org.freedesktop.UDisks2'
+2026-04-23T15:17:19.667264-04:00 memexpand.cs.rutgers.edu systemd[1]: Started udisks2.service - Disk Manager.
+2026-04-23T15:17:19.668810-04:00 memexpand.cs.rutgers.edu udisksd[1194606]: Acquired the name org.freedesktop.UDisks2 on the system message bus
+2026-04-23T15:17:19.952056-04:00 memexpand.cs.rutgers.edu fwupd[1193764]: 19:17:19.951 FuMain               fwupd 1.9.34 ready for requests (locale en_US.UTF-8)
+2026-04-23T15:17:19.953102-04:00 memexpand.cs.rutgers.edu dbus-daemon[4203]: [system] Successfully activated service 'org.freedesktop.fwupd'
+2026-04-23T15:17:19.953213-04:00 memexpand.cs.rutgers.edu systemd[1]: Started fwupd.service - Firmware update daemon.
+2026-04-23T15:17:19.986948-04:00 memexpand.cs.rutgers.edu fwupdmgr[1193754]: Updating lvfs
+2026-04-23T15:17:21.312062-04:00 memexpand.cs.rutgers.edu fwupdmgr[1193754]: Successfully downloaded new metadata: 0 local devices supported
+2026-04-23T15:17:21.317874-04:00 memexpand.cs.rutgers.edu systemd[1]: fwupd-refresh.service: Deactivated successfully.
+2026-04-23T15:17:21.318042-04:00 memexpand.cs.rutgers.edu systemd[1]: Finished fwupd-refresh.service - Refresh fwupd metadata and update motd.
