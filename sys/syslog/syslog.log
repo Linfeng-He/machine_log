@@ -1,0 +1,381 @@
+===== syslog snapshot host=memexpand boot_started_utc=20260423T182916Z boot_id=230a16fb-d4d9-4460-b551-e1f54133a8d7 captured_utc=20260423T184434Z =====
+
+2026-04-23T14:23:15.228213-04:00 memexpand.cs.rutgers.edu rsyslogd: [origin software="rsyslogd" swVersion="8.2312.0" x-pid="4311" x-info="https://www.rsyslog.com"] rsyslogd was HUPed
+2026-04-23T14:23:15.330467-04:00 memexpand.cs.rutgers.edu systemd[1]: logrotate.service: Deactivated successfully.
+2026-04-23T14:23:15.330640-04:00 memexpand.cs.rutgers.edu systemd[1]: Finished logrotate.service - Rotate log files.
+2026-04-23T14:23:15.721142-04:00 memexpand.cs.rutgers.edu systemd[1]: Started xrdp.service - xrdp daemon.
+2026-04-23T14:23:15.925841-04:00 memexpand.cs.rutgers.edu systemd[1]: Started tuned.service - Dynamic System Tuning Daemon.
+2026-04-23T14:23:16.217538-04:00 memexpand.cs.rutgers.edu systemd-networkd[4071]: ens4047f0np0: Gained IPv6LL
+2026-04-23T14:23:16.573587-04:00 memexpand.cs.rutgers.edu sssd_be[4272]: Backend is online
+2026-04-23T14:23:16.717983-04:00 memexpand.cs.rutgers.edu xrdp[4546]: [INFO ] starting xrdp with pid 4546
+2026-04-23T14:23:16.718162-04:00 memexpand.cs.rutgers.edu xrdp[4546]: [INFO ] address [0.0.0.0] port [3389] mode 1
+2026-04-23T14:23:16.718262-04:00 memexpand.cs.rutgers.edu xrdp[4546]: [INFO ] listening to port 3389 on 0.0.0.0
+2026-04-23T14:23:16.718377-04:00 memexpand.cs.rutgers.edu xrdp[4546]: [INFO ] xrdp_listen_pp done
+2026-04-23T14:23:17.370634-04:00 memexpand.cs.rutgers.edu ModemManager[4286]: <msg> [base-manager] couldn't check support for device '/sys/devices/pci0000:3a/0000:3a:02.0/0000:3b:00.0': not supported by any plugin
+2026-04-23T14:23:17.371201-04:00 memexpand.cs.rutgers.edu ModemManager[4286]: <msg> [base-manager] couldn't check support for device '/sys/devices/pci0000:3a/0000:3a:02.0/0000:3b:00.1': not supported by any plugin
+2026-04-23T14:23:18.469728-04:00 memexpand.cs.rutgers.edu NetworkManager[4238]: <info>  [1776968598.4694] policy: set 'netplan-ens4047f0np0' (ens4047f0np0) as default for IPv6 routing and DNS
+2026-04-23T14:23:18.791119-04:00 memexpand.cs.rutgers.edu systemd[1]: dmesg.service: Deactivated successfully.
+2026-04-23T14:23:16.185634-04:00 memexpand.cs.rutgers.edu chronyd[4529]: Selected source 128.6.1.1
+2026-04-23T14:23:16.185693-04:00 memexpand.cs.rutgers.edu chronyd[4529]: System clock wrong by -2.741386 seconds
+2026-04-23T14:23:16.186608-04:00 memexpand.cs.rutgers.edu kernel: systemd-journald[1562]: Time jumped backwards, rotating.
+2026-04-23T14:23:16.195874-04:00 memexpand.cs.rutgers.edu systemd-resolved[4083]: Clock change detected. Flushing caches.
+2026-04-23T14:23:16.195916-04:00 memexpand.cs.rutgers.edu chronyd[4529]: System clock was stepped by -2.741386 seconds
+2026-04-23T14:23:16.195941-04:00 memexpand.cs.rutgers.edu chronyd[4529]: System clock TAI offset set to 37 seconds
+2026-04-23T14:23:17.711036-04:00 memexpand.cs.rutgers.edu NetworkManager[4238]: <info>  [1776968597.7107] manager: startup complete
+2026-04-23T14:23:17.714934-04:00 memexpand.cs.rutgers.edu systemd[1]: Finished NetworkManager-wait-online.service - Network Manager Wait Online.
+2026-04-23T14:23:17.715289-04:00 memexpand.cs.rutgers.edu systemd[1]: Reached target network-online.target - Network is Online.
+2026-04-23T14:23:17.715333-04:00 memexpand.cs.rutgers.edu systemd[1]: Started update-notifier-download.timer - Download data for packages that failed at package install time.
+2026-04-23T14:23:17.715474-04:00 memexpand.cs.rutgers.edu systemd[1]: Started update-notifier-motd.timer - Check to see whether there is a new version of Ubuntu available.
+2026-04-23T14:23:17.715545-04:00 memexpand.cs.rutgers.edu systemd[1]: Reached target timers.target - Timer Units.
+2026-04-23T14:23:17.736042-04:00 memexpand.cs.rutgers.edu systemd[1]: Started cups-browsed.service - Make remote CUPS printers available locally.
+2026-04-23T14:23:17.736446-04:00 memexpand.cs.rutgers.edu systemd[1]: open-iscsi.service - Login to default iSCSI targets was skipped because no trigger condition checks were met.
+2026-04-23T14:23:17.736542-04:00 memexpand.cs.rutgers.edu systemd[1]: Reached target remote-fs-pre.target - Preparation for Remote File Systems.
+2026-04-23T14:23:17.736593-04:00 memexpand.cs.rutgers.edu systemd[1]: Reached target remote-fs.target - Remote File Systems.
+2026-04-23T14:23:17.740144-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting apport.service - automatic crash report generation...
+2026-04-23T14:23:17.743664-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting autofs.service - Automounts filesystems on demand...
+2026-04-23T14:23:17.745195-04:00 memexpand.cs.rutgers.edu systemd[1]: Finished blk-availability.service - Availability of block devices.
+2026-04-23T14:23:17.746692-04:00 memexpand.cs.rutgers.edu systemd[1]: Started cron.service - Regular background program processing daemon.
+2026-04-23T14:23:17.748704-04:00 memexpand.cs.rutgers.edu (utomount)[4649]: autofs.service: Referenced but unset environment variable evaluates to an empty string: OPTIONS
+2026-04-23T14:23:17.749522-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting kerneloops.service - Tool to automatically collect and submit kernel crash signatures...
+2026-04-23T14:23:17.751448-04:00 memexpand.cs.rutgers.edu (cron)[4650]: cron.service: Referenced but unset environment variable evaluates to an empty string: EXTRA_OPTS
+2026-04-23T14:23:17.752337-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting loadcpufreq.service - LSB: Load kernel modules needed to enable cpufreq scaling...
+2026-04-23T14:23:17.753598-04:00 memexpand.cs.rutgers.edu cron[4650]: (CRON) INFO (pidfile fd = 3)
+2026-04-23T14:23:17.754823-04:00 memexpand.cs.rutgers.edu cron[4650]: (CRON) INFO (Running @reboot jobs)
+2026-04-23T14:23:17.755004-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting openipmi.service - LSB: OpenIPMI Driver init script...
+2026-04-23T14:23:17.755216-04:00 memexpand.cs.rutgers.edu systemd[1]: pollinate.service - Pollinate to seed the pseudo random number generator was skipped because of an unmet condition check (ConditionPathExists=!/var/cache/pollinate/seeded).
+2026-04-23T14:23:17.758955-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting postfix@-.service - Postfix Mail Transport Agent (instance -)...
+2026-04-23T14:23:17.762058-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting rpc-statd-notify.service - Notify NFS peers of a restart...
+2026-04-23T14:23:17.765000-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting sep5.service - systemd script to load sep5 driver at boot time...
+2026-04-23T14:23:17.767848-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+2026-04-23T14:23:17.767935-04:00 memexpand.cs.rutgers.edu systemd[1]: systemd-pcrphase.service - TPM2 PCR Barrier (User) was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+2026-04-23T14:23:17.769998-04:00 memexpand.cs.rutgers.edu sm-notify[4662]: Version 2.6.4 starting
+2026-04-23T14:23:17.770952-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting systemd-user-sessions.service - Permit User Sessions...
+2026-04-23T14:23:17.773749-04:00 memexpand.cs.rutgers.edu sep5-load.sh[4667]: Loading the sep5 driver:
+2026-04-23T14:23:17.773893-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting telegraf.service - Telegraf...
+2026-04-23T14:23:17.773968-04:00 memexpand.cs.rutgers.edu systemd[1]: ubuntu-advantage.service - Ubuntu Pro Background Auto Attach was skipped because no trigger condition checks were met.
+2026-04-23T14:23:17.777567-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting wazuh-agent.service - Wazuh agent...
+2026-04-23T14:23:17.781756-04:00 memexpand.cs.rutgers.edu systemd[1]: kerneloops.service: Found left-over process 4664 (kerneloops) in control group while starting unit. Ignoring.
+2026-04-23T14:23:17.781823-04:00 memexpand.cs.rutgers.edu systemd[1]: kerneloops.service: This usually indicates unclean termination of a previous run, or service implementation deficiencies.
+2026-04-23T14:23:17.783378-04:00 memexpand.cs.rutgers.edu systemd[1]: Started rpc-statd-notify.service - Notify NFS peers of a restart.
+2026-04-23T14:23:17.783832-04:00 memexpand.cs.rutgers.edu systemd[1]: Finished systemd-user-sessions.service - Permit User Sessions.
+2026-04-23T14:23:17.787763-04:00 memexpand.cs.rutgers.edu (rneloops)[4696]: kerneloops.service: Referenced but unset environment variable evaluates to an empty string: DAEMON_ARGS
+2026-04-23T14:23:17.790785-04:00 memexpand.cs.rutgers.edu systemd[1]: Started autofs.service - Automounts filesystems on demand.
+2026-04-23T14:23:17.791045-04:00 memexpand.cs.rutgers.edu (telegraf)[4675]: telegraf.service: Referenced but unset environment variable evaluates to an empty string: TELEGRAF_OPTS
+2026-04-23T14:23:17.794888-04:00 memexpand.cs.rutgers.edu systemd[1]: Started kerneloops.service - Tool to automatically collect and submit kernel crash signatures.
+2026-04-23T14:23:17.797843-04:00 memexpand.cs.rutgers.edu loadcpufreq[4652]:  * Loading cpufreq kernel modules...
+2026-04-23T14:23:17.800836-04:00 memexpand.cs.rutgers.edu openipmi[4653]:  * Starting ipmi drivers
+2026-04-23T14:23:17.801113-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting plymouth-quit-wait.service - Hold until boot process finishes up...
+2026-04-23T14:23:17.803893-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting plymouth-quit.service - Terminate Plymouth Boot Screen...
+2026-04-23T14:23:17.804081-04:00 memexpand.cs.rutgers.edu systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+2026-04-23T14:23:17.808417-04:00 memexpand.cs.rutgers.edu systemd[1]: Finished plymouth-quit-wait.service - Hold until boot process finishes up.
+2026-04-23T14:23:17.812209-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting setvtrgb.service - Set console scheme...
+2026-04-23T14:23:17.819028-04:00 memexpand.cs.rutgers.edu openipmi[4653]:    ...done.
+2026-04-23T14:23:17.820409-04:00 memexpand.cs.rutgers.edu systemd[1]: Started openipmi.service - LSB: OpenIPMI Driver init script.
+2026-04-23T14:23:17.820994-04:00 memexpand.cs.rutgers.edu systemd[1]: Finished plymouth-quit.service - Terminate Plymouth Boot Screen.
+2026-04-23T14:23:17.821332-04:00 memexpand.cs.rutgers.edu systemd[1]: Finished setvtrgb.service - Set console scheme.
+2026-04-23T14:23:17.825807-04:00 memexpand.cs.rutgers.edu systemd[1]: Created slice system-getty.slice - Slice /system/getty.
+2026-04-23T14:23:17.830011-04:00 memexpand.cs.rutgers.edu systemd[1]: Started getty@tty1.service - Getty on tty1.
+2026-04-23T14:23:17.830189-04:00 memexpand.cs.rutgers.edu systemd[1]: Reached target getty.target - Login Prompts.
+2026-04-23T14:23:17.837228-04:00 memexpand.cs.rutgers.edu loadcpufreq[4652]:    ...done.
+2026-04-23T14:23:17.838328-04:00 memexpand.cs.rutgers.edu env[4682]: Starting Wazuh v4.11.0...
+2026-04-23T14:23:17.839084-04:00 memexpand.cs.rutgers.edu systemd[1]: Started loadcpufreq.service - LSB: Load kernel modules needed to enable cpufreq scaling.
+2026-04-23T14:23:17.842303-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting cpufrequtils.service - LSB: set CPUFreq kernel parameters...
+2026-04-23T14:23:17.857321-04:00 memexpand.cs.rutgers.edu cpufrequtils[4843]:  * CPUFreq Utilities: Setting ondemand CPUFreq governor...
+2026-04-23T14:23:17.857933-04:00 memexpand.cs.rutgers.edu cpufrequtils[4843]:  * disabled, governor not available...
+2026-04-23T14:23:17.857956-04:00 memexpand.cs.rutgers.edu cpufrequtils[4843]:    ...done.
+2026-04-23T14:23:17.858934-04:00 memexpand.cs.rutgers.edu systemd[1]: Started cpufrequtils.service - LSB: set CPUFreq kernel parameters.
+2026-04-23T14:23:17.885108-04:00 memexpand.cs.rutgers.edu systemd[1]: Finished apport.service - automatic crash report generation.
+2026-04-23T14:23:17.895440-04:00 memexpand.cs.rutgers.edu env[4682]: Deleting PID file '/var/ossec/var/run/wazuh-modulesd-5464.pid' not used...
+2026-04-23T14:23:17.950472-04:00 memexpand.cs.rutgers.edu env[4682]: Deleting PID file '/var/ossec/var/run/wazuh-logcollector-5388.pid' not used...
+2026-04-23T14:23:17.965731-04:00 memexpand.cs.rutgers.edu postmulti[4934]: postfix: Postfix is using backwards-compatible default settings
+2026-04-23T14:23:17.965767-04:00 memexpand.cs.rutgers.edu postmulti[4934]: postfix: See http://www.postfix.org/COMPATIBILITY_README.html for details
+2026-04-23T14:23:17.965784-04:00 memexpand.cs.rutgers.edu postmulti[4934]: postfix: To disable backwards compatibility use "postconf compatibility_level=3.6" and "postfix reload"
+2026-04-23T14:23:17.965808-04:00 memexpand.cs.rutgers.edu postfix[4934]: Postfix is using backwards-compatible default settings
+2026-04-23T14:23:17.965843-04:00 memexpand.cs.rutgers.edu postfix[4934]: See http://www.postfix.org/COMPATIBILITY_README.html for details
+2026-04-23T14:23:17.965862-04:00 memexpand.cs.rutgers.edu postfix[4934]: To disable backwards compatibility use "postconf compatibility_level=3.6" and "postfix reload"
+2026-04-23T14:23:17.985486-04:00 memexpand.cs.rutgers.edu dbus-daemon[4945]: [session uid=995 pid=4932] AppArmor D-Bus mediation is enabled
+2026-04-23T14:23:17.985623-04:00 memexpand.cs.rutgers.edu systemd[1]: Started telegraf.service - Telegraf.
+2026-04-23T14:23:18.000655-04:00 memexpand.cs.rutgers.edu env[4682]: Deleting PID file '/var/ossec/var/run/wazuh-syscheckd-5308.pid' not used...
+2026-04-23T14:23:18.055212-04:00 memexpand.cs.rutgers.edu env[4682]: Deleting PID file '/var/ossec/var/run/wazuh-agentd-5218.pid' not used...
+2026-04-23T14:23:18.100650-04:00 memexpand.cs.rutgers.edu env[4682]: Deleting PID file '/var/ossec/var/run/wazuh-execd-4807.pid' not used...
+2026-04-23T14:23:18.136973-04:00 memexpand.cs.rutgers.edu postmulti[5039]: postfix/postlog: warning: /var/spool/postfix/etc/ssl/certs/ssl-cert-snakeoil.pem and /etc/ssl/certs/ssl-cert-snakeoil.pem differ
+2026-04-23T14:23:18.137035-04:00 memexpand.cs.rutgers.edu postfix/postfix-script[5039]: warning: /var/spool/postfix/etc/ssl/certs/ssl-cert-snakeoil.pem and /etc/ssl/certs/ssl-cert-snakeoil.pem differ
+2026-04-23T14:23:18.289011-04:00 memexpand.cs.rutgers.edu postmulti[5224]: postfix/postlog: starting the Postfix mail system
+2026-04-23T14:23:18.289067-04:00 memexpand.cs.rutgers.edu postfix/postfix-script[5224]: starting the Postfix mail system
+2026-04-23T14:23:18.294650-04:00 memexpand.cs.rutgers.edu postfix/master[5226]: daemon started -- version 3.8.6, configuration /etc/postfix
+2026-04-23T14:23:18.296451-04:00 memexpand.cs.rutgers.edu systemd[1]: Started postfix@-.service - Postfix Mail Transport Agent (instance -).
+2026-04-23T14:23:18.313881-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting postfix.service - Postfix Mail Transport Agent...
+2026-04-23T14:23:18.315610-04:00 memexpand.cs.rutgers.edu systemd[1]: Finished postfix.service - Postfix Mail Transport Agent.
+2026-04-23T14:23:18.391228-04:00 memexpand.cs.rutgers.edu telegraf[4675]: 2026-04-23T18:23:18Z I! Loading config: /etc/telegraf/telegraf.conf
+2026-04-23T14:23:18.392822-04:00 memexpand.cs.rutgers.edu telegraf[4675]: 2026-04-23T18:23:18Z I! Loading config: /etc/telegraf/telegraf.d/ansible-tags.conf
+2026-04-23T14:23:18.393037-04:00 memexpand.cs.rutgers.edu telegraf[4675]: 2026-04-23T18:23:18Z I! Loading config: /etc/telegraf/telegraf.d/cgroup.conf
+2026-04-23T14:23:18.393293-04:00 memexpand.cs.rutgers.edu telegraf[4675]: 2026-04-23T18:23:18Z I! Loading config: /etc/telegraf/telegraf.d/chrony.conf
+2026-04-23T14:23:18.393642-04:00 memexpand.cs.rutgers.edu telegraf[4675]: 2026-04-23T18:23:18Z I! Loading config: /etc/telegraf/telegraf.d/ipmi.conf
+2026-04-23T14:23:18.393906-04:00 memexpand.cs.rutgers.edu telegraf[4675]: 2026-04-23T18:23:18Z I! Loading config: /etc/telegraf/telegraf.d/kernel.conf
+2026-04-23T14:23:18.394147-04:00 memexpand.cs.rutgers.edu telegraf[4675]: 2026-04-23T18:23:18Z I! Loading config: /etc/telegraf/telegraf.d/linux_cpu.conf
+2026-04-23T14:23:18.394368-04:00 memexpand.cs.rutgers.edu telegraf[4675]: 2026-04-23T18:23:18Z I! Loading config: /etc/telegraf/telegraf.d/sensors.conf
+2026-04-23T14:23:18.394579-04:00 memexpand.cs.rutgers.edu telegraf[4675]: 2026-04-23T18:23:18Z I! Loading config: /etc/telegraf/telegraf.d/smart.conf
+2026-04-23T14:23:18.394801-04:00 memexpand.cs.rutgers.edu telegraf[4675]: 2026-04-23T18:23:18Z I! Loading config: /etc/telegraf/telegraf.d/users.conf
+2026-04-23T14:23:18.395499-04:00 memexpand.cs.rutgers.edu telegraf[4675]: 2026-04-23T18:23:18Z I! Starting Telegraf 1.36.3 brought to you by InfluxData the makers of InfluxDB
+2026-04-23T14:23:18.395548-04:00 memexpand.cs.rutgers.edu telegraf[4675]: 2026-04-23T18:23:18Z I! Available plugins: 239 inputs, 9 aggregators, 35 processors, 26 parsers, 65 outputs, 6 secret-stores
+2026-04-23T14:23:18.395632-04:00 memexpand.cs.rutgers.edu telegraf[4675]: 2026-04-23T18:23:18Z I! Loaded inputs: cgroup chrony cpu disk diskio (2x) exec ipmi_sensor kernel kernel_vmstat linux_cpu linux_sysctl_fs mem net nstat processes sensors smart swap system
+2026-04-23T14:23:18.395652-04:00 memexpand.cs.rutgers.edu telegraf[4675]: 2026-04-23T18:23:18Z I! Loaded aggregators: minmax
+2026-04-23T14:23:18.395671-04:00 memexpand.cs.rutgers.edu telegraf[4675]: 2026-04-23T18:23:18Z I! Loaded processors: clone regex
+2026-04-23T14:23:18.395685-04:00 memexpand.cs.rutgers.edu telegraf[4675]: 2026-04-23T18:23:18Z I! Loaded secretstores:
+2026-04-23T14:23:18.395700-04:00 memexpand.cs.rutgers.edu telegraf[4675]: 2026-04-23T18:23:18Z I! Loaded outputs: influxdb_v2 (2x)
+2026-04-23T14:23:18.395724-04:00 memexpand.cs.rutgers.edu telegraf[4675]: 2026-04-23T18:23:18Z I! Tags enabled: cluster=rusys host=memexpand.cs.rutgers.edu
+2026-04-23T14:23:18.395740-04:00 memexpand.cs.rutgers.edu telegraf[4675]: 2026-04-23T18:23:18Z I! [agent] Config: Interval:10s, Quiet:false, Hostname:"memexpand.cs.rutgers.edu", Flush Interval:10s
+2026-04-23T14:23:18.395755-04:00 memexpand.cs.rutgers.edu telegraf[4675]: 2026-04-23T18:23:18Z W! [agent] The default value of 'skip_processors_after_aggregators' will change to 'true' with Telegraf v1.40.0! If you need the current default behavior, please explicitly set the option to 'false'!
+2026-04-23T14:23:18.408742-04:00 memexpand.cs.rutgers.edu telegraf[4675]: 2026-04-23T18:23:18Z W! [inputs.smart] nvme not found: verify that nvme is installed and it is in your PATH (or specified in config) to gather vendor specific attributes: provided path does not exist: []
+2026-04-23T14:23:19.154349-04:00 memexpand.cs.rutgers.edu env[4682]: Started wazuh-execd...
+2026-04-23T14:23:20.203285-04:00 memexpand.cs.rutgers.edu env[4682]: Started wazuh-agentd...
+2026-04-23T14:23:20.240128-04:00 memexpand.cs.rutgers.edu audisp-af_unix: Client connected
+2026-04-23T14:23:21.252802-04:00 memexpand.cs.rutgers.edu env[4682]: Started wazuh-syscheckd...
+2026-04-23T14:23:22.301054-04:00 memexpand.cs.rutgers.edu env[4682]: Started wazuh-logcollector...
+2026-04-23T14:23:23.365177-04:00 memexpand.cs.rutgers.edu env[4682]: Started wazuh-modulesd...
+2026-04-23T14:23:25.366207-04:00 memexpand.cs.rutgers.edu env[4682]: Completed.
+2026-04-23T14:23:25.369602-04:00 memexpand.cs.rutgers.edu systemd[1]: Started wazuh-agent.service - Wazuh agent.
+2026-04-23T14:23:25.746263-04:00 memexpand.cs.rutgers.edu systemd[1]: NetworkManager-dispatcher.service: Deactivated successfully.
+2026-04-23T14:23:38.828199-04:00 memexpand.cs.rutgers.edu systemd[1]: systemd-fsckd.service: Deactivated successfully.
+2026-04-23T14:23:41.451788-04:00 memexpand.cs.rutgers.edu sssd[4219]: Child [4272] ('cs.rutgers.edu':'%BE_cs.rutgers.edu') was terminated by own WATCHDOG. Consult corresponding logs to figure out the reason.
+2026-04-23T14:23:41.456323-04:00 memexpand.cs.rutgers.edu systemd[1]: systemd-hostnamed.service: Deactivated successfully.
+2026-04-23T14:23:41.462313-04:00 memexpand.cs.rutgers.edu sssd_be[5802]: Starting up
+2026-04-23T14:23:46.209975-04:00 memexpand.cs.rutgers.edu rsyslogd: action 'action-11-builtin:omfwd' resumed (module 'builtin:omfwd') [v8.2312.0 try https://www.rsyslog.com/e/2359 ]
+2026-04-23T14:23:46.229901-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting sssd-pam.service - SSSD PAM Service responder...
+2026-04-23T14:23:46.233911-04:00 memexpand.cs.rutgers.edu systemd[1]: Started sssd-pam.service - SSSD PAM Service responder.
+2026-04-23T14:23:46.249218-04:00 memexpand.cs.rutgers.edu sssd_pam[5921]: Starting up
+2026-04-23T14:23:49.157981-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting sssd-kcm.service - SSSD Kerberos Cache Manager...
+2026-04-23T14:23:49.170755-04:00 memexpand.cs.rutgers.edu systemd[1]: Started sssd-kcm.service - SSSD Kerberos Cache Manager.
+2026-04-23T14:23:49.183052-04:00 memexpand.cs.rutgers.edu sssd_kcm[6000]: Starting up
+2026-04-23T14:23:49.259116-04:00 memexpand.cs.rutgers.edu sep5-load.sh[4677]: PYTHON is set to python3
+2026-04-23T14:23:49.366936-04:00 memexpand.cs.rutgers.edu sep5-load.sh[4677]: Detecting Secure Boot status...
+2026-04-23T14:23:49.374681-04:00 memexpand.cs.rutgers.edu sep5-load.sh[4677]: Secure Boot is disabled
+2026-04-23T14:23:49.381756-04:00 memexpand.cs.rutgers.edu sep5-load.sh[4677]: ---------------------    Loading PAX driver    ---------------------
+2026-04-23T14:23:54.318022-04:00 memexpand.cs.rutgers.edu sep5-load.sh[6050]: Detecting Secure Boot status...
+2026-04-23T14:23:54.324531-04:00 memexpand.cs.rutgers.edu sep5-load.sh[6050]: Secure Boot is disabled
+2026-04-23T14:23:54.333801-04:00 memexpand.cs.rutgers.edu sep5-load.sh[6050]: Checking for PMU arbitration service (PAX) ... not detected.
+2026-04-23T14:23:54.333857-04:00 memexpand.cs.rutgers.edu sep5-load.sh[6050]: Attempting to start PAX service ...
+2026-04-23T14:23:54.333883-04:00 memexpand.cs.rutgers.edu sep5-load.sh[6050]: Executing: insmod ./pax/pax-x32_64-6.8.0-106-genericsmp.ko
+2026-04-23T14:23:55.341976-04:00 memexpand.cs.rutgers.edu sep5-load.sh[6050]: Setting group ownership of devices to group "vtune" ... done.
+2026-04-23T14:23:55.342353-04:00 memexpand.cs.rutgers.edu sep5-load.sh[6050]: Setting file permissions on devices to "660" ... done.
+2026-04-23T14:23:55.342377-04:00 memexpand.cs.rutgers.edu sep5-load.sh[6050]: The pax driver has been successfully loaded.
+2026-04-23T14:23:55.422849-04:00 memexpand.cs.rutgers.edu sep5-load.sh[4677]: ---------------------    Loading SEP driver    ---------------------
+2026-04-23T14:23:55.422923-04:00 memexpand.cs.rutgers.edu sep5-load.sh[4677]: Executing: insmod ./sep5-x32_64-6.8.0-106-genericsmp.ko sym_lookup_func_addr="ffffffffb8e325b0"
+2026-04-23T14:23:55.867950-04:00 memexpand.cs.rutgers.edu systemd[1]: Created slice user-1905239618.slice - User Slice of UID 1905239618.
+2026-04-23T14:23:55.891907-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting user-runtime-dir@1905239618.service - User Runtime Directory /run/user/1905239618...
+2026-04-23T14:23:55.900177-04:00 memexpand.cs.rutgers.edu systemd[1]: Finished user-runtime-dir@1905239618.service - User Runtime Directory /run/user/1905239618.
+2026-04-23T14:23:55.905856-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting user@1905239618.service - User Manager for UID 1905239618...
+2026-04-23T14:23:56.418147-04:00 memexpand.cs.rutgers.edu systemd[6310]: Queued start job for default target default.target.
+2026-04-23T14:23:56.446673-04:00 memexpand.cs.rutgers.edu systemd[6310]: Created slice app.slice - User Application Slice.
+2026-04-23T14:23:56.448265-04:00 memexpand.cs.rutgers.edu systemd[6310]: Created slice session.slice - User Core Session Slice.
+2026-04-23T14:23:56.448919-04:00 memexpand.cs.rutgers.edu systemd[6310]: Started ubuntu-report.path - Pending report trigger for Ubuntu Report.
+2026-04-23T14:23:56.448950-04:00 memexpand.cs.rutgers.edu systemd[6310]: Started launchpadlib-cache-clean.timer - Clean up old files in the Launchpadlib cache.
+2026-04-23T14:23:56.448986-04:00 memexpand.cs.rutgers.edu systemd[6310]: Reached target paths.target - Paths.
+2026-04-23T14:23:56.449016-04:00 memexpand.cs.rutgers.edu systemd[6310]: Reached target timers.target - Timers.
+2026-04-23T14:23:56.451657-04:00 memexpand.cs.rutgers.edu systemd[6310]: Starting dbus.socket - D-Bus User Message Bus Socket...
+2026-04-23T14:23:56.451778-04:00 memexpand.cs.rutgers.edu systemd[6310]: Listening on dirmngr.socket - GnuPG network certificate management daemon.
+2026-04-23T14:23:56.451894-04:00 memexpand.cs.rutgers.edu systemd[6310]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+2026-04-23T14:23:56.451983-04:00 memexpand.cs.rutgers.edu systemd[6310]: Listening on gnome-keyring-daemon.socket - GNOME Keyring daemon.
+2026-04-23T14:23:56.452061-04:00 memexpand.cs.rutgers.edu systemd[6310]: Listening on gpg-agent-browser.socket - GnuPG cryptographic agent and passphrase cache (access for web browsers).
+2026-04-23T14:23:56.452125-04:00 memexpand.cs.rutgers.edu systemd[6310]: Listening on gpg-agent-extra.socket - GnuPG cryptographic agent and passphrase cache (restricted).
+2026-04-23T14:23:56.454234-04:00 memexpand.cs.rutgers.edu systemd[6310]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+2026-04-23T14:23:56.454324-04:00 memexpand.cs.rutgers.edu systemd[6310]: Listening on gpg-agent.socket - GnuPG cryptographic agent and passphrase cache.
+2026-04-23T14:23:56.454410-04:00 memexpand.cs.rutgers.edu systemd[6310]: Listening on keyboxd.socket - GnuPG public key management service.
+2026-04-23T14:23:56.454508-04:00 memexpand.cs.rutgers.edu systemd[6310]: Listening on pipewire-pulse.socket - PipeWire PulseAudio.
+2026-04-23T14:23:56.454610-04:00 memexpand.cs.rutgers.edu systemd[6310]: Listening on pipewire.socket - PipeWire Multimedia System Sockets.
+2026-04-23T14:23:56.454688-04:00 memexpand.cs.rutgers.edu systemd[6310]: Listening on pk-debconf-helper.socket - debconf communication socket.
+2026-04-23T14:23:56.454771-04:00 memexpand.cs.rutgers.edu systemd[6310]: Listening on speech-dispatcher.socket - Speech Dispatcher Socket.
+2026-04-23T14:23:56.462933-04:00 memexpand.cs.rutgers.edu systemd[6310]: Listening on dbus.socket - D-Bus User Message Bus Socket.
+2026-04-23T14:23:56.470461-04:00 memexpand.cs.rutgers.edu sep5-load.sh[4677]: Setting group ownership of devices to group "vtune" ... done.
+2026-04-23T14:23:56.474180-04:00 memexpand.cs.rutgers.edu sep5-load.sh[4677]: Setting file permissions on devices to "660" ... done.
+2026-04-23T14:23:56.474202-04:00 memexpand.cs.rutgers.edu sep5-load.sh[4677]: The sep5 driver has been successfully loaded.
+2026-04-23T14:23:56.474271-04:00 memexpand.cs.rutgers.edu sep5-load.sh[4677]: ---------------------  Loading VTSSPP driver  ---------------------
+2026-04-23T14:23:56.476204-04:00 memexpand.cs.rutgers.edu systemd[6310]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+2026-04-23T14:23:56.476340-04:00 memexpand.cs.rutgers.edu systemd[6310]: Reached target sockets.target - Sockets.
+2026-04-23T14:23:56.476398-04:00 memexpand.cs.rutgers.edu systemd[6310]: Reached target basic.target - Basic System.
+2026-04-23T14:23:56.477193-04:00 memexpand.cs.rutgers.edu systemd[1]: Started user@1905239618.service - User Manager for UID 1905239618.
+2026-04-23T14:23:56.480996-04:00 memexpand.cs.rutgers.edu sep5-load.sh[4677]: Checking for vtsspp driver ... not detected.
+2026-04-23T14:23:56.482605-04:00 memexpand.cs.rutgers.edu systemd[6310]: Starting gnome-initial-setup-copy-worker.service - GNOME Initial Setup Copy Worker...
+2026-04-23T14:23:56.484835-04:00 memexpand.cs.rutgers.edu systemd[1]: Started session-1.scope - Session 1 of User lh818.
+2026-04-23T14:23:56.486239-04:00 memexpand.cs.rutgers.edu systemd[6310]: Started pipewire.service - PipeWire Multimedia Service.
+2026-04-23T14:23:56.488993-04:00 memexpand.cs.rutgers.edu systemd[6310]: Started filter-chain.service - PipeWire filter chain daemon.
+2026-04-23T14:23:56.491804-04:00 memexpand.cs.rutgers.edu systemd[6310]: Started wireplumber.service - Multimedia Service Session Manager.
+2026-04-23T14:23:56.494845-04:00 memexpand.cs.rutgers.edu systemd[6310]: Started pipewire-pulse.service - PipeWire PulseAudio.
+2026-04-23T14:23:56.495416-04:00 memexpand.cs.rutgers.edu systemd[6310]: Finished gnome-initial-setup-copy-worker.service - GNOME Initial Setup Copy Worker.
+2026-04-23T14:23:56.495573-04:00 memexpand.cs.rutgers.edu systemd[6310]: Reached target default.target - Main User Target.
+2026-04-23T14:23:56.495635-04:00 memexpand.cs.rutgers.edu systemd[6310]: Startup finished in 571ms.
+2026-04-23T14:23:56.505980-04:00 memexpand.cs.rutgers.edu systemd[6310]: Starting dbus.service - D-Bus User Message Bus...
+2026-04-23T14:23:56.516452-04:00 memexpand.cs.rutgers.edu dbus-daemon[6418]: [session uid=1905239618 pid=6418] AppArmor D-Bus mediation is enabled
+2026-04-23T14:23:56.516569-04:00 memexpand.cs.rutgers.edu systemd[6310]: Started dbus.service - D-Bus User Message Bus.
+2026-04-23T14:23:56.518487-04:00 memexpand.cs.rutgers.edu dbus-daemon[4203]: [system] Activating via systemd: service name='org.freedesktop.RealtimeKit1' unit='rtkit-daemon.service' requested by ':1.33' (uid=1905239618 pid=6402 comm="/usr/bin/wireplumber" label="unconfined")
+2026-04-23T14:23:56.523855-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting rtkit-daemon.service - RealtimeKit Scheduling Policy Service...
+2026-04-23T14:23:56.524239-04:00 memexpand.cs.rutgers.edu pipewire[6395]: mod.jackdbus-detect: Failed to receive jackdbus reply: org.freedesktop.DBus.Error.ServiceUnknown: The name org.jackaudio.service was not provided by any .service files
+2026-04-23T14:23:56.541160-04:00 memexpand.cs.rutgers.edu dbus-daemon[4203]: [system] Successfully activated service 'org.freedesktop.RealtimeKit1'
+2026-04-23T14:23:56.541460-04:00 memexpand.cs.rutgers.edu systemd[1]: Started rtkit-daemon.service - RealtimeKit Scheduling Policy Service.
+2026-04-23T14:23:56.541763-04:00 memexpand.cs.rutgers.edu rtkit-daemon[6438]: Successfully called chroot.
+2026-04-23T14:23:56.541971-04:00 memexpand.cs.rutgers.edu rtkit-daemon[6438]: Successfully dropped privileges.
+2026-04-23T14:23:56.542012-04:00 memexpand.cs.rutgers.edu rtkit-daemon[6438]: Successfully limited resources.
+2026-04-23T14:23:56.542102-04:00 memexpand.cs.rutgers.edu rtkit-daemon[6438]: Canary thread running.
+2026-04-23T14:23:56.542130-04:00 memexpand.cs.rutgers.edu rtkit-daemon[6438]: Running.
+2026-04-23T14:23:56.542154-04:00 memexpand.cs.rutgers.edu rtkit-daemon[6438]: Watchdog thread running.
+2026-04-23T14:23:56.542190-04:00 memexpand.cs.rutgers.edu rtkit-daemon[6438]: Supervising 0 threads of 0 processes of 0 users.
+2026-04-23T14:23:56.542433-04:00 memexpand.cs.rutgers.edu rtkit-daemon[6438]: message repeated 11 times: [ Supervising 0 threads of 0 processes of 0 users.]
+2026-04-23T14:23:56.544287-04:00 memexpand.cs.rutgers.edu wireplumber[6402]: SPA handle 'api.libcamera.enum.manager' could not be loaded; is it installed?
+2026-04-23T14:23:56.544355-04:00 memexpand.cs.rutgers.edu wireplumber[6402]: PipeWire's libcamera SPA missing or broken. libcamera not supported.
+2026-04-23T14:23:56.558607-04:00 memexpand.cs.rutgers.edu wireplumber[6402]: Failed to get percentage from UPower: org.freedesktop.DBus.Error.NameHasNoOwner
+2026-04-23T14:23:56.560078-04:00 memexpand.cs.rutgers.edu wireplumber[6402]: BlueZ system service is not available
+2026-04-23T14:23:56.585818-04:00 memexpand.cs.rutgers.edu sep5-load.sh[6390]: Executing: insmod ./vtsspp/vtsspp-x32_64-6.8.0-106-genericsmp.ko gid=1002 mode=0660 ksyms="ffffffffb8e325b0"
+2026-04-23T14:23:56.595424-04:00 memexpand.cs.rutgers.edu sep5-load.sh[6390]: The vtsspp driver has been successfully loaded.
+2026-04-23T14:23:56.595884-04:00 memexpand.cs.rutgers.edu sep5-load.sh[4677]: --------------------- Loading SOCWATCH driver ---------------------
+2026-04-23T14:23:56.601366-04:00 memexpand.cs.rutgers.edu sep5-load.sh[4677]: Checking for socwatch driver ... not detected.
+2026-04-23T14:23:56.611783-04:00 memexpand.cs.rutgers.edu sep5-load.sh[6470]: Executing: insmod ./socwatch/drivers/socwatch2_16-x32_64-6.8.0-106-genericsmp.ko
+2026-04-23T14:23:57.623032-04:00 memexpand.cs.rutgers.edu sep5-load.sh[6470]: Setting group ownership of device file to group "vtune" ... done.
+2026-04-23T14:23:57.623681-04:00 memexpand.cs.rutgers.edu sep5-load.sh[6470]: Setting file permissions of device file to "660" ... done.
+2026-04-23T14:23:57.623713-04:00 memexpand.cs.rutgers.edu sep5-load.sh[6470]: The socwatch2_16-x32_64-6.8.0-106-genericsmp driver has been successfully loaded.
+2026-04-23T14:23:57.623730-04:00 memexpand.cs.rutgers.edu sep5-load.sh[6470]: NOTE:
+2026-04-23T14:23:57.623746-04:00 memexpand.cs.rutgers.edu sep5-load.sh[6470]: The driver is accessible only to users under the group 'vtune'.
+2026-04-23T14:23:57.623774-04:00 memexpand.cs.rutgers.edu sep5-load.sh[6470]: Please add the users to the group 'vtune' to use the tool.
+2026-04-23T14:23:57.623794-04:00 memexpand.cs.rutgers.edu sep5-load.sh[6470]: To change driver access group, reinstall the driver using -g <desired_group> option.
+2026-04-23T14:23:57.624166-04:00 memexpand.cs.rutgers.edu sep5-load.sh[4677]: NOTE:
+2026-04-23T14:23:57.624235-04:00 memexpand.cs.rutgers.edu sep5-load.sh[4677]: The driver is accessible only to users under the group vtune.
+2026-04-23T14:23:57.624263-04:00 memexpand.cs.rutgers.edu sep5-load.sh[4677]: Please add the users to the group vtune to use the tool.
+2026-04-23T14:23:57.624285-04:00 memexpand.cs.rutgers.edu sep5-load.sh[4677]: To change driver access group, reload the driver using -g <desired_group> option.
+2026-04-23T14:23:57.626613-04:00 memexpand.cs.rutgers.edu systemd[1]: Finished sep5.service - systemd script to load sep5 driver at boot time.
+2026-04-23T14:23:57.627151-04:00 memexpand.cs.rutgers.edu systemd[1]: Reached target multi-user.target - Multi-User System.
+2026-04-23T14:23:57.653869-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting systemd-update-utmp-runlevel.service - Record Runlevel Change in UTMP...
+2026-04-23T14:23:57.662399-04:00 memexpand.cs.rutgers.edu systemd[1]: systemd-update-utmp-runlevel.service: Deactivated successfully.
+2026-04-23T14:23:57.662671-04:00 memexpand.cs.rutgers.edu systemd[1]: Finished systemd-update-utmp-runlevel.service - Record Runlevel Change in UTMP.
+2026-04-23T14:23:57.666615-04:00 memexpand.cs.rutgers.edu systemd[1]: Startup finished in 1min 35.687s (firmware) + 2.792s (loader) + 14.160s (kernel) + 50.350s (userspace) = 2min 42.990s.
+2026-04-23T14:23:58.098481-04:00 memexpand.cs.rutgers.edu automount[4655]: key "node_modules" not found in map source(s).
+2026-04-23T14:23:59.032775-04:00 memexpand.cs.rutgers.edu automount[4655]: key ".jj" not found in map source(s).
+2026-04-23T14:23:59.033018-04:00 memexpand.cs.rutgers.edu automount[4655]: key ".rgignore" not found in map source(s).
+2026-04-23T14:23:59.033211-04:00 memexpand.cs.rutgers.edu automount[4655]: key ".ignore" not found in map source(s).
+2026-04-23T14:23:59.033708-04:00 memexpand.cs.rutgers.edu automount[4655]: key ".gitignore" not found in map source(s).
+2026-04-23T14:23:59.033847-04:00 memexpand.cs.rutgers.edu automount[4655]: key ".git" not found in map source(s).
+2026-04-23T14:24:01.731135-04:00 memexpand.cs.rutgers.edu vsce-sign: Package file size:  103427269
+2026-04-23T14:24:01.731889-04:00 memexpand.cs.rutgers.edu vsce-sign: Signature archive file size:  52698
+2026-04-23T14:24:01.783842-04:00 memexpand.cs.rutgers.edu CRON[7275]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T14:24:01.788261-04:00 memexpand.cs.rutgers.edu vsce-sign: Manifest file size:  115725
+2026-04-23T14:24:01.788381-04:00 memexpand.cs.rutgers.edu vsce-sign: Signature file size:  12148
+2026-04-23T14:24:02.206832-04:00 memexpand.cs.rutgers.edu vsce-sign: ManifestPackageIntegrityPolicy succeeded.
+2026-04-23T14:24:02.277008-04:00 memexpand.cs.rutgers.edu vsce-sign: SignatureIntegrityPolicy for primary signature succeeded.
+2026-04-23T14:24:02.311045-04:00 memexpand.cs.rutgers.edu vsce-sign: SignatureValidityPolicy for primary signature succeeded.
+2026-04-23T14:24:02.326538-04:00 memexpand.cs.rutgers.edu vsce-sign: SignatureIntegrityPolicy for primary timestamp signature succeeded.
+2026-04-23T14:24:02.326918-04:00 memexpand.cs.rutgers.edu vsce-sign: SignatureValidityPolicy for primary timestamp signature succeeded.
+2026-04-23T14:24:02.344413-04:00 memexpand.cs.rutgers.edu vsce-sign: X.509 certificate chain validation will use the fallback certificate bundle for timestamping.
+2026-04-23T14:24:02.571780-04:00 memexpand.cs.rutgers.edu vsce-sign: SignatureTrustPolicy for repository primary signature timestamp signature succeeded.
+2026-04-23T14:24:02.573767-04:00 memexpand.cs.rutgers.edu vsce-sign: X.509 certificate chain validation will use the fallback certificate bundle for code signing.
+2026-04-23T14:24:02.645726-04:00 memexpand.cs.rutgers.edu vsce-sign: SignatureTrustPolicy for repository primary signature succeeded.
+2026-04-23T14:24:02.646487-04:00 memexpand.cs.rutgers.edu vsce-sign: RepositoryCountersignaturePolicy for repository primary signature succeeded.
+2026-04-23T14:24:02.646795-04:00 memexpand.cs.rutgers.edu vsce-sign: Primary signature type:  repository primary signature
+2026-04-23T14:24:02.651121-04:00 memexpand.cs.rutgers.edu vsce-sign: Primary signature status:  OK
+2026-04-23T14:24:02.651170-04:00 memexpand.cs.rutgers.edu vsce-sign: Timestamp signature status:  OK
+2026-04-23T14:24:02.654613-04:00 memexpand.cs.rutgers.edu vsce-sign: Exit code:  Success
+2026-04-23T14:24:29.568918-04:00 memexpand.cs.rutgers.edu automount[4655]: key "pnpm-lock.yaml" not found in map source(s).
+2026-04-23T14:24:29.580933-04:00 memexpand.cs.rutgers.edu automount[4655]: key "package.json" not found in map source(s).
+2026-04-23T14:25:01.908132-04:00 memexpand.cs.rutgers.edu CRON[9147]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T14:25:01.908293-04:00 memexpand.cs.rutgers.edu CRON[9146]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2026-04-23T14:25:06.301128-04:00 memexpand.cs.rutgers.edu automount[4655]: key ".git" not found in map source(s).
+2026-04-23T14:26:02.026569-04:00 memexpand.cs.rutgers.edu CRON[10305]: (root) CMD (/usr/sbin/renewd.sh > /var/log/renewd.log 2>&1)
+2026-04-23T14:26:02.027667-04:00 memexpand.cs.rutgers.edu CRON[10306]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T14:26:02.448611-04:00 memexpand.cs.rutgers.edu renewd: not time to renew yet KCM:1905239618:44599
+2026-04-23T14:26:49.830904-04:00 memexpand.cs.rutgers.edu automount[4655]: key ".git" not found in map source(s).
+2026-04-23T14:27:01.504251-04:00 memexpand.cs.rutgers.edu CRON[11380]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T14:28:01.627759-04:00 memexpand.cs.rutgers.edu CRON[12034]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T14:28:09.815080-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting update-notifier-download.service - Download data for packages that failed at package install time...
+2026-04-23T14:28:09.995642-04:00 memexpand.cs.rutgers.edu systemd[1]: update-notifier-download.service: Deactivated successfully.
+2026-04-23T14:28:09.995878-04:00 memexpand.cs.rutgers.edu systemd[1]: Finished update-notifier-download.service - Download data for packages that failed at package install time.
+2026-04-23T14:28:12.025646-04:00 memexpand.cs.rutgers.edu anacron[4548]: Job `cron.daily' started
+2026-04-23T14:28:12.029485-04:00 memexpand.cs.rutgers.edu anacron[12168]: Updated timestamp for job `cron.daily' to 2026-04-23
+2026-04-23T14:28:12.064567-04:00 memexpand.cs.rutgers.edu anacron[4548]: Job `cron.daily' terminated
+2026-04-23T14:29:01.763006-04:00 memexpand.cs.rutgers.edu CRON[12535]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T14:29:15.632766-04:00 memexpand.cs.rutgers.edu systemd[1]: Reloading requested from client PID 12575 ('systemctl') (unit session-1.scope)...
+2026-04-23T14:29:15.632925-04:00 memexpand.cs.rutgers.edu systemd[1]: Reloading...
+2026-04-23T14:29:15.720576-04:00 memexpand.cs.rutgers.edu systemd[1]: Configuration file /etc/systemd/system/oomnotify.service is marked executable. Please remove executable permission bits. Proceeding anyway.
+2026-04-23T14:29:15.739163-04:00 memexpand.cs.rutgers.edu systemd[1]: Configuration file /etc/systemd/system/zabbix-agent2.service.d/rundir.conf is marked executable. Please remove executable permission bits. Proceeding anyway.
+2026-04-23T14:29:15.742411-04:00 memexpand.cs.rutgers.edu systemd[1]: /etc/systemd/system/user.slice.d/cpu.conf:2: Unit uses CPUShares=; please use CPUWeight= instead. Support for CPUShares= will be removed soon.
+2026-04-23T14:29:15.772173-04:00 memexpand.cs.rutgers.edu systemd[1]: /etc/systemd/system/system.slice.d/cpu.conf:4: Unit uses CPUShares=; please use CPUWeight= instead. Support for CPUShares= will be removed soon.
+2026-04-23T14:29:15.838482-04:00 memexpand.cs.rutgers.edu systemd[1]: Reloading finished in 205 ms.
+2026-04-23T14:29:15.872026-04:00 memexpand.cs.rutgers.edu systemd[1]: Configuration file /etc/systemd/system/crash-pusher.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+2026-04-23T14:29:15.872565-04:00 memexpand.cs.rutgers.edu systemd[1]: Reloading requested from client PID 12646 ('systemctl') (unit session-1.scope)...
+2026-04-23T14:29:15.872639-04:00 memexpand.cs.rutgers.edu systemd[1]: Reloading...
+2026-04-23T14:29:15.960202-04:00 memexpand.cs.rutgers.edu systemd[1]: Configuration file /etc/systemd/system/oomnotify.service is marked executable. Please remove executable permission bits. Proceeding anyway.
+2026-04-23T14:29:15.979009-04:00 memexpand.cs.rutgers.edu systemd[1]: Configuration file /etc/systemd/system/zabbix-agent2.service.d/rundir.conf is marked executable. Please remove executable permission bits. Proceeding anyway.
+2026-04-23T14:29:15.982257-04:00 memexpand.cs.rutgers.edu systemd[1]: /etc/systemd/system/user.slice.d/cpu.conf:2: Unit uses CPUShares=; please use CPUWeight= instead. Support for CPUShares= will be removed soon.
+2026-04-23T14:29:15.989973-04:00 memexpand.cs.rutgers.edu systemd[1]: Configuration file /etc/systemd/system/crash-pusher.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+2026-04-23T14:29:16.012086-04:00 memexpand.cs.rutgers.edu systemd[1]: /etc/systemd/system/system.slice.d/cpu.conf:4: Unit uses CPUShares=; please use CPUWeight= instead. Support for CPUShares= will be removed soon.
+2026-04-23T14:29:16.076877-04:00 memexpand.cs.rutgers.edu systemd[1]: Reloading finished in 204 ms.
+2026-04-23T14:29:16.130919-04:00 memexpand.cs.rutgers.edu systemd[1]: Started crash-pusher.service - Crash log pusher.
+2026-04-23T14:29:16.152532-04:00 memexpand.cs.rutgers.edu bash[12718]: [2026-04-23T18:29:16Z] git user: root
+2026-04-23T14:29:16.163042-04:00 memexpand.cs.rutgers.edu bash[12718]: [2026-04-23T18:29:16Z] origin remote: https://github.com/Linfeng-He/machine_log.git
+2026-04-23T14:29:16.248539-04:00 memexpand.cs.rutgers.edu bash[12718]: [2026-04-23T18:29:16Z] push preflight failed for origin/main
+2026-04-23T14:29:16.249712-04:00 memexpand.cs.rutgers.edu bash[12718]: [2026-04-23T18:29:16Z] push preflight: fatal: could not read Username for 'https://github.com': No such device or address
+2026-04-23T14:29:16.250934-04:00 memexpand.cs.rutgers.edu bash[12718]: [2026-04-23T18:29:16Z] github https remote detected; configure a credential helper/token or switch origin to ssh for unattended pushes
+2026-04-23T14:29:19.767999-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T18:29:19Z] git push failed for origin/main
+2026-04-23T14:29:19.769223-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T18:29:19Z] git push: fatal: could not read Username for 'https://github.com': No such device or address
+2026-04-23T14:29:19.802047-04:00 memexpand.cs.rutgers.edu systemd[6310]: launchpadlib-cache-clean.service - Clean up old files in the Launchpadlib cache was skipped because of an unmet condition check (ConditionPathExists=/common/home/lh818/.launchpadlib/api.launchpad.net/cache).
+2026-04-23T14:29:50.208288-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T18:29:50Z] git push failed for origin/main
+2026-04-23T14:29:50.209078-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T18:29:50Z] git push: fatal: could not read Username for 'https://github.com': No such device or address
+2026-04-23T14:30:00.030144-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting sysstat-collect.service - system activity accounting tool...
+2026-04-23T14:30:00.041967-04:00 memexpand.cs.rutgers.edu systemd[1]: sysstat-collect.service: Deactivated successfully.
+2026-04-23T14:30:00.042161-04:00 memexpand.cs.rutgers.edu systemd[1]: Finished sysstat-collect.service - system activity accounting tool.
+2026-04-23T14:30:01.874578-04:00 memexpand.cs.rutgers.edu CRON[31198]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T14:30:01.875683-04:00 memexpand.cs.rutgers.edu CRON[31199]: (root) CMD ([ -x /etc/init.d/anacron ] && if [ ! -d /run/systemd/system ]; then /usr/sbin/invoke-rc.d anacron start >/dev/null; fi)
+2026-04-23T14:30:20.743941-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T18:30:20Z] git push failed for origin/main
+2026-04-23T14:30:20.745238-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T18:30:20Z] git push: fatal: could not read Username for 'https://github.com': No such device or address
+2026-04-23T14:30:51.216909-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T18:30:51Z] git push failed for origin/main
+2026-04-23T14:30:51.217580-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T18:30:51Z] git push: fatal: could not read Username for 'https://github.com': No such device or address
+2026-04-23T14:31:01.997482-04:00 memexpand.cs.rutgers.edu CRON[55891]: (root) CMD (/usr/sbin/renewd.sh > /var/log/renewd.log 2>&1)
+2026-04-23T14:31:01.998132-04:00 memexpand.cs.rutgers.edu CRON[55893]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T14:31:02.235147-04:00 memexpand.cs.rutgers.edu renewd: not time to renew yet KCM:1905239618:44599
+2026-04-23T14:31:21.687449-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T18:31:21Z] git push failed for origin/main
+2026-04-23T14:31:21.688251-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T18:31:21Z] git push: fatal: could not read Username for 'https://github.com': No such device or address
+2026-04-23T14:31:52.185380-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T18:31:52Z] git push failed for origin/main
+2026-04-23T14:31:52.187306-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T18:31:52Z] git push: fatal: could not read Username for 'https://github.com': No such device or address
+2026-04-23T14:32:01.287701-04:00 memexpand.cs.rutgers.edu CRON[80217]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T14:32:22.696795-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T18:32:22Z] git push failed for origin/main
+2026-04-23T14:32:22.698298-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T18:32:22Z] git push: fatal: could not read Username for 'https://github.com': No such device or address
+2026-04-23T14:32:53.191341-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting sssd-ssh.service - SSSD SSH Service responder...
+2026-04-23T14:32:53.194883-04:00 memexpand.cs.rutgers.edu systemd[1]: Started sssd-ssh.service - SSSD SSH Service responder.
+2026-04-23T14:32:53.210308-04:00 memexpand.cs.rutgers.edu sssd_ssh[101265]: Starting up
+2026-04-23T14:32:53.678646-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T18:32:53Z] git push failed for origin/main
+2026-04-23T14:32:53.680671-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T18:32:53Z] git push: Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+2026-04-23T14:32:53.682125-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T18:32:53Z] git push: git@github.com: Permission denied (publickey).
+2026-04-23T14:32:53.684162-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T18:32:53Z] git push: fatal: Could not read from remote repository.
+2026-04-23T14:32:53.685520-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T18:32:53Z] git push: Please make sure you have the correct access rights
+2026-04-23T14:32:53.686759-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T18:32:53Z] git push: and the repository exists.
+2026-04-23T14:33:01.399875-04:00 memexpand.cs.rutgers.edu CRON[104582]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T14:33:14.026244-04:00 memexpand.cs.rutgers.edu anacron[4548]: Job `cron.weekly' started
+2026-04-23T14:33:14.030019-04:00 memexpand.cs.rutgers.edu anacron[109848]: Updated timestamp for job `cron.weekly' to 2026-04-23
+2026-04-23T14:33:14.031720-04:00 memexpand.cs.rutgers.edu anacron[4548]: Job `cron.weekly' terminated
+2026-04-23T14:33:14.031780-04:00 memexpand.cs.rutgers.edu anacron[4548]: Normal exit (2 jobs run)
+2026-04-23T14:33:14.033442-04:00 memexpand.cs.rutgers.edu systemd[1]: anacron.service: Deactivated successfully.
+2026-04-23T14:33:46.283266-04:00 memexpand.cs.rutgers.edu sssd_pam[5921]: Shutting down (status = 0)
+2026-04-23T14:33:46.290313-04:00 memexpand.cs.rutgers.edu systemd[1]: sssd-pam.service: Deactivated successfully.
+2026-04-23T14:34:01.509874-04:00 memexpand.cs.rutgers.edu CRON[129362]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T14:34:49.260234-04:00 memexpand.cs.rutgers.edu systemd[1]: Started anacron.service - Run anacron jobs.
+2026-04-23T14:34:49.261501-04:00 memexpand.cs.rutgers.edu anacron[148688]: Anacron 2.3 started on 2026-04-23
+2026-04-23T14:34:49.261751-04:00 memexpand.cs.rutgers.edu anacron[148688]: Normal exit (0 jobs run)
+2026-04-23T14:34:49.263390-04:00 memexpand.cs.rutgers.edu systemd[1]: anacron.service: Deactivated successfully.
+2026-04-23T14:35:01.629000-04:00 memexpand.cs.rutgers.edu CRON[153395]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2026-04-23T14:35:01.630107-04:00 memexpand.cs.rutgers.edu CRON[153396]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T14:36:01.749537-04:00 memexpand.cs.rutgers.edu CRON[178029]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T14:36:01.750594-04:00 memexpand.cs.rutgers.edu CRON[178030]: (root) CMD (/usr/sbin/renewd.sh > /var/log/renewd.log 2>&1)
+2026-04-23T14:36:02.123000-04:00 memexpand.cs.rutgers.edu renewd: not time to renew yet KCM:1905239618:44599
+2026-04-23T14:37:01.175472-04:00 memexpand.cs.rutgers.edu CRON[202132]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T14:37:53.407225-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting systemd-tmpfiles-clean.service - Cleanup of Temporary Directories...
+2026-04-23T14:37:53.438147-04:00 memexpand.cs.rutgers.edu systemd[1]: systemd-tmpfiles-clean.service: Deactivated successfully.
+2026-04-23T14:37:53.438362-04:00 memexpand.cs.rutgers.edu systemd[1]: Finished systemd-tmpfiles-clean.service - Cleanup of Temporary Directories.
+2026-04-23T14:38:01.278227-04:00 memexpand.cs.rutgers.edu CRON[226701]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T14:39:01.408901-04:00 memexpand.cs.rutgers.edu CRON[250883]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T14:40:00.035242-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting sysstat-collect.service - system activity accounting tool...
+2026-04-23T14:40:00.047702-04:00 memexpand.cs.rutgers.edu systemd[1]: sysstat-collect.service: Deactivated successfully.
+2026-04-23T14:40:00.047940-04:00 memexpand.cs.rutgers.edu systemd[1]: Finished sysstat-collect.service - system activity accounting tool.
+2026-04-23T14:40:01.520480-04:00 memexpand.cs.rutgers.edu CRON[275469]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T14:41:01.629008-04:00 memexpand.cs.rutgers.edu CRON[299520]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T14:41:01.629735-04:00 memexpand.cs.rutgers.edu CRON[299521]: (root) CMD (/usr/sbin/renewd.sh > /var/log/renewd.log 2>&1)
+2026-04-23T14:41:01.840107-04:00 memexpand.cs.rutgers.edu renewd: not time to renew yet KCM:1905239618:44599
+2026-04-23T14:42:01.892384-04:00 memexpand.cs.rutgers.edu CRON[324214]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T14:43:02.013083-04:00 memexpand.cs.rutgers.edu CRON[348481]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T14:44:01.142033-04:00 memexpand.cs.rutgers.edu CRON[372298]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T14:44:21.528242-04:00 memexpand.cs.rutgers.edu automount[4655]: key ".git" not found in map source(s).
