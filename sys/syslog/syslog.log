@@ -1,4 +1,4 @@
-===== syslog snapshot host=node0 boot_started_utc=20260422T233040Z boot_id=e66596e1-a2c6-4d58-80f4-d1779cbb52ce captured_utc=20260422T233203Z =====
+===== syslog snapshot host=node0 boot_started_utc=20260423T014435Z boot_id=e66596e1-a2c6-4d58-80f4-d1779cbb52ce captured_utc=20260423T014440Z =====
 
 Apr 21 17:44:40 localhost systemd[1]: Starting GRUB failed boot detection...
 Apr 21 17:44:40 localhost systemd[1]: logrotate.service: Deactivated successfully.
@@ -2671,3 +2671,36 @@ Apr 22 18:30:40 localhost systemd[1]: Configuration file /run/systemd/system/net
 Apr 22 18:30:40 localhost systemd[1]: Started Crash log pusher.
 Apr 22 18:30:40 localhost bash[562085]: [2026-04-22T23:30:40Z] git user: LH
 Apr 22 18:30:41 localhost bash[562085]: [2026-04-22T23:30:41Z] origin remote: https://github.com/Linfeng-He/machine_log.git
+Apr 22 18:32:03 localhost systemd[1]: Stopping Crash log pusher...
+Apr 22 18:32:03 localhost bash[562085]: [2026-04-22T23:32:03Z] stopping
+Apr 22 18:32:06 localhost systemd[1]: crash-pusher.service: Main process exited, code=exited, status=143/n/a
+Apr 22 18:32:06 localhost systemd[1]: crash-pusher.service: Killing process 570017 (sleep) with signal SIGKILL.
+Apr 22 18:32:06 localhost systemd[1]: crash-pusher.service: Failed with result 'exit-code'.
+Apr 22 18:32:06 localhost systemd[1]: crash-pusher.service: Unit process 570017 (sleep) remains running after unit stopped.
+Apr 22 18:32:06 localhost systemd[1]: Stopped Crash log pusher.
+Apr 22 18:32:06 localhost systemd[1]: crash-pusher.service: Consumed 42.759s CPU time.
+Apr 22 18:44:57 localhost systemd[1]: Started ntp-systemd-netif.service.
+Apr 22 18:44:57 localhost systemd[1]: ntp-systemd-netif.service: Deactivated successfully.
+Apr 22 19:17:01 localhost CRON[571696]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Apr 22 19:25:36 localhost systemd[1]: Starting Ubuntu Advantage Timer for running repeated jobs...
+Apr 22 19:25:37 localhost systemd[1]: ua-timer.service: Deactivated successfully.
+Apr 22 19:25:37 localhost systemd[1]: Finished Ubuntu Advantage Timer for running repeated jobs.
+Apr 22 20:17:01 localhost CRON[572044]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Apr 22 20:40:02 localhost systemd[1]: Reloading.
+Apr 22 20:40:02 localhost systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Apr 22 20:40:29 localhost systemd[1]: Starting Update APT News...
+Apr 22 20:40:29 localhost systemd[1]: Starting Update the local ESM caches...
+Apr 22 20:40:30 localhost systemd[1]: apt-news.service: Deactivated successfully.
+Apr 22 20:40:30 localhost systemd[1]: Finished Update APT News.
+Apr 22 20:40:30 localhost systemd[1]: esm-cache.service: Deactivated successfully.
+Apr 22 20:40:30 localhost systemd[1]: Finished Update the local ESM caches.
+Apr 22 20:44:34 localhost systemd[1]: Reloading.
+Apr 22 20:44:34 localhost systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Apr 22 20:44:34 localhost systemd[1]: Starting Daily apt download activities...
+Apr 22 20:44:34 localhost systemd[1]: Reloading.
+Apr 22 20:44:35 localhost systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Apr 22 20:44:35 localhost systemd[1]: Started Crash log pusher.
+Apr 22 20:44:35 localhost bash[573902]: [2026-04-23T01:44:35Z] git user: LH
+Apr 22 20:44:35 localhost bash[573902]: [2026-04-23T01:44:35Z] origin remote: https://github.com/Linfeng-He/machine_log.git
+Apr 22 20:44:36 localhost systemd[1]: apt-daily.service: Deactivated successfully.
+Apr 22 20:44:36 localhost systemd[1]: Finished Daily apt download activities.
