@@ -1176,6 +1176,8 @@ if [[ -n "$STAGING_ROOT" ]]; then
   echo "staging install completed at $STAGING_ROOT"
   echo "manual service test example:"
   echo "  CRASH_PUSHER_ENV_FILE=$ENV_PATH /bin/bash $REPO_SCRIPT_PATH --run-service"
+else
+  register_service_main
 fi
 
 echo "installer completed"
@@ -1183,7 +1185,8 @@ echo "environment file: $ENV_PATH"
 echo "service file: $SERVICE_PATH"
 echo "service entrypoint: $REPO_SCRIPT_PATH --run-service"
 echo "repo dir: $REPO_DIR"
-echo "to register and start: bash install_crash_pusher.sh --reg"
+echo "service status: enabled and restarted"
+echo "to re-register later: bash install_crash_pusher.sh --reg"
 echo "to stop later: bash install_crash_pusher.sh --stop"
 echo "manual stop command: sudo systemctl disable --now crash-pusher.service"
 if [[ -n "$CMMHI_CMD" ]]; then
