@@ -1,4 +1,4 @@
-===== dmesg snapshot host=memexpand boot_started_utc=20260423T182916Z boot_id=230a16fb-d4d9-4460-b551-e1f54133a8d7 captured_utc=20260423T183359Z =====
+===== dmesg snapshot host=memexpand boot_started_utc=20260423T182916Z boot_id=230a16fb-d4d9-4460-b551-e1f54133a8d7 captured_utc=20260423T183432Z =====
 
 [Thu Apr 23 14:22:53 2026] Linux version 6.8.0-106-generic (buildd@lcy02-amd64-074) (x86_64-linux-gnu-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0, GNU ld (GNU Binutils for Ubuntu) 2.42) #106-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar  6 07:58:08 UTC 2026 (Ubuntu 6.8.0-106.106-generic 6.8.12)
 [Thu Apr 23 14:22:53 2026] Command line: BOOT_IMAGE=/boot/vmlinuz-6.8.0-106-generic root=UUID=f417519a-fbfe-4b20-b6bb-27e79387bf15 ro swapaccount=1 crashkernel=2G-4G:320M,4G-32G:512M,32G-64G:1024M,64G-128G:2048M,128G-:4096M
