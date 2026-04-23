@@ -56,7 +56,7 @@ memexpand.cs.rutgers.edu
           bus info: cpu@0
           version: 6.175.3
           slot: CPU1
-          size: 800MHz
+          size: 1500MHz
           capacity: 3200MHz
           width: 64 bits
           clock: 100MHz
@@ -94,7 +94,7 @@ memexpand.cs.rutgers.edu
           bus info: cpu@1
           version: 6.175.3
           slot: CPU2
-          size: 2GHz
+          size: 1500MHz
           capacity: 3200MHz
           width: 64 bits
           clock: 100MHz
@@ -1270,7 +1270,7 @@ memexpand.cs.rutgers.edu
                    serial: f417519a-fbfe-4b20-b6bb-27e79387bf15
                    size: 192GiB
                    capabilities: journaled extended_attributes large_files huge_files dir_nlink recover 64bit extents ext4 ext2 initialized
-                   configuration: created=2025-11-10 10:14:12 filesystem=ext4 lastmountpoint=/ modified=2026-04-23 14:23:09 mount.fstype=ext4 mount.options=rw,relatime,stripe=32 mounted=2026-04-23 14:23:10 state=mounted
+                   configuration: created=2025-11-10 10:14:12 filesystem=ext4 lastmountpoint=/ modified=2026-04-23 15:23:09 mount.fstype=ext4 mount.options=rw,relatime,stripe=32 mounted=2026-04-23 14:23:10 state=mounted
               *-volume:2
                    description: Linux swap volume
                    vendor: Linux
