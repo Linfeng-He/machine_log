@@ -1,4 +1,4 @@
-===== dmesg snapshot host=memexpand boot_started_utc=20260423T202201Z boot_id=bedb69d7-802a-4db2-aeb7-4e361b3c4120 captured_utc=20260423T202407Z =====
+===== dmesg snapshot host=memexpand boot_started_utc=20260423T202201Z boot_id=bedb69d7-802a-4db2-aeb7-4e361b3c4120 captured_utc=20260423T202448Z =====
 
 [Thu Apr 23 16:19:35 2026] Linux version 6.8.0-106-generic (buildd@lcy02-amd64-074) (x86_64-linux-gnu-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0, GNU ld (GNU Binutils for Ubuntu) 2.42) #106-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar  6 07:58:08 UTC 2026 (Ubuntu 6.8.0-106.106-generic 6.8.12)
 [Thu Apr 23 16:19:35 2026] Command line: BOOT_IMAGE=/boot/vmlinuz-6.8.0-106-generic root=UUID=f417519a-fbfe-4b20-b6bb-27e79387bf15 ro efi=nosoftreserve nokaslr swapaccount=1 crashkernel=2G-4G:320M,4G-32G:512M,32G-64G:1024M,64G-128G:2048M,128G-:4096M
@@ -3492,3 +3492,65 @@
 [Thu Apr 23 16:20:10 2026] Key type id_legacy registered
 [Thu Apr 23 16:20:11 2026] systemd-journald[1588]: /var/log/journal/0f78dedde13342209808d23953801a97/user-1905239618.journal: Journal file uses a different sequence number ID, rotating.
 [Thu Apr 23 16:24:01 2026] tee (96108): drop_caches: 3
+[Thu Apr 23 16:24:33 2026] sep5_58: [warning] [linuxos_offline_cpu@898]: Cpu 33 is not allowed to go offline!
+[Thu Apr 23 16:24:33 2026] smpboot: CPU 33 is now offline
+[Thu Apr 23 16:24:33 2026] sep5_58: [warning] [linuxos_offline_cpu@898]: Cpu 34 is not allowed to go offline!
+[Thu Apr 23 16:24:33 2026] smpboot: CPU 34 is now offline
+[Thu Apr 23 16:24:33 2026] sep5_58: [warning] [linuxos_offline_cpu@898]: Cpu 35 is not allowed to go offline!
+[Thu Apr 23 16:24:33 2026] smpboot: CPU 35 is now offline
+[Thu Apr 23 16:24:34 2026] sep5_58: [warning] [linuxos_offline_cpu@898]: Cpu 36 is not allowed to go offline!
+[Thu Apr 23 16:24:34 2026] smpboot: CPU 36 is now offline
+[Thu Apr 23 16:24:34 2026] sep5_58: [warning] [linuxos_offline_cpu@898]: Cpu 37 is not allowed to go offline!
+[Thu Apr 23 16:24:34 2026] smpboot: CPU 37 is now offline
+[Thu Apr 23 16:24:34 2026] sep5_58: [warning] [linuxos_offline_cpu@898]: Cpu 38 is not allowed to go offline!
+[Thu Apr 23 16:24:34 2026] smpboot: CPU 38 is now offline
+[Thu Apr 23 16:24:34 2026] sep5_58: [warning] [linuxos_offline_cpu@898]: Cpu 39 is not allowed to go offline!
+[Thu Apr 23 16:24:34 2026] smpboot: CPU 39 is now offline
+[Thu Apr 23 16:24:34 2026] sep5_58: [warning] [linuxos_offline_cpu@898]: Cpu 40 is not allowed to go offline!
+[Thu Apr 23 16:24:34 2026] smpboot: CPU 40 is now offline
+[Thu Apr 23 16:24:34 2026] sep5_58: [warning] [linuxos_offline_cpu@898]: Cpu 41 is not allowed to go offline!
+[Thu Apr 23 16:24:34 2026] smpboot: CPU 41 is now offline
+[Thu Apr 23 16:24:34 2026] sep5_58: [warning] [linuxos_offline_cpu@898]: Cpu 42 is not allowed to go offline!
+[Thu Apr 23 16:24:34 2026] smpboot: CPU 42 is now offline
+[Thu Apr 23 16:24:34 2026] sep5_58: [warning] [linuxos_offline_cpu@898]: Cpu 43 is not allowed to go offline!
+[Thu Apr 23 16:24:34 2026] smpboot: CPU 43 is now offline
+[Thu Apr 23 16:24:34 2026] sep5_58: [warning] [linuxos_offline_cpu@898]: Cpu 44 is not allowed to go offline!
+[Thu Apr 23 16:24:34 2026] smpboot: CPU 44 is now offline
+[Thu Apr 23 16:24:34 2026] sep5_58: [warning] [linuxos_offline_cpu@898]: Cpu 45 is not allowed to go offline!
+[Thu Apr 23 16:24:34 2026] smpboot: CPU 45 is now offline
+[Thu Apr 23 16:24:34 2026] sep5_58: [warning] [linuxos_offline_cpu@898]: Cpu 46 is not allowed to go offline!
+[Thu Apr 23 16:24:34 2026] smpboot: CPU 46 is now offline
+[Thu Apr 23 16:24:34 2026] sep5_58: [warning] [linuxos_offline_cpu@898]: Cpu 47 is not allowed to go offline!
+[Thu Apr 23 16:24:34 2026] smpboot: CPU 47 is now offline
+[Thu Apr 23 16:24:34 2026] sep5_58: [warning] [linuxos_offline_cpu@898]: Cpu 48 is not allowed to go offline!
+[Thu Apr 23 16:24:34 2026] smpboot: CPU 48 is now offline
+[Thu Apr 23 16:24:34 2026] sep5_58: [warning] [linuxos_offline_cpu@898]: Cpu 49 is not allowed to go offline!
+[Thu Apr 23 16:24:34 2026] smpboot: CPU 49 is now offline
+[Thu Apr 23 16:24:34 2026] sep5_58: [warning] [linuxos_offline_cpu@898]: Cpu 50 is not allowed to go offline!
+[Thu Apr 23 16:24:34 2026] smpboot: CPU 50 is now offline
+[Thu Apr 23 16:24:34 2026] sep5_58: [warning] [linuxos_offline_cpu@898]: Cpu 51 is not allowed to go offline!
+[Thu Apr 23 16:24:34 2026] smpboot: CPU 51 is now offline
+[Thu Apr 23 16:24:34 2026] sep5_58: [warning] [linuxos_offline_cpu@898]: Cpu 52 is not allowed to go offline!
+[Thu Apr 23 16:24:34 2026] smpboot: CPU 52 is now offline
+[Thu Apr 23 16:24:34 2026] sep5_58: [warning] [linuxos_offline_cpu@898]: Cpu 53 is not allowed to go offline!
+[Thu Apr 23 16:24:34 2026] smpboot: CPU 53 is now offline
+[Thu Apr 23 16:24:34 2026] sep5_58: [warning] [linuxos_offline_cpu@898]: Cpu 54 is not allowed to go offline!
+[Thu Apr 23 16:24:34 2026] smpboot: CPU 54 is now offline
+[Thu Apr 23 16:24:34 2026] sep5_58: [warning] [linuxos_offline_cpu@898]: Cpu 55 is not allowed to go offline!
+[Thu Apr 23 16:24:34 2026] smpboot: CPU 55 is now offline
+[Thu Apr 23 16:24:34 2026] sep5_58: [warning] [linuxos_offline_cpu@898]: Cpu 56 is not allowed to go offline!
+[Thu Apr 23 16:24:34 2026] smpboot: CPU 56 is now offline
+[Thu Apr 23 16:24:34 2026] sep5_58: [warning] [linuxos_offline_cpu@898]: Cpu 57 is not allowed to go offline!
+[Thu Apr 23 16:24:34 2026] smpboot: CPU 57 is now offline
+[Thu Apr 23 16:24:34 2026] sep5_58: [warning] [linuxos_offline_cpu@898]: Cpu 58 is not allowed to go offline!
+[Thu Apr 23 16:24:34 2026] smpboot: CPU 58 is now offline
+[Thu Apr 23 16:24:35 2026] sep5_58: [warning] [linuxos_offline_cpu@898]: Cpu 59 is not allowed to go offline!
+[Thu Apr 23 16:24:35 2026] smpboot: CPU 59 is now offline
+[Thu Apr 23 16:24:35 2026] sep5_58: [warning] [linuxos_offline_cpu@898]: Cpu 60 is not allowed to go offline!
+[Thu Apr 23 16:24:35 2026] smpboot: CPU 60 is now offline
+[Thu Apr 23 16:24:35 2026] sep5_58: [warning] [linuxos_offline_cpu@898]: Cpu 61 is not allowed to go offline!
+[Thu Apr 23 16:24:35 2026] smpboot: CPU 61 is now offline
+[Thu Apr 23 16:24:35 2026] sep5_58: [warning] [linuxos_offline_cpu@898]: Cpu 62 is not allowed to go offline!
+[Thu Apr 23 16:24:35 2026] smpboot: CPU 62 is now offline
+[Thu Apr 23 16:24:35 2026] sep5_58: [warning] [linuxos_offline_cpu@898]: Cpu 63 is not allowed to go offline!
+[Thu Apr 23 16:24:35 2026] smpboot: CPU 63 is now offline
