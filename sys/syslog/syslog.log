@@ -1,4 +1,4 @@
-===== syslog snapshot host=memexpand boot_started_utc=20260423T182916Z boot_id=230a16fb-d4d9-4460-b551-e1f54133a8d7 captured_utc=20260423T191511Z =====
+===== syslog snapshot host=memexpand boot_started_utc=20260423T182916Z boot_id=230a16fb-d4d9-4460-b551-e1f54133a8d7 captured_utc=20260423T191550Z =====
 
 2026-04-23T14:23:15.228213-04:00 memexpand.cs.rutgers.edu rsyslogd: [origin software="rsyslogd" swVersion="8.2312.0" x-pid="4311" x-info="https://www.rsyslog.com"] rsyslogd was HUPed
 2026-04-23T14:23:15.330467-04:00 memexpand.cs.rutgers.edu systemd[1]: logrotate.service: Deactivated successfully.
@@ -493,3 +493,84 @@
 2026-04-23T15:14:01.706451-04:00 memexpand.cs.rutgers.edu CRON[1114395]: (root) CMD (/usr/local/sbin/thermalwatch)
 2026-04-23T15:15:01.820426-04:00 memexpand.cs.rutgers.edu CRON[1138441]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
 2026-04-23T15:15:01.821222-04:00 memexpand.cs.rutgers.edu CRON[1138442]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T15:15:46.897147-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting sssd-pac.service - SSSD PAC Service responder...
+2026-04-23T15:15:46.901405-04:00 memexpand.cs.rutgers.edu systemd[1]: Started sssd-pac.service - SSSD PAC Service responder.
+2026-04-23T15:15:46.920156-04:00 memexpand.cs.rutgers.edu sssd_pac[1156971]: Starting up
+2026-04-23T15:15:46.926444-04:00 memexpand.cs.rutgers.edu systemd[1]: sssd-pac.service: Main process exited, code=exited, status=3/NOTIMPLEMENTED
+2026-04-23T15:15:46.926625-04:00 memexpand.cs.rutgers.edu systemd[1]: sssd-pac.service: Failed with result 'exit-code'.
+2026-04-23T15:15:47.052210-04:00 memexpand.cs.rutgers.edu systemd[1]: sssd-pac.service: Scheduled restart job, restart counter is at 1.
+2026-04-23T15:15:47.070764-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting sssd-pac.service - SSSD PAC Service responder...
+2026-04-23T15:15:47.073600-04:00 memexpand.cs.rutgers.edu systemd[1]: Started sssd-pac.service - SSSD PAC Service responder.
+2026-04-23T15:15:47.089992-04:00 memexpand.cs.rutgers.edu sssd_pac[1157147]: Starting up
+2026-04-23T15:15:47.094906-04:00 memexpand.cs.rutgers.edu systemd[1]: sssd-pac.service: Main process exited, code=exited, status=3/NOTIMPLEMENTED
+2026-04-23T15:15:47.095017-04:00 memexpand.cs.rutgers.edu systemd[1]: sssd-pac.service: Failed with result 'exit-code'.
+2026-04-23T15:15:47.302070-04:00 memexpand.cs.rutgers.edu systemd[1]: sssd-pac.service: Scheduled restart job, restart counter is at 2.
+2026-04-23T15:15:47.315818-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting sssd-pac.service - SSSD PAC Service responder...
+2026-04-23T15:15:47.318412-04:00 memexpand.cs.rutgers.edu systemd[1]: Started sssd-pac.service - SSSD PAC Service responder.
+2026-04-23T15:15:47.334244-04:00 memexpand.cs.rutgers.edu sssd_pac[1157153]: Starting up
+2026-04-23T15:15:47.339078-04:00 memexpand.cs.rutgers.edu systemd[1]: sssd-pac.service: Main process exited, code=exited, status=3/NOTIMPLEMENTED
+2026-04-23T15:15:47.339186-04:00 memexpand.cs.rutgers.edu systemd[1]: sssd-pac.service: Failed with result 'exit-code'.
+2026-04-23T15:15:47.552013-04:00 memexpand.cs.rutgers.edu systemd[1]: sssd-pac.service: Scheduled restart job, restart counter is at 3.
+2026-04-23T15:15:47.571836-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting sssd-pac.service - SSSD PAC Service responder...
+2026-04-23T15:15:47.575665-04:00 memexpand.cs.rutgers.edu systemd[1]: Started sssd-pac.service - SSSD PAC Service responder.
+2026-04-23T15:15:47.591958-04:00 memexpand.cs.rutgers.edu sssd_pac[1157160]: Starting up
+2026-04-23T15:15:47.597282-04:00 memexpand.cs.rutgers.edu systemd[1]: sssd-pac.service: Main process exited, code=exited, status=3/NOTIMPLEMENTED
+2026-04-23T15:15:47.597410-04:00 memexpand.cs.rutgers.edu systemd[1]: sssd-pac.service: Failed with result 'exit-code'.
+2026-04-23T15:15:47.802145-04:00 memexpand.cs.rutgers.edu systemd[1]: sssd-pac.service: Scheduled restart job, restart counter is at 4.
+2026-04-23T15:15:47.824862-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting sssd-pac.service - SSSD PAC Service responder...
+2026-04-23T15:15:47.827129-04:00 memexpand.cs.rutgers.edu systemd[1]: Started sssd-pac.service - SSSD PAC Service responder.
+2026-04-23T15:15:47.842994-04:00 memexpand.cs.rutgers.edu sssd_pac[1157185]: Starting up
+2026-04-23T15:15:47.847773-04:00 memexpand.cs.rutgers.edu systemd[1]: sssd-pac.service: Main process exited, code=exited, status=3/NOTIMPLEMENTED
+2026-04-23T15:15:47.847890-04:00 memexpand.cs.rutgers.edu systemd[1]: sssd-pac.service: Failed with result 'exit-code'.
+2026-04-23T15:15:48.052196-04:00 memexpand.cs.rutgers.edu systemd[1]: sssd-pac.service: Scheduled restart job, restart counter is at 5.
+2026-04-23T15:15:48.052536-04:00 memexpand.cs.rutgers.edu systemd[1]: sssd-pac.service: Start request repeated too quickly.
+2026-04-23T15:15:48.052674-04:00 memexpand.cs.rutgers.edu systemd[1]: sssd-pac.service: Failed with result 'exit-code'.
+2026-04-23T15:15:48.052719-04:00 memexpand.cs.rutgers.edu systemd[1]: Failed to start sssd-pac.service - SSSD PAC Service responder.
+2026-04-23T15:15:48.052789-04:00 memexpand.cs.rutgers.edu systemd[1]: sssd-pac.socket: Failed with result 'service-start-limit-hit'.
+2026-04-23T15:15:48.542505-04:00 memexpand.cs.rutgers.edu systemd[1]: Created slice user-1056.slice - User Slice of UID 1056.
+2026-04-23T15:15:48.561896-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting user-runtime-dir@1056.service - User Runtime Directory /run/user/1056...
+2026-04-23T15:15:48.568497-04:00 memexpand.cs.rutgers.edu systemd[1]: Finished user-runtime-dir@1056.service - User Runtime Directory /run/user/1056.
+2026-04-23T15:15:48.573017-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting user@1056.service - User Manager for UID 1056...
+2026-04-23T15:15:48.720802-04:00 memexpand.cs.rutgers.edu systemd[1157744]: Queued start job for default target default.target.
+2026-04-23T15:15:48.741158-04:00 memexpand.cs.rutgers.edu systemd[1157744]: Created slice app.slice - User Application Slice.
+2026-04-23T15:15:48.743569-04:00 memexpand.cs.rutgers.edu systemd[1157744]: Created slice session.slice - User Core Session Slice.
+2026-04-23T15:15:48.745849-04:00 memexpand.cs.rutgers.edu systemd[1157744]: Started ubuntu-report.path - Pending report trigger for Ubuntu Report.
+2026-04-23T15:15:48.745889-04:00 memexpand.cs.rutgers.edu systemd[1157744]: Started launchpadlib-cache-clean.timer - Clean up old files in the Launchpadlib cache.
+2026-04-23T15:15:48.745927-04:00 memexpand.cs.rutgers.edu systemd[1157744]: Reached target paths.target - Paths.
+2026-04-23T15:15:48.745957-04:00 memexpand.cs.rutgers.edu systemd[1157744]: Reached target timers.target - Timers.
+2026-04-23T15:15:48.749090-04:00 memexpand.cs.rutgers.edu systemd[1157744]: Starting dbus.socket - D-Bus User Message Bus Socket...
+2026-04-23T15:15:48.749211-04:00 memexpand.cs.rutgers.edu systemd[1157744]: Listening on dirmngr.socket - GnuPG network certificate management daemon.
+2026-04-23T15:15:48.749328-04:00 memexpand.cs.rutgers.edu systemd[1157744]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+2026-04-23T15:15:48.749415-04:00 memexpand.cs.rutgers.edu systemd[1157744]: Listening on gnome-keyring-daemon.socket - GNOME Keyring daemon.
+2026-04-23T15:15:48.749496-04:00 memexpand.cs.rutgers.edu systemd[1157744]: Listening on gpg-agent-browser.socket - GnuPG cryptographic agent and passphrase cache (access for web browsers).
+2026-04-23T15:15:48.749571-04:00 memexpand.cs.rutgers.edu systemd[1157744]: Listening on gpg-agent-extra.socket - GnuPG cryptographic agent and passphrase cache (restricted).
+2026-04-23T15:15:48.752294-04:00 memexpand.cs.rutgers.edu systemd[1157744]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+2026-04-23T15:15:48.752391-04:00 memexpand.cs.rutgers.edu systemd[1157744]: Listening on gpg-agent.socket - GnuPG cryptographic agent and passphrase cache.
+2026-04-23T15:15:48.752491-04:00 memexpand.cs.rutgers.edu systemd[1157744]: Listening on keyboxd.socket - GnuPG public key management service.
+2026-04-23T15:15:48.752622-04:00 memexpand.cs.rutgers.edu systemd[1157744]: Listening on pipewire-pulse.socket - PipeWire PulseAudio.
+2026-04-23T15:15:48.752774-04:00 memexpand.cs.rutgers.edu systemd[1157744]: Listening on pipewire.socket - PipeWire Multimedia System Sockets.
+2026-04-23T15:15:48.752814-04:00 memexpand.cs.rutgers.edu systemd[1157744]: Listening on pk-debconf-helper.socket - debconf communication socket.
+2026-04-23T15:15:48.752904-04:00 memexpand.cs.rutgers.edu systemd[1157744]: Listening on speech-dispatcher.socket - Speech Dispatcher Socket.
+2026-04-23T15:15:48.757162-04:00 memexpand.cs.rutgers.edu systemd[1157744]: Listening on dbus.socket - D-Bus User Message Bus Socket.
+2026-04-23T15:15:48.768663-04:00 memexpand.cs.rutgers.edu systemd[1157744]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+2026-04-23T15:15:48.768723-04:00 memexpand.cs.rutgers.edu systemd[1157744]: Reached target sockets.target - Sockets.
+2026-04-23T15:15:48.768769-04:00 memexpand.cs.rutgers.edu systemd[1157744]: Reached target basic.target - Basic System.
+2026-04-23T15:15:48.769037-04:00 memexpand.cs.rutgers.edu systemd[1]: Started user@1056.service - User Manager for UID 1056.
+2026-04-23T15:15:48.769174-04:00 memexpand.cs.rutgers.edu systemd[1157744]: gnome-initial-setup-copy-worker.service - GNOME Initial Setup Copy Worker was skipped because of an unmet condition check (ConditionPathExists=!/common/home/kconover/.config/gnome-initial-setup-done).
+2026-04-23T15:15:48.774005-04:00 memexpand.cs.rutgers.edu systemd[1]: Started session-78.scope - Session 78 of User kconover.
+2026-04-23T15:15:48.774260-04:00 memexpand.cs.rutgers.edu systemd[1157744]: Started pipewire.service - PipeWire Multimedia Service.
+2026-04-23T15:15:48.776283-04:00 memexpand.cs.rutgers.edu systemd[1157744]: Started filter-chain.service - PipeWire filter chain daemon.
+2026-04-23T15:15:48.778965-04:00 memexpand.cs.rutgers.edu systemd[1157744]: Started wireplumber.service - Multimedia Service Session Manager.
+2026-04-23T15:15:48.783489-04:00 memexpand.cs.rutgers.edu systemd[1157744]: Started pipewire-pulse.service - PipeWire PulseAudio.
+2026-04-23T15:15:48.783551-04:00 memexpand.cs.rutgers.edu systemd[1157744]: Reached target default.target - Main User Target.
+2026-04-23T15:15:48.783591-04:00 memexpand.cs.rutgers.edu systemd[1157744]: Startup finished in 190ms.
+2026-04-23T15:15:48.791768-04:00 memexpand.cs.rutgers.edu systemd[1157744]: Starting dbus.service - D-Bus User Message Bus...
+2026-04-23T15:15:48.800393-04:00 memexpand.cs.rutgers.edu dbus-daemon[1157774]: [session uid=1056 pid=1157774] AppArmor D-Bus mediation is enabled
+2026-04-23T15:15:48.800684-04:00 memexpand.cs.rutgers.edu systemd[1157744]: Started dbus.service - D-Bus User Message Bus.
+2026-04-23T15:15:48.802379-04:00 memexpand.cs.rutgers.edu rtkit-daemon[6438]: Supervising 0 threads of 0 processes of 0 users.
+2026-04-23T15:15:48.802840-04:00 memexpand.cs.rutgers.edu rtkit-daemon[6438]: message repeated 11 times: [ Supervising 0 threads of 0 processes of 0 users.]
+2026-04-23T15:15:48.805590-04:00 memexpand.cs.rutgers.edu pipewire[1157769]: mod.jackdbus-detect: Failed to receive jackdbus reply: org.freedesktop.DBus.Error.ServiceUnknown: The name org.jackaudio.service was not provided by any .service files
+2026-04-23T15:15:48.816133-04:00 memexpand.cs.rutgers.edu wireplumber[1157771]: SPA handle 'api.libcamera.enum.manager' could not be loaded; is it installed?
+2026-04-23T15:15:48.816207-04:00 memexpand.cs.rutgers.edu wireplumber[1157771]: PipeWire's libcamera SPA missing or broken. libcamera not supported.
+2026-04-23T15:15:48.827478-04:00 memexpand.cs.rutgers.edu wireplumber[1157771]: Failed to get percentage from UPower: org.freedesktop.DBus.Error.NameHasNoOwner
+2026-04-23T15:15:48.828756-04:00 memexpand.cs.rutgers.edu wireplumber[1157771]: BlueZ system service is not available
