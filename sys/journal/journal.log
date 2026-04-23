@@ -1,21 +1,5 @@
-===== journal snapshot host=node0 boot_started_utc=20260423T014435Z boot_id=e66596e1-a2c6-4d58-80f4-d1779cbb52ce captured_utc=20260423T014512Z =====
+===== journal snapshot host=node0 boot_started_utc=20260423T014435Z boot_id=e66596e1-a2c6-4d58-80f4-d1779cbb52ce captured_utc=20260423T014544Z =====
 
-Apr 22 18:49:27 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[571558]: Connection closed by invalid user pi 161.132.4.167 port 52192 [preauth]
-Apr 22 18:50:34 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[571563]: Connection reset by authenticating user root 92.118.39.195 port 31428 [preauth]
-Apr 22 18:50:58 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[571565]: Invalid user admin from 91.109.114.213 port 43370
-Apr 22 18:50:58 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[571565]: Connection closed by invalid user admin 91.109.114.213 port 43370 [preauth]
-Apr 22 18:52:20 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[571571]: Connection reset by authenticating user root 92.118.39.236 port 47846 [preauth]
-Apr 22 18:52:52 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[571573]: Connection closed by authenticating user root 91.109.114.213 port 58344 [preauth]
-Apr 22 18:53:53 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[571575]: error: kex_exchange_identification: Connection closed by remote host
-Apr 22 18:53:53 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[571575]: Connection closed by 45.164.168.10 port 27601
-Apr 22 18:54:09 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[571576]: Connection reset by authenticating user root 2.57.122.197 port 21216 [preauth]
-Apr 22 18:54:44 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[571579]: Connection closed by authenticating user root 91.109.114.213 port 39002 [preauth]
-Apr 22 18:55:57 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[571584]: Connection reset by authenticating user root 45.148.10.151 port 60606 [preauth]
-Apr 22 18:56:44 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[571586]: Connection closed by authenticating user root 91.109.114.213 port 42462 [preauth]
-Apr 22 18:57:44 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[571591]: Connection reset by authenticating user root 92.118.39.196 port 55934 [preauth]
-Apr 22 18:58:40 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[571594]: Connection closed by authenticating user root 91.109.114.213 port 48278 [preauth]
-Apr 22 18:59:31 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[571596]: Connection reset by authenticating user root 2.57.122.194 port 1932 [preauth]
-Apr 22 19:00:39 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[571598]: Invalid user admin from 91.109.114.213 port 33200
 Apr 22 19:00:39 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[571598]: Connection closed by invalid user admin 91.109.114.213 port 33200 [preauth]
 Apr 22 19:01:20 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[571605]: Connection reset by authenticating user root 2.57.122.194 port 3434 [preauth]
 Apr 22 19:02:34 node0.testnode.lsm-pg0.wisc.cloudlab.us sshd[571607]: Invalid user user from 91.109.114.213 port 49350
@@ -400,3 +384,19 @@ Apr 22 20:44:40 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[574339]: pam_unix(s
 Apr 22 20:44:40 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[574345]:     root : PWD=/users/LH/machine_log ; USER=LH ; COMMAND=/usr/bin/env DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 ELECTRON_RUN_AS_NODE=1 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log push origin main
 Apr 22 20:44:40 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[574345]: pam_unix(sudo:session): session opened for user LH(uid=20023) by (uid=0)
 Apr 22 20:44:42 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[574345]: pam_unix(sudo:session): session closed for user LH
+Apr 22 20:45:12 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[577925]:     root : PWD=/users/LH/machine_log ; USER=LH ; COMMAND=/usr/bin/env DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 ELECTRON_RUN_AS_NODE=1 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log add --all -- sys
+Apr 22 20:45:12 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[577925]: pam_unix(sudo:session): session opened for user LH(uid=20023) by (uid=0)
+Apr 22 20:45:12 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[577925]: pam_unix(sudo:session): session closed for user LH
+Apr 22 20:45:12 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[577939]:     root : PWD=/users/LH/machine_log ; USER=LH ; COMMAND=/usr/bin/env DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 ELECTRON_RUN_AS_NODE=1 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log diff --cached --name-only -- sys
+Apr 22 20:45:12 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[577939]: pam_unix(sudo:session): session opened for user LH(uid=20023) by (uid=0)
+Apr 22 20:45:12 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[577939]: pam_unix(sudo:session): session closed for user LH
+Apr 22 20:45:12 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[577945]:     root : PWD=/users/LH/machine_log ; USER=LH ; COMMAND=/usr/bin/env DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 ELECTRON_RUN_AS_NODE=1 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log -c user.name=crash-pusher -c user.email=crash-pusher@node0 commit -m 'sys capture node0 20260423T014435Z 2026-04-23T01:45:12Z' -- sys
+Apr 22 20:45:12 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[577945]: pam_unix(sudo:session): session opened for user LH(uid=20023) by (uid=0)
+Apr 22 20:45:13 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[577945]: pam_unix(sudo:session): session closed for user LH
+Apr 22 20:45:13 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[578058]:     root : PWD=/users/LH/machine_log ; USER=LH ; COMMAND=/usr/bin/env DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 ELECTRON_RUN_AS_NODE=1 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log remote get-url origin
+Apr 22 20:45:13 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[578058]: pam_unix(sudo:session): session opened for user LH(uid=20023) by (uid=0)
+Apr 22 20:45:13 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[578058]: pam_unix(sudo:session): session closed for user LH
+Apr 22 20:45:13 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[578064]:     root : PWD=/users/LH/machine_log ; USER=LH ; COMMAND=/usr/bin/env DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/20023/bus XDG_RUNTIME_DIR=/run/user/20023 ELECTRON_RUN_AS_NODE=1 'GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new' git -C /users/LH/machine_log push origin main
+Apr 22 20:45:13 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[578064]: pam_unix(sudo:session): session opened for user LH(uid=20023) by (uid=0)
+Apr 22 20:45:14 node0.testnode.lsm-pg0.wisc.cloudlab.us sudo[578064]: pam_unix(sudo:session): session closed for user LH
+Apr 22 20:45:36 node0.testnode.lsm-pg0.wisc.cloudlab.us usermod[580705]: change user 'root' password
