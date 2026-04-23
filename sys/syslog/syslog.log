@@ -1,4 +1,4 @@
-===== syslog snapshot host=memexpand boot_started_utc=20260423T192834Z boot_id=230a16fb-d4d9-4460-b551-e1f54133a8d7 captured_utc=20260423T192958Z =====
+===== syslog snapshot host=memexpand boot_started_utc=20260423T192834Z boot_id=230a16fb-d4d9-4460-b551-e1f54133a8d7 captured_utc=20260423T193036Z =====
 
 2026-04-23T14:23:15.228213-04:00 memexpand.cs.rutgers.edu rsyslogd: [origin software="rsyslogd" swVersion="8.2312.0" x-pid="4311" x-info="https://www.rsyslog.com"] rsyslogd was HUPed
 2026-04-23T14:23:15.330467-04:00 memexpand.cs.rutgers.edu systemd[1]: logrotate.service: Deactivated successfully.
@@ -768,3 +768,8 @@
 2026-04-23T15:28:34.666608-04:00 memexpand.cs.rutgers.edu bash[1424663]: [2026-04-23T19:28:34Z] git user: root
 2026-04-23T15:28:34.681603-04:00 memexpand.cs.rutgers.edu bash[1424663]: [2026-04-23T19:28:34Z] origin remote: git@github.com:Linfeng-He/machine_log.git
 2026-04-23T15:29:01.054671-04:00 memexpand.cs.rutgers.edu CRON[1433559]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T15:30:00.037341-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting sysstat-collect.service - system activity accounting tool...
+2026-04-23T15:30:00.052302-04:00 memexpand.cs.rutgers.edu systemd[1]: sysstat-collect.service: Deactivated successfully.
+2026-04-23T15:30:00.052730-04:00 memexpand.cs.rutgers.edu systemd[1]: Finished sysstat-collect.service - system activity accounting tool.
+2026-04-23T15:30:01.198166-04:00 memexpand.cs.rutgers.edu CRON[1455687]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T15:30:01.199246-04:00 memexpand.cs.rutgers.edu CRON[1455688]: (root) CMD ([ -x /etc/init.d/anacron ] && if [ ! -d /run/systemd/system ]; then /usr/sbin/invoke-rc.d anacron start >/dev/null; fi)
