@@ -1,4 +1,4 @@
-===== syslog snapshot host=memexpand boot_started_utc=20260423T182916Z boot_id=230a16fb-d4d9-4460-b551-e1f54133a8d7 captured_utc=20260423T183539Z =====
+===== syslog snapshot host=memexpand boot_started_utc=20260423T182916Z boot_id=230a16fb-d4d9-4460-b551-e1f54133a8d7 captured_utc=20260423T183611Z =====
 
 2026-04-23T14:23:15.228213-04:00 memexpand.cs.rutgers.edu rsyslogd: [origin software="rsyslogd" swVersion="8.2312.0" x-pid="4311" x-info="https://www.rsyslog.com"] rsyslogd was HUPed
 2026-04-23T14:23:15.330467-04:00 memexpand.cs.rutgers.edu systemd[1]: logrotate.service: Deactivated successfully.
@@ -359,3 +359,6 @@
 2026-04-23T14:34:49.263390-04:00 memexpand.cs.rutgers.edu systemd[1]: anacron.service: Deactivated successfully.
 2026-04-23T14:35:01.629000-04:00 memexpand.cs.rutgers.edu CRON[153395]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
 2026-04-23T14:35:01.630107-04:00 memexpand.cs.rutgers.edu CRON[153396]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T14:36:01.749537-04:00 memexpand.cs.rutgers.edu CRON[178029]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T14:36:01.750594-04:00 memexpand.cs.rutgers.edu CRON[178030]: (root) CMD (/usr/sbin/renewd.sh > /var/log/renewd.log 2>&1)
+2026-04-23T14:36:02.123000-04:00 memexpand.cs.rutgers.edu renewd: not time to renew yet KCM:1905239618:44599
