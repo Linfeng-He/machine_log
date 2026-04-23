@@ -1,4 +1,4 @@
-===== syslog snapshot host=memexpand boot_started_utc=20260423T192834Z boot_id=230a16fb-d4d9-4460-b551-e1f54133a8d7 captured_utc=20260423T193036Z =====
+===== syslog snapshot host=memexpand boot_started_utc=20260423T192834Z boot_id=230a16fb-d4d9-4460-b551-e1f54133a8d7 captured_utc=20260423T193114Z =====
 
 2026-04-23T14:23:15.228213-04:00 memexpand.cs.rutgers.edu rsyslogd: [origin software="rsyslogd" swVersion="8.2312.0" x-pid="4311" x-info="https://www.rsyslog.com"] rsyslogd was HUPed
 2026-04-23T14:23:15.330467-04:00 memexpand.cs.rutgers.edu systemd[1]: logrotate.service: Deactivated successfully.
@@ -773,3 +773,14 @@
 2026-04-23T15:30:00.052730-04:00 memexpand.cs.rutgers.edu systemd[1]: Finished sysstat-collect.service - system activity accounting tool.
 2026-04-23T15:30:01.198166-04:00 memexpand.cs.rutgers.edu CRON[1455687]: (root) CMD (/usr/local/sbin/thermalwatch)
 2026-04-23T15:30:01.199246-04:00 memexpand.cs.rutgers.edu CRON[1455688]: (root) CMD ([ -x /etc/init.d/anacron ] && if [ ! -d /run/systemd/system ]; then /usr/sbin/invoke-rc.d anacron start >/dev/null; fi)
+2026-04-23T15:30:36.447151-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting sssd-pam.service - SSSD PAM Service responder...
+2026-04-23T15:30:36.452105-04:00 memexpand.cs.rutgers.edu systemd[1]: Started sssd-pam.service - SSSD PAM Service responder.
+2026-04-23T15:30:36.470609-04:00 memexpand.cs.rutgers.edu sssd_pam[1468603]: Starting up
+2026-04-23T15:31:01.338900-04:00 memexpand.cs.rutgers.edu CRON[1477670]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T15:31:01.340373-04:00 memexpand.cs.rutgers.edu CRON[1477671]: (root) CMD (/usr/sbin/renewd.sh > /var/log/renewd.log 2>&1)
+2026-04-23T15:31:01.521662-04:00 memexpand.cs.rutgers.edu renewd: not time to renew yet KCM:1056:31856
+2026-04-23T15:31:01.624657-04:00 memexpand.cs.rutgers.edu renewd: not time to renew yet KCM:1905239618:44599
+2026-04-23T15:31:03.875269-04:00 memexpand.cs.rutgers.edu systemd[1]: Started anacron.service - Run anacron jobs.
+2026-04-23T15:31:03.878211-04:00 memexpand.cs.rutgers.edu anacron[1478738]: Anacron 2.3 started on 2026-04-23
+2026-04-23T15:31:03.879306-04:00 memexpand.cs.rutgers.edu anacron[1478738]: Normal exit (0 jobs run)
+2026-04-23T15:31:03.881564-04:00 memexpand.cs.rutgers.edu systemd[1]: anacron.service: Deactivated successfully.
