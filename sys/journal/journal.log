@@ -1,16 +1,5 @@
-===== journal snapshot host=memexpand boot_started_utc=20260423T182916Z boot_id=230a16fb-d4d9-4460-b551-e1f54133a8d7 captured_utc=20260423T185612Z =====
+===== journal snapshot host=memexpand boot_started_utc=20260423T182916Z boot_id=230a16fb-d4d9-4460-b551-e1f54133a8d7 captured_utc=20260423T185648Z =====
 
-Apr 23 14:49:48 memexpand.cs.rutgers.edu audispd[4077]: type=USER_ACCT msg=audit(1776970188.032:839): pid=493234 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_sss acct="lh818" exe="/usr/sbin/sshd" hostname=172.25.226.96 addr=172.25.226.96 terminal=ssh res=success' UID="root" AUID="unset"
-Apr 23 14:49:48 memexpand.cs.rutgers.edu sshd[493232]: Accepted keyboard-interactive/pam for lh818 from 172.25.226.96 port 62257 ssh2
-Apr 23 14:49:48 memexpand.cs.rutgers.edu sshd[493232]: pam_unix(sshd:session): session opened for user lh818(uid=1905239618) by lh818(uid=0)
-Apr 23 14:49:48 memexpand.cs.rutgers.edu systemd-logind[4319]: New session 38 of user lh818.
-Apr 23 14:49:48 memexpand.cs.rutgers.edu systemd[1]: Started session-38.scope - Session 38 of User lh818.
-Apr 23 14:49:48 memexpand.cs.rutgers.edu wireplumber[6402]: Failed to get percentage from UPower: org.freedesktop.DBus.Error.NameHasNoOwner
-Apr 23 14:49:48 memexpand.cs.rutgers.edu wireplumber[6402]: BlueZ system service is not available
-Apr 23 14:49:48 memexpand.cs.rutgers.edu audispd[4077]: type=SYSCALL msg=audit(1776970188.099:840): arch=c000003e syscall=59 success=yes exit=0 a0=5610dc1de982 a1=5610dc230490 a2=5610dc22ac50 a3=ffffffff items=3 ppid=493232 pid=513960 auid=1905239618 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=38 comm="setlimits.sh" exe="/usr/bin/dash" subj=unconfined key="lcsr-priv-exec" ARCH=x86_64 SYSCALL=execve AUID="lh818" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
-Apr 23 14:49:48 memexpand.cs.rutgers.edu audispd[4077]: type=EXECVE msg=audit(1776970188.099:840): argc=2 a0="/bin/sh" a1="/usr/libexec/setlimits.sh"
-Apr 23 14:49:48 memexpand.cs.rutgers.edu audispd[4077]: type=SYSCALL msg=audit(1776970188.100:841): arch=c000003e syscall=59 success=yes exit=0 a0=5ecc9bd0a7b0 a1=5ecc9bd0a710 a2=5ecc9bd0a730 a3=1 items=2 ppid=513985 pid=513986 auid=1905239618 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=38 comm="getent" exe="/usr/bin/getent" subj=unconfined key="lcsr-priv-exec" ARCH=x86_64 SYSCALL=execve AUID="lh818" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
-Apr 23 14:49:48 memexpand.cs.rutgers.edu audispd[4077]: type=EXECVE msg=audit(1776970188.100:841): argc=3 a0="getent" a1="passwd" a2="lh818"
 Apr 23 14:49:48 memexpand.cs.rutgers.edu audispd[4077]: type=SYSCALL msg=audit(1776970188.100:842): arch=c000003e syscall=59 success=yes exit=0 a0=5ecc9bd0a7b0 a1=5ecc9bd0a710 a2=5ecc9bd0a730 a3=1 items=2 ppid=513985 pid=513987 auid=1905239618 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=38 comm="cut" exe="/usr/bin/cut" subj=unconfined key="lcsr-priv-exec" ARCH=x86_64 SYSCALL=execve AUID="lh818" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
 Apr 23 14:49:48 memexpand.cs.rutgers.edu audispd[4077]: type=EXECVE msg=audit(1776970188.100:842): argc=3 a0="cut" a1="-d:" a2="-f3"
 Apr 23 14:49:48 memexpand.cs.rutgers.edu audispd[4077]: type=SYSCALL msg=audit(1776970188.102:843): arch=c000003e syscall=59 success=yes exit=0 a0=5ecc9bd0a860 a1=5ecc9bd0a7b0 a2=5ecc9bd0a7e0 a3=8 items=2 ppid=513960 pid=513988 auid=1905239618 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=38 comm="getent" exe="/usr/bin/getent" subj=unconfined key="lcsr-priv-exec" ARCH=x86_64 SYSCALL=execve AUID="lh818" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
@@ -400,3 +389,14 @@ Apr 23 14:56:02 memexpand.cs.rutgers.edu sudo[666695]: pam_succeed_if(sudo:sessi
 Apr 23 14:56:02 memexpand.cs.rutgers.edu renewd[666707]: not time to renew yet KCM:1905239618:44599
 Apr 23 14:56:02 memexpand.cs.rutgers.edu CRON[666610]: pam_unix(cron:session): session closed for user root
 Apr 23 14:56:02 memexpand.cs.rutgers.edu CRON[666610]: pam_succeed_if(cron:session): requirement "service in cron:atd" was met by user "root"
+Apr 23 14:56:27 memexpand.cs.rutgers.edu su[12059]: pam_unix(su:session): session closed for user root
+Apr 23 14:56:27 memexpand.cs.rutgers.edu sudo[12057]: pam_unix(sudo:session): session closed for user root
+Apr 23 14:56:27 memexpand.cs.rutgers.edu sudo[12057]: pam_succeed_if(sudo:session): requirement "service in cron:atd" not met by user "root"
+Apr 23 14:56:30 memexpand.cs.rutgers.edu sudo[677968]: telegraf : PWD=/ ; USER=root ; COMMAND=/usr/bin/ipmitool sdr
+Apr 23 14:56:30 memexpand.cs.rutgers.edu audispd[4077]: type=USER_ACCT msg=audit(1776970590.009:991): pid=677968 uid=995 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="telegraf" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success' UID="telegraf" AUID="unset"
+Apr 23 14:56:30 memexpand.cs.rutgers.edu audispd[4077]: type=USER_CMD msg=audit(1776970590.009:992): pid=677968 uid=995 auid=4294967295 ses=4294967295 subj=unconfined msg='cwd="/" cmd=2F7573722F62696E2F69706D69746F6F6C20736472 exe="/usr/bin/sudo" terminal=? res=success' UID="telegraf" AUID="unset"
+Apr 23 14:56:30 memexpand.cs.rutgers.edu audispd[4077]: type=CRED_REFR msg=audit(1776970590.009:993): pid=677968 uid=995 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success' UID="telegraf" AUID="unset"
+Apr 23 14:56:30 memexpand.cs.rutgers.edu sudo[677968]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=995)
+Apr 23 14:56:30 memexpand.cs.rutgers.edu sudo[677968]: pam_succeed_if(sudo:session): requirement "service in cron:atd" not met by user "root"
+Apr 23 14:56:30 memexpand.cs.rutgers.edu sudo[677968]: pam_unix(sudo:session): session closed for user root
+Apr 23 14:56:30 memexpand.cs.rutgers.edu sudo[677968]: pam_succeed_if(sudo:session): requirement "service in cron:atd" not met by user "root"
