@@ -1,13 +1,5 @@
-===== journal snapshot host=memexpand boot_started_utc=20260423T182916Z boot_id=230a16fb-d4d9-4460-b551-e1f54133a8d7 captured_utc=20260423T183611Z =====
+===== journal snapshot host=memexpand boot_started_utc=20260423T182916Z boot_id=230a16fb-d4d9-4460-b551-e1f54133a8d7 captured_utc=20260423T183644Z =====
 
-Apr 23 14:29:16 memexpand.cs.rutgers.edu audispd[4077]: type=SYSCALL msg=audit(1776968956.109:551): arch=c000003e syscall=59 success=yes exit=0 a0=5f1091edf090 a1=7ffe2c62e380 a2=7ffe2c62ec08 a3=0 items=2 ppid=12716 pid=12717 auid=1905239618 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts1 ses=1 comm="systemd-tty-ask" exe="/usr/bin/systemd-tty-ask-password-agent" subj=unconfined key="lcsr-priv-exec" ARCH=x86_64 SYSCALL=execve AUID="lh818" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
-Apr 23 14:29:16 memexpand.cs.rutgers.edu audispd[4077]: type=EXECVE msg=audit(1776968956.109:551): argc=2 a0="/usr/bin/systemd-tty-ask-password-agent" a1="--watch"
-Apr 23 14:29:16 memexpand.cs.rutgers.edu systemd[1]: Started crash-pusher.service - Crash log pusher.
-Apr 23 14:29:16 memexpand.cs.rutgers.edu audispd[4077]: type=SERVICE_START msg=audit(1776968956.130:552): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=crash-pusher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success' UID="root" AUID="unset"
-Apr 23 14:29:16 memexpand.cs.rutgers.edu sudo[12299]: pam_unix(sudo:session): session closed for user root
-Apr 23 14:29:16 memexpand.cs.rutgers.edu sudo[12299]: pam_succeed_if(sudo:session): requirement "service in cron:atd" not met by user "root"
-Apr 23 14:29:16 memexpand.cs.rutgers.edu bash[12718]: [2026-04-23T18:29:16Z] git user: root
-Apr 23 14:29:16 memexpand.cs.rutgers.edu bash[12718]: [2026-04-23T18:29:16Z] origin remote: https://github.com/Linfeng-He/machine_log.git
 Apr 23 14:29:16 memexpand.cs.rutgers.edu bash[12718]: [2026-04-23T18:29:16Z] push preflight failed for origin/main
 Apr 23 14:29:16 memexpand.cs.rutgers.edu bash[12718]: [2026-04-23T18:29:16Z] push preflight: fatal: could not read Username for 'https://github.com': No such device or address
 Apr 23 14:29:16 memexpand.cs.rutgers.edu bash[12718]: [2026-04-23T18:29:16Z] github https remote detected; configure a credential helper/token or switch origin to ssh for unattended pushes
@@ -400,3 +392,11 @@ Apr 23 14:36:02 memexpand.cs.rutgers.edu sudo[178088]: pam_succeed_if(sudo:sessi
 Apr 23 14:36:02 memexpand.cs.rutgers.edu renewd[178100]: not time to renew yet KCM:1905239618:44599
 Apr 23 14:36:02 memexpand.cs.rutgers.edu CRON[178004]: pam_unix(cron:session): session closed for user root
 Apr 23 14:36:02 memexpand.cs.rutgers.edu CRON[178004]: pam_succeed_if(cron:session): requirement "service in cron:atd" was met by user "root"
+Apr 23 14:36:30 memexpand.cs.rutgers.edu sudo[189425]: telegraf : PWD=/ ; USER=root ; COMMAND=/usr/bin/ipmitool sdr
+Apr 23 14:36:30 memexpand.cs.rutgers.edu audispd[4077]: type=USER_ACCT msg=audit(1776969390.008:685): pid=189425 uid=995 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="telegraf" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success' UID="telegraf" AUID="unset"
+Apr 23 14:36:30 memexpand.cs.rutgers.edu audispd[4077]: type=USER_CMD msg=audit(1776969390.008:686): pid=189425 uid=995 auid=4294967295 ses=4294967295 subj=unconfined msg='cwd="/" cmd=2F7573722F62696E2F69706D69746F6F6C20736472 exe="/usr/bin/sudo" terminal=? res=success' UID="telegraf" AUID="unset"
+Apr 23 14:36:30 memexpand.cs.rutgers.edu audispd[4077]: type=CRED_REFR msg=audit(1776969390.008:687): pid=189425 uid=995 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success' UID="telegraf" AUID="unset"
+Apr 23 14:36:30 memexpand.cs.rutgers.edu sudo[189425]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=995)
+Apr 23 14:36:30 memexpand.cs.rutgers.edu sudo[189425]: pam_succeed_if(sudo:session): requirement "service in cron:atd" not met by user "root"
+Apr 23 14:36:30 memexpand.cs.rutgers.edu sudo[189425]: pam_unix(sudo:session): session closed for user root
+Apr 23 14:36:30 memexpand.cs.rutgers.edu sudo[189425]: pam_succeed_if(sudo:session): requirement "service in cron:atd" not met by user "root"
