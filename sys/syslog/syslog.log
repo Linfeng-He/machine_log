@@ -1,4 +1,4 @@
-===== syslog snapshot host=memexpand boot_started_utc=20260423T182916Z boot_id=230a16fb-d4d9-4460-b551-e1f54133a8d7 captured_utc=20260423T192643Z =====
+===== syslog snapshot host=memexpand boot_started_utc=20260423T192834Z boot_id=230a16fb-d4d9-4460-b551-e1f54133a8d7 captured_utc=20260423T192841Z =====
 
 2026-04-23T14:23:15.228213-04:00 memexpand.cs.rutgers.edu rsyslogd: [origin software="rsyslogd" swVersion="8.2312.0" x-pid="4311" x-info="https://www.rsyslog.com"] rsyslogd was HUPed
 2026-04-23T14:23:15.330467-04:00 memexpand.cs.rutgers.edu systemd[1]: logrotate.service: Deactivated successfully.
@@ -718,3 +718,52 @@
 2026-04-23T15:26:20.479671-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:26:20Z] git add: are terminated then try again. If it still fails, a git process
 2026-04-23T15:26:20.482445-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:26:20Z] git add: may have crashed in this repository earlier:
 2026-04-23T15:26:20.485124-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:26:20Z] git add: remove the file manually to continue.
+2026-04-23T15:26:43.689334-04:00 memexpand.cs.rutgers.edu systemd[1]: Configuration file /etc/systemd/system/crash-pusher.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+2026-04-23T15:26:43.703109-04:00 memexpand.cs.rutgers.edu systemd[1]: Reloading requested from client PID 1423453 ('systemctl') (unit session-59.scope)...
+2026-04-23T15:26:43.703292-04:00 memexpand.cs.rutgers.edu systemd[1]: Reloading...
+2026-04-23T15:26:43.843228-04:00 memexpand.cs.rutgers.edu systemd[1]: Configuration file /etc/systemd/system/oomnotify.service is marked executable. Please remove executable permission bits. Proceeding anyway.
+2026-04-23T15:26:43.873175-04:00 memexpand.cs.rutgers.edu systemd[1]: Configuration file /etc/systemd/system/zabbix-agent2.service.d/rundir.conf is marked executable. Please remove executable permission bits. Proceeding anyway.
+2026-04-23T15:26:43.878367-04:00 memexpand.cs.rutgers.edu systemd[1]: /etc/systemd/system/user.slice.d/cpu.conf:2: Unit uses CPUShares=; please use CPUWeight= instead. Support for CPUShares= will be removed soon.
+2026-04-23T15:26:43.926071-04:00 memexpand.cs.rutgers.edu systemd[1]: /etc/systemd/system/system.slice.d/cpu.conf:4: Unit uses CPUShares=; please use CPUWeight= instead. Support for CPUShares= will be removed soon.
+2026-04-23T15:26:44.017436-04:00 memexpand.cs.rutgers.edu systemd[1]: Configuration file /etc/systemd/system/crash-pusher.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+2026-04-23T15:26:44.036088-04:00 memexpand.cs.rutgers.edu systemd[1]: Reloading finished in 332 ms.
+2026-04-23T15:26:44.090096-04:00 memexpand.cs.rutgers.edu systemd[1]: Stopping crash-pusher.service - Crash log pusher...
+2026-04-23T15:26:44.092856-04:00 memexpand.cs.rutgers.edu bash[12718]: [2026-04-23T19:26:44Z] stopping
+2026-04-23T15:26:44.110375-04:00 memexpand.cs.rutgers.edu bash[12718]: [2026-04-23T19:26:44Z] git add failed
+2026-04-23T15:26:44.112740-04:00 memexpand.cs.rutgers.edu bash[12718]: [2026-04-23T19:26:44Z] git add: fatal: Unable to create '/var/tmp/machine_log/.git/index.lock': File exists.
+2026-04-23T15:26:44.115027-04:00 memexpand.cs.rutgers.edu bash[12718]: [2026-04-23T19:26:44Z] git add: Another git process seems to be running in this repository, e.g.
+2026-04-23T15:26:44.117306-04:00 memexpand.cs.rutgers.edu bash[12718]: [2026-04-23T19:26:44Z] git add: an editor opened by 'git commit'. Please make sure all processes
+2026-04-23T15:26:44.119525-04:00 memexpand.cs.rutgers.edu bash[12718]: [2026-04-23T19:26:44Z] git add: are terminated then try again. If it still fails, a git process
+2026-04-23T15:26:44.121943-04:00 memexpand.cs.rutgers.edu bash[12718]: [2026-04-23T19:26:44Z] git add: may have crashed in this repository earlier:
+2026-04-23T15:26:44.124212-04:00 memexpand.cs.rutgers.edu bash[12718]: [2026-04-23T19:26:44Z] git add: remove the file manually to continue.
+2026-04-23T15:26:44.126167-04:00 memexpand.cs.rutgers.edu bash[12718]: /var/tmp/machine_log/install_crash_pusher.sh: line 621: cleanup_done: unbound variable
+2026-04-23T15:26:44.126838-04:00 memexpand.cs.rutgers.edu systemd[1]: crash-pusher.service: Main process exited, code=exited, status=1/FAILURE
+2026-04-23T15:26:44.127054-04:00 memexpand.cs.rutgers.edu systemd[1]: crash-pusher.service: Killing process 1414720 (sleep) with signal SIGKILL.
+2026-04-23T15:26:44.127128-04:00 memexpand.cs.rutgers.edu systemd[1]: crash-pusher.service: Killing process 1423440 (sleep) with signal SIGKILL.
+2026-04-23T15:26:44.127170-04:00 memexpand.cs.rutgers.edu systemd[1]: crash-pusher.service: Killing process 1423548 (ps) with signal SIGKILL.
+2026-04-23T15:26:44.127213-04:00 memexpand.cs.rutgers.edu systemd[1]: crash-pusher.service: Killing process 1423549 (head) with signal SIGKILL.
+2026-04-23T15:26:44.128155-04:00 memexpand.cs.rutgers.edu systemd[1]: crash-pusher.service: Failed with result 'exit-code'.
+2026-04-23T15:26:44.128763-04:00 memexpand.cs.rutgers.edu systemd[1]: Stopped crash-pusher.service - Crash log pusher.
+2026-04-23T15:26:44.129001-04:00 memexpand.cs.rutgers.edu systemd[1]: crash-pusher.service: Consumed 33min 54.732s CPU time, 1009.2M memory peak, 0B memory swap peak.
+2026-04-23T15:27:01.781094-04:00 memexpand.cs.rutgers.edu CRON[1423719]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T15:28:01.919347-04:00 memexpand.cs.rutgers.edu CRON[1424198]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T15:28:33.872866-04:00 memexpand.cs.rutgers.edu systemd[1]: Reloading requested from client PID 1424485 ('systemctl') (unit session-59.scope)...
+2026-04-23T15:28:33.873090-04:00 memexpand.cs.rutgers.edu systemd[1]: Reloading...
+2026-04-23T15:28:34.008271-04:00 memexpand.cs.rutgers.edu systemd[1]: Configuration file /etc/systemd/system/oomnotify.service is marked executable. Please remove executable permission bits. Proceeding anyway.
+2026-04-23T15:28:34.038488-04:00 memexpand.cs.rutgers.edu systemd[1]: Configuration file /etc/systemd/system/zabbix-agent2.service.d/rundir.conf is marked executable. Please remove executable permission bits. Proceeding anyway.
+2026-04-23T15:28:34.043656-04:00 memexpand.cs.rutgers.edu systemd[1]: /etc/systemd/system/user.slice.d/cpu.conf:2: Unit uses CPUShares=; please use CPUWeight= instead. Support for CPUShares= will be removed soon.
+2026-04-23T15:28:34.090884-04:00 memexpand.cs.rutgers.edu systemd[1]: /etc/systemd/system/system.slice.d/cpu.conf:4: Unit uses CPUShares=; please use CPUWeight= instead. Support for CPUShares= will be removed soon.
+2026-04-23T15:28:34.182643-04:00 memexpand.cs.rutgers.edu systemd[1]: Configuration file /etc/systemd/system/crash-pusher.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+2026-04-23T15:28:34.201418-04:00 memexpand.cs.rutgers.edu systemd[1]: Reloading finished in 328 ms.
+2026-04-23T15:28:34.247954-04:00 memexpand.cs.rutgers.edu systemd[1]: Configuration file /etc/systemd/system/crash-pusher.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+2026-04-23T15:28:34.248857-04:00 memexpand.cs.rutgers.edu systemd[1]: Reloading requested from client PID 1424564 ('systemctl') (unit session-59.scope)...
+2026-04-23T15:28:34.248923-04:00 memexpand.cs.rutgers.edu systemd[1]: Reloading...
+2026-04-23T15:28:34.383619-04:00 memexpand.cs.rutgers.edu systemd[1]: Configuration file /etc/systemd/system/oomnotify.service is marked executable. Please remove executable permission bits. Proceeding anyway.
+2026-04-23T15:28:34.413393-04:00 memexpand.cs.rutgers.edu systemd[1]: Configuration file /etc/systemd/system/zabbix-agent2.service.d/rundir.conf is marked executable. Please remove executable permission bits. Proceeding anyway.
+2026-04-23T15:28:34.418631-04:00 memexpand.cs.rutgers.edu systemd[1]: /etc/systemd/system/user.slice.d/cpu.conf:2: Unit uses CPUShares=; please use CPUWeight= instead. Support for CPUShares= will be removed soon.
+2026-04-23T15:28:34.430758-04:00 memexpand.cs.rutgers.edu systemd[1]: Configuration file /etc/systemd/system/crash-pusher.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+2026-04-23T15:28:34.466020-04:00 memexpand.cs.rutgers.edu systemd[1]: /etc/systemd/system/system.slice.d/cpu.conf:4: Unit uses CPUShares=; please use CPUWeight= instead. Support for CPUShares= will be removed soon.
+2026-04-23T15:28:34.575117-04:00 memexpand.cs.rutgers.edu systemd[1]: Reloading finished in 325 ms.
+2026-04-23T15:28:34.637014-04:00 memexpand.cs.rutgers.edu systemd[1]: Started crash-pusher.service - Crash log pusher.
+2026-04-23T15:28:34.666608-04:00 memexpand.cs.rutgers.edu bash[1424663]: [2026-04-23T19:28:34Z] git user: root
+2026-04-23T15:28:34.681603-04:00 memexpand.cs.rutgers.edu bash[1424663]: [2026-04-23T19:28:34Z] origin remote: git@github.com:Linfeng-He/machine_log.git
