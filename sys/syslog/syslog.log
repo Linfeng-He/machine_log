@@ -1,4 +1,4 @@
-===== syslog snapshot host=memexpand boot_started_utc=20260423T182916Z boot_id=230a16fb-d4d9-4460-b551-e1f54133a8d7 captured_utc=20260423T185129Z =====
+===== syslog snapshot host=memexpand boot_started_utc=20260423T182916Z boot_id=230a16fb-d4d9-4460-b551-e1f54133a8d7 captured_utc=20260423T185204Z =====
 
 2026-04-23T14:23:15.228213-04:00 memexpand.cs.rutgers.edu rsyslogd: [origin software="rsyslogd" swVersion="8.2312.0" x-pid="4311" x-info="https://www.rsyslog.com"] rsyslogd was HUPed
 2026-04-23T14:23:15.330467-04:00 memexpand.cs.rutgers.edu systemd[1]: logrotate.service: Deactivated successfully.
@@ -402,3 +402,9 @@
 2026-04-23T14:51:01.237903-04:00 memexpand.cs.rutgers.edu CRON[543926]: (root) CMD (/usr/local/sbin/thermalwatch)
 2026-04-23T14:51:01.378850-04:00 memexpand.cs.rutgers.edu renewd: not time to renew yet KCM:1905239618:44599
 2026-04-23T14:51:29.174207-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting apt-daily-upgrade.service - Daily apt upgrade and clean activities...
+2026-04-23T14:51:59.301993-04:00 memexpand.cs.rutgers.edu systemd-networkd-wait-online[555114]: Timeout occurred while waiting for network connectivity.
+2026-04-23T14:51:59.324929-04:00 memexpand.cs.rutgers.edu apt-helper[555110]: E: Sub-process /lib/systemd/systemd-networkd-wait-online returned an error code (1)
+2026-04-23T14:52:01.431527-04:00 memexpand.cs.rutgers.edu CRON[568670]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T14:52:01.914775-04:00 memexpand.cs.rutgers.edu systemd[1]: apt-daily-upgrade.service: Deactivated successfully.
+2026-04-23T14:52:01.915025-04:00 memexpand.cs.rutgers.edu systemd[1]: Finished apt-daily-upgrade.service - Daily apt upgrade and clean activities.
+2026-04-23T14:52:01.915362-04:00 memexpand.cs.rutgers.edu systemd[1]: apt-daily-upgrade.service: Consumed 2.593s CPU time.
