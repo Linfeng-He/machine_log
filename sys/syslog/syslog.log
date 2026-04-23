@@ -1,4 +1,4 @@
-===== syslog snapshot host=node0 boot_started_utc=20260423T014435Z boot_id=e66596e1-a2c6-4d58-80f4-d1779cbb52ce captured_utc=20260423T014553Z =====
+===== syslog snapshot host=node0 boot_started_utc=20260423T015139Z boot_id=e66596e1-a2c6-4d58-80f4-d1779cbb52ce captured_utc=20260423T015144Z =====
 
 Apr 21 17:44:40 localhost systemd[1]: Starting GRUB failed boot detection...
 Apr 21 17:44:40 localhost systemd[1]: logrotate.service: Deactivated successfully.
@@ -2704,3 +2704,17 @@ Apr 22 20:44:35 localhost bash[573902]: [2026-04-23T01:44:35Z] git user: LH
 Apr 22 20:44:35 localhost bash[573902]: [2026-04-23T01:44:35Z] origin remote: https://github.com/Linfeng-He/machine_log.git
 Apr 22 20:44:36 localhost systemd[1]: apt-daily.service: Deactivated successfully.
 Apr 22 20:44:36 localhost systemd[1]: Finished Daily apt download activities.
+Apr 22 20:45:53 localhost systemd[1]: Stopping Crash log pusher...
+Apr 22 20:45:53 localhost bash[573902]: [2026-04-23T01:45:53Z] stopping
+Apr 22 20:45:56 localhost systemd[1]: crash-pusher.service: Main process exited, code=exited, status=143/n/a
+Apr 22 20:45:56 localhost systemd[1]: crash-pusher.service: Killing process 581997 (sleep) with signal SIGKILL.
+Apr 22 20:45:56 localhost systemd[1]: crash-pusher.service: Failed with result 'exit-code'.
+Apr 22 20:45:56 localhost systemd[1]: Stopped Crash log pusher.
+Apr 22 20:45:56 localhost systemd[1]: crash-pusher.service: Consumed 41.148s CPU time.
+Apr 22 20:51:38 localhost systemd[1]: Reloading.
+Apr 22 20:51:38 localhost systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Apr 22 20:51:38 localhost systemd[1]: Reloading.
+Apr 22 20:51:39 localhost systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Apr 22 20:51:39 localhost systemd[1]: Started Crash log pusher.
+Apr 22 20:51:39 localhost bash[583086]: [2026-04-23T01:51:39Z] git user: LH
+Apr 22 20:51:39 localhost bash[583086]: [2026-04-23T01:51:39Z] origin remote: https://github.com/Linfeng-He/machine_log.git
