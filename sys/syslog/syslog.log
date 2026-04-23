@@ -1,4 +1,4 @@
-===== syslog snapshot host=memexpand boot_started_utc=20260423T182916Z boot_id=230a16fb-d4d9-4460-b551-e1f54133a8d7 captured_utc=20260423T184835Z =====
+===== syslog snapshot host=memexpand boot_started_utc=20260423T182916Z boot_id=230a16fb-d4d9-4460-b551-e1f54133a8d7 captured_utc=20260423T184909Z =====
 
 2026-04-23T14:23:15.228213-04:00 memexpand.cs.rutgers.edu rsyslogd: [origin software="rsyslogd" swVersion="8.2312.0" x-pid="4311" x-info="https://www.rsyslog.com"] rsyslogd was HUPed
 2026-04-23T14:23:15.330467-04:00 memexpand.cs.rutgers.edu systemd[1]: logrotate.service: Deactivated successfully.
@@ -387,3 +387,7 @@
 2026-04-23T14:46:51.984453-04:00 memexpand.cs.rutgers.edu automount[4655]: key ".git" not found in map source(s).
 2026-04-23T14:47:01.773482-04:00 memexpand.cs.rutgers.edu CRON[446543]: (root) CMD (/usr/local/sbin/thermalwatch)
 2026-04-23T14:48:01.882097-04:00 memexpand.cs.rutgers.edu CRON[470922]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T14:49:00.274049-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting sssd-pam.service - SSSD PAM Service responder...
+2026-04-23T14:49:00.278396-04:00 memexpand.cs.rutgers.edu systemd[1]: Started sssd-pam.service - SSSD PAM Service responder.
+2026-04-23T14:49:00.292422-04:00 memexpand.cs.rutgers.edu sssd_pam[494502]: Starting up
+2026-04-23T14:49:01.985863-04:00 memexpand.cs.rutgers.edu CRON[495440]: (root) CMD (/usr/local/sbin/thermalwatch)
