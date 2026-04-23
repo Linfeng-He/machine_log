@@ -1182,15 +1182,7 @@ Memory Array Mapped Address
 	Physical Array Handle: 0x0021
 	Partition Width: 4
 
-Handle 0x0046, DMI type 19, 31 bytes
-Memory Array Mapped Address
-	Starting Address: 0x0000063000000000k
-	Ending Address: 0x0000070F7FFFFFFFk
-	Range Size: 894 GB
-	Physical Array Handle: 0x0021
-	Partition Width: 1
-
-Handle 0x0047, DMI type 9, 17 bytes
+Handle 0x0046, DMI type 9, 17 bytes
 System Slot Information
 	Designation: RSC-H-6G5L SLOT1 PCI-E 5.0 X16
 	Type: x16 PCI Express 5 x16
@@ -1202,17 +1194,17 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:ff:00.0
 
-Handle 0x0048, DMI type 130, 39 bytes
+Handle 0x0047, DMI type 130, 39 bytes
 OEM-specific Type
 	Header and Data:
-		82 27 48 00 00 00 00 00 00 00 BE 00 00 00 00 01
+		82 27 47 00 00 00 00 00 00 00 BE 00 00 00 00 01
 		10 20 21 22 23 24 25 26 00 00 00 00 00 00 00 00
 		10 00 01 10 02 00 00
 	Strings:
 		RSC-H-6G5L
 		SLOT1 PCI-E 5.0 X16
 
-Handle 0x0049, DMI type 9, 17 bytes
+Handle 0x0048, DMI type 9, 17 bytes
 System Slot Information
 	Designation: RSC-H-68G5 SLOT1 PCIE 5.0 X16
 	Type: x16 PCI Express 5 x16
@@ -1224,17 +1216,17 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:ff:00.0
 
-Handle 0x004A, DMI type 130, 39 bytes
+Handle 0x0049, DMI type 130, 39 bytes
 OEM-specific Type
 	Header and Data:
-		82 27 4A 00 00 00 00 00 00 00 C0 00 00 00 00 01
+		82 27 49 00 00 00 00 00 00 00 C0 00 00 00 00 01
 		10 20 21 22 23 24 25 26 00 00 00 00 00 00 00 00
 		10 00 01 10 02 00 00
 	Strings:
 		RSC-H-68G5
 		SLOT1 PCIE 5.0 X16
 
-Handle 0x004B, DMI type 9, 17 bytes
+Handle 0x004A, DMI type 9, 17 bytes
 System Slot Information
 	Designation: P1_AIOM
 	Type: Other
@@ -1245,17 +1237,17 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:3b:00.0
 
-Handle 0x004C, DMI type 130, 39 bytes
+Handle 0x004B, DMI type 130, 39 bytes
 OEM-specific Type
 	Header and Data:
-		82 27 4C 00 00 00 00 00 00 00 0B 00 00 00 00 01
+		82 27 4B 00 00 00 00 00 00 00 0B 00 00 00 00 01
 		08 20 21 22 23 24 25 26 00 00 00 00 00 00 00 00
 		08 01 02 00 02 00 00
 	Strings:
 		AOC-ATGC-i2TM
 		Intel X710-AT2
 
-Handle 0x004D, DMI type 9, 17 bytes
+Handle 0x004C, DMI type 9, 17 bytes
 System Slot Information
 	Designation: RSC-H-68G5 SLOT1 PCIE 5.0 X16
 	Type: x16 PCI Express 5 x16
@@ -1267,17 +1259,17 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:ff:00.0
 
-Handle 0x004E, DMI type 130, 39 bytes
+Handle 0x004D, DMI type 130, 39 bytes
 OEM-specific Type
 	Header and Data:
-		82 27 4E 00 00 00 00 00 00 00 C6 00 00 00 00 01
+		82 27 4D 00 00 00 00 00 00 00 C6 00 00 00 00 01
 		10 20 21 22 23 24 25 26 00 00 00 00 00 00 00 00
 		10 00 01 10 02 00 00
 	Strings:
 		RSC-H-68G5
 		SLOT1 PCIE 5.0 X16
 
-Handle 0x004F, DMI type 9, 17 bytes
+Handle 0x004E, DMI type 9, 17 bytes
 System Slot Information
 	Designation: RSC-H-68G5 SLOT1 PCIE 5.0 X16
 	Type: x16 PCI Express 5 x16
@@ -1289,97 +1281,97 @@ System Slot Information
 		PME signal is supported
 	Bus Address: 0000:ff:00.0
 
-Handle 0x0050, DMI type 130, 39 bytes
+Handle 0x004F, DMI type 130, 39 bytes
 OEM-specific Type
 	Header and Data:
-		82 27 50 00 00 00 00 00 00 00 C8 00 00 00 00 01
+		82 27 4F 00 00 00 00 00 00 00 C8 00 00 00 00 01
 		10 20 21 22 23 24 25 26 00 00 00 00 00 00 00 00
 		10 00 01 10 02 00 00
 	Strings:
 		RSC-H-68G5
 		SLOT1 PCIE 5.0 X16
 
-Handle 0x0051, DMI type 168, 47 bytes
+Handle 0x0050, DMI type 168, 47 bytes
 OEM-specific Type
 	Header and Data:
-		A8 2F 51 00 01 00 01 02 05 00 01 D8 00 00 00 00
+		A8 2F 50 00 01 00 01 02 05 00 01 D8 00 00 00 00
 		7E F8 83 02 00 00 00 00 00 00 00 00 00 00 00 00
 		FF 03 0A 00 00 00 FF FF FF FF 00 00 00 00 00
 	Strings:
 		Member: OTA General Information
 
-Handle 0x0052, DMI type 14, 8 bytes
+Handle 0x0051, DMI type 14, 8 bytes
 Group Associations
 	Name: Group: One Touch Activation (OTA)
 	Items: 1
-		0x0051 (OEM-specific)
+		0x0050 (OEM-specific)
 
-Handle 0x0053, DMI type 134, 28 bytes
+Handle 0x0052, DMI type 134, 28 bytes
 OEM-specific Type
 	Header and Data:
-		86 1C 53 00 04 00 01 00 30 03 00 03 24 20 22 11
+		86 1C 52 00 04 00 01 00 30 03 00 03 24 20 22 11
 		F3 06 0A 00 01 00 00 00 FF FF 00 00
 
-Handle 0x0054, DMI type 40, 27 bytes
+Handle 0x0053, DMI type 40, 27 bytes
 Additional Information 1
 	Referenced Handle: 0x000c
 	Referenced Offset: 0x00
 	String: Not Specified
 	Value: Unexpected size
 
-Handle 0x0055, DMI type 40, 27 bytes
+Handle 0x0054, DMI type 40, 27 bytes
 Additional Information 1
 	Referenced Handle: 0x000d
 	Referenced Offset: 0x00
 	String: Not Specified
 	Value: Unexpected size
 
+Handle 0x0055, DMI type 40, 27 bytes
+Additional Information 1
+	Referenced Handle: 0x0046
+	Referenced Offset: 0x00
+	String: Not Specified
+	Value: Unexpected size
+
 Handle 0x0056, DMI type 40, 27 bytes
 Additional Information 1
-	Referenced Handle: 0x0047
+	Referenced Handle: 0x0048
 	Referenced Offset: 0x00
 	String: Not Specified
 	Value: Unexpected size
 
-Handle 0x0057, DMI type 40, 27 bytes
+Handle 0x0057, DMI type 40, 227 bytes
 Additional Information 1
-	Referenced Handle: 0x0049
+	Referenced Handle: 0x004a
 	Referenced Offset: 0x00
 	String: Not Specified
 	Value: Unexpected size
 
-Handle 0x0058, DMI type 40, 227 bytes
+Handle 0x0058, DMI type 40, 27 bytes
 Additional Information 1
-	Referenced Handle: 0x004b
+	Referenced Handle: 0x004c
 	Referenced Offset: 0x00
 	String: Not Specified
 	Value: Unexpected size
 
 Handle 0x0059, DMI type 40, 27 bytes
 Additional Information 1
-	Referenced Handle: 0x004d
+	Referenced Handle: 0x004e
 	Referenced Offset: 0x00
 	String: Not Specified
 	Value: Unexpected size
 
 Handle 0x005A, DMI type 40, 27 bytes
 Additional Information 1
-	Referenced Handle: 0x004f
-	Referenced Offset: 0x00
-	String: Not Specified
-	Value: Unexpected size
-
-Handle 0x005B, DMI type 40, 27 bytes
-Additional Information 1
 	Referenced Handle: 0x0012
 	Referenced Offset: 0x00
 	String: Not Specified
 	Value: Unexpected size
 
-Handle 0x005D, DMI type 221, 89 bytes
+Handle 0x005C, DMI type 221, 89 bytes
 OEM-specific Type
 	Header and Data:
-		DD 59 5D 00 0C 01 02 FF FF FF FF FF 03 04 FF FF
+		DD 59 5C 00 0C 01 02 FF FF FF FF FF 03 04 FF FF
 		FF FF FF 05 06 FF FF FF FF FF 07 08 FF FF FF FF
 		FF 09 0A FF FF FF FF FF 0B 0C FF FF FF FF FF 0D
 		0E FF FF FF FF FF 0F 10 FF FF FF FF FF 11 12 FF
@@ -1411,10 +1403,10 @@ OEM-specific Type
 		TDXSEAMSIG
 		0B817FB0
 
-Handle 0x005E, DMI type 42, 17 bytes
+Handle 0x005D, DMI type 42, 17 bytes
 Management Controller Host Interface
 	Host Interface Type: KCS: Keyboard Controller Style
 
-Handle 0x005F, DMI type 127, 4 bytes
+Handle 0x005E, DMI type 127, 4 bytes
 End Of Table
 
