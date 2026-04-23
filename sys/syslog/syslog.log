@@ -1,4 +1,4 @@
-===== syslog snapshot host=memexpand boot_started_utc=20260423T182916Z boot_id=230a16fb-d4d9-4460-b551-e1f54133a8d7 captured_utc=20260423T191940Z =====
+===== syslog snapshot host=memexpand boot_started_utc=20260423T182916Z boot_id=230a16fb-d4d9-4460-b551-e1f54133a8d7 captured_utc=20260423T192643Z =====
 
 2026-04-23T14:23:15.228213-04:00 memexpand.cs.rutgers.edu rsyslogd: [origin software="rsyslogd" swVersion="8.2312.0" x-pid="4311" x-info="https://www.rsyslog.com"] rsyslogd was HUPed
 2026-04-23T14:23:15.330467-04:00 memexpand.cs.rutgers.edu systemd[1]: logrotate.service: Deactivated successfully.
@@ -604,3 +604,117 @@
 2026-04-23T15:17:21.318042-04:00 memexpand.cs.rutgers.edu systemd[1]: Finished fwupd-refresh.service - Refresh fwupd metadata and update motd.
 2026-04-23T15:18:01.784355-04:00 memexpand.cs.rutgers.edu CRON[1211805]: (root) CMD (/usr/local/sbin/thermalwatch)
 2026-04-23T15:19:01.905744-04:00 memexpand.cs.rutgers.edu CRON[1236010]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T15:20:00.029334-04:00 memexpand.cs.rutgers.edu systemd[1]: Starting sysstat-collect.service - system activity accounting tool...
+2026-04-23T15:20:00.040666-04:00 memexpand.cs.rutgers.edu systemd[1]: sysstat-collect.service: Deactivated successfully.
+2026-04-23T15:20:00.040922-04:00 memexpand.cs.rutgers.edu systemd[1]: Finished sysstat-collect.service - system activity accounting tool.
+2026-04-23T15:20:02.017087-04:00 memexpand.cs.rutgers.edu CRON[1260530]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T15:20:12.031016-04:00 memexpand.cs.rutgers.edu systemd[1]: Started session-87.scope - Session 87 of User lh818.
+2026-04-23T15:20:12.035907-04:00 memexpand.cs.rutgers.edu wireplumber[6402]: BlueZ system service is not available
+2026-04-23T15:20:12.974294-04:00 memexpand.cs.rutgers.edu automount[4655]: key "node_modules" not found in map source(s).
+2026-04-23T15:20:13.471050-04:00 memexpand.cs.rutgers.edu automount[4655]: key ".jj" not found in map source(s).
+2026-04-23T15:20:13.471381-04:00 memexpand.cs.rutgers.edu automount[4655]: key ".rgignore" not found in map source(s).
+2026-04-23T15:20:13.471666-04:00 memexpand.cs.rutgers.edu automount[4655]: key ".ignore" not found in map source(s).
+2026-04-23T15:20:13.471832-04:00 memexpand.cs.rutgers.edu automount[4655]: key ".gitignore" not found in map source(s).
+2026-04-23T15:20:13.472195-04:00 memexpand.cs.rutgers.edu automount[4655]: key ".git" not found in map source(s).
+2026-04-23T15:20:20.163241-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:20:20Z] git add failed
+2026-04-23T15:20:50.176133-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:20:50Z] git add failed
+2026-04-23T15:20:50.178149-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:20:50Z] git add: fatal: Unable to create '/var/tmp/machine_log/.git/index.lock': File exists.
+2026-04-23T15:20:50.179461-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:20:50Z] git add: Another git process seems to be running in this repository, e.g.
+2026-04-23T15:20:50.180670-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:20:50Z] git add: an editor opened by 'git commit'. Please make sure all processes
+2026-04-23T15:20:50.181850-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:20:50Z] git add: are terminated then try again. If it still fails, a git process
+2026-04-23T15:20:50.182966-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:20:50Z] git add: may have crashed in this repository earlier:
+2026-04-23T15:20:50.184050-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:20:50Z] git add: remove the file manually to continue.
+2026-04-23T15:21:01.136292-04:00 memexpand.cs.rutgers.edu CRON[1284883]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T15:21:01.137246-04:00 memexpand.cs.rutgers.edu CRON[1284884]: (root) CMD (/usr/sbin/renewd.sh > /var/log/renewd.log 2>&1)
+2026-04-23T15:21:01.349113-04:00 memexpand.cs.rutgers.edu renewd: not time to renew yet KCM:1056:31856
+2026-04-23T15:21:01.449063-04:00 memexpand.cs.rutgers.edu renewd: not time to renew yet KCM:1905239618:44599
+2026-04-23T15:21:19.802389-04:00 memexpand.cs.rutgers.edu systemd[1157744]: launchpadlib-cache-clean.service - Clean up old files in the Launchpadlib cache was skipped because of an unmet condition check (ConditionPathExists=/common/home/kconover/.launchpadlib/api.launchpad.net/cache).
+2026-04-23T15:21:20.196839-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:21:20Z] git add failed
+2026-04-23T15:21:20.197737-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:21:20Z] git add: fatal: Unable to create '/var/tmp/machine_log/.git/index.lock': File exists.
+2026-04-23T15:21:20.198902-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:21:20Z] git add: Another git process seems to be running in this repository, e.g.
+2026-04-23T15:21:20.200165-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:21:20Z] git add: an editor opened by 'git commit'. Please make sure all processes
+2026-04-23T15:21:20.201457-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:21:20Z] git add: are terminated then try again. If it still fails, a git process
+2026-04-23T15:21:20.202646-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:21:20Z] git add: may have crashed in this repository earlier:
+2026-04-23T15:21:20.203941-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:21:20Z] git add: remove the file manually to continue.
+2026-04-23T15:21:50.216826-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:21:50Z] git add failed
+2026-04-23T15:21:50.217690-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:21:50Z] git add: fatal: Unable to create '/var/tmp/machine_log/.git/index.lock': File exists.
+2026-04-23T15:21:50.218891-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:21:50Z] git add: Another git process seems to be running in this repository, e.g.
+2026-04-23T15:21:50.220142-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:21:50Z] git add: an editor opened by 'git commit'. Please make sure all processes
+2026-04-23T15:21:50.221395-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:21:50Z] git add: are terminated then try again. If it still fails, a git process
+2026-04-23T15:21:50.222582-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:21:50Z] git add: may have crashed in this repository earlier:
+2026-04-23T15:21:50.224764-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:21:50Z] git add: remove the file manually to continue.
+2026-04-23T15:22:01.505009-04:00 memexpand.cs.rutgers.edu CRON[1310082]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T15:22:20.245707-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:22:20Z] git add failed
+2026-04-23T15:22:20.248222-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:22:20Z] git add: fatal: Unable to create '/var/tmp/machine_log/.git/index.lock': File exists.
+2026-04-23T15:22:20.250799-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:22:20Z] git add: Another git process seems to be running in this repository, e.g.
+2026-04-23T15:22:20.253637-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:22:20Z] git add: an editor opened by 'git commit'. Please make sure all processes
+2026-04-23T15:22:20.255927-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:22:20Z] git add: are terminated then try again. If it still fails, a git process
+2026-04-23T15:22:20.258222-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:22:20Z] git add: may have crashed in this repository earlier:
+2026-04-23T15:22:20.260690-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:22:20Z] git add: remove the file manually to continue.
+2026-04-23T15:22:50.276816-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:22:50Z] git add failed
+2026-04-23T15:22:50.278837-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:22:50Z] git add: fatal: Unable to create '/var/tmp/machine_log/.git/index.lock': File exists.
+2026-04-23T15:22:50.281235-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:22:50Z] git add: Another git process seems to be running in this repository, e.g.
+2026-04-23T15:22:50.283706-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:22:50Z] git add: an editor opened by 'git commit'. Please make sure all processes
+2026-04-23T15:22:50.286117-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:22:50Z] git add: are terminated then try again. If it still fails, a git process
+2026-04-23T15:22:50.287393-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:22:50Z] git add: may have crashed in this repository earlier:
+2026-04-23T15:22:50.290083-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:22:50Z] git add: remove the file manually to continue.
+2026-04-23T15:23:01.620367-04:00 memexpand.cs.rutgers.edu CRON[1334255]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T15:23:20.306799-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:23:20Z] git add failed
+2026-04-23T15:23:20.307619-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:23:20Z] git add: fatal: Unable to create '/var/tmp/machine_log/.git/index.lock': File exists.
+2026-04-23T15:23:20.308848-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:23:20Z] git add: Another git process seems to be running in this repository, e.g.
+2026-04-23T15:23:20.310130-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:23:20Z] git add: an editor opened by 'git commit'. Please make sure all processes
+2026-04-23T15:23:20.311492-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:23:20Z] git add: are terminated then try again. If it still fails, a git process
+2026-04-23T15:23:20.312722-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:23:20Z] git add: may have crashed in this repository earlier:
+2026-04-23T15:23:20.313894-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:23:20Z] git add: remove the file manually to continue.
+2026-04-23T15:23:50.326628-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:23:50Z] git add failed
+2026-04-23T15:23:50.327544-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:23:50Z] git add: fatal: Unable to create '/var/tmp/machine_log/.git/index.lock': File exists.
+2026-04-23T15:23:50.328881-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:23:50Z] git add: Another git process seems to be running in this repository, e.g.
+2026-04-23T15:23:50.330158-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:23:50Z] git add: an editor opened by 'git commit'. Please make sure all processes
+2026-04-23T15:23:50.331427-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:23:50Z] git add: are terminated then try again. If it still fails, a git process
+2026-04-23T15:23:50.332624-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:23:50Z] git add: may have crashed in this repository earlier:
+2026-04-23T15:23:50.333954-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:23:50Z] git add: remove the file manually to continue.
+2026-04-23T15:24:01.729437-04:00 memexpand.cs.rutgers.edu CRON[1358740]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T15:24:20.346754-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:24:20Z] git add failed
+2026-04-23T15:24:20.348583-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:24:20Z] git add: fatal: Unable to create '/var/tmp/machine_log/.git/index.lock': File exists.
+2026-04-23T15:24:20.350029-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:24:20Z] git add: Another git process seems to be running in this repository, e.g.
+2026-04-23T15:24:20.351327-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:24:20Z] git add: an editor opened by 'git commit'. Please make sure all processes
+2026-04-23T15:24:20.352634-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:24:20Z] git add: are terminated then try again. If it still fails, a git process
+2026-04-23T15:24:20.353949-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:24:20Z] git add: may have crashed in this repository earlier:
+2026-04-23T15:24:20.355304-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:24:20Z] git add: remove the file manually to continue.
+2026-04-23T15:24:50.374473-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:24:50Z] git add failed
+2026-04-23T15:24:50.375943-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:24:50Z] git add: fatal: Unable to create '/var/tmp/machine_log/.git/index.lock': File exists.
+2026-04-23T15:24:50.378148-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:24:50Z] git add: Another git process seems to be running in this repository, e.g.
+2026-04-23T15:24:50.380552-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:24:50Z] git add: an editor opened by 'git commit'. Please make sure all processes
+2026-04-23T15:24:50.382833-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:24:50Z] git add: are terminated then try again. If it still fails, a git process
+2026-04-23T15:24:50.385047-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:24:50Z] git add: may have crashed in this repository earlier:
+2026-04-23T15:24:50.386834-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:24:50Z] git add: remove the file manually to continue.
+2026-04-23T15:25:01.853970-04:00 memexpand.cs.rutgers.edu CRON[1385733]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T15:25:01.854369-04:00 memexpand.cs.rutgers.edu CRON[1385734]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2026-04-23T15:25:20.405068-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:25:20Z] git add failed
+2026-04-23T15:25:20.406691-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:25:20Z] git add: fatal: Unable to create '/var/tmp/machine_log/.git/index.lock': File exists.
+2026-04-23T15:25:20.408498-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:25:20Z] git add: Another git process seems to be running in this repository, e.g.
+2026-04-23T15:25:20.410905-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:25:20Z] git add: an editor opened by 'git commit'. Please make sure all processes
+2026-04-23T15:25:20.413309-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:25:20Z] git add: are terminated then try again. If it still fails, a git process
+2026-04-23T15:25:20.415194-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:25:20Z] git add: may have crashed in this repository earlier:
+2026-04-23T15:25:20.416861-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:25:20Z] git add: remove the file manually to continue.
+2026-04-23T15:25:34.235008-04:00 memexpand.cs.rutgers.edu sssd_pam[1090941]: Shutting down (status = 0)
+2026-04-23T15:25:34.242538-04:00 memexpand.cs.rutgers.edu systemd[1]: sssd-pam.service: Deactivated successfully.
+2026-04-23T15:25:40.066670-04:00 memexpand.cs.rutgers.edu automount[4655]: key "ho" not found in map source(s).
+2026-04-23T15:25:50.433424-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:25:50Z] git add failed
+2026-04-23T15:25:50.434954-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:25:50Z] git add: fatal: Unable to create '/var/tmp/machine_log/.git/index.lock': File exists.
+2026-04-23T15:25:50.436782-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:25:50Z] git add: Another git process seems to be running in this repository, e.g.
+2026-04-23T15:25:50.438485-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:25:50Z] git add: an editor opened by 'git commit'. Please make sure all processes
+2026-04-23T15:25:50.440194-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:25:50Z] git add: are terminated then try again. If it still fails, a git process
+2026-04-23T15:25:50.441775-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:25:50Z] git add: may have crashed in this repository earlier:
+2026-04-23T15:25:50.443602-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:25:50Z] git add: remove the file manually to continue.
+2026-04-23T15:26:02.002295-04:00 memexpand.cs.rutgers.edu CRON[1407959]: (root) CMD (/usr/local/sbin/thermalwatch)
+2026-04-23T15:26:02.004156-04:00 memexpand.cs.rutgers.edu CRON[1407960]: (root) CMD (/usr/sbin/renewd.sh > /var/log/renewd.log 2>&1)
+2026-04-23T15:26:02.393061-04:00 memexpand.cs.rutgers.edu renewd: not time to renew yet KCM:1056:31856
+2026-04-23T15:26:02.705823-04:00 memexpand.cs.rutgers.edu renewd: not time to renew yet KCM:1905239618:44599
+2026-04-23T15:26:20.468739-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:26:20Z] git add failed
+2026-04-23T15:26:20.471301-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:26:20Z] git add: fatal: Unable to create '/var/tmp/machine_log/.git/index.lock': File exists.
+2026-04-23T15:26:20.474215-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:26:20Z] git add: Another git process seems to be running in this repository, e.g.
+2026-04-23T15:26:20.476846-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:26:20Z] git add: an editor opened by 'git commit'. Please make sure all processes
+2026-04-23T15:26:20.479671-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:26:20Z] git add: are terminated then try again. If it still fails, a git process
+2026-04-23T15:26:20.482445-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:26:20Z] git add: may have crashed in this repository earlier:
+2026-04-23T15:26:20.485124-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T19:26:20Z] git add: remove the file manually to continue.
