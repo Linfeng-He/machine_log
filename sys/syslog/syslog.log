@@ -1,4 +1,4 @@
-===== syslog snapshot host=memexpand boot_started_utc=20260423T182916Z boot_id=230a16fb-d4d9-4460-b551-e1f54133a8d7 captured_utc=20260423T183121Z =====
+===== syslog snapshot host=memexpand boot_started_utc=20260423T182916Z boot_id=230a16fb-d4d9-4460-b551-e1f54133a8d7 captured_utc=20260423T183151Z =====
 
 2026-04-23T14:23:15.228213-04:00 memexpand.cs.rutgers.edu rsyslogd: [origin software="rsyslogd" swVersion="8.2312.0" x-pid="4311" x-info="https://www.rsyslog.com"] rsyslogd was HUPed
 2026-04-23T14:23:15.330467-04:00 memexpand.cs.rutgers.edu systemd[1]: logrotate.service: Deactivated successfully.
@@ -328,3 +328,5 @@
 2026-04-23T14:31:01.997482-04:00 memexpand.cs.rutgers.edu CRON[55891]: (root) CMD (/usr/sbin/renewd.sh > /var/log/renewd.log 2>&1)
 2026-04-23T14:31:01.998132-04:00 memexpand.cs.rutgers.edu CRON[55893]: (root) CMD (/usr/local/sbin/thermalwatch)
 2026-04-23T14:31:02.235147-04:00 memexpand.cs.rutgers.edu renewd: not time to renew yet KCM:1905239618:44599
+2026-04-23T14:31:21.687449-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T18:31:21Z] git push failed for origin/main
+2026-04-23T14:31:21.688251-04:00 memexpand.cs.rutgers.edu bash[13396]: [2026-04-23T18:31:21Z] git push: fatal: could not read Username for 'https://github.com': No such device or address
